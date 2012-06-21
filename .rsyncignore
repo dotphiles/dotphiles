@@ -1,0 +1,19 @@
+#
+# dotphiles : https://github.com/dotphiles/dotfiles
+#
+# Ignore these files when rsyncing to remote machines
+#
+
+.git/
+backups/
+ssh/id*
+ssh/environment*
+ssh/known_hosts
+gnupg/secring.gpg
+gnupg/sshcontrol
+gnupg/gpg-agent.env
+gnupg/private*
+vim/.*
+vim/*.swp
+mutt/cache/.*
+subversion/auth/
