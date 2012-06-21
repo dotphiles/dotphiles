@@ -1,8 +1,8 @@
-############################################################################
-# File:         .gitignore
-# Author:       Ben O'Hara <bohara@gmail.com>
-# Description:  Ignore these files in this repo
-############################################################################    
+#
+# dotphiles : https://github.com/dotphiles/dotfiles
+#
+# Ignore these files in this repo.
+#
 
 *.swp
 .DS_Store
