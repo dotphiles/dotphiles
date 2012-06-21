@@ -1,0 +1,15 @@
+[submodule "dotsync"]
+	path = dotsync
+	url = git@github.com:dotphiles/dotsync.git
+[submodule "zsh"]
+	path = zsh
+	url = git://github.com/dotphiles/dotzsh.git
+[submodule "bash"]
+	path = bash
+	url = git@github.com:dotphiles/dotbash.git
+[submodule "vim"]
+	path = vim
+	url = git@github.com:dotphiles/dotvim.git
+[submodule "dir_colors/dircolors-solarized"]
+	path = dir_colors/dircolors-solarized
+	url = git://github.com/seebi/dircolors-solarized.git

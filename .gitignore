@@ -1,0 +1,21 @@
+############################################################################
+# File:         .gitignore
+# Author:       Ben O'Hara <bohara@gmail.com>
+# Description:  Ignore these files in this repo
+############################################################################    
+
+*.swp
+.DS_Store
+backups/*
+ssh/id*
+ssh/environment*
+ssh/known_hosts
+subversion/README.txt
+subversion/auth/*
+gnupg/secring.gpg
+gnupg/gpg-agent.env
+gnupg/sshcontrol
+gnupg/random*
+gnupg/private*
+gnupg/*~
+task/*.data
