@@ -1,0 +1,104 @@
+#
+# dotphiles : https://github.com/dotphiles/dotfiles
+# Git configuration.
+#
+
+# Global Config
+[user]
+  name = "Your Name"
+  email = "your@email.com"
+  signingkey = YOURKEYID
+
+[branch "master"]
+  remote = origin
+  merge = refs/heads/master
+
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+  ui = true
+  pager = true
+
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+
+[core]
+  pager = less -FRSX
+  whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+
+[alias]
+  # [s = status] short status
+  s = "status -s"
+  # [b = branch]
+  b = "branch -a"
+  # [g = gui]
+  g = "!git gui &"
+  # unadd - removes files/directories from staging
+  unadd = rm -r --cached
+  # gitk
+  k = !gitk --all --select-commit=HEAD &
+  # [l = log] short one line logs with ref-names
+  l  = log --oneline --decorate=short
+  # [l = log] short one line logs with ref-names, date and author - nice colored
+  l2 = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --date=relative
+  # [gl = graph log]
+  gl = log --oneline --decorate --stat --graph
+  # [r = remote] listing remotes with urls
+  r  = remote -v
+  # [dfb = diff before pull]
+  dfb = diff ORIG_HEAD HEAD
+  # [sf = submodule foreach] shortcut when running something on all submodules - eg. git sf "git s"
+  sf = submodule foreach
+  # [c = count] number of commits in current branch
+  c  = "!git log --oneline | wc -l "
+  # cc clean and compress the repository [be carefull, can use a lot of RAM and take long on big repositories]
+  cc = "!du -hs .git; git gc --aggressive; du -hs .git;"
+  # [co = checkout]
+  co = checkout
+  # shows ignored directories
+  ignored = "!git ls-files --others -i --exclude-standard --directory"
+  # [ci = commit]
+  ci = commit
+  # [aa = add all] Adds all files
+  aa = add .
+  # [rs = reset hard] Resets modified files to state of last commit
+  rh = reset --hard
+  # [h = hash] hash of HEAD
+  h = rev-list --max-count=1 HEAD
+  # [shc = submodule hash] Shows current sha1s of all submodules and number of commits
+  shc = "!git sf 'git h; git c'"
+  # [llm = last log message] Shows the last git logentry (hash, author, date commitmessage)
+  llm = log -1
+  # [lcm = last log messages submodules] Last log message of all submodules
+  llms = !git sf "git llm;"
+  # [siu = submodule init update] Runs submodule-initialisation and update after a fresh checkout RECURSIVE!
+  siu = "!git submodule init; git submodule update; git submodule foreach \"git siu\""
+  # Pushs all submodules to origin master
+  pushsub = submodule foreach "git push origin master"
+  # Pull submodules from origin master
+  pullsub = submodule foreach "git pull origin master"
+  # [icg = if changed gui] Opens git gui if there are changes in the repository
+  icg = "!REPOCHANGED=`git s`; REPOCHANGED=${#REPOCHANGED}; if [ $REPOCHANGED != 0 ]; then git gui & fi;"
+  # Open git guis for all submodules which have changes
+  subgui = "submodule foreach git icg"
+  # [ul = user list]  show users which have commits in current branch
+  ul = "!git log --format='%aN' | sort -u"
+  # [uccl = user commit count list ;)] show users which have commits in current branch, including number of commits, sorted (most commits last)
+  uccl = "!git log --format='%aN <%aE>'  | awk '{arr[$0]++} END{for (i in arr){print arr[i], i;}}' | sort -n"
+  # [ahg = archive head gzip] creates a tar.gz archive named after the last commits hash from HEAD! in the directory above the repository
+  ahg = "!git archive HEAD --format=tar | gzip > ../`git h`.tar.gz"
