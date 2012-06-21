@@ -1,0 +1,32 @@
+#
+# dotphiles : https://github.com/dotphiles/dotfiles
+#
+# Config for dotsync.
+#
+
+# Location of your dotfiles
+#DOTFILES=.dotfiles
+
+# dotfiles to symlink
+[files]
+bash
+bashrc
+dir_colors
+dotsyncrc
+gitconfig
+gitignore
+vim
+vimrc
+zlogin
+zlogout
+zprofile
+zsh
+zshenv
+zshrc
+[endfiles]
+
+# Hosts to sync
+## hostname                     type=masterhost, ANY or NONE
+[hosts]
+your-machine-name-here          git=NONE
+[endhosts]
