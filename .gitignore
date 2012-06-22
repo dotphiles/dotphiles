@@ -10,6 +10,7 @@ backups/*
 ssh/id*
 ssh/environment*
 ssh/known_hosts
+ssh/master-*
 subversion/README.txt
 subversion/auth/*
 gnupg/secring.gpg
