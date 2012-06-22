@@ -19,6 +19,9 @@ gnupg
 inputrc
 screenrc
 ssh
+subversion
+task
+taskrc
 tmux.conf
 pythonrc
 vim

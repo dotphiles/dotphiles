@@ -1,0 +1,13 @@
+#
+# dotphiles : https://github.com/dotphiles/dotfiles
+#
+# Client options for subversion
+#
+
+### Section for configuring miscelleneous Subversion options.
+[miscellany]
+enable-auto-props = yes
+
+### Section for configuring automatic properties.
+[auto-props]
+* = svn:keywords="LastChangedBy LastChangedDate Id HeadURL Rev"
