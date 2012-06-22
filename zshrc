@@ -45,10 +45,10 @@ zstyle ':omz:load' omodule 'environment' 'terminal' 'macports' 'gnu-utility' \
 zstyle ':omz:module:prompt' theme 'dotphiles'
 
 # Set custom scheme based on hostname
-zstyle ':omz:module:prompt:host:natte.mcvax.org' theme 'benohara' 'dark' 'magenta'
-zstyle ':omz:module:prompt:host:excession.mikegrice.com' theme 'benohara' 'dark' 'violet'
-zstyle ':omz:module:prompt:host:mac-mini.benohara.net' theme 'benohara' 'dark' 'blue'
-zstyle ':omz:module:prompt:domain:apnic.net' theme 'benohara' 'dark' 'red'
+zstyle ':omz:module:prompt:host:natte.mcvax.org' theme 'dotphiles' 'dark' 'magenta'
+zstyle ':omz:module:prompt:host:excession.mikegrice.com' theme 'dotphiles' 'dark' 'violet'
+zstyle ':omz:module:prompt:host:mac-mini.dotphiles.net' theme 'dotphiles' 'dark' 'blue'
+zstyle ':omz:module:prompt:domain:apnic.net' theme 'dotphiles' 'dark' 'red'
 
 zstyle ':omz:module:utility:dircolors' theme '.dir_colors/dircolors-solarized/dircolors.256dark'
 

@@ -34,5 +34,6 @@ zshrc
 # Hosts to sync
 ## hostname                     type=masterhost, ANY or NONE
 [hosts]
-your-machine-name-here          git=NONE
+mac-mini                        git=bens-macbook-pro
+parsley                         rsync=bens-macbook-pro
 [endhosts]
