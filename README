@@ -3,10 +3,10 @@ dotphiles
 
 dotfiles, ready to go
 
-   - `dotsync` see dotsync[1]
-   - `zsh` see dotzsh[2]
-   - `bash` see dotbash[3]
-   - `vim` see dotvim[4]
+   - `dotsync` see [dotsync][1]
+   - `zsh` see [dotzsh][2]
+   - `bash` see [dotbash][3]
+   - `vim` see [dotvim][4]
 
 Installation
 ============
@@ -26,15 +26,15 @@ Sign up for an account on github][5] and click fork
 Configuration
 =============
 
-### Dotsync[1]
+### [Dotsync][1]
 
 Add your dotfiles and machine names to *dotsyncrc*
 
-### Zsh[2]
+### [Zsh][2]
 
 Add your own settings to *zshrc*, *zshenv*, *zlogin*, *zlogout* and *zprofile*
 
-### Bash[3]
+### [Bash][3]
 
 Add your own settings to *bashrc*
 
