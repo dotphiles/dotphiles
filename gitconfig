@@ -8,7 +8,7 @@
 [user]
   name = "Ben O'Hara"
   email = "bohara@gmail.com"
-  #signingkey = YOURKEYID
+  signingkey = 6DD6BFD9
 
 [branch "master"]
   remote = origin
