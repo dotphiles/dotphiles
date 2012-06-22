@@ -18,7 +18,7 @@ Installation
 
 ### Fork
 
-Sign up for an account on github][5] and click fork
+Sign up for an account on [github][5] and click fork
 
     git clone --recursive git@github.com:username/dotfiles.git ~/.dotfiles
     ./.dotfiles/dotsync/bin/dotsync -L
