@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
 # dothiles : https://github.com/dotphiles/dotfiles
@@ -5,7 +6,14 @@
 # Best goddamn .pythonrc file in the whole world.
 #
 
-# Imports we need
+"""
+
+This file is executed when the Python interactive shell is started if
+$PYTHONSTARTUP is in your environment and points to this file. It's just
+regular Python commands, so do what you will. Your ~/.inputrc file can greatly
+complement this file.
+
+"""
 import sys
 import os
 import readline, rlcompleter
@@ -13,14 +21,14 @@ import atexit
 import pprint
 from tempfile import mkstemp
 from code import InteractiveConsole
-
-# Imports we want
 import datetime
 import pdb
 
 AUTHOR = 'Seth House <seth@eseth.com>'
 
 # Color Support
+###############
+
 class TermColors(dict):
     """Gives easy access to ANSI color codes. Attempts to fall back to no color
     for certain TERM values. (Mostly stolen from IPython.)"""
@@ -50,6 +58,7 @@ class TermColors(dict):
 
     def __init__(self):
         if os.environ.get('TERM') in ('xterm-color', 'xterm-256color', 'linux',
+                                      'xterm',
                                     'screen', 'screen-256color', 'screen-bce'):
             self.update(dict([(k, self._base % v) for k,v in self.COLOR_TEMPLATES]))
         else:
@@ -57,14 +66,16 @@ class TermColors(dict):
 _c = TermColors()
 
 # Enable a History
-HISTFILE="%s/.pyhistory" % os.environ["HOME"]
+##################
+
+HISTFILE="%s/.python_history" % os.environ["HOME"]
 
 # Read the existing history if there is one
 if os.path.exists(HISTFILE):
     readline.read_history_file(HISTFILE)
 
 # Set maximum number of items that will be written to the history file
-readline.set_history_length(300)
+readline.set_history_length(3000)
 
 def savehist():
     readline.write_history_file(HISTFILE)
@@ -72,10 +83,14 @@ def savehist():
 atexit.register(savehist)
 
 # Enable Color Prompts
-sys.ps1 = "%s>>> %s" % (_c['Green'], _c['Normal'])
-sys.ps2 = "%s... %s" % (_c['Red'], _c['Normal'])
+######################
+
+sys.ps1 = '%s>>> %s' % (_c['LightGreen'], _c['Normal'])
+sys.ps2 = '%s... %s' % (_c['LightRed'], _c['Normal'])
 
 # Enable Pretty Printing for stdout
+###################################
+
 def my_displayhook(value):
     if value is not None:
         try:
@@ -88,20 +103,29 @@ def my_displayhook(value):
 sys.displayhook = my_displayhook
 
 # Welcome message
-WELCOME = """\
+#################
+
+WELCOME = """%(LightBlue)s
+The Python shell is coming at 'ya, punk!
 %(Cyan)s
 You've got color, history, and pretty printing.
 (If your ~/.inputrc doesn't suck, you've also
 got completion and vi-mode keybindings.)
 %(Brown)s
 Type \e to get an external editor.
+%(Blue)s
+Oh yeah, it is that cool.
 %(Normal)s""" % _c
 
-atexit.register(lambda: sys.stdout.write("""%(DarkGray)s
-Sheesh, I thought he'd never leave. Who invited that guy?
-%(Normal)s""" % _c))
+WELCOME = ""
+
+#atexit.register(lambda: sys.stdout.write("""%(DarkGray)s
+#Sheesh, I thought he'd never leave. Who invited that guy?
+#%(Normal)s""" % _c))
 
 # Django Helpers
+################
+
 def SECRET_KEY():
     "Generates a new SECRET_KEY that can be used in a project settings file." 
 
@@ -143,7 +167,21 @@ normal environment call `teardown_test_environment()`.
 Warning: DEBUG_PROPAGATE_EXCEPTIONS has been set to True.
 %(Normal)s""" % _c
 
+
+# Numpy
+######
+try:
+    import numpy
+    trows, tcols = map(int, os.popen('stty size', 'r').read().split())
+    numpy.set_printoptions(linewidth=tcols)
+except ImportError:
+    pass
+
+
 # Start an external editor with \e
+##################################     
+# http://aspn.activestate.com/ASPN/Cookbook/Python/Recipe/438813/
+
 EDITOR = os.environ.get('EDITOR', 'vi')
 EDIT_CMD = '\e'
 
