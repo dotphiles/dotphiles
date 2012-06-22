@@ -27,6 +27,7 @@ Bundle 'calendar.vim--Matsumoto'
 Bundle 'chrisbra/NrrwRgn'
 Bundle 'utl.vim'
 Bundle 'hsitz/VimOrganizer'
+Bundle 'kien/ctrlp.vim.git'
 
 " Gundo requires at least vim 7.3
 if v:version < '703' || !has('python')
