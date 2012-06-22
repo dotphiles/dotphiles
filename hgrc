@@ -1,3 +1,9 @@
+#
+# dotphiles : https://github.com/dotphiles/dotfiles
+#
+# Setup mercurial
+#
+
 [ui]
 username = Ben O'Hara <bohara@apnic.net>
 merge = internal:merge
