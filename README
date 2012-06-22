@@ -1,12 +1,7 @@
 dotphiles
 =========
 
-dotfiles, ready to go
-
-   - [dotsync][1]
-   - [dotzsh][2]
-   - [dotbash][3]
-   - [dotvim][4]
+A framework of dotfiles for the usual terminal apps and shells.
 
 Installation
 ============
@@ -18,7 +13,7 @@ Installation
 
 ### Fork
 
-Sign up for an account on [github][5] and click fork
+Sign up for an account on [github][5] and fork the project
 
     git clone --recursive git@github.com:username/dotfiles.git ~/.dotfiles
     ./.dotfiles/dotsync/bin/dotsync -L
