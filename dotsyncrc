@@ -15,8 +15,10 @@ dir_colors
 dotsyncrc
 gitconfig
 gitignore
+gnupg
 inputrc
 screenrc
+ssh
 tmux.conf
 pythonrc
 vim
