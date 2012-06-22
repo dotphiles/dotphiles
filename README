@@ -42,10 +42,30 @@ Add your own settings to *bashrc*
 
 Add your name, email and gpg keyid to *gitconfig*
 
-Authors
-=======
+Contribute
+----------
 
-*The authors of this module should be contacted via the [issue tracker][6].*
+This project would not exist without all of its users and [contributors][6].
+
+If you have ideas on how to make the configuration easier to maintain or
+improve its performance, do not hesitate to fork and send pull requests.
+
+### Issue Reporting
+
+   - Check that the [issue][7] has not already been reported.
+   - Check that the [issue][7] has not already been fixed in the latest code.
+   - Open an [issue][7] with a clear title and description in grammatically correct,
+     complete sentences.
+
+### Pull Request
+
+   - Read [how to properly contribute to open source projects on GitHub][8].
+   - Use a topic branch to easily amend a pull request later, if necessary.
+   - Write [good commit messages][9].
+   - Squash commits on the topic branch before opening a pull request.
+   - Use the same coding style and spacing.
+   - Open a [pull request][10] that relates to but one subject with a clear
+     title and description in gramatically correct, complete sentences.
 
 License
 =======
@@ -75,4 +95,8 @@ THE SOFTWARE.
 [3]: https://github.com/dotphiles/dotbash
 [4]: https://github.com/dotphiles/dotvim
 [5]: https://github.com/
-[6]: https://github.com/dotphiles/dotfiles/issues
+[6]: https://github.com/dotphiles/dotfiles/contributors
+[7]: https://github.com/dotphiles/dotfiles/issues
+[8]: http://gun.io/blog/how-to-github-fork-branch-and-pull-request
+[9]: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
+[10]: https://help.github.com/articles/using-pull-requests
