@@ -1,0 +1,25 @@
+#
+# dotphiles : https://github.com/dotphiles/dotfiles
+#
+# Description:  Config for ssh client
+#
+
+# Global Settings
+ForwardAgent yes
+#VisualHostKey yes
+HashKnownHosts no
+#ConnectTimeout 2
+ServerAliveCountMax 6
+ServerAliveInterval 30
+
+# My Hosts
+#Host hostname hostname.fqdn.com
+#    Hostname hostname.fqdn.com
+
+# Default
+Host *
+    StrictHostKeyChecking ask
+    ControlMaster auto
+    ControlPersist yes
+    ControlPath /tmp/ssh-%r@%h:%p
+    ServerAliveInterval 600

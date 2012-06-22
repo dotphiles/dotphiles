@@ -1,0 +1,8 @@
+#
+# dotphiles : https://github.com/dotphiles/dotfiles
+#
+# Allow access from the following keys
+#
+
+# Add your ssh key here
+ssh-rsa ssh-key-goes-here user@email.com
