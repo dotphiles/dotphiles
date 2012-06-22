@@ -3,19 +3,17 @@ dotphiles
 
 dotfiles, ready to go
 
-   *zsh*
-   *bash*
-   *vim*
+   - `zsh`
+   - `bash`
+   - `vim`
 
-INSTALLATION:
-=============
+Installation
+============
 
 ### Quickstart
 
     git clone --recursive git@github.com:dotfiles/dotfiles.git ~/.dotfiles
     ./.dotfiles/dotsync/bin/dotsync -L
-
-Sign up for an account on github, and click 
 
 ### Fork
 
