@@ -42,10 +42,10 @@ zstyle ':omz:load' omodule 'environment' 'terminal' 'macports' 'gnu-utility' \
 # Set the prompt theme to load.
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
-zstyle ':omz:module:prompt' theme 'dotphiles' 'dark' 'yellow'
+zstyle ':omz:module:prompt' theme 'dotphiles'
 
 # Set custom scheme based on hostname
-#zstyle ':omz:module:prompt:host:hostname.example' theme 'dotphiles' 'dark' 'magenta'
+zstyle ':omz:module:prompt:host:bens-macbook-pro' theme 'dotphiles' 'dark' 'yellow'
 #zstyle ':omz:module:prompt:host:hostname2.example2.com' theme 'dotphiles' 'dark' 'violet'
 #zstyle ':omz:module:prompt:domain:example.net' theme 'dotphiles' 'dark' 'red'
 
