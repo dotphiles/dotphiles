@@ -16,3 +16,6 @@
 [submodule "irssi"]
 	path = irssi
 	url = git@github.com:dotphiles/dotirssi
+[submodule "mutt"]
+	path = mutt
+	url = git@github.com:dotphiles/dotmutt
