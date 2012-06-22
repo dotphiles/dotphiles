@@ -4,5 +4,4 @@
 # Allow access from the following keys
 #
 
-# Add your ssh key here
-ssh-rsa ssh-key-goes-here user@email.com
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDUaQsQ6JN33sFSUcl+uleJO+YzQiQ/DM7MemnNbcmNuRp7+SaXJ6McuGG1pAFJB7Vrzz889eAgpR5XtO7YKd/9tP2uM7ueFkjyz6Fp46uM+lK98wkDm7RZkZguQu4AiMGiUFVWCeUNo5X1jdvHTJ29QntPB3THqjszQei3by7Ke0nfquS3O9ersnWQDlj36oQ6Wu/aYHaM4EzYbg0yW0iXd+uULfO6QGrYmVqz8wqv+1LHX4lT5SO/fslsYOT0llY/M0FrV806uYrMS3ArUhj1Db4Fm0J9hK+/QMuP8QbWLq1rM+uy0IKfx1qIAJawKgYtAkSy3Thwriufgut8z9PD bohara@gmail.com
