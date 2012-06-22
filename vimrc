@@ -16,7 +16,6 @@ Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'wincent/Command-T'
-Bundle 'taglist.vim'
 Bundle 'YankRing.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
@@ -24,9 +23,7 @@ Bundle 'tsaleh/vim-align'
 Bundle 'mileszs/ack.vim'
 Bundle 'austintaylor/vim-indentobject'
 Bundle 'greplace.vim'
-Bundle 'Lokaltog/vim-powerline'
 Bundle 'sjl/threesome.vim'
-Bundle 'Indent-Guides'
 Bundle 'tpope/vim-endwise'
 Bundle 'Raimondi/delimitMate'
 Bundle 'calendar.vim--Matsumoto'
@@ -44,6 +41,19 @@ if v:version >= '702'
   Bundle 'AutoComplPop'
   Bundle 'msanders/snipmate.vim'
   Bundle 'syntastic'
+endif
+
+if v:version > '700'
+  Bundle 'VimClojure'
+  Bundle 'Indent-Guides'
+endif
+
+
+if version > 600
+  if executable('ctags')
+    Bundle 'taglist.vim'
+    Bundle 'Lokaltog/vim-powerline'
+  endif
 endif
 
 " Ruby/Rails
@@ -71,7 +81,6 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'vitaly/vim-syntastic-coffee'
 Bundle 'vim-scripts/jade.vim'
 Bundle 'wavded/vim-stylus'
-Bundle 'VimClojure'
 Bundle 'bbommarito/vim-slim'
 
 " Support and minor
