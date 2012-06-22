@@ -29,11 +29,11 @@ Bundle 'utl.vim'
 Bundle 'hsitz/VimOrganizer'
 
 " Gundo requires at least vim 7.3
-if v:version < '703' || !has('python')
+if v:version >= '703' || !has('python')
   Bundle 'gundo.vim'
 endif
 
-if v:version < '702'
+if v:version >= '702'
   Bundle 'AutoComplPop'
   Bundle 'msanders/snipmate.vim'
   Bundle 'syntastic'
