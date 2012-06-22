@@ -1,3 +1,9 @@
+"
+" dotphiles : https://github.com/dotphiles/dotvim
+"
+" Setup vim and load required plugins before dotvim
+"
+
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/vundle/
