@@ -6,8 +6,8 @@
 
 # Global Config
 [user]
-  #name = "Your Name"
-  #email = "your@email.com"
+  name = "Ben O'Hara"
+  email = "bohara@gmail.com"
   #signingkey = YOURKEYID
 
 [branch "master"]
