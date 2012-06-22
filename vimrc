@@ -34,18 +34,17 @@ Bundle 'tpope/vim-surround'
 "Bundle 'hsitz/VimOrganizer'
 Bundle 'kien/ctrlp.vim.git'
 
-" Gundo requires at least vim 7.3
-if v:version >= '703' || !has('python')
-  Bundle 'gundo.vim'
+" requires at least vim 7.3
+if v:version >= '703'
+  if has('python')
+    Bundle 'gundo.vim'
+  endif
   Bundle 'Lokaltog/vim-powerline'
   Bundle 'VimClojure'
-  Bundle 'Indent-Guides'
-endif
-
-if v:version > '703'
   Bundle 'AutoComplPop'
   Bundle 'msanders/snipmate.vim'
   Bundle 'syntastic'
+  Bundle 'Indent-Guides'
 endif
 
 if version > 600
