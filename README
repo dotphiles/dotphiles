@@ -3,9 +3,10 @@ dotphiles
 
 dotfiles, ready to go
 
-   - `zsh`
-   - `bash`
-   - `vim`
+   - `dotsync` see dotsync[1]
+   - `zsh` see dotzsh[2]
+   - `bash` see dotbash[3]
+   - `vim` see dotvim[4]
 
 Installation
 ============
@@ -17,7 +18,7 @@ Installation
 
 ### Fork
 
-Sign up for an account on [github][1] and click fork
+Sign up for an account on github][5] and click fork
 
     git clone --recursive git@github.com:username/dotfiles.git ~/.dotfiles
     ./.dotfiles/dotsync/bin/dotsync -L
@@ -25,17 +26,26 @@ Sign up for an account on [github][1] and click fork
 Configuration
 =============
 
-### Zsh
+### Dotsync[1]
+
+Add your dotfiles and machine names to *dotsyncrc*
+
+### Zsh[2]
 
 Add your own settings to *zshrc*, *zshenv*, *zlogin*, *zlogout* and *zprofile*
+
+### Bash[3]
+
+Add your own settings to *bashrc*
 
 ### Git
 
 Add your name, email and gpg keyid to *gitconfig*
 
-### Dotsync
+Authors
+=======
 
-Add your dotfiles and machine names to *dotsyncrc*
+*The authors of this module should be contacted via the [issue tracker][6].*
 
 License
 =======
@@ -60,4 +70,9 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-[1]: https://github.com/dotphiles/dotfiles
+[1]: https://github.com/dotphiles/dotsync
+[2]: https://github.com/dotphiles/dotzsh
+[3]: https://github.com/dotphiles/dotbash
+[4]: https://github.com/dotphiles/dotvim
+[5]: https://github.com/
+[6]: https://github.com/dotphiles/dotfiles/issues
