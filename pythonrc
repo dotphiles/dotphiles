@@ -1,7 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
+<<<<<<< HEAD
 # dothiles : https://github.com/dotphiles/dotfiles
+=======
+# dotphiles : https://github.com/dotphiles/dotfiles
+>>>>>>> b01c170209ad8b86a46b4d0e993378db5c4d074e
 #
 # Best goddamn .pythonrc file in the whole world.
 #
