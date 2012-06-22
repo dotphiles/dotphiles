@@ -16,7 +16,11 @@ dotsyncrc
 gitconfig
 gitignore
 gnupg
+hgrc
 inputrc
+irssi
+mutt
+muttrc
 screenrc
 ssh
 subversion
