@@ -1,8 +1,15 @@
+"
+" dotphiles : https://github.com/dotphiles/dotfiles
+"
+" Setup bundles to load with vundle and call dotvim
+"
+
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+" Use vundle for packaging
 Bundle 'gmarik/vundle'
 
 Bundle 'scrooloose/nerdtree'
