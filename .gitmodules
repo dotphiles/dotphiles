@@ -3,7 +3,7 @@
 	url = git@github.com:dotphiles/dotsync.git
 [submodule "zsh"]
 	path = zsh
-	url = git://github.com/dotphiles/dotzsh.git
+	url = git@github.com:dotphiles/dotzsh.git
 [submodule "bash"]
 	path = bash
 	url = git@github.com:dotphiles/dotbash.git
