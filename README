@@ -6,60 +6,64 @@ A framework of dotfiles for the usual terminal apps and shells
 Installation
 ============
 
-### Quickstart
+Sign up for an account on [github][1] and fork the project
 
-    git clone --recursive git@github.com:dotfiles/dotfiles.git ~/.dotfiles
+    git clone --recursive git@github.com:*username*/dotfiles.git ~/.dotfiles
+
+Edit *dotsyncrc* and select which dotfiles to use
+
+Then symlink then into place with
+
     ./.dotfiles/dotsync/bin/dotsync -L
 
-### Fork
+*Any existing files will be backed up into `~.dotfiles/backups/`*
 
-Sign up for an account on [github][5] and fork the project
+Settings
+========
 
-    git clone --recursive git@github.com:username/dotfiles.git ~/.dotfiles
-    ./.dotfiles/dotsync/bin/dotsync -L
+### [dotsync](https://github.com/dotphiles/dotsync)
 
-Configuration
-=============
+Add your dotfiles and machines to sync into *dotsyncrc*
 
-### [Dotsync][1]
-
-Add your dotfiles and machine names to *dotsyncrc*
-
-### [Zsh][2]
+### [dotzsh](https://github.com/dotphiles/dotzsh)
 
 Add your own settings to *zshrc*, *zshenv*, *zlogin*, *zlogout* and *zprofile*
 
-### [Bash][3]
+### [dotbash](https://github.com/dotphiles/dotbash)
 
 Add your own settings to *bashrc*
 
-### Git
+### [dotvim](https://github.com/dotphiles/dotvim)
+
+Add your own settings to *vimrc*
+
+### git
 
 Add your name, email and gpg keyid to *gitconfig*
 
 Contribute
 ==========
 
-This project would not exist without all of its users and [contributors][6].
+This project would not exist without all of its users and [contributors][2].
 
 If you have ideas on how to make the configuration easier to maintain or
 improve its performance, do not hesitate to fork and send pull requests.
 
 ### Issue Reporting
 
-   - Check that the [issue][7] has not already been reported.
-   - Check that the [issue][7] has not already been fixed in the latest code.
-   - Open an [issue][7] with a clear title and description in grammatically correct,
+   - Check that the [issue][3] has not already been reported.
+   - Check that the [issue][3] has not already been fixed in the latest code.
+   - Open an [issue][3] with a clear title and description in grammatically correct,
      complete sentences.
 
 ### Pull Request
 
-   - Read [how to properly contribute to open source projects on GitHub][8].
+   - Read [how to properly contribute to open source projects on GitHub][4].
    - Use a topic branch to easily amend a pull request later, if necessary.
-   - Write [good commit messages][9].
+   - Write [good commit messages][5].
    - Squash commits on the topic branch before opening a pull request.
    - Use the same coding style and spacing.
-   - Open a [pull request][10] that relates to but one subject with a clear
+   - Open a [pull request][6] that relates to but one subject with a clear
      title and description in gramatically correct, complete sentences.
 
 License
@@ -82,13 +86,9 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-[1]: https://github.com/dotphiles/dotsync
-[2]: https://github.com/dotphiles/dotzsh
-[3]: https://github.com/dotphiles/dotbash
-[4]: https://github.com/dotphiles/dotvim
-[5]: https://github.com/
-[6]: https://github.com/dotphiles/dotfiles/contributors
-[7]: https://github.com/dotphiles/dotfiles/issues
-[8]: http://gun.io/blog/how-to-github-fork-branch-and-pull-request
-[9]: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
-[10]: https://help.github.com/articles/using-pull-requests
+[1]: https://github.com
+[2]: https://github.com/dotphiles/dotfiles/contributors
+[3]: https://github.com/dotphiles/dotfiles/issues
+[4]: http://gun.io/blog/how-to-github-fork-branch-and-pull-request
+[5]: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
+[6]: https://help.github.com/articles/using-pull-requests

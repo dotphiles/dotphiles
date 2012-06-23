@@ -8,31 +8,32 @@
 #DOTFILES=.dotfiles
 
 # dotfiles to symlink
+# uncomment to enable
 [files]
-bash
-bashrc
-dir_colors
-dotsyncrc
-gitconfig
-gitignore
-gnupg
-inputrc
-screenrc
-ssh
-tmux.conf
-pythonrc
-vim
-vimrc
-zlogin
-zlogout
-zprofile
-zsh
-zshenv
-zshrc
+##bash
+##bashrc
+##dir_colors
+##dotsyncrc
+##gitconfig
+##gitignore
+##gnupg
+##inputrc
+##screenrc
+##ssh
+##tmux.conf
+##pythonrc
+##vim
+##vimrc
+##zlogin
+##zlogout
+##zprofile
+##zsh
+##zshenv
+##zshrc
 [endfiles]
 
 # Hosts to sync
 ## hostname                     type=masterhost, ANY or NONE
 [hosts]
-your-machine-name-here          git=NONE
+##your-machine-name-here          git=NONE
 [endhosts]
