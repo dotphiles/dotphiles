@@ -49,7 +49,7 @@ zstyle ':omz:module:prompt:host:bens-macbook-pro' theme 'dotphiles' 'dark' 'yell
 #zstyle ':omz:module:prompt:host:hostname2.example2.com' theme 'dotphiles' 'dark' 'violet'
 #zstyle ':omz:module:prompt:domain:example.net' theme 'dotphiles' 'dark' 'red'
 
-zstyle ':omz:module:utility:dircolors' theme '.dir_colors/dircolors-solarized/dircolors.256dark'
+zstyle ':omz:module:utility:dircolors' theme '.dircolors/solarized/dircolors.256dark'
 
 #zstyle ':omz:module:tmux' auto-start 'yes'
 
