@@ -43,5 +43,29 @@ zshrc
 ## hostname                     type=masterhost, ANY or NONE
 [hosts]
 mac-mini                        git=bens-macbook-pro
-parsley                         rsync=bens-macbook-pro
+excession.mikegrice.com         git=bens-macbook-pro
+parsley.apnic.net               rsync=bens-macbook-pro
+natto.apnic.net                 rsync=bens-macbook-pro
+fennel.apnic.net                rsync=bens-macbook-pro
+cron.apnic.net                  rsync=bens-macbook-pro
+svc-ia1.apnic.net               rsync=bens-macbook-pro
+svc-ia2.apnic.net               rsync=bens-macbook-pro
+nsadmin.apnic.net               rsync=bens-macbook-pro
+shell.apnic.net                 rsync=bens-macbook-pro
+software.apnic.net              rsync=bens-macbook-pro
+chilli.apnic.net                rsync=bens-macbook-pro
+chilli-old.apnic.net            rsync=bens-macbook-pro
+matrix-auth.apnic.net           rsync=bens-macbook-pro
+matrix-proxy2.apnic.net         rsync=bens-macbook-pro
+svc-ao1.apnic.net               rsync=bens-macbook-pro
+svc-ao2.apnic.net               rsync=bens-macbook-pro
+master.apnic.net                rsync=bens-macbook-pro
+mugwort.apnic.net               rsync=bens-macbook-pro
+whois-node1.apnic.net           rsync=bens-macbook-pro
+whois-node2.apnic.net           rsync=bens-macbook-pro
+whois-node3.apnic.net           rsync=bens-macbook-pro
+whois-node4.apnic.net           rsync=bens-macbook-pro
+whois-node5.apnic.net           rsync=bens-macbook-pro
+wasabi.apnic.net                rsync=bens-macbook-pro
+racktables.apnic.net            rsync=bens-macbook-pro
 [endhosts]
