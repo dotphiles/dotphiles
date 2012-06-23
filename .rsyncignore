@@ -9,6 +9,7 @@ backups/
 ssh/id*
 ssh/environment*
 ssh/known_hosts
+ssh/master/*
 gnupg/secring.gpg
 gnupg/sshcontrol
 gnupg/gpg-agent.env
