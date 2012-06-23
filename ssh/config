@@ -15,7 +15,7 @@ ServerAliveInterval 30
 # My Hosts
 Host mac-mini mac-mini.benohara.net
     Hostname bens-mac-mini.local
-Host excession exession.mikegrice.com
+Host excession excession.mikegrice.com
     User ben
     Hostname excession.mikegrice.com
 
