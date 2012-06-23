@@ -15,9 +15,12 @@ ServerAliveInterval 30
 # My Hosts
 Host mac-mini mac-mini.benohara.net
     Hostname bens-mac-mini.local
-
+Host excession exession.mikegrice.com
+    User ben
+    Hostname excession.mikegrice.com
 # Default
 Host *
+    User bohara
     SendEnv LANG LC_*
     StrictHostKeyChecking ask
     #ControlMaster auto
