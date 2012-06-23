@@ -50,7 +50,7 @@ zstyle ':omz:module:prompt:host:excession.mikegrice.com' theme 'dotphiles' 'dark
 zstyle ':omz:module:prompt:host:mac-mini.benohara.net' theme 'dotphiles' 'dark' 'blue'
 zstyle ':omz:module:prompt:domain:apnic.net' theme 'dotphiles' 'dark' 'red'
 
-zstyle ':omz:module:utility:dircolors' theme '.dir_colors/dircolors-solarized/dircolors.256dark'
+zstyle ':omz:module:utility:dircolors' theme '.dircolors/solarized/dircolors.256dark'
 
 #zstyle ':omz:module:tmux' auto-start 'yes'
 
