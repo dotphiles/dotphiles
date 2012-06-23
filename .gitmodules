@@ -10,6 +10,6 @@
 [submodule "vim"]
 	path = vim
 	url = git@github.com:dotphiles/dotvim.git
-[submodule "dir_colors/dircolors-solarized"]
-	path = dir_colors/dircolors-solarized
-	url = git://github.com/seebi/dircolors-solarized.git
+[submodule "dircolors/solarized"]
+	path = dircolors/solarized
+	url = git@github.com:dotphiles/dircolors-solarized.git
