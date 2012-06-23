@@ -8,6 +8,7 @@
 #DOTFILES=.dotfiles
 
 # dotfiles to symlink
+# uncomment to enable
 [files]
 bash
 bashrc
