@@ -18,6 +18,7 @@ Host mac-mini mac-mini.benohara.net
 Host excession exession.mikegrice.com
     User ben
     Hostname excession.mikegrice.com
+
 # Default
 Host *
     User bohara
