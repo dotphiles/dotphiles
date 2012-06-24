@@ -66,7 +66,6 @@ class TermColors(dict):
 _c = TermColors()
 
 # Enable a History
-<<<<<<< HEAD
 ##################
 
 HISTFILE="%s/.history/pyhistory" % os.environ["HOME"]
