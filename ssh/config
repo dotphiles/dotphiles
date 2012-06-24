@@ -22,7 +22,7 @@ Host excession excession.mikegrice.com
 # Default
 Host *
     User bohara
-    SendEnv LANG LC_*
+    #SendEnv LANG LC_*
     StrictHostKeyChecking ask
     ControlMaster auto
     #ControlPersist yes
