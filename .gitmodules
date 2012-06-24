@@ -1,21 +1,21 @@
 [submodule "dotsync"]
 	path = dotsync
-	url = git@github.com:dotphiles/dotsync.git
+	url = git://github.com/dotphiles/dotsync.git
 [submodule "zsh"]
 	path = zsh
-	url = git@github.com:dotphiles/dotzsh.git
+	url = git://github.com/dotphiles/dotzsh.git
 [submodule "bash"]
 	path = bash
-	url = git@github.com:dotphiles/dotbash.git
+	url = git://github.com/dotphiles/dotbash.git
 [submodule "vim"]
 	path = vim
-	url = git@github.com:dotphiles/dotvim.git
+	url = git://github.com/dotphiles/dotvim.git
 [submodule "irssi"]
 	path = irssi
-	url = git@github.com:dotphiles/dotirssi
+	url = git://github.com/dotphiles/dotirssi
 [submodule "mutt"]
 	path = mutt
-	url = git@github.com:dotphiles/dotmutt
+	url = git://github.com/dotphiles/dotmutt
 [submodule "dircolors/solarized"]
 	path = dircolors/solarized
-	url = git@github.com:dotphiles/dircolors-solarized.git
+	url = git://github.com/dotphiles/dircolors-solarized.git
