@@ -1,5 +1,5 @@
 #
-# dotphiles : https://github.com/dotphiles/dotmutt
+# dotmutt : https://github.com/dotphiles/dotmutt
 #
 # Setup mutt
 #
@@ -9,10 +9,11 @@ source ~/.mutt/dotmuttrc
 
 # Setup mailboxes
 set smtp_url="smtp://username@smtp.gmail.com:587/"
-set from="bohara@gmail.com"
-set realname="Ben O'Hara"
+set from="username@gmail.com"
+set realname="Your Name"
+set signature="~/.sig/work"
 
-set imap_user="bohara@gmail.com"
+set imap_user="username"
 set folder="imaps://imap.gmail.com/"
 set spoolfile="+INBOX"
 set record="+INBOX.Sent"
