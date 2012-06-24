@@ -6,7 +6,7 @@
 
 *.swp
 .DS_Store
-backups/*
+backup/*
 ssh/id*
 ssh/environment*
 ssh/known_hosts
