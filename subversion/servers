@@ -1,0 +1,9 @@
+#
+# dotphiles : https://github.com/dotphiles/dotfiles
+#
+# Server options for subversion
+#
+
+[global]
+# Password / passphrase caching parameters:
+store-plaintext-passwords = no
