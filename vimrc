@@ -43,7 +43,7 @@ if v:version >= '703'
   Bundle 'VimClojure'
   Bundle 'AutoComplPop'
   Bundle 'msanders/snipmate.vim'
-  Bundle 'syntastic'
+  Bundle 'scrooloose/syntastic'
   Bundle 'Indent-Guides'
 endif
 
