@@ -53,8 +53,6 @@ unset path_file
 # Language
 if [[ -z "$LANG" ]]; then
   eval "$(locale)"
-else 
-  LC_CTYPE=$LANG
 fi
 
 # Browser (Default)
