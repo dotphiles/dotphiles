@@ -41,6 +41,14 @@ Add your own settings to *vimrc*
 
 Add your name, email and gpg keyid to *gitconfig*
 
+Terminal
+========
+
+dotphiles is set to use the solarized theme, so you need to install the
+colors scheme and fonts for your terminal,
+
+see the files in *~/.dotfiles/bootstrap*
+
 Contribute
 ==========
 
