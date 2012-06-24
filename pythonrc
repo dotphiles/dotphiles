@@ -57,7 +57,7 @@ class TermColors(dict):
 _c = TermColors()
 
 # Enable a History
-HISTFILE="%s/.history/pyhistory" % os.environ["HOME"]
+HISTFILE="%s/.history/python" % os.environ["HOME"]
 HISTDIR = os.path.dirname(HISTFILE)
 if not os.path.exists(HISTDIR):
    os.makedirs(HISTDIR)
