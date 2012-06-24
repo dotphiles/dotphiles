@@ -1,11 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-<<<<<<< HEAD
-# dothiles : https://github.com/dotphiles/dotfiles
-=======
 # dotphiles : https://github.com/dotphiles/dotfiles
->>>>>>> b01c170209ad8b86a46b4d0e993378db5c4d074e
 #
 # Best goddamn .pythonrc file in the whole world.
 #
@@ -70,9 +66,13 @@ class TermColors(dict):
 _c = TermColors()
 
 # Enable a History
+<<<<<<< HEAD
 ##################
 
-HISTFILE="%s/.python_history" % os.environ["HOME"]
+HISTFILE="%s/.history/pyhistory" % os.environ["HOME"]
+HISTDIR = os.path.dirname(HISTFILE)
+if not os.path.exists(HISTDIR):
+   os.makedirs(HISTDIR)
 
 # Read the existing history if there is one
 if os.path.exists(HISTFILE):
