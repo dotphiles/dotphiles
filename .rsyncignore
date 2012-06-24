@@ -5,7 +5,7 @@
 #
 
 .git/
-backups/
+backup/
 ssh/id*
 ssh/environment*
 ssh/known_hosts
@@ -16,6 +16,6 @@ gnupg/gpg-agent.env
 gnupg/private*
 vim/.*
 vim/*.swp
-vim/backup/*
+vim/backup/
 mutt/cache/.*
 subversion/auth/
