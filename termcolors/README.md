@@ -1,0 +1,1 @@
+Color pallettes for terminals, import these to use the solarized themes correctly
