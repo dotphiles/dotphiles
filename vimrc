@@ -4,10 +4,12 @@
 " Setup vim and load required plugins before dotvim
 "
 
-set nocompatible
-filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+if has("user_commands")
+  set nocompatible
+  filetype off
+  set rtp+=~/.vim/bundle/vundle/
+  call vundle#rc()
+endif
 
 " let Vundle manage Vundle
 " required!
