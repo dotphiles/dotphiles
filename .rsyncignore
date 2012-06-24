@@ -16,5 +16,6 @@ gnupg/gpg-agent.env
 gnupg/private*
 vim/.*
 vim/*.swp
+vim/backup/*
 mutt/cache/.*
 subversion/auth/
