@@ -51,9 +51,9 @@ done
 unset path_file
 
 # Language
-#if [[ -z "$LANG" ]]; then
+if [[ -z "$LANG" ]] || [[ -z "$LC_CTYPE" ]]; then
   eval "$(locale)"
-#fi
+fi
 
 # Browser (Default)
 if [[ "$OSTYPE" == darwin* ]]; then
