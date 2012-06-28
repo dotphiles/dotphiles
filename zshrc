@@ -37,7 +37,7 @@ zstyle ':omz:load' zfunction 'zargs' 'zmv'
 zstyle ':omz:load' omodule 'environment' 'terminal' 'macports' 'gnu-utility' \
   'utility' 'completion' 'editor' 'history' 'directory' 'ssh' 'osx' \
   'git' 'python' 'rails' 'yum' 'dpkg' 'tmux' 'screen' 'syntax-highlighting' \
-  'history-substring-search' 'prompt' \
+  'screensaver' 'dotsync' 'history-substring-search' 'prompt' \
 
 # Set the prompt theme to load.
 # Setting it to 'random' loads a random theme.
@@ -58,4 +58,3 @@ zstyle ':omz:module:utility:dircolors' theme '.dircolors/solarized/dircolors.256
 source "$OMZ/init.zsh"
 
 # Customize to your needs...
-
