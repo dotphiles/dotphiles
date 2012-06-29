@@ -31,5 +31,7 @@ Host *
     User bohara
     StrictHostKeyChecking ask
     ControlMaster auto
-    #ControlPersist yes
+    ControlPersist 4h
     ControlPath ~/.ssh/master/%r@%h:%p
+
+
