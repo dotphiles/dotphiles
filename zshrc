@@ -37,7 +37,7 @@ zstyle ':omz:load' zfunction 'zargs' 'zmv'
 zstyle ':omz:load' omodule 'environment' 'terminal' 'macports' 'gnu-utility' \
   'utility' 'completion' 'editor' 'history' 'directory' 'ssh' 'osx' \
   'git' 'python' 'rails' 'yum' 'dpkg' 'tmux' 'screen' 'syntax-highlighting' \
-  'screensaver' 'dotsync' 'history-substring-search' 'prompt' \
+  'dotsync' 'history-substring-search' 'prompt' \
 
 # Set the prompt theme to load.
 # Setting it to 'random' loads a random theme.
