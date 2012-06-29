@@ -51,7 +51,7 @@ done
 unset path_file
 
 # Language
-if [[ -z "$LANG" ]] || [[ -z "$LC_CTYPE" ]]; then
+if [[ -z "$LANG" ]]; then
   eval "$(locale)"
 fi
 
