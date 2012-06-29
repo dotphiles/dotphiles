@@ -6,11 +6,10 @@
 
 # Global Settings
 ForwardAgent yes
-#VisualHostKey yes
 HashKnownHosts no
-#ConnectTimeout 2
 ServerAliveCountMax 6
 ServerAliveInterval 30
+KeepAlive yes
 
 # My Hosts
 Host home home.benohara.net
@@ -21,12 +20,17 @@ Host excession excession.mikegrice.com
     User benoh
     Hostname excession.mikegrice.com
 
+# Work
+Host ialb1 sclb1 iagb1 scgb1
+    User admin
+Host aox1 iax1 scx1 scx2 scx3 scx4
+    User netops
+
 # Default
 Host *
     User bohara
-    #SendEnv LANG LC_*
     StrictHostKeyChecking ask
     ControlMaster auto
-    #ControlPersist yes
+    ControlPersist yes
     ControlPath ~/.ssh/master/%r@%h:%p
     ServerAliveInterval 600
