@@ -8,13 +8,13 @@
 source ~/.mutt/dotmuttrc
 
 # Setup mailboxes
-set smtp_url="smtp://username@smtp.gmail.com:587/"
-set from="username@gmail.com"
-set realname="Your Name"
+set smtp_url="smtp://bohara@asmtp.apnic.net:587/"
+set from="bohara@apnic.net"
+set realname="Ben O'Hara"
 set signature="~/.sig/work"
 
-set imap_user="username"
-set folder="imaps://imap.gmail.com/"
+set imap_user="bohara"
+set folder="imaps://imaps.apnic.net/"
 set spoolfile="+INBOX"
 set record="+INBOX.Sent"
 set postponed="+INBOX.Drafts"
