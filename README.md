@@ -35,11 +35,23 @@ Add your own settings to *bashrc*
 
 ### [dotvim](https://github.com/dotphiles/dotvim)
 
-Add your own settings to *vimrc*
+Add your own settings to *vimrc*, start vim and run :BundleInstall
 
 ### git
 
 Add your name, email and gpg keyid to *gitconfig*
+
+### [dotirssi](https://github.com/dotphiles/dotirssi)
+
+Copy *irssi/config-example* to *irssi/config* and run irssi
+
+### [dotmutt](https://github.com/dotphiles/dotmutt)
+
+Edit *muttrc* and add your mail accounts
+
+### ssh
+
+Add your known hosts to *ssh/config*
 
 Terminal
 ========
