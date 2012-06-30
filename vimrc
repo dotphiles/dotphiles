@@ -46,6 +46,7 @@ if has("user_commands")
     Bundle 'VimClojure'
     Bundle 'AutoComplPop'
     Bundle 'msanders/snipmate.vim'
+    Bundle 'scrooloose/snipmate-snippets'
     Bundle 'scrooloose/syntastic'
     Bundle 'Indent-Guides'
   endif
