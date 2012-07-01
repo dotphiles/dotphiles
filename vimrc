@@ -97,5 +97,5 @@ if has("user_commands")
   "Bundle 'reinh/vim-makegreen'
 endif
 
-" Call dotvim 
+" Call dotvim
 source ~/.vim/dotvim.vim
