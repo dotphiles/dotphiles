@@ -72,6 +72,7 @@ whois-node5.apnic.net           rsync=bens-macbook-pro
 wasabi.apnic.net                rsync=bens-macbook-pro
 racktables.apnic.net            rsync=bens-macbook-pro
 puppet.apnic.net                rsync=bens-macbook-pro
+puppetvc.apnic.net              rsync=bens-macbook-pro
 kumera5.apnic.net               rsync=bens-macbook-pro
 clove.apnic.net                 rsync=bens-macbook-pro
 chive.apnic.net                 rsync=bens-macbook-pro
