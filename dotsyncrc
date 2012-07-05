@@ -82,4 +82,9 @@ celery2.apnic.net               rsync=bens-macbook-pro
 rosemary.apnic.net              rsync=bens-macbook-pro
 soursop.apnic.net               rsync=bens-macbook-pro
 soba.apnic.net                  rsync=bens-macbook-pro
+jwhois1.apnic.net               rsync=bens-macbook-pro
+oregano.apnic.net               rsync=bens-macbook-pro
+elasticsearch1.apnic.net        rsync=bens-macbook-pro
+elasticsearch2.apnic.net        rsync=bens-macbook-pro
+cacti.apnic.net                 rsync=bens-macbook-pro
 [endhosts]
