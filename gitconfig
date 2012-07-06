@@ -6,7 +6,7 @@
 
 # Global Config
 [user]
-  name = "Ben O'Hara"
+	name = Ben O'Hara
   email = "bohara@gmail.com"
   signingkey = 38774E40
 
