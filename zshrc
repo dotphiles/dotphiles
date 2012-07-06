@@ -57,4 +57,4 @@ zstyle ':omz:module:utility:dircolors' theme '.dircolors/solarized/dircolors.256
 # This will make you shout: OH MY ZSHELL!
 source "$OMZ/init.zsh"
 
-# Customize to your needs...
+# Customize to your needs...source /Users/bohara/zaw/zaw.zsh

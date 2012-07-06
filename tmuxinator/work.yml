@@ -10,5 +10,6 @@ tabs:
       panes:
         - vim
         - #empty, will just run plain bash
-        - top
   - shell: 
+  - irssi: irssi
+
