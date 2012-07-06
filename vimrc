@@ -34,6 +34,7 @@ if has("user_commands")
   Bundle 'hsitz/VimOrganizer'
   Bundle 'kien/ctrlp.vim.git'
   Bundle 'Lokaltog/vim-powerline'
+  Bundle 'editorconfig/editorconfig-vim'
 
   " requires at least vim 7.3
   if v:version >= '703'
