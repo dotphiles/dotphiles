@@ -40,7 +40,7 @@ zstyle ':dotzsh:load' zfunction 'zargs' 'zmv'
 zstyle ':dotzsh:load' omodule 'environment' 'terminal' 'macports' 'gnu-utility' \
   'utility' 'completion' 'editor' 'history' 'directory' 'ssh' 'osx' \
   'git' 'python' 'rails' 'yum' 'dpkg' 'tmux' 'screen' 'syntax-highlighting' \
-  'notify' 'dotsync' 'fasd' 'history-substring-search' 'prompt' \
+  'grc' 'mercurial' 'notify' 'dotsync' 'fasd' 'history-substring-search' 'prompt' \
 
 # Set the prompt theme to load.
 # Setting it to 'random' loads a random theme.
