@@ -5,7 +5,7 @@
 #
 
 # Location of your dotfiles
-DOTFILES=.dotphiles
+# DOTFILES=.dotphiles
 
 # dotfiles to symlink
 # uncomment to enable
