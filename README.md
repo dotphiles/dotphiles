@@ -8,15 +8,15 @@ Installation
 
 Sign up for an account on [github][1] and fork the project
 
-    git clone --recursive git@github.com:*username*/dotfiles.git ~/.dotfiles
+    git clone --recursive git@github.com:*username*/dotphiles.git ~/.dotphiles
 
 Edit *dotsyncrc* and select which dotfiles to use
 
 Then symlink then into place with
 
-    ./.dotfiles/dotsync/bin/dotsync -L
+    ./.dotphiles/dotsync/bin/dotsync -L
 
-*Any existing files will be backed up into ~/.dotfiles/backup/*
+*Any existing files will be backed up into ~/.dotphiles/backup/*
 
 Settings
 ========
@@ -59,7 +59,7 @@ Terminal
 dotphiles is set to use the solarized theme, so you need to install the
 colors scheme and fonts for your terminal,
 
-see the files in *~/.dotfiles/bootstrap*
+see the files in *~/.dotphiles/bootstrap*
 
 Contribute
 ==========
