@@ -1,0 +1,7 @@
+#
+# dotphiles : https://github.com/dotphiles/dotfiles
+#
+# Settings for fasd
+#
+
+_FASD_VIMINFO=$HOME/.vim/.viminfo
