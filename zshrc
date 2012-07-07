@@ -35,7 +35,7 @@ zstyle ':dotzsh:load' zmodule 'stat'
 # Set the Zsh functions to load (man zshcontrib).
 zstyle ':dotzsh:load' zfunction 'zargs' 'zmv'
 
-# Set the Oh My Zsh modules to load (browse modules).
+# Set the dotzsh modules to load (browse modules).
 # The order matters.
 zstyle ':dotzsh:load' omodule 'environment' 'terminal' 'macports' 'gnu-utility' \
   'utility' 'completion' 'editor' 'history' 'directory' 'ssh' 'osx' \

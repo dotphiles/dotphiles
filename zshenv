@@ -4,7 +4,7 @@
 # Defines environment variables.
 #
 
-# Set the path to Oh My Zsh.
+# Set the path to dotzsh.
 export DOTZSH="$HOME/.zsh"
 
 # Paths
