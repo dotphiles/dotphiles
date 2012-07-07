@@ -8,20 +8,14 @@ tabs:
   - editor:
       layout: main-vertical
       panes:
-        - vim
-        - #empty, will just run plain shell
-        - #empty, will just run plain shell
-  - shell:
-      layout: main-vertical
-      panes:
-        - #empty, will just run plain shell
+        - vim .
         - #empty, will just run plain shell
         - #empty, will just run plain shell
   - testing:
-      layout: main-vertical
+      layout: tiled
       panes:
-        - ssh dotphiles@localhost
-        - #ssh dotphiles@centos5
-        - #ssh dotphile@sdebian5
-        - #ssh dotphiles@ubuntu12
+        - ssh -t dotphiles@localhost -C "cd ~/.dotphiles ; $SHELL"
+        - ssh -t dotphiles@mac-mini -C "cd ~/.dotphiles ; $SHELL"
+        - #ssh -t dotphile@sdebian5 -C "cd ~/.dotphiles ; $SHELL"
+        - #ssh -t dotphiles@ubuntu12 -C "cd ~/.dotphiles ; $SHELL"
 
