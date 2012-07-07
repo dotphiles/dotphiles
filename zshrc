@@ -12,10 +12,13 @@ zstyle ':omz:module:editor' editor 'vi'
 zstyle ':omz:module:editor' dot-expansion 'no'
 
 # Set case-sensitivity for completion, history lookup, etc.
-zstyle ':omz:*:*' case-sensitive 'no'
+zstyle ':omz:module:*' case-sensitive 'no'
 
 # Color output (auto set to 'no' on dumb terminals).
-zstyle ':omz:*:*' color 'yes'
+zstyle ':omz:module:*' color 'yes'
+
+# Setup aliases for modules (disable per module below).
+zstyle ':omz:module:*' aliases 'yes'
 
 # Auto set the tab and window titles.
 zstyle ':omz:module:terminal' auto-title 'yes'
