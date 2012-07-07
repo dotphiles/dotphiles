@@ -14,8 +14,8 @@ tabs:
   - testing:
       layout: tiled
       panes:
-        - ssh -t dotphiles@localhost -C "cd ~/.dotphiles ; $SHELL"
-        - ssh -t dotphiles@mac-mini -C "cd ~/.dotphiles ; $SHELL"
-        - #ssh -t dotphile@sdebian5 -C "cd ~/.dotphiles ; $SHELL"
-        - #ssh -t dotphiles@ubuntu12 -C "cd ~/.dotphiles ; $SHELL"
+        - sshcd dotphiles@localhost .dotphiles
+        - sshcd dotphiles@mac-mini .dotphiles
+        - sshcd dotphile@sdebian5 .dotphiles
+        - sshcd dotphiles@ubuntu12 .dotphiles
 
