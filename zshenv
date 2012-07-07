@@ -5,7 +5,7 @@
 #
 
 # Set the path to Oh My Zsh.
-export OMZ="$HOME/.zsh"
+export DOTZSH="$HOME/.zsh"
 
 # Paths
 typeset -gU cdpath fpath mailpath manpath path
