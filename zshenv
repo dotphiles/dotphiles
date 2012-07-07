@@ -41,7 +41,6 @@ path=(
   /usr/{bin,sbin}
   /{bin,sbin}
   ~/bin/
-  ~/.dotfiles/dotsync/bin/
   $path
 )
 

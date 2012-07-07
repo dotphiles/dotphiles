@@ -12,6 +12,7 @@
 [files]
 bash
 bashrc
+bin:bin
 dircolors
 dotsyncrc
 fasdrc
