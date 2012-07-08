@@ -57,7 +57,7 @@ zstyle ':dotzsh:module:utility:dircolors' theme '.dircolors/solarized/dircolors.
 
 #zstyle ':dotzsh:module:tmux' auto-start 'yes'
 
-# This will make you shout: OH MY ZSHELL!
+# Load dotzsh
 source "$DOTZSH/init.zsh"
 
 # Customize to your needs...
