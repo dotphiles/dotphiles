@@ -11,12 +11,16 @@
 # DOTFILES=.dotphiles
 
 # dotfiles to symlink
-# uncomment to enable
+#
+# srcfile:dstfile
+# dstfile will be '.$srcfile' by default
+#
 [files]
 ##bash
 ##bashrc
+##bin:bin
 ##dircolors
-##dotsyncrc
+dotsyncrc
 ##fasdrc
 ##gitconfig
 ##gitignore
