@@ -34,7 +34,7 @@ zstyle ':dotzsh:load' zfunction 'zargs' 'zmv'
 
 # Set the Oh My Zsh modules to load (browse modules).
 # The order matters.
-zstyle ':dotzsh:load' omodule 'environment' 'terminal' 'macports' 'gnu-utility' \
+zstyle ':dotzsh:load' dzmodule 'environment' 'terminal' 'macports' 'gnu-utility' \
   'utility' 'completion' 'editor' 'history' 'directory' 'ssh' 'osx' \
   'git' 'python' 'rails' 'yum' 'dpkg' 'tmux' 'screen' 'syntax-highlighting' \
   'dotsync' 'history-substring-search' 'prompt' \
