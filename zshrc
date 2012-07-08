@@ -42,10 +42,10 @@ zstyle ':dotzsh:load' dzmodule 'environment' 'terminal' 'macports' 'gnu-utility'
 # Set the prompt theme to load.
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
-zstyle ':dotzsh:module:prompt' theme 'dotphiles'
+zstyle ':dotzsh:module:prompt' theme 'dotphiles' 'dark' 'yellow'
 
 # Set custom scheme based on hostname
-zstyle ':dotzsh:module:prompt:host:bens-macbook-pro' theme 'dotphiles' 'dark' 'yellow'
+#zstyle ':dotzsh:module:prompt:host:hostname' theme 'dotphiles' 'dark' 'yellow'
 #zstyle ':dotzsh:module:prompt:host:hostname2.example2.com' theme 'dotphiles' 'dark' 'violet'
 #zstyle ':dotzsh:module:prompt:domain:example.net' theme 'dotphiles' 'dark' 'red'
 
