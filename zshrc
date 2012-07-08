@@ -3,6 +3,10 @@
 #
 # Sets dotzsh options.
 #
+# Authors:
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#   Ben O'Hara <bohara@gmail.com>
+#
 
 # Set the key mapping style to 'emacs' or 'vi'.
 zstyle ':dotzsh:module:editor' keymap 'emacs'

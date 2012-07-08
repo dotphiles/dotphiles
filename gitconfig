@@ -3,6 +3,9 @@
 #
 # Git configuration.
 #
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
 
 # Global Config
 [user]

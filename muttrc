@@ -3,6 +3,9 @@
 #
 # Setup mutt
 #
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
 
 # Source dotmuttrc
 source ~/.mutt/dotmuttrc

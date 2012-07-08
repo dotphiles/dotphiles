@@ -3,6 +3,9 @@
 #
 # Setup taskwarrior
 #
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
 
 # Here is an example of entries that use the default, override and blank values
 #   variable=foo   -- By specifying a value, this overrides the default

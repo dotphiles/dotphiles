@@ -4,6 +4,9 @@
 #
 # Best goddamn .pythonrc file in the whole world.
 #
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
 
 # Imports we need
 import sys

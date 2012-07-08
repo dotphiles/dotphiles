@@ -3,6 +3,9 @@
 "
 " Setup vim and load required plugins before dotvim
 "
+" Authors:
+"   Ben O'Hara <bohara@gmail.com>
+"
 
 if has("user_commands")
   set nocompatible
