@@ -42,9 +42,11 @@ zstyle ':dotzsh:load' zfunction 'zargs' 'zmv'
 # Set the dotzsh modules to load (browse modules).
 # The order matters.
 zstyle ':dotzsh:load' dzmodule 'environment' 'terminal' 'macports' 'gnu-utility' \
-  'utility' 'completion' 'editor' 'history' 'directory' 'ssh' 'osx' \
-  'git' 'python' 'rails' 'yum' 'dpkg' 'tmux' 'screen' 'syntax-highlighting' \
-  'grc' 'mercurial' 'notify' 'dotsync' 'fasd' 'history-substring-search' 'prompt' \
+  'utility' 'completion' 'editor' 'history' 'directory' 'ssh' 'gnupg' 'osx' \
+  'archive' 'git' 'python' 'rails' 'yum' 'dpkg' 'tmux' 'screen' 'syntax-highlighting' \
+  'command-not-found' 'directory' 'dpkg' 'haskell' 'node' 'pacman' 'perl' 'rsync' \
+  'ruby' 'trap' 'wakeonlan' 'z' 'grc' 'mercurial' 'notify' 'dotsync' 'fasd' \
+  'history-substring-search' 'prompt' \
 
 # Set the prompt theme to load.
 # Setting it to 'random' loads a random theme.
@@ -60,6 +62,7 @@ zstyle ':dotzsh:module:prompt:domain:apnic.net' theme 'dotphiles' 'dark' 'orange
 zstyle ':dotzsh:module:utility:dircolors' theme '.dircolors/solarized/dircolors.256dark'
 
 #zstyle ':dotzsh:module:tmux' auto-start 'yes'
+zstyle ':dotzsh:module:git' aliases 'no'
 
 # Load dotzsh
 source "$DOTZSH/init.zsh"
