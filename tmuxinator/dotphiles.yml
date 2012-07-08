@@ -15,7 +15,7 @@ tabs:
       layout: tiled
       panes:
         - sshcd dotphiles@localhost .dotphiles
-        - sshcd dotphiles@mac-mini .dotphiles
-        - sshcd dotphile@sdebian5 .dotphiles
-        - sshcd dotphiles@ubuntu12 .dotphiles
+        - sshcd dotphiles@bens-mac-mini.local .dotphiles
+        - #sshcd dotphile@sdebian5 .dotphiles
+        - #sshcd dotphiles@ubuntu12 .dotphiles
 
