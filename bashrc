@@ -1,4 +1,12 @@
 #!/usr/bin/env bash
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# Set bash and load dotbash
+#
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
 
 # Load RVM, if you are using it
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm

@@ -3,6 +3,9 @@
 #
 # Git global ignores
 #
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
 
 # Compiled source
 *.pyc

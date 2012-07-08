@@ -3,6 +3,9 @@
 #
 # Make python shell usable
 #
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
 
 $include /etc/inputrc
 

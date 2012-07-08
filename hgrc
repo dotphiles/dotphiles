@@ -3,6 +3,9 @@
 #
 # Setup mercurial
 #
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
 
 [ui]
 username = Ben O'Hara <bohara@apnic.net>
