@@ -49,10 +49,10 @@ zstyle ':dotzsh:load' dzmodule 'environment' 'terminal' 'macports' 'gnu-utility'
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
 zstyle ':dotzsh:module:prompt' theme 'dotphiles'
-# Set custom scheme based on hostname
-zstyle ':dotzsh:module:prompt:host:natte.mcvax.org' theme 'dotphiles' 'dark' 'magenta'
-zstyle ':dotzsh:module:prompt:host:excession.mikegrice.com' theme 'dotphiles' 'dark' 'violet'
-zstyle ':dotzsh:module:prompt:host:mac-mini.benohara.net' theme 'dotphiles' 'dark' 'blue'
+# Set custom scheme based on hostname or domain
+zstyle ':dotzsh:module:prompt:hostname:natte.mcvax.org' theme 'dotphiles' 'dark' 'magenta'
+zstyle ':dotzsh:module:prompt:hostname:excession.mikegrice.com' theme 'dotphiles' 'dark' 'violet'
+zstyle ':dotzsh:module:prompt:hostname:mac-mini.benohara.net' theme 'dotphiles' 'dark' 'blue'
 zstyle ':dotzsh:module:prompt:domain:apnic.net' theme 'dotphiles' 'dark' 'orange'
 
 zstyle ':dotzsh:module:utility:dircolors' theme '.dircolors/solarized/dircolors.256dark'

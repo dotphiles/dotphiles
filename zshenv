@@ -3,7 +3,7 @@
 #
 # Defines environment variables.
 #
-# Authors:                                                                               │                                                                                         
+# Authors:
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #   Ben O'Hara <bohara@gmail.com>
 #
@@ -41,7 +41,7 @@ unset path_file
 
 # Set the list of directories that Zsh searches for programs.
 path=(
-  /usr/local/{bin,sbin}
+  /{opt,usr}/local/{bin,sbin}
   /usr/{bin,sbin}
   /{bin,sbin}
   ~/bin/
