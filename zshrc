@@ -1,9 +1,9 @@
 #
 # dotphiles : https://github.com/dotphiles/dotphiles
 #
-# Sets dotzsh options.
+# Set dotzsh options.
 #
-# Authors:                                                                               │                                                                                         
+# Authors:
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #   Ben O'Hara <bohara@gmail.com>
 #
@@ -30,9 +30,6 @@ zstyle ':dotzsh:module:terminal' auto-title 'yes'
 zstyle ':dotzsh:module:ssh:agent' forwarding 'yes'
 zstyle ':dotzsh:module:ssh:aliases' hosts 'yes'
 
-zstyle ':dotzsh:module:syntax-highlighting' highlighters 'main' 'brackets' 'pattern' \
-  'cursor' 'root' \
-
 # Set the Zsh modules to load (man zshmodules).
 zstyle ':dotzsh:load' zmodule 'stat'
 
@@ -45,14 +42,13 @@ zstyle ':dotzsh:load' dzmodule 'environment' 'terminal' 'macports' 'gnu-utility'
   'utility' 'completion' 'editor' 'history' 'directory' 'ssh' 'gnupg' 'osx' \
   'archive' 'git' 'python' 'rails' 'yum' 'dpkg' 'tmux' 'screen' 'syntax-highlighting' \
   'command-not-found' 'directory' 'dpkg' 'haskell' 'node' 'pacman' 'perl' 'rsync' \
-  'ruby' 'trap' 'wakeonlan' 'z' 'grc' 'mercurial' 'notify' 'dotsync' 'fasd' \
-  'history-substring-search' 'prompt' \
+  'ruby' 'trap' 'wakeonlan' 'grc' 'mercurial' 'notify' 'dotsync' 'fasd' \
+  'taskwarrior' 'history-substring-search' 'prompt' \
 
 # Set the prompt theme to load.
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
 zstyle ':dotzsh:module:prompt' theme 'dotphiles'
-
 # Set custom scheme based on hostname
 zstyle ':dotzsh:module:prompt:host:natte.mcvax.org' theme 'dotphiles' 'dark' 'magenta'
 zstyle ':dotzsh:module:prompt:host:excession.mikegrice.com' theme 'dotphiles' 'dark' 'violet'
@@ -60,9 +56,6 @@ zstyle ':dotzsh:module:prompt:host:mac-mini.benohara.net' theme 'dotphiles' 'dar
 zstyle ':dotzsh:module:prompt:domain:apnic.net' theme 'dotphiles' 'dark' 'orange'
 
 zstyle ':dotzsh:module:utility:dircolors' theme '.dircolors/solarized/dircolors.256dark'
-
-#zstyle ':dotzsh:module:tmux' auto-start 'yes'
-zstyle ':dotzsh:module:git' aliases 'no'
 
 # Load dotzsh
 source "$DOTZSH/init.zsh"
