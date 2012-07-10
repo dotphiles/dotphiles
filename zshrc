@@ -20,10 +20,10 @@ zstyle ':dotzsh:module:editor' editor 'vi'
 zstyle ':dotzsh:module:editor' dot-expansion 'no'
 
 # Set case-sensitivity for completion, history lookup, etc.
-zstyle ':dotzsh:module:*' case-sensitive 'no'
+zstyle ':dotzsh:*:*' case-sensitive 'no'
 
 # Color output (auto set to 'no' on dumb terminals).
-zstyle ':dotzsh:module:*' color 'yes'
+zstyle ':dotzsh:*:*' color 'yes'
 
 # Setup aliases for modules (disable per module below).
 zstyle ':dotzsh:module:*' aliases 'yes'
@@ -33,6 +33,9 @@ zstyle ':dotzsh:module:terminal' auto-title 'yes'
 
 zstyle ':dotzsh:module:ssh:agent' forwarding 'yes'
 zstyle ':dotzsh:module:ssh:aliases' hosts 'yes'
+
+zstyle ':dotzsh:module:syntax-highlighting' highlighters 'main' 'brackets' 'pattern' \
+  'cursor' 'root' \
 
 # Set the Zsh modules to load (man zshmodules).
 zstyle ':dotzsh:load' zmodule 'stat'

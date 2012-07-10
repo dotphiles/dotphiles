@@ -1,5 +1,5 @@
 "
-" dotphiles : https://github.com/dotphiles/dotvim
+" dotphiles : https://github.com/dotphiles/dotphiles
 "
 " Setup vim and load required plugins before dotvim
 "
@@ -25,7 +25,6 @@ if has("user_commands")
   Bundle 'YankRing.vim'
   Bundle 'tpope/vim-fugitive'
   Bundle 'tpope/vim-surround'
-  Bundle 'tsaleh/vim-align'
   Bundle 'mileszs/ack.vim'
   Bundle 'austintaylor/vim-indentobject'
   Bundle 'greplace.vim'
