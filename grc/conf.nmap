@@ -1,0 +1,55 @@
+# ip number                                                                                                                                
+regexp=\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}
+colours=bold yellow
+======
+# list header
+regexp=(PORT|STATE|SERVICE|REASON|VERSION)
+colours=bold white
+======
+# open
+regexp=open
+colours=dark green
+======
+# filtered
+regexp=filtered
+colours=dark yellow
+======
+# closed
+regexp=closed
+colours= dark red
+======
+# tcp n udp
+regexp=(/tcp|/udp)
+colours=bold black
+======
+# device type
+regexp=(Device type:)
+colours=cyan
+======
+# running
+regexp=(Running:|Running)
+colours=cyan
+======
+# os details
+regexp=(OS details:)
+colours=cyan
+======
+# MAC
+regexp=(MAC Address:)
+colours=cyan
+======
+# network distance
+regexp=(Network Distance:)
+colours=cyan
+======
+# Service Info
+regexp=(Service Info:)
+colours=cyan
+======
+# Agressive
+regexp=(Aggressive OS guesses:)
+colours=cyan
+======
+# no exact match
+regexp=(No exact OS matches for host)
+colours=magenta     
