@@ -3,7 +3,7 @@
 
 project_name: dotphiles
 project_root: ~/.dotphiles
-socket_name: work # Not needed.  Remove to use default socket
+socket_name: dotphiles # Not needed.  Remove to use default socket
 tabs:
   - editor:
       layout: main-vertical
@@ -11,11 +11,3 @@ tabs:
         - vim .
         - #empty, will just run plain shell
         - #empty, will just run plain shell
-  - testing:
-      layout: tiled
-      panes:
-        - sshcd dotphiles@localhost .dotphiles
-        - sshcd dotphiles@bens-mac-mini.local .dotphiles
-        - #sshcd dotphile@sdebian5 .dotphiles
-        - #sshcd dotphiles@ubuntu12 .dotphiles
-
