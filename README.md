@@ -25,15 +25,15 @@ Settings
 
 Add your dotfiles and machines to sync into *dotsyncrc*
 
-### [dotzsh](https://github.com/dotphiles/dotzsh)
+### [dotzsh](https://github.com/dotzsh/dotzsh)
 
 Add your own settings to *zshrc*, *zshenv*, *zlogin*, *zlogout* and *zprofile*
 
-### [dotbash](https://github.com/dotphiles/dotbash)
+### [dotbash](https://github.com/dotbash/dotbash)
 
 Add your own settings to *bashrc*
 
-### [dotvim](https://github.com/dotphiles/dotvim)
+### [dotvim](https://github.com/dotvim/dotvim)
 
 Add your own settings to *vimrc*, start vim and run :BundleInstall
 
