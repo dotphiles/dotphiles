@@ -19,7 +19,7 @@
   # Set environment variables for launchd processes.
   if [[ "$OSTYPE" == darwin* ]]; then
     for env_var in PATH MANPATH; do
-      launchctl setenv "$env_var" "${(P)env_var}"
+      launchctl setenv "$env_var" "${(P)env_var}" 2>/dev/null
     done
   fi
 } &!
