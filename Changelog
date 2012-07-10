@@ -4,9 +4,10 @@
 # Changelog
 #
 
-* 2012-06-23 - Ben O'Hara <bohara@gmail.com>
-  - dotzsh - Initial Release.
-  - dotsync - Initial Release.
-  - dotvim - Initial Release.
-  - dotbash - Initial Release.
-  - dotfiles - Initial Release.
+2012-06-23 - Ben O'Hara <bohara@gmail.com>
+
+	* dotzsh - Initial Release.
+	* dotsync - Initial Release.
+	* dotvim - Initial Release.
+	* dotbash - Initial Release.
+	* dotfiles - Initial Release.
