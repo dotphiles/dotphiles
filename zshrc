@@ -21,6 +21,9 @@ zstyle ':dotzsh:*:*' case-sensitive 'no'
 # Color output (auto set to 'no' on dumb terminals).
 zstyle ':dotzsh:*:*' color 'yes'
 
+# Setup aliases for modules (disable per module below).
+zstyle ':dotzsh:module:*' aliases 'yes'
+
 # Auto set the tab and window titles.
 zstyle ':dotzsh:module:terminal' auto-title 'yes'
 
