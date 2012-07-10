@@ -12,3 +12,4 @@ sudo port install tmux
 sudo port install tmux-pasteboard
 sudo port install gnupg
 sudo port install ipcalc
+sudo port install grc
