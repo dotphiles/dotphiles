@@ -8,6 +8,10 @@
 #   Ben O'Hara <bohara@gmail.com>
 #
 
+zstyle ':dotzsh:load' debug 'yes'
+#zstyle ':dotzsh:module:*' debug 'yes'
+#zstyle ':dotzsh:module:local:*' debug 'yes'
+
 # Set the key mapping style to 'emacs' or 'vi'.
 zstyle ':dotzsh:module:editor' keymap 'emacs'
 zstyle ':dotzsh:module:editor' editor 'vi'
@@ -38,7 +42,7 @@ zstyle ':dotzsh:load' zfunction 'zargs' 'zmv'
 
 # Set the dotzsh modules to load (browse modules).
 # The order matters.
-zstyle ':dotzsh:load' dzmodule 'environment' 'terminal' 'macports' 'gnu-utility' \
+zstyle ':dotzsh:load' dzmodule 'macports' 'gnu-utility' 'environment' 'terminal' \
   'utility' 'completion' 'editor' 'history' 'directory' 'ssh' 'gnupg' 'osx' \
   'archive' 'git' 'python' 'rails' 'yum' 'dpkg' 'tmux' 'screen' 'syntax-highlighting' \
   'command-not-found' 'directory' 'dpkg' 'haskell' 'node' 'pacman' 'perl' 'rsync' \
