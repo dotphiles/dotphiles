@@ -7,13 +7,8 @@
 #   Ben O'Hara <bohara@gmail.com>
 #
 
-<<<<<<< HEAD
 # Location of your dotfiles in $HOME
 DOTFILES=.dotphiles
-=======
-# Location of your dotfiles
-# DOTFILES=.dotphiles
->>>>>>> 2f0ce86f8624e374ad7eb37bba33eba56ef70b02
 
 # dotfiles to symlink
 #
@@ -21,7 +16,6 @@ DOTFILES=.dotphiles
 # dstfile will be '.$srcfile' by default
 #
 [files]
-<<<<<<< HEAD
 bash
 bashrc
 bin:bin
@@ -53,39 +47,6 @@ zprofile
 zsh
 zshenv
 zshrc
-=======
-##bash
-##bashrc
-##bin:bin
-##dircolors
-dotsyncrc
-##fasdrc
-##gitconfig
-##gitignore
-##gnupg
-##grc
-##hgrc
-##inputrc
-##irssi
-##mutt
-##muttrc
-##screenrc
-##ssh
-##subversion
-##task
-##taskrc
-##tmux.conf
-##tmuxinator
-##pythonrc
-##vim
-##vimrc
-##zlogin
-##zlogout
-##zprofile
-##zsh
-##zshenv
-##zshrc
->>>>>>> 2f0ce86f8624e374ad7eb37bba33eba56ef70b02
 [endfiles]
 
 # Hosts to sync

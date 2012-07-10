@@ -6,13 +6,6 @@ project_root: ~/.dotphiles
 socket_name: dotphiles # Not needed.  Remove to use default socket
 tabs:
   - editor:
-<<<<<<< HEAD
-      layout: main-vertical
-      panes:
-        - vim .
-        - #empty, will just run plain shell
-        - #empty, will just run plain shell
-=======
       layout: even-horizontal
       panes:
         - vim .
@@ -29,4 +22,3 @@ tabs:
       panes:
         - #sshcd solaris1 .dotphiles
         - #empty
->>>>>>> 2f0ce86f8624e374ad7eb37bba33eba56ef70b02

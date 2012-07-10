@@ -6,11 +6,8 @@
 # Authors:
 #   Ben O'Hara <bohara@gmail.com>
 #
-<<<<<<< HEAD
 
 $include /etc/inputrc
-=======
->>>>>>> 2f0ce86f8624e374ad7eb37bba33eba56ef70b02
 
 # Set things up for python shell
 set editing-mode vi
