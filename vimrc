@@ -97,6 +97,8 @@ if has("user_commands")
   Bundle 'mattn/gist-vim'
   Bundle 'mattn/webapi-vim'
 
+  Bundle 'xaviershay/tslime'
+
   "Bundle 'ShowMarks'
   "Bundle 'tpope/vim-unimpaired'
   "Bundle 'reinh/vim-makegreen'
