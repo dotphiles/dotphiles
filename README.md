@@ -112,8 +112,8 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 [1]: https://github.com
-[2]: https://github.com/dotphiles/dotphiles/contributors
-[3]: https://github.com/dotphiles/dotphiles/issues
+[2]: https://github.com/dotphiles/dotfiles/contributors
+[3]: https://github.com/dotphiles/dotfiles/issues
 [4]: http://gun.io/blog/how-to-github-fork-branch-and-pull-request
 [5]: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
 [6]: https://help.github.com/articles/using-pull-requests
