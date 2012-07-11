@@ -97,4 +97,5 @@ elasticsearch1.apnic.net        rsync=bens-macbook-pro
 elasticsearch2.apnic.net        rsync=bens-macbook-pro
 cacti.apnic.net                 rsync=bens-macbook-pro
 foswiki.apnic.net               rsync=bens-macbook-pro
+nutmeg5.apnic.net               rsync=bens-macbook-pro
 [endhosts]
