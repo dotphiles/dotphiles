@@ -1,5 +1,5 @@
 "
-" dotphiles : https://github.com/dotphiles/dotphiles
+" dotphiles : https://github.com/dotphiles/dotfiles
 "
 " Setup vim and load required plugins before dotvim
 "
@@ -95,6 +95,8 @@ if has("user_commands")
   Bundle 'scrooloose/vim-space'
   Bundle 'mattn/gist-vim'
   Bundle 'mattn/webapi-vim'
+
+  Bundle 'xaviershay/tslime'
 
   "Bundle 'ShowMarks'
   "Bundle 'tpope/vim-unimpaired'
