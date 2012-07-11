@@ -1,5 +1,5 @@
 #
-# dotphiles : https://github.com/dotphiles/dotphiles
+# dotphiles : https://github.com/dotphiles/dotfiles
 #
 # Config for dotsync.
 #
@@ -7,11 +7,14 @@
 #   Ben O'Hara <bohara@gmail.com>
 #
 
-# Location of your dotfiles in $HOME
-DOTFILES=.dotphiles
+# Location of your dotfiles
+# DOTFILES=.dotfiles
 
 # dotfiles to symlink
-# uncomment to enable
+#
+# srcfile:dstfile
+# dstfile will be '.$srcfile' by default
+#
 [files]
 bash
 bashrc

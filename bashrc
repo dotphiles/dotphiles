@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# dotphiles : https://github.com/dotphiles/dotphiles
+# dotphiles : https://github.com/dotphiles/dotfiles
 #
 # Set bash and load dotbash
 #
