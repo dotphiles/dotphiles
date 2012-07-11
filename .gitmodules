@@ -4,18 +4,6 @@
 [submodule "zsh"]
 	path = zsh
 	url = git://github.com/dotzsh/dotzsh.git
-[submodule "bash"]
-	path = bash
-	url = git://github.com/dotbash/dotbash.git
 [submodule "vim"]
 	path = vim
 	url = git://github.com/dotvim/dotvim.git
-[submodule "dircolors/solarized"]
-	path = dircolors/solarized
-	url = git://github.com/dotphiles/dircolors-solarized.git
-[submodule "mutt"]
-	path = mutt
-	url = git://github.com/dotphiles/dotmutt.git
-[submodule "irssi"]
-	path = irssi
-	url = git://github.com/dotphiles/dotirssi.git
