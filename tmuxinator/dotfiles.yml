@@ -1,9 +1,9 @@
 # ~/.tmuxinator/work.yml
 # you can make as many tabs as you wish...
 
-project_name: dotphiles
-project_root: ~/.dotphiles
-socket_name: dotphiles # Not needed.  Remove to use default socket
+project_name: dotfiles
+project_root: ~/.dotfiles
+socket_name: dotfiles # Not needed.  Remove to use default socket
 tabs:
   - editor:
       layout: even-horizontal
@@ -13,12 +13,12 @@ tabs:
   - testing1:
       layout: tiled
       panes:
-        - #sshcd debian1 .dotphiles
-        - #sshcd ubuntu1 .dotphiles
-        - #sshcd centos1 .dotphiles
-        - #sshcd freebsd1 .dotphiles
+        - #sshcd debian1 .dotfiles
+        - #sshcd ubuntu1 .dotfiles
+        - #sshcd centos1 .dotfiles
+        - #sshcd freebsd1 .dotfiles
   - testing2:
       layout: tiled
       panes:
-        - #sshcd solaris1 .dotphiles
+        - #sshcd solaris1 .dotfiles
         - #empty
