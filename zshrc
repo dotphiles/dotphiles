@@ -34,6 +34,8 @@ zstyle ':dotzsh:module:terminal' auto-title 'yes'
 zstyle ':dotzsh:module:ssh:agent' forwarding 'yes'
 zstyle ':dotzsh:module:ssh:aliases' hosts 'yes'
 
+zstyle ':dotzsh:module:tmux:aliases' tmuxinator 'yes'
+
 zstyle ':dotzsh:module:syntax-highlighting' highlighters 'main' 'brackets' 'pattern' \
   'cursor' 'root' \
 
@@ -50,19 +52,17 @@ zstyle ':dotzsh:load' dzmodule 'macports' 'gnu-utility' 'environment' 'terminal'
   'archive' 'git' 'python' 'rails' 'yum' 'dpkg' 'tmux' 'screen' 'syntax-highlighting' \
   'command-not-found' 'directory' 'dpkg' 'haskell' 'node' 'pacman' 'perl' 'rsync' \
   'ruby' 'trap' 'wakeonlan' 'grc' 'mercurial' 'notify' 'dotsync' 'fasd' \
-  'taskwarrior' 'history-substring-search' 'prompt' \
+  'taskwarrior' 'history-substring-search' 'theme' \
 
-# Set the prompt theme to load.
-# Setting it to 'random' loads a random theme.
+# Set the prompt to load.
+# Setting it to 'random' loads a random prompt.
 # Auto set to 'off' on dumb terminals.
-zstyle ':dotzsh:module:prompt' theme 'dotphiles'
+zstyle ':dotzsh:module:theme' theme 'dotphiles'
 # Set custom scheme based on hostname or domain
-zstyle ':dotzsh:module:prompt:hostname:natte.mcvax.org' theme 'dotphiles' 'dark' 'magenta'
-zstyle ':dotzsh:module:prompt:hostname:excession.mikegrice.com' theme 'dotphiles' 'dark' 'violet'
-zstyle ':dotzsh:module:prompt:hostname:mac-mini.benohara.net' theme 'dotphiles' 'dark' 'blue'
-zstyle ':dotzsh:module:prompt:domain:apnic.net' theme 'dotphiles' 'dark' 'orange'
-
-zstyle ':dotzsh:module:utility:dircolors' theme '.dircolors/solarized/dircolors.256dark'
+zstyle ':dotzsh:module:theme:hostname:natte.mcvax.org' theme 'dotphiles' 'dark' 'magenta'
+zstyle ':dotzsh:module:theme:hostname:excession.mikegrice.com' theme 'dotphiles' 'dark' 'violet'
+zstyle ':dotzsh:module:theme:hostname:mac-mini.benohara.net' theme 'dotphiles' 'dark' 'blue'
+zstyle ':dotzsh:module:theme:domain:apnic.net' theme 'dotphiles' 'dark' 'orange'
 
 # Load dotzsh
 source "$DOTZSH/init.zsh"
