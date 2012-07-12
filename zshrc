@@ -64,6 +64,8 @@ zstyle ':dotzsh:module:theme:hostname:excession.mikegrice.com' theme 'dotphiles'
 zstyle ':dotzsh:module:theme:hostname:mac-mini.benohara.net' theme 'dotphiles' 'dark' 'blue'
 zstyle ':dotzsh:module:theme:domain:apnic.net' theme 'dotphiles' 'dark' 'orange'
 
+#zstyle ':dotzsh:module:tmux' auto-start 'yes'
+
 # Load dotzsh
 source "$DOTZSH/init.zsh"
 
