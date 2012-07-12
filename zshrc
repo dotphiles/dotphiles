@@ -44,19 +44,16 @@ zstyle ':dotzsh:load' zfunction 'zargs' 'zmv'
 zstyle ':dotzsh:load' dzmodule 'environment' 'terminal' 'macports' 'gnu-utility' \
   'utility' 'completion' 'editor' 'history' 'directory' 'ssh' 'osx' \
   'git' 'python' 'rails' 'yum' 'dpkg' 'tmux' 'screen' 'syntax-highlighting' \
-  'dotsync' 'history-substring-search' 'prompt' \
+  'dotsync' 'history-substring-search' 'theme' \
 
-# Set the prompt theme to load.
+# Set the theme to load.
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
-zstyle ':dotzsh:module:prompt' theme 'dotphiles' 'dark' 'yellow'
-
+zstyle ':dotzsh:module:theme' theme 'dotphiles' 'dark' 'yellow'
 # Set custom scheme based on hostname
-#zstyle ':dotzsh:module:prompt:host:hostname' theme 'dotphiles' 'dark' 'yellow'
-#zstyle ':dotzsh:module:prompt:host:hostname2.example2.com' theme 'dotphiles' 'dark' 'violet'
-#zstyle ':dotzsh:module:prompt:domain:example.net' theme 'dotphiles' 'dark' 'red'
-
-zstyle ':dotzsh:module:utility:dircolors' theme '.dircolors/solarized/dircolors.256dark'
+#zstyle ':dotzsh:module:theme:host:hostname' theme 'dotphiles' 'dark' 'yellow'
+#zstyle ':dotzsh:module:theme:host:hostname2.example2.com' theme 'dotphiles' 'dark' 'violet'
+#zstyle ':dotzsh:module:theme:domain:example.net' theme 'dotphiles' 'dark' 'red'
 
 #zstyle ':dotzsh:module:tmux' auto-start 'yes'
 
