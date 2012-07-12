@@ -52,7 +52,7 @@ zstyle ':dotzsh:load' dzmodule 'macports' 'gnu-utility' 'environment' 'terminal'
   'archive' 'git' 'python' 'rails' 'yum' 'dpkg' 'tmux' 'screen' 'syntax-highlighting' \
   'command-not-found' 'directory' 'dpkg' 'haskell' 'node' 'pacman' 'perl' 'rsync' \
   'ruby' 'trap' 'wakeonlan' 'grc' 'mercurial' 'notify' 'dotsync' 'fasd' \
-  'taskwarrior' 'history-substring-search' 'theme' \
+  'taskwarrior' 'history-substring-search' 'theme' 'test'\
 
 # Set the theme to load.
 # Setting it to 'random' loads a random prompt.
