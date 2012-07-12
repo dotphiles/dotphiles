@@ -54,7 +54,7 @@ zstyle ':dotzsh:load' dzmodule 'macports' 'gnu-utility' 'environment' 'terminal'
   'ruby' 'trap' 'wakeonlan' 'grc' 'mercurial' 'notify' 'dotsync' 'fasd' \
   'taskwarrior' 'history-substring-search' 'theme' \
 
-# Set the prompt to load.
+# Set the theme to load.
 # Setting it to 'random' loads a random prompt.
 # Auto set to 'off' on dumb terminals.
 zstyle ':dotzsh:module:theme' theme 'dotphiles'
