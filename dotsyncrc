@@ -16,10 +16,7 @@
 # dstfile will be '.$srcfile' by default
 #
 [files]
-##bash
-##bashrc
 ##bin:bin
-##dircolors
 dotsyncrc
 ##fasdrc
 ##gitconfig
@@ -28,9 +25,6 @@ dotsyncrc
 ##grc
 ##hgrc
 ##inputrc
-##irssi
-##mutt
-##muttrc
 ##screenrc
 ##ssh
 ##subversion
