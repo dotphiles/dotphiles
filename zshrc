@@ -8,9 +8,9 @@
 #   Ben O'Hara <bohara@gmail.com>
 #
 
-zstyle ':dotzsh:load' debug 'yes'
-zstyle ':dotzsh:module:*' debug 'yes'
-zstyle ':dotzsh:module:local:*' debug 'yes'
+zstyle ':dotzsh:load' timing 'yes'
+#zstyle ':dotzsh:module:*' timing 'yes'
+#zstyle ':dotzsh:module:local:*' timing 'yes'
 
 # Set the key mapping style to 'emacs' or 'vi'.
 zstyle ':dotzsh:module:editor' keymap 'emacs'
