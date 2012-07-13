@@ -3,7 +3,7 @@
 	url = git://github.com/dotphiles/dotsync.git
 [submodule "zsh"]
 	path = zsh
-	url = git://github.com/dotzsh/dotzsh.git
+	url = git@github.com:dotzsh/dotzsh.git
 [submodule "vim"]
 	path = vim
 	url = git://github.com/dotvim/dotvim.git
