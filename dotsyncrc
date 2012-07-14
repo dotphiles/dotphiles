@@ -23,6 +23,7 @@ gitconfig
 gitignore
 gnupg
 grc
+gvimrc
 hgrc
 inputrc
 screenrc
