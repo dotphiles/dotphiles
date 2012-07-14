@@ -1,5 +1,5 @@
 "
-" dotvim : https://github.com/dotvim/dotvim
+" dotvim : https://github.com/dotphiles/dotvim
 "
 " gvimrc config
 "
