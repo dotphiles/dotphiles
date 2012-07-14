@@ -9,7 +9,7 @@
 	url = https://github.com/dotphiles/dotsync.git
 [submodule "zsh"]
 	path = zsh
-	url = https://github.com/dotphiles/dotzsh.git
+	url = https://github.com/dotphiles/dotzsh
 [submodule "vim"]
 	path = vim
-	url = https://github.com/dotphiles/dotvim.git
+	url = https://github.com/dotphiles/dotvim
