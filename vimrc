@@ -15,3 +15,4 @@ endif
 
 " Call dotvim
 source ~/.vim/dotvim.vim
+
