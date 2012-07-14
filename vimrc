@@ -1,4 +1,4 @@
-" dotphiles : https://github.com/dotphiles/dotfiles
+" dotphiles : https://github.com/dotphiles/dotphiles
 "
 " Setup vim and load required plugins before dotvim
 "
