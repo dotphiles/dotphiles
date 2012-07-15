@@ -11,4 +11,4 @@
 source ~/.vim/dotvim.vim
 
 " Customize to your needs...
-Bundle 'test'
+
