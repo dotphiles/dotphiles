@@ -1,10 +1,11 @@
 dotphiles
 =========
 
-A framework of dotfiles for the usual terminal apps and shells
+A framework of dotfiles for the usual terminal apps and shells designed to be
+cross platform and degrade for older machines
 
 Installation
-============
+------------
 
 Sign up for an account on [github][1] and fork the project
 
@@ -16,10 +17,12 @@ Then symlink then into place with
 
     ./.dotfiles/dotsync/bin/dotsync -L
 
-*Any existing files will be backed up into ~/.dotfiles/backup/*
+*An existing ~/.dotfiles will be backed up into ~/.backup/dotfiles.old on init*
+
+*Any existing files will be backed up into ~/.backup/dotfiles/*
 
 Settings
-========
+--------
 
 ### [dotsync](https://github.com/dotphiles/dotsync)
 
@@ -29,7 +32,7 @@ Add your dotfiles and machines to sync into *dotsyncrc*
 
 Add your own settings to *zshrc*, *zshenv*, *zlogin*, *zlogout* and *zprofile*
 
-### [dotvim](https://github.com/dotphilephiless/dotvim)
+### [dotvim](https://github.com/dotphiles/dotvim)
 
 Add your own settings to *vimrc*, start vim and run :BundleInstall
 
@@ -42,7 +45,7 @@ Add your name, email and gpg keyid to *gitconfig*
 Add your known hosts to *ssh/config*
 
 Terminal
-========
+--------
 
 dotphiles is set to use the solarized theme, so you need to install the
 colors scheme and fonts for your terminal,
@@ -50,7 +53,7 @@ colors scheme and fonts for your terminal,
 see the files in *~/.dotfiles/bootstrap*
 
 Contribute
-==========
+----------
 
 This project would not exist without all of its users and [contributors][2].
 
@@ -75,7 +78,7 @@ improve its performance, do not hesitate to fork and send pull requests.
      title and description in gramatically correct, complete sentences.
 
 License
-=======
+-------
 
 Copyright (c) 2012 Ben O'Hara <bohara@gmail.com>
 
@@ -104,3 +107,4 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 [4]: http://gun.io/blog/how-to-github-fork-branch-and-pull-request
 [5]: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
 [6]: https://help.github.com/articles/using-pull-requests
+
