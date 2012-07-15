@@ -1,5 +1,4 @@
-dotphiles
-=========
+# dotphiles
 
 A framework of dotfiles for the usual terminal apps and shells designed to be
 cross platform and degrade for older machines
