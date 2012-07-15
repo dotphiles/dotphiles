@@ -4,8 +4,7 @@ dotphiles
 A framework of dotfiles for the usual terminal apps and shells designed to be
 cross platform and degrade for older machines
 
-Installation
-------------
+## Installation
 
 Sign up for an account on [github][1] and fork the project
 
