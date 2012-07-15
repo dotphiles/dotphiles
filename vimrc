@@ -7,12 +7,8 @@
 "   Ben O'Hara <bohara@gmail.com>
 "
 
-if has("user_commands")
-  set nocompatible
-  filetype off
-  call pathogen#infect() 
-endif
-
 " Call dotvim
 source ~/.vim/dotvim.vim
 
+" Customize to your needs...
+Bundle 'test'
