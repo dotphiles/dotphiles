@@ -10,5 +10,33 @@
 " Call dotvim
 source ~/.vim/dotvim.vim
 
+if has("user_commands")
+  set nocompatible
+  filetype off
+  set rtp+=~/.vim/bundle/vundle/
+  call vundle#rc()
+  Bundle 'gmarik/vundle'
+
+  Bundle 'kien/ctrlp.vim'
+  Bundle 'scrooloose/nerdcommenter'
+  Bundle 'scrooloose/nerdtree'
+  Bundle 'jistr/vim-nerdtree-tabs'
+  Bundle 'altercation/vim-colors-solarized'
+  Bundle 'tpope/vim-fugitive'
+  Bundle 'vitaly/vim-gitignore'
+  Bundle 'austintaylor/vim-indentobject'
+  Bundle 'tpope/vim-markdown'
+  Bundle 'Lokaltog/vim-powerline'
+  Bundle 'tsaleh/vim-tmux'
+  Bundle 'YankRing.vim'
+  Bundle 'Indent-Guides'
+  Bundle 'Puppet-Syntax-Highlighting'
+  Bundle 'csexton/jekyll.vim'
+  Bundle 'PProvost/vim-markdown-jekyll'
+  if v:version > 700
+    Bundle 'Shougo/neocomplcache'
+  endif
+endif
+
 " Customize to your needs...
 
