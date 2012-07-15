@@ -1,11 +1,11 @@
-# dotphiles
+dotphiles
+=========
 
 A framework of dotfiles for the usual terminal apps and shells designed to be
 cross platform and degrade for older machines
 
-## Setup
-
-### Installation
+Installation
+------------
 
 Sign up for an account on [github][1] and fork the project
 
@@ -22,7 +22,7 @@ Then symlink then into place with
 *Any existing files will be backed up into ~/.backup/dotfiles/*
 
 Settings
-========
+--------
 
 ### [dotsync](https://github.com/dotphiles/dotsync)
 
@@ -45,7 +45,7 @@ Add your name, email and gpg keyid to *gitconfig*
 Add your known hosts to *ssh/config*
 
 Terminal
-========
+--------
 
 dotphiles is set to use the solarized theme, so you need to install the
 colors scheme and fonts for your terminal,
@@ -53,7 +53,7 @@ colors scheme and fonts for your terminal,
 see the files in *~/.dotfiles/bootstrap*
 
 Contribute
-==========
+----------
 
 This project would not exist without all of its users and [contributors][2].
 
@@ -78,7 +78,7 @@ improve its performance, do not hesitate to fork and send pull requests.
      title and description in gramatically correct, complete sentences.
 
 License
-=======
+-------
 
 Copyright (c) 2012 Ben O'Hara <bohara@gmail.com>
 
