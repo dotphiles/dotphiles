@@ -17,7 +17,7 @@ Then symlink then into place with
 
     ./.dotfiles/dotsync/bin/dotsync -L
 
-*Any existing files will be backed up into ~/.dotfiles/backup/*
+*Any existing files will be backed up into ~/.backup/dotfiles/*
 
 Settings
 ========
