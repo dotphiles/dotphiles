@@ -33,6 +33,7 @@ if has("user_commands")
   Bundle 'PProvost/vim-markdown-jekyll'
   if v:version > 700
     Bundle 'Shougo/neocomplcache'
+    Bundle 'Indent-Guides'
   endif
 endif
 
