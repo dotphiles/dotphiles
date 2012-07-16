@@ -28,10 +28,9 @@ if has("user_commands")
   Bundle 'tpope/vim-markdown'
   Bundle 'Lokaltog/vim-powerline'
   Bundle 'tsaleh/vim-tmux'
-  Bundle 'YankRing.vim'
-  Bundle 'Indent-Guides'
   if v:version > 700
     Bundle 'Shougo/neocomplcache'
+    Bundle 'Indent-Guides'
   endif
   " Add extra bundles here...
 
