@@ -20,3 +20,4 @@ if has('mac')
 elseif has('unix')
     let &guifont="DejaVu Sans Mono 10"
 endif
+

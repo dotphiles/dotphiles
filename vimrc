@@ -27,7 +27,6 @@ if has("user_commands")
   Bundle 'tpope/vim-markdown'
   Bundle 'Lokaltog/vim-powerline'
   Bundle 'tsaleh/vim-tmux'
-  Bundle 'YankRing.vim'
   Bundle 'Indent-Guides'
   Bundle 'Puppet-Syntax-Highlighting'
   Bundle 'csexton/jekyll.vim'
