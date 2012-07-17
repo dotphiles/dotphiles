@@ -74,4 +74,3 @@ source "$DOTZSH/init.zsh"
 alias rcfg="sshcd parsley /data/rancid/configs"
 alias acls="sshcd parsley /opt/tftpboot/acl"
 
-
