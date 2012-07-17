@@ -28,6 +28,7 @@ if has("user_commands")
   Bundle 'tpope/vim-markdown'
   Bundle 'Lokaltog/vim-powerline'
   Bundle 'tsaleh/vim-tmux'
+  Bundle 'SearchComplete'
   if v:version > 700
     Bundle 'Shougo/neocomplcache'
     Bundle 'Indent-Guides'
