@@ -31,6 +31,7 @@ if has("user_commands")
   Bundle 'Puppet-Syntax-Highlighting'
   Bundle 'csexton/jekyll.vim'
   Bundle 'PProvost/vim-markdown-jekyll'
+  Bundle 'SearchComplete'
   if v:version > 700
     Bundle 'Shougo/neocomplcache'
     Bundle 'Indent-Guides'
