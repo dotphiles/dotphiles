@@ -47,11 +47,11 @@ zstyle ':dotzsh:load' zfunction 'zargs' 'zmv'
 
 # Set the dotzsh modules to load (browse modules).
 # The order matters.
-zstyle ':dotzsh:load' dzmodule 'macports' 'gnu-utility' 'environment' 'terminal' \
-  'utility' 'completion' 'editor' 'history' 'directory' 'ssh' 'gnupg' 'osx' \
-  'archive' 'git' 'python' 'rails' 'yum' 'dpkg' 'tmux' 'screen' 'syntax-highlighting' \
-  'command-not-found' 'directory' 'dpkg' 'haskell' 'node' 'pacman' 'perl' 'rsync' \
-  'ruby' 'trap' 'wakeonlan' 'grc' 'mercurial' 'notify' 'dotsync' 'fasd' \
+zstyle ':dotzsh:load' dzmodule \
+  'macports' 'gnu-utility' 'environment' 'terminal' \
+  'utility' 'completion' 'editor' 'history' 'ssh' 'gnupg' 'osx' \
+  'archive' 'git' 'yum' 'tmux' 'syntax-highlighting' 'perl' 'rsync' \
+  'grc' 'mercurial' 'notify' 'dotsync' 'fasd' \
   'taskwarrior' 'history-substring-search' 'theme'
 
 # Set the theme to load.
