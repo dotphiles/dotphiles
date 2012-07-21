@@ -28,17 +28,17 @@ if has("user_commands")
   Bundle 'tpope/vim-markdown'
   Bundle 'Lokaltog/vim-powerline'
   Bundle 'tsaleh/vim-tmux'
-  Bundle 'Indent-Guides'
-  Bundle 'Puppet-Syntax-Highlighting'
-  Bundle 'csexton/jekyll.vim'
-  Bundle 'PProvost/vim-markdown-jekyll'
   Bundle 'SearchComplete'
   if v:version > 700
     Bundle 'Shougo/neocomplcache'
     Bundle 'Indent-Guides'
   endif
   " Add extra bundles here...
-
+  Bundle 'Indent-Guides'
+  Bundle 'Puppet-Syntax-Highlighting'
+  Bundle 'csexton/jekyll.vim'
+  Bundle 'PProvost/vim-markdown-jekyll'
+ 
 endif
 
 " Customize to your needs...
