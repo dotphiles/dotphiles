@@ -37,6 +37,8 @@ if has("user_commands")
     Bundle 'Shougo/neocomplcache'
     Bundle 'Indent-Guides'
   endif
+  " Add extra bundles here...
+
 endif
 
 " Customize to your needs...
