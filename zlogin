@@ -16,14 +16,6 @@
     zcompile "$dump_file"
   fi
 
-  # Compile dotzsh to increase startup speed
-  #for dzfile in `find ${DOTZSH}/ -type f -maxdepth 3 -name *.zsh`
-  #do
-  #  if [[ "$dzfile" -nt "${dzfile}.zwc" || ! -s "${dzfile}.zwc" ]]; then
-  #    zcompile "$dzfile"
-  #  fi
-  #done
-
   # Set environment variables for launchd processes.
   if [[ "$OSTYPE" == darwin* ]]; then
     for env_var in PATH MANPATH; do
