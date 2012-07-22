@@ -49,11 +49,11 @@ zstyle ':dotzsh:load' dzmodule 'environment' 'terminal' 'macports' 'gnu-utility'
 # Set the theme to load.
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
-zstyle ':dotzsh:module:theme' theme 'dotphiles' 'soldark' 'yellow'
+zstyle ':dotzsh:module:theme' theme 'dotphiles'
 # Set custom scheme based on hostname
-#zstyle ':dotzsh:module:theme:host:hostname' theme 'dotphiles' 'dark' 'yellow'
-#zstyle ':dotzsh:module:theme:host:hostname2.example2.com' theme 'dotphiles' 'dark' 'violet'
-#zstyle ':dotzsh:module:theme:domain:example.net' theme 'dotphiles' 'dark' 'red'
+#zstyle ':dotzsh:module:theme:host:hostname' theme 'dotphiles' 'soldark' 'yellow'
+#zstyle ':dotzsh:module:theme:host:hostname2.example2.com' theme 'dotphiles' 'soldark' 'violet'
+#zstyle ':dotzsh:module:theme:domain:example.net' theme 'dotphiles' 'soldark' 'red'
 
 #zstyle ':dotzsh:module:tmux' auto-start 'yes'
 
