@@ -38,6 +38,7 @@ if has("user_commands")
   Bundle 'Puppet-Syntax-Highlighting'
   Bundle 'csexton/jekyll.vim'
   Bundle 'PProvost/vim-markdown-jekyll'
+  Bundle 'Zenburn'
  
 endif
 

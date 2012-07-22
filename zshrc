@@ -59,10 +59,10 @@ zstyle ':dotzsh:load' dzmodule \
 # Auto set to 'off' on dumb terminals.
 zstyle ':dotzsh:module:theme' theme 'dotphiles'
 # Set custom scheme based on hostname or domain
-zstyle ':dotzsh:module:theme:hostname:natte.mcvax.org' theme 'dotphiles' 'dark' 'magenta'
-zstyle ':dotzsh:module:theme:hostname:excession.mikegrice.com' theme 'dotphiles' 'dark' 'violet'
-zstyle ':dotzsh:module:theme:hostname:mac-mini.benohara.net' theme 'dotphiles' 'dark' 'blue'
-zstyle ':dotzsh:module:theme:domain:apnic.net' theme 'dotphiles' 'dark' 'orange'
+zstyle ':dotzsh:module:theme:hostname:natte.mcvax.org' theme 'dotphiles' 'soldark' 'magenta'
+zstyle ':dotzsh:module:theme:hostname:excession.mikegrice.com' theme 'dotphiles' 'soldark' 'violet'
+zstyle ':dotzsh:module:theme:hostname:mac-mini.benohara.net' theme 'dotphiles' 'soldark' 'blue'
+zstyle ':dotzsh:module:theme:domain:apnic.net' theme 'dotphiles' 'soldark' 'orange'
 
 #zstyle ':dotzsh:module:tmux' auto-start 'yes'
 
