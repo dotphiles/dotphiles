@@ -34,7 +34,7 @@ Add your own settings to *zshrc*, *zshenv*, *zlogin*, *zlogout* and *zprofile*
 
 ### [dotvim](https://github.com/dotphiles/dotvim)
 
-Add your own settings to *vimrc*, start vim and run :BundleInstall
+Add your own settings to *vimrc* and start vim to auto install plugins
 
 ### git
 
@@ -42,7 +42,7 @@ Add your name, email and gpg keyid to *gitconfig*
 
 ### ssh
 
-Add your known hosts to *ssh/config*
+Add your known hosts to *ssh/config* and your public key to *ssh/authorized_keys*
 
 Terminal
 --------
