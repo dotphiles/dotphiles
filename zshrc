@@ -47,11 +47,11 @@ zstyle ':dotzsh:load' zfunction 'zargs' 'zmv'
 
 # Set the dotzsh modules to load (browse modules).
 # The order matters.
-zstyle ':dotzsh:load' dzmodule 'macports' 'gnu-utility' 'environment' 'terminal' \
-  'utility' 'completion' 'editor' 'history' 'directory' 'ssh' 'gnupg' 'osx' \
-  'archive' 'git' 'python' 'rails' 'yum' 'dpkg' 'tmux' 'screen' 'syntax-highlighting' \
-  'command-not-found' 'directory' 'dpkg' 'haskell' 'node' 'pacman' 'perl' 'rsync' \
-  'ruby' 'trap' 'wakeonlan' 'grc' 'mercurial' 'notify' 'dotsync' 'fasd' \
+zstyle ':dotzsh:load' dzmodule \
+  'macports' 'gnu-utility' 'environment' 'terminal' \
+  'utility' 'completion' 'editor' 'history' 'ssh' 'gnupg' 'osx' \
+  'archive' 'git' 'yum' 'tmux' 'syntax-highlighting' 'perl' 'rsync' \
+  'grc' 'mercurial' 'notify' 'dotsync' 'fasd' \
   'taskwarrior' 'history-substring-search' 'theme'
 
 # Set the theme to load.
@@ -59,10 +59,10 @@ zstyle ':dotzsh:load' dzmodule 'macports' 'gnu-utility' 'environment' 'terminal'
 # Auto set to 'off' on dumb terminals.
 zstyle ':dotzsh:module:theme' theme 'dotphiles'
 # Set custom scheme based on hostname or domain
-zstyle ':dotzsh:module:theme:hostname:natte.mcvax.org' theme 'dotphiles' 'dark' 'magenta'
-zstyle ':dotzsh:module:theme:hostname:excession.mikegrice.com' theme 'dotphiles' 'dark' 'violet'
-zstyle ':dotzsh:module:theme:hostname:mac-mini.benohara.net' theme 'dotphiles' 'dark' 'blue'
-zstyle ':dotzsh:module:theme:domain:apnic.net' theme 'dotphiles' 'dark' 'orange'
+zstyle ':dotzsh:module:theme:hostname:natte.mcvax.org' theme 'dotphiles' 'soldark' 'magenta'
+zstyle ':dotzsh:module:theme:hostname:excession.mikegrice.com' theme 'dotphiles' 'soldark' 'violet'
+zstyle ':dotzsh:module:theme:hostname:mac-mini.benohara.net' theme 'dotphiles' 'soldark' 'blue'
+zstyle ':dotzsh:module:theme:domain:apnic.net' theme 'dotphiles' 'soldark' 'orange'
 
 #zstyle ':dotzsh:module:tmux' auto-start 'yes'
 
@@ -73,4 +73,5 @@ source "$DOTZSH/init.zsh"
 
 alias rcfg="sshcd parsley /data/rancid/configs"
 alias acls="sshcd parsley /opt/tftpboot/acl"
+
 

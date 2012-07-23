@@ -48,11 +48,6 @@ zshrc
 ## hostname                     type=masterhost, ANY or NONE
 [hosts]
 mac-mini                        git=bens-macbook-pro
-ubuntu1                         git=mac-mini.benohara.net
-centos1                         git=mac-mini.benohara.net
-debian1                         git=mac-mini.benohara.net
-arch1                           git=mac-mini.benohara.net
-solaris1                        git=mac-mini.benohara.net
 excession.mikegrice.com         rsync=bens-macbook-pro
 parsley.apnic.net               rsync=bens-macbook-pro
 natto.apnic.net                 rsync=bens-macbook-pro

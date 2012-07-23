@@ -17,6 +17,7 @@ if has("user_commands")
   set rtp+=~/.vim/bundle/vundle/
   call vundle#rc()
   Bundle 'gmarik/vundle'
+  Bundle 'sudo.vim'
   Bundle 'kien/ctrlp.vim'
   Bundle 'scrooloose/nerdcommenter'
   Bundle 'scrooloose/nerdtree'
@@ -28,15 +29,18 @@ if has("user_commands")
   Bundle 'tpope/vim-markdown'
   Bundle 'Lokaltog/vim-powerline'
   Bundle 'tsaleh/vim-tmux'
-  Bundle 'Indent-Guides'
-  Bundle 'Puppet-Syntax-Highlighting'
-  Bundle 'csexton/jekyll.vim'
-  Bundle 'PProvost/vim-markdown-jekyll'
   Bundle 'SearchComplete'
   if v:version > 700
     Bundle 'Shougo/neocomplcache'
     Bundle 'Indent-Guides'
   endif
+  " Add extra bundles here...
+  Bundle 'Indent-Guides'
+  Bundle 'Puppet-Syntax-Highlighting'
+  Bundle 'csexton/jekyll.vim'
+  Bundle 'PProvost/vim-markdown-jekyll'
+  Bundle 'Zenburn'
+ 
 endif
 
 " Customize to your needs...
