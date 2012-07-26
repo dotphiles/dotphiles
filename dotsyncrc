@@ -97,4 +97,6 @@ wakame.apnic.net                rsync=bens-macbook-pro
 graphite.apnic.net              rsync=bens-macbook-pro
 nori.apnic.net                  rsync=bens-macbook-pro
 events.apnic.net                rsync=bens-macbook-pro
+mace.apnic.net                  rsync=bens-macbook-pro
+rrs.apnic.net                   rsync=bens-macbook-pro
 [endhosts]

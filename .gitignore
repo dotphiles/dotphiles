@@ -4,6 +4,7 @@
 # Ignore these files in this repo.
 #
 
+*.local
 *.swp
 .DS_Store
 ssh/id*
@@ -21,3 +22,4 @@ gnupg/random*
 gnupg/private*
 gnupg/*~
 task/*.data
+
