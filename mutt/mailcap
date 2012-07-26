@@ -1,0 +1,8 @@
+############################################################################
+# File:         mailcap
+# Author:       Ben O'Hara <bohara@gmail.com>
+# Description:  Mailcap for mutt
+############################################################################    
+
+text/html;      links %s; nametemplate=%s.html
+text/html;      links -dump %s; nametemplate=%s.html; copiousoutput

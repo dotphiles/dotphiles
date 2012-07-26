@@ -1,0 +1,20 @@
+############################################################################
+# File:         muttrc
+# Author:       Ben O'Hara <bohara@gmail.com>
+# Description:  Setup mutt for imap email
+############################################################################
+
+# Setup mailboxes {{{
+
+set smtp_url="smtp://bohara@asmtp.apnic.net:587/"
+set from="bohara@apnic.net"
+set realname="Ben O'Hara"
+set signature="~/.sig/work"
+
+set imap_user="bohara"
+set folder="imaps://imaps.apnic.net/"
+set spoolfile="+INBOX"
+set record="+INBOX.Sent"
+set postponed="+INBOX.Drafts"
+set imap_authenticators="login"
+# }}}
