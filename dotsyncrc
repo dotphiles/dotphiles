@@ -50,3 +50,4 @@ dotsyncrc
 [hosts]
 ##your-machine-name-here          git=NONE
 [endhosts]
+

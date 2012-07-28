@@ -62,3 +62,4 @@ colours=cyan
 # no exact match
 regexp=(No exact OS matches for host)
 colours=magenta
+

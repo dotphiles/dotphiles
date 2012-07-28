@@ -43,3 +43,4 @@ outgoing = --style compact -v
 incoming = --style compact -v
 heads = --template '{rev}:{node|short}({branches}) {desc|firstline}\n'
 qseries = -s
+
