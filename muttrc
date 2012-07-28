@@ -1,142 +1,29 @@
-############################################################################
-# File:         muttrc
-# Author:       Ben O'Hara <bohara@gmail.com>
-# Description:  Setup mutt for imap email
-############################################################################
-
-# Setup mailboxes {{{
-
-source ~/.mutt/config/`test -e ~/.mutt/config/$(hostname -s) && echo $(hostname -s) || echo global`
-
-set header_cache=~/.mutt/cache/headers
-set message_cachedir=~/.mutt/cache/bodies
-set certificate_file=~/.mutt/certificates
-
-set folder_format="%2C %t %5N %8s %d %f"
-
-set move=no
-set edit_headers=yes
-set editor='vim +/^$ "+normal j"'
-set markers=no
-
-set sort='threads'
-set sort_aux=last-date-received
-set imap_check_subscribed
-set imap_keepalive=60
-set mail_check=60
-set timeout=15
-set quit=ask-yes
-set nobeep
-set mailcap_path=~/.mutt/mailcap
-auto_view text/html
-
-ignore "Authentication-Results:"
-ignore "DomainKey-Signature:"
-ignore "DKIM-Signature:"
-hdr_order Date From To Cc
-
-set pager_index_lines=10
-# }}}
-# GPG Settings {{{
-set pgp_decode_command="gpg %?p?--passphrase-fd 0? --no-verbose --batch --output - %f"
-set pgp_verify_command="gpg --no-verbose --batch --output - --verify %s %f"
-set pgp_decrypt_command="gpg --passphrase-fd 0 --no-verbose --batch --output - %f"
-set pgp_sign_command="gpg --no-verbose --batch --output - --passphrase-fd 0 --armor --detach-sign --textmode %?a?-u %a? %f"
-set pgp_clearsign_command="gpg --no-verbose --batch --output - --passphrase-fd 0 --armor --textmode --clearsign %?a?-u %a? %f"
-set pgp_encrypt_only_command="pgpewrap gpg --batch --quiet --no-verbose --output - --encrypt --textmode --armor --always-trust --encrypt-to 0xE9687DBC -- -r %r -- %f"
-set pgp_encrypt_sign_command="pgpewrap gpg --passphrase-fd 0 --batch --quiet --no-verbose --textmode --output - --encrypt --sign %?a?-u %a? --armor --always-trust --encrypt-to 0xE9687DBC -- -r %r -- %f"
-set pgp_import_command="gpg --no-verbose --import -v %f"
-set pgp_export_command="gpg --no-verbose --export --armor %r"
-set pgp_verify_key_command="gpg --no-verbose --batch --fingerprint --check-sigs %r"
-set pgp_list_pubring_command="gpg --no-verbose --batch --with-colons --list-keys %r" 
-set pgp_list_secring_command="gpg --no-verbose --batch --with-colons --list-secret-keys %r" 
-set pgp_autosign=yes
-set pgp_sign_as=0xE9687DBC 
-set pgp_replyencrypt=yes
-set pgp_timeout=1800
-set pgp_good_sign="^gpg: Good signature from"
-# }}}
-# S/MIME Settings {{{
-# If you compiled mutt with support for both PGP and S/MIME, PGP
-# will be the default method unless the following option is set
-#set smime_is_default
-# Uncoment this if you don't want to set labels for certificates you add.
-# unset smime_ask_cert_label
-# Passphrase expiration
-set smime_timeout=300
-# Global crypto options -- these affect PGP operations as well.
-set crypt_autosign=no
-set crypt_replyencrypt=no
-set crypt_replysign=no
-set crypt_replysignencrypted=no
-set crypt_verify_sig=yes
-# Section A: Key Management.
-# The (default) keyfile for signing/decrypting.  Uncomment the following
-# line and replace the keyid with your own.
-#set smime_default_key="12345678.0"
-# Uncommen to make mutt ask what key to use when trying to decrypt a message.
-# It will use the default key above (if that was set) else.
-#unset smime_decrypt_use_default_key
-# Path to a file or directory with trusted certificates
-set smime_ca_location="~/.mutt/smime/cacerts/ca-bundle.cer"
-# Path to where all known certificates go. (must exist!)
-set smime_certificates="~/.mutt/smime/certificates"
-# Path to where all private keys go. (must exist!)
-set smime_keys="~/.mutt/smime/keys"
-# These are used to extract a certificate from a message.
-# First generate a PKCS#7 structure from the message.
-set smime_pk7out_command="openssl smime -verify -in %f -noverify -pk7out"
-# Extract the included certificate(s) from a PKCS#7 structure.
-set smime_get_cert_command="openssl pkcs7 -print_certs -in %f"
-# Extract the signer's certificate only from a S/MIME signature (sender verification)
-set smime_get_signer_cert_command="openssl smime -verify -in %f -noverify -signer %c -out /dev/null"
-# This is used to get the email address the certificate was issued to.
-set smime_get_cert_email_command="openssl x509 -in  %f -noout -email"
-# Add a certificate to the database using smime_keys.
-set smime_import_cert_command="smime_keys add_cert %f"
-# Sction B: Outgoing messages
-# Algorithm to use for encryption.
-# valid choices are rc2-40, rc2-64, rc2-128, des, des3
-set smime_encrypt_with="des3"
-# Encrypt a message. Input file is a MIME entity.
-set smime_encrypt_command="openssl smime -encrypt -%a -outform DER -in %f %c"
-# Sign.
-set smime_sign_command="openssl smime -sign -signer %c -inkey %k -passin stdin -in %f -certfile %i -outform DER"
-#Section C: Incoming messages
-# Decrypt a message. Output is a MIME entity.
-set smime_decrypt_command="openssl smime -decrypt  -passin stdin -inform DER -in %f -inkey %k -recip %c"
-# Verify a signature of type multipart/signed
-set smime_verify_command="openssl smime -verify -inform DER -in %s %C -content %f"
-# Verify a signature of type application/x-pkcs7-mime
-set smime_verify_opaque_command="openssl smime -verify -inform DER -in %s %C"
-# }}}
-# Colors {{{
-
-source ~/.mutt/colors/solarized
-
-# }}}
-# Sidebar {{{
-# set up the sidebar, default not visible
-set meta_key=yes
-set sidebar_width=35
-set sidebar_visible=no
-color sidebar_new color33 default
-set sidebar_delim=' '
-                   
-#Sidebar Navigation
-bind index \ep sidebar-prev
-bind index \en sidebar-next
-bind index \eo sidebar-open
-bind pager \ep sidebar-prev
-bind pager \en sidebar-next
-bind pager \eo sidebar-open
 #
-# 
-# b toggles sidebar visibility
-macro index b '<enter-command>toggle sidebar_visible<enter>'
-macro pager b '<enter-command>toggle sidebar_visible<enter>'
+# dotphiles : https://github.com/dotphiles/dotphiles
 #
-# }}} 
-# Macros {{{
-macro index M "T.*\n;WN" "Mark all messages as read"
-# }}}
+# Setup mutt with offlineimap
+#
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
+
+# Setup mailboxes
+
+set smtp_url="smtp://bohara@asmtp.apnic.net:587/"
+set from="bohara@apnic.net"
+set realname="Ben O'Hara"
+set signature="~/.sig/work"
+
+set mbox_type=Maildir
+
+set folder=$HOME/.mail
+set spoolfile=+"gmail/inbox"
+
+set reverse_name=yes
+set from=bohara@gmail.com
+alternates bohara@apnic.net
+
+source $HOME/mutt/colors/solarized
+
+source $HOME/.mutt/muttrc
+
