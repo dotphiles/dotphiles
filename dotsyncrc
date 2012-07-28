@@ -25,6 +25,7 @@ dotsyncrc
 ##gnupg
 ##grc
 ##hgrc
+##hushlogin
 ##inputrc
 ##screenrc
 ##ssh
