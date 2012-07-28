@@ -1,8 +1,11 @@
-############################################################################
-# File:         muttrc
-# Author:       Ben O'Hara <bohara@gmail.com>
-# Description:  Setup mutt for imap email
-############################################################################
+#
+# dotphiles : https://github.com/dotphiles/dothiles
+#
+# main muttrc to be sourced from ~/.muttrc
+#
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
 
 # General
 set header_cache=~/.mutt/cache/headers
@@ -34,12 +37,12 @@ hdr_order Date From To Cc
 
 set pager_index_lines=10
 
+# Macros
+macro index M "T.*\n;WN" "Mark all messages as read"
+
 # Settings
+source ~/.mutt/mailboxes
 source ~/.mutt/config/pgp
 source ~/.mutt/config/smime
 source ~/.mutt/config/sidebar
-source ~/.mutt/mailboxes
-
-# Macros
-macro index M "T.*\n;WN" "Mark all messages as read"
 

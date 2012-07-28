@@ -51,6 +51,6 @@ ssl = yes
 enabled = yes
 filename = ~/.mutt/mailboxes
 header = "mailboxes "
-peritem = "+%(accountname)s/%(foldername)s"
+peritem = "=%(accountname)s/%(foldername)s"
 sep = " "
 footer = "\n"

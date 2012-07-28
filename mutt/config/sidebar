@@ -22,8 +22,7 @@ bind index \eo sidebar-open
 bind pager \ep sidebar-prev
 bind pager \en sidebar-next
 bind pager \eo sidebar-open
-#
-#
+
 # b toggles sidebar visibility
 macro index b '<enter-command>toggle sidebar_visible<enter>'
 macro pager b '<enter-command>toggle sidebar_visible<enter>'
