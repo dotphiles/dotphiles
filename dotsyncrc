@@ -18,6 +18,7 @@
 [files]
 ##bin:bin
 dotsyncrc
+##editrc
 ##fasdrc
 ##gitconfig
 ##gitignore
