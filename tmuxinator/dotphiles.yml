@@ -1,9 +1,15 @@
-# ~/.tmuxinator/work.yml
-# you can make as many tabs as you wish...
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# ~/.tmuxinator/dotphiles.yml
+#
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
 
-project_name: dotfiles
+project_name: dotphiles
 project_root: ~/.dotfiles
-socket_name: dotfiles # Not needed.  Remove to use default socket
+socket_name: dotphiles # Not needed.  Remove to use default socket
 tabs:
   - editor:
       layout: even-horizontal
@@ -22,3 +28,4 @@ tabs:
       panes:
         - #sshcd solaris1 .dotfiles
         - #empty
+
