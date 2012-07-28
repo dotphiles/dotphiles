@@ -25,6 +25,7 @@ gnupg
 grc
 gvimrc
 hgrc
+hushlogin
 inputrc
 screenrc
 ssh
@@ -99,4 +100,6 @@ nori.apnic.net                  rsync=bens-macbook-pro
 events.apnic.net                rsync=bens-macbook-pro
 mace.apnic.net                  rsync=bens-macbook-pro
 rrs.apnic.net                   rsync=bens-macbook-pro
+ns3.apnic.net                   rsync=bens-macbook-pro
+sec3.apnic.net                  rsync=bens-macbook-pro
 [endhosts]

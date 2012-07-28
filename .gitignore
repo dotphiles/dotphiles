@@ -7,6 +7,8 @@
 *.local
 *.swp
 .DS_Store
+mutt/cache/
+mutt/mailboxes
 ssh/id*
 ssh/environment*
 ssh/known_hosts
