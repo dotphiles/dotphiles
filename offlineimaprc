@@ -1,8 +1,8 @@
 # In the general section
 [general]
 # Controls how many accounts may be synced simultaneously
-maxsyncaccounts = 1
-accounts=gmail
+maxsyncaccounts = 2
+accounts=gmail,apnic
 
 # In the account identifier
 [Account gmail]
