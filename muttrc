@@ -10,9 +10,6 @@
 # Setup mailboxes
 
 set smtp_url="smtp://bohara@asmtp.apnic.net:587/"
-set from="bohara@apnic.net"
-set realname="Ben O'Hara"
-set signature="~/.sig/work"
 
 set mbox_type=Maildir
 
@@ -21,9 +18,10 @@ set spoolfile=+"gmail/inbox"
 
 set reverse_name=yes
 set from=bohara@gmail.com
+set realname="Ben O'Hara"
 alternates bohara@apnic.net
 
-source $HOME/mutt/colors/solarized
+source $HOME/.mutt/colors/solarized
 
 source $HOME/.mutt/muttrc
 

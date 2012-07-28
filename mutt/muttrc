@@ -4,8 +4,7 @@
 # Description:  Setup mutt for imap email
 ############################################################################
 
-# Setup mailboxes {{{
-
+# General
 set header_cache=~/.mutt/cache/headers
 set message_cachedir=~/.mutt/cache/bodies
 set certificate_file=~/.mutt/certificates
@@ -34,15 +33,12 @@ ignore "DKIM-Signature:"
 hdr_order Date From To Cc
 
 set pager_index_lines=10
-#
 
-# Colors
-
+# Settings
 source ~/.mutt/config/pgp
 source ~/.mutt/config/smime
 source ~/.mutt/config/sidebar
 source ~/.mutt/mailboxes
-
 
 # Macros
 macro index M "T.*\n;WN" "Mark all messages as read"
