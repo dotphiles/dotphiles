@@ -1,0 +1,56 @@
+# In the general section
+[general]
+# Controls how many accounts may be synced simultaneously
+maxsyncaccounts = 1
+accounts=gmail
+
+# In the account identifier
+[Account gmail]
+# Minutes between syncs
+autorefresh = 5
+# Number of quick-syncs between autorefreshes. Quick-syncs do not update if the
+# only changes were to IMAP flags
+quick = 10
+localrepository = gmail-local
+remoterepository = gmail-remote
+
+[Repository gmail-local]
+type = Maildir
+localfolders = ~/.mail/gmail/
+
+[Repository gmail-remote]
+type = Gmail
+remoteuser = bohara@gmail.com
+nametrans = lambda foldername: re.sub ('^\[gmail\]', 'bak',
+                               re.sub ('sent_mail', 'sent',
+                               re.sub ('starred', 'flagged',
+                               re.sub (' ', '_', foldername.lower()))))
+folderfilter = lambda foldername: foldername not in '[Gmail]/All Mail'
+
+# In the account identifier
+[Account apnic]
+# Minutes between syncs
+autorefresh = 5
+# Number of quick-syncs between autorefreshes. Quick-syncs do not update if the
+# only changes were to IMAP flags
+quick = 10
+localrepository = apnic-local
+remoterepository = apnic-remote
+
+[Repository apnic-local]
+type = Maildir
+localfolders = ~/.mail/apnic/
+
+[Repository apnic-remote]
+type = IMAP
+remotehost = imaps.apnic.net
+remoteuser = bohara
+ssl = yes
+
+[mbnames]
+enabled = yes
+filename = ~/.mutt/mailboxes
+header = "mailboxes "
+peritem = "+%(accountname)s/%(foldername)s"
+sep = " "
+footer = "\n"
