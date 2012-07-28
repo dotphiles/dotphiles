@@ -1,0 +1,68 @@
+#!/opt/local/bin/perl
+## use Data::Dumper;
+
+## git changelog generator
+## -----------------------
+## Usage: git.generate-changelog [commit-md5]
+## -----------------------
+## Copyright : Deep Blue Sky Digital Ltd
+## Warrantee : ABSOLULTELY NONE WHATSOEVER
+## License   : Take your pick.. something opensource 
+## -----------------------
+
+@aLines         = split /\n/, `git log`;
+$stop           = $ARGV[0];
+$author         = '';
+
+foreach my $line (@aLines){
+        $author         = $1 if $line =~ /^Author: (\S+)/;
+        my $message     = $1 if $line =~ /^    (.*)/;
+
+        if ( $message ) {
+
+                $message .= " ~$author";
+
+                if ( $message =~ /^Fix/i ) {
+                        push @{$output{'FIXED'}}, $message;
+                } elsif ( $message =~ /^Merge/i ){
+                        $message =~ /Merge branch '(.*?)'.*?into (\S+)/sio;
+                        if ( $1 ne $2 ){
+                                push @{$output{'MERGE'}}, "Merged: $1 -> $2";
+                        } else {
+                                #push @{$output{'MERGE IGNORE: '}}, "[$1] [$2] $message";
+                        }
+                } elsif ( $message =~ /^Add/i ){
+                        push @{$output{'NEW'}}, $message;
+                } else {
+                        push @{$output{'OTHER'}}, $message;
+                }
+
+                $message = 0;
+        }
+
+        last if $line =~ $stop;
+}
+
+if ( scalar @{$output{'FIXED'}} ){
+        print "\n - FIXED:\n\n -- ";
+        print join "\n -- ", @{$output{'FIXED'}};
+        print "\n";
+}
+
+if ( scalar @{$output{'NEW'}} ){
+        print "\n - NEW:\n\n -- ";
+        print join "\n -- ", @{$output{'NEW'}};
+        print "\n";
+}
+
+if ( scalar @{$output{'MERGE'}} ){
+        print "\n - BRANCHES MERGED IN:\n\n -- ";
+        print join "\n -- ", @{$output{'MERGE'}};
+        print "\n";
+}
+
+if ( scalar @{$output{'OTHER'}} ){
+        print "\n - OTHER CHANGES:\n\n -- ";
+        print join "\n -- ", @{$output{'OTHER'}};
+        print "\n";
+}
