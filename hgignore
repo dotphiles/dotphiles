@@ -1,11 +1,14 @@
 #
 # dotphiles : https://github.com/dotphiles/dotphiles
 #
-# Git global ignores
+# Mercurial global ignores
 #
 # Authors:
 #   Ben O'Hara <bohara@gmail.com>
 #
+
+# Use shell-style glob syntax
+syntax: glob
 
 # Compiled source
 *.pyc

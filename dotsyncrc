@@ -25,6 +25,7 @@ gitignore
 gnupg
 grc
 gvimrc
+hgignore
 hgrc
 hushlogin
 inputrc
