@@ -1,0 +1,13 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# Completion for mysql/irb command line tools
+#
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
+
+bind -v
+bind "^R" em-inc-search-prev
+bind \\t rl_complete
+
