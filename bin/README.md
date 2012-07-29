@@ -1,31 +1,13 @@
-bootstrap
-=========
+bin
+===
 
-Scripts to bootstrap a new machine
+Add any of your own local scripts to this dir, it will be added to the path
 
-osx
----
+To use, add the following to **dotsyncrc**
 
-Setup OSX with sensible default options
-
-macports
---------
-
-Install required packages using macports
-
-brew
-----
-
-Install required packages using homebrew
-
-terminal
---------
-
-Colour schemes for terminal programs, iTerm2, Apple Terminal etc
-
-fonts
------
-
-Fonts that maybe required, for powerline status bar etc
-
+    [files]
+    ..
+    bin:bin
+    ..
+    [endfiles]
 
