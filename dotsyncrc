@@ -50,7 +50,7 @@ shell/zsh/fasdrc
 shell/zsh/zlogin
 shell/zsh/zlogout
 shell/zsh/zprofile
-shell/zsh/dotzsh
+shell/zsh/dotzsh:.zsh
 shell/zsh/zshenv
 shell/zsh/zshrc
 [endfiles]
