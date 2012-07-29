@@ -1,8 +1,11 @@
-############################################################################
-# File:         config
-# Author:       Ben O'Hara <bohara@gmail.com>
-# Description:  Config for irssi
-############################################################################    
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# Config for irssi
+#
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
 
 servers = (
   { address = "eu.irc6.net"; chatnet = "IRCnet"; port = "6667"; },
@@ -282,7 +285,7 @@ statusbar = {
   };
 };
 settings = {
-  core = { real_name = "Ben"; user_name = "bohara"; nick = "Ben"; };
+  core = { real_name = "Your Name"; user_name = "username"; nick = "nick"; };
   "fe-text" = { actlist_sort = "refnum"; };
   "perl/core/scripts" = {
     ### For Solarized adv_windowlist.pl script

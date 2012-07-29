@@ -12,8 +12,8 @@ color status green default
 set folder=$HOME/.mail
 set spoolfile="+Gmail/INBOX"
 
-set from      = "bohara@gmail.com"
-set smtp_url  = "smtp://bohara@smtp.gmail.com:587/"
+set from      = "username@gmail.com"
+set smtp_url  = "smtp://username@smtp.gmail.com:587/"
 set mbox      = "+GMail/archive"
 unset record
 set postponed = "+GMail/drafts"

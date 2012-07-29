@@ -4,7 +4,7 @@
 # Work specific options
 #
 # Authors:
-#   Ben O'Hara <boahra@gmail.com>
+#   Ben O'Hara <bohara@gmail.com>
 #
 #
 
@@ -13,8 +13,8 @@ color status cyan default
 set folder=$HOME/.mail/
 set spoolfile="+Work/INBOX"
 
-set from      = "bohara@apnic.net"
-set smtp_url  = "smtp://bohara@asmtp.apnic.net:587/"
+set from      = "username@work.com"
+set smtp_url  = "smtp://username@smtp.work.com:587/"
 set mbox      = "+Work/Archive"
 set record    = "+Work/Sent"
 set postponed = "+Work/Drafts"

@@ -1,3 +1,12 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# Use offlineimap to pull mail
+#
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
+
 # In the general section
 [general]
 # Controls how many accounts may be synced simultaneously
@@ -20,7 +29,7 @@ localfolders = ~/.mail/GMail/
 
 [Repository GMail-remote]
 type = Gmail
-remoteuser = bohara@gmail.com
+remoteuser = username@gmail.com
 # "[GMail]/Some Folder" --> some_folder
 nametrans = lambda folder: re.sub('^inbox$', 'INBOX',
                            re.sub(' +', '_',
@@ -42,8 +51,8 @@ localfolders = ~/.mail/Work/
 
 [Repository Work-remote]
 type = IMAP
-remotehost = imaps.apnic.net
-remoteuser = bohara
+remotehost = imap.work.com
+remoteuser = username
 ssl = yes
 
 [mbnames]
