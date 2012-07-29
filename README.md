@@ -65,7 +65,8 @@ To keep your fork upto date with additions to the dotphiles repo, do the followi
 
     cd ~/.dotfiles
     git remote add upstream https://github.com/dotphiles/dotphiles
-    git pull --ff-only upstream master
+    git fetch upstream
+    git merge upstream/master
 
 Contribute
 ----------
