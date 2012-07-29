@@ -2,7 +2,7 @@
 [general]
 # Controls how many accounts may be synced simultaneously
 maxsyncaccounts = 2
-accounts=GMail,APNIC
+accounts=GMail,Work
 
 # In the account identifier
 [Account GMail]
@@ -27,20 +27,20 @@ nametrans = lambda folder: re.sub('^inbox$', 'INBOX',
                            re.sub(r'.*/(.*)$', r'\1', folder).lower()))
 
 # In the account identifier
-[Account APNIC]
+[Account Work]
 # Minutes between syncs
 autorefresh = 5
 # Number of quick-syncs between autorefreshes. Quick-syncs do not update if the
 # only changes were to IMAP flags
 quick = 10
-localrepository = APNIC-local
-remoterepository = APNIC-remote
+localrepository = Work-local
+remoterepository = Work-remote
 
-[Repository APNIC-local]
+[Repository Work-local]
 type = Maildir
-localfolders = ~/.mail/APNIC/
+localfolders = ~/.mail/Work/
 
-[Repository APNIC-remote]
+[Repository Work-remote]
 type = IMAP
 remotehost = imaps.apnic.net
 remoteuser = bohara
