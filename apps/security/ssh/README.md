@@ -1,13 +1,13 @@
-gnupg
-=====
+ssh
+===
 
-Adds config for gnupg
+Adds config for openssh
 
 To use, add the following to **dotsyncrc**
 
     [files]
     ..
-    gnupg
+    apps/security/ssh
     ..
     [endfiles]
 

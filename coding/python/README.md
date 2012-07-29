@@ -7,7 +7,7 @@ To use, add the following to **dotsyncrc**
 
     [files]
     ..
-    python/pythonrc
+    coding/python/pythonrc
     ..
     [endfiles]
 
