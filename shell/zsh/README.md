@@ -7,12 +7,13 @@ To use, add the following to **dotsyncrc**
 
     [files]
     ..
-    zsh/dotzsh:.zsh
-    zsh/zshrc
-    zsh/zshenv
-    zsh/zprofile
-    zsh/zlogin
-    zsh/zlogout
+    shell/zsh/fasdrc
+    shell/zsh/dotzsh:.zsh
+    shell/zsh/zshrc
+    shell/zsh/zshenv
+    shell/zsh/zprofile
+    shell/zsh/zlogin
+    shell/zsh/zlogout
     ..
     [endfiles]
 

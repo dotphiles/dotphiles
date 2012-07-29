@@ -1,0 +1,15 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# Ignore these files from gnupg
+#
+
+secring.gpg
+pubring.gpg
+trustdb.gpg
+gpg-agent.env
+sshcontrol
+random*
+private*
+*~
+
