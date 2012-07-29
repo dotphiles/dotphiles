@@ -1,0 +1,26 @@
+###
+# gmx specific options
+###
+
+color status cyan default
+
+set folder=$HOME/.mail/
+set spoolfile="+APNIC/INBOX"
+
+set from      = "bohara@apnic.net"
+set smtp_url  = "smtp://bohara@asmtp.apnic.net:587/"
+set mbox      = "+APNIC/Archive"
+set record    = "+APNIC/Sent"
+set postponed = "+APNIC/Drafts"
+
+macro index E \
+    "<change-folder>+GMX/Archive<enter><limit>~B " \
+    "search everything"
+
+macro index D \
+    "<save-message>+GMX/Trash<enter>" \
+    "move message to the trash"
+
+macro index S \
+    "<save-message>+GMX/Spam<enter>"  \
+        "mark message as spam"

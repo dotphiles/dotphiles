@@ -23,5 +23,5 @@ alternates ALTERNATEADDRESSES
 
 source $HOME/mutt/colors/solarized
 
-source $HOME/.mutt/muttrc
+source $HOME/.mutt/global
 

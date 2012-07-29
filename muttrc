@@ -9,12 +9,8 @@
 
 # Setup mailboxes
 
-set smtp_url="smtp://bohara@asmtp.apnic.net:587/"
-
-set mbox_type=Maildir
-
-set folder=$HOME/.mail
-set spoolfile=+"gmail/inbox"
+set folder=$HOME/.mail/
+set spoolfile="+GMail/INBOX"
 
 set reverse_name=yes
 set from=bohara@gmail.com
@@ -23,5 +19,9 @@ alternates bohara@apnic.net
 
 source $HOME/.mutt/colors/solarized
 
-source $HOME/.mutt/muttrc
+source $HOME/.mutt/global
+
+# account specific sources
+folder-hook GMail/* source ~/.mutt/gmail
+folder-hook APNIC/* source ~/.mutt/apnic
 
