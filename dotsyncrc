@@ -13,38 +13,42 @@
 # dotfiles to symlink
 #
 # srcfile:dstfile
-# dstfile will be '.$srcfile' by default
+# dstfile will be '.$srcfile' by default (with path removed)
 #
 [files]
-##bin:bin
+# Uncomment examples below
+#bin:bin
 dotsyncrc
-##editor/editrc:.editrc
-##editor/fasdrc:.fasdrc
-##git/gitconfig:.gitconfig
-##git/gitignore:.gitignore
-##gnupg
-##grc
-##mercurial/hgrc:.hgrc
-##mercurial/hgignore:.hgignore
-##hushlogin
-##editor/inputrc:.inputrc
-##screen/screenrc:.screenrc
-##ssh
-##subversion
-##taskwarrior/task:.task
-##taskwarrior/taskrc:.taskrc
-##git/tigrc:.tigrc
-##tmux/tmux.conf:.tmux.conf
-##tmux/tmuxinator:.tmuxinator
-##python/pythonrc:.pythonrc
-##vim/dotvim:.vim
-##vim/vimrc:.vimrc
-##zsh/zlogin:.zlogin
-##zsh/zlogout:.zlogout
-##zsh/zprofile:.zprofile
-##zsh/dotzsh:.zsh
-##zsh/zshenv:.zshenv
-##zsh/zshrc:.zshrc
+#apps/taskwarrior/task
+#apps/taskwarrior/taskrc
+#dev/python/pythonrc
+#dev/ruby/irbrc
+#dev/ruby/pryrc
+#dev/ruby/gemrc
+#editor/editrc
+#editor/fasdrc
+#editor/inputrc
+#editor/vim/dotvim:.vim
+#editor/vim/vimrc
+#mux/screen/screenrc
+#mux/tmux/tmux.conf
+#mux/tmux/tmuxinator
+#sec/gnupg
+#sec/ssh
+#shell/grc
+#shell/hushlogin
+#shell/zsh/zlogin
+#shell/zsh/zlogout
+#shell/zsh/zprofile
+#shell/zsh/dotzsh
+#shell/zsh/zshenv
+#shell/zsh/zshrc
+#vcs/git/gitconfig
+#vcs/git/gitignore
+#vcs/git/tigrc
+#vcs/mercurial/hgrc
+#vcs/mercurial/hgignore
+#vcs/subversion
 [endfiles]
 
 # Hosts to sync
