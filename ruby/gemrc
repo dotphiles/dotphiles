@@ -1,3 +1,12 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# Setup gem
+#
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
+
 ---
 :update_sources: true
 :verbose: true
@@ -5,3 +14,4 @@
 :backtrace: false
 :benchmark: false
 gem: --no-ri --no-rdoc
+

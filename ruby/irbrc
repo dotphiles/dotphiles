@@ -1,4 +1,13 @@
 #!/usr/bin/ruby
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# Setup irb
+#
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
+
 require 'irb/completion'
 require 'irb/ext/save-history'
 require 'rubygems'

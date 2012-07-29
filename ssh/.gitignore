@@ -1,0 +1,11 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# Ignore these files from ssh
+#
+
+id*
+environment*
+known_hosts
+master/*
+

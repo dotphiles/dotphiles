@@ -1,3 +1,12 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# Setup pry
+#
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
+
 def require_without_bundler gem
   gem_path = Dir.glob("#{Gem.path.first}/gems/#{gem}*/lib").first
   $LOAD_PATH << gem_path
