@@ -19,14 +19,14 @@
 # Uncomment examples below
 #bin:bin
 dotsyncrc
-#apps/gnupg
-#apps/ssh
+#apps/security/gnupg
+#apps/security/ssh
 #apps/chat/irssi
-#apps/taskwarrior/task
-#apps/taskwarrior/taskrc
-#apps/screen/screenrc
-#apps/tmux/tmux.conf
-#apps/tmux/tmuxinator
+#apps/todo/taskwarrior/task
+#apps/todo/taskwarrior/taskrc
+#apps/mux/screen/screenrc
+#apps/mux/tmux/tmux.conf
+#apps/mux/tmux/tmuxinator
 #apps/mail/mutt
 #apps/mail/muttrc
 #apps/mail/offlineimaprc
