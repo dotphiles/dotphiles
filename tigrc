@@ -1,0 +1,17 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# tig config
+#
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
+
+set show-date = relative
+set show-rev-graph = yes
+set show-refs = yes
+set show-line-numbers = yes
+set line-number-interval = 5
+set tab-size = 2
+set commit-encoding = "UTF-8"
+
