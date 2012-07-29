@@ -19,7 +19,6 @@
 # Uncomment examples below
 bin:bin
 dotsyncrc
-<<<<<<< HEAD
 apps/security/gnupg
 apps/security/ssh
 apps/chat/irssi
