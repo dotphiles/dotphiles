@@ -38,6 +38,7 @@ taskwarrior/task
 taskwarrior/taskrc
 tmux/tmux.conf
 tmux/tmuxinator
+mysql/my.cnf
 ruby/irbrc
 ruby/pryrc
 ruby/gemrc

@@ -48,7 +48,7 @@ ssl = yes
 
 [mbnames]
 enabled = yes
-filename = ~/.mutt/mailboxes
+filename = ~/.mutt/.mailboxes
 header = "mailboxes "
 peritem = "=%(accountname)s/%(foldername)s"
 sep = " "
