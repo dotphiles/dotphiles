@@ -35,6 +35,7 @@ ssh
 subversion
 task
 taskrc
+tigrc
 tmux.conf
 tmuxinator
 pythonrc

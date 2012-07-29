@@ -51,13 +51,21 @@ Add your name, email and gpg keyid to *gitconfig*
 
 Add your known hosts to *ssh/config* and your public key to *ssh/authorized_keys*
 
-Terminal
---------
+### Terminal
 
 dotphiles is set to use the solarized theme, so you need to install the
 colors scheme and fonts for your terminal,
 
 see the files in *~/.dotfiles/bootstrap*
+
+Updating
+--------
+
+To keep your fork upto date with additions to the dotphiles repo, do the following
+
+    cd ~/.dotfiles
+    git remote add upstream https://github.com/dotphiles/dotphiles
+    git pull --ff-only upstream master
 
 Contribute
 ----------
