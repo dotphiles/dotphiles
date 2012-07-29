@@ -1,0 +1,8 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# Ignore these files from taskwarrior
+#
+
+*.data
+
