@@ -1,0 +1,11 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# Ignore these files from gnupg when rsyncing to remote machines
+#
+
+secring.gpg
+sshcontrol
+gpg-agent.env
+private*
+

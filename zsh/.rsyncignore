@@ -1,0 +1,8 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# Ignore these files from zsh when rsyncing to remote machines
+#
+
+dotzsh/modules/*/cache.zsh
+
