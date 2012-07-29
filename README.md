@@ -6,8 +6,10 @@ cross platform and degrade for older machines
 
 ### Why would I want my dotfiles on GitHub?
 
-  - **Backup**, **restore**, and **sync** the prefs and settings for your toolbox. Your dotfiles might be the most important files on your machine.
-  - **Learn** from the community. Discover new tools for your toolbox and new tricks for the ones you already use.
+  - **Backup**, **restore**, and **sync** the prefs and settings for your 
+    toolbox. Your dotfiles might be the most important files on your machine.
+  - **Learn** from the community. Discover new tools for your toolbox and new 
+    tricks for the ones you already use.
   - **Share** what you've learned with the rest of us.
 
 
@@ -31,9 +33,16 @@ Then symlink then into place with
 Settings
 --------
 
+### Terminal
+
+dotphiles is set to use the solarized theme, so you need to install the
+colors scheme and fonts for your terminal,
+
+see the files in *~/.dotfiles/bootstrap*
+
 ### [dotsync](https://github.com/dotphiles/dotsync)
 
-Add your dotfiles and machines to sync into *dotsyncrc*
+Add the dotfiles and machines to sync into *dotsyncrc*
 
 ### [dotzsh](https://github.com/dotphiles/dotzsh)
 
@@ -51,13 +60,15 @@ Add your name, email and gpg keyid to *gitconfig*
 
 Add your known hosts to *ssh/config* and your public key to *ssh/authorized_keys*
 
-Terminal
+Updating
 --------
 
-dotphiles is set to use the solarized theme, so you need to install the
-colors scheme and fonts for your terminal,
+To keep your fork upto date with additions to the dotphiles repo, do the following
 
-see the files in *~/.dotfiles/bootstrap*
+    cd ~/.dotfiles
+    git remote add upstream https://github.com/dotphiles/dotphiles
+    git fetch upstream
+    git merge upstream/master
 
 Contribute
 ----------
