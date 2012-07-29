@@ -1,13 +1,13 @@
-gnupg
+mysql
 =====
 
-Adds config for gnupg
+Config for mysql client
 
 To use, add the following to **dotsyncrc**
 
     [files]
     ..
-    security/gnupg
+    coding/mysql/my.cnf
     ..
     [endfiles]
 
