@@ -13,37 +13,47 @@
 # dotfiles to symlink
 #
 # srcfile:dstfile
-# dstfile will be '.$srcfile' by default
+# dstfile will be '.$srcfile' by default (with path removed)
 #
 [files]
-##bin:bin
+# Uncomment examples below
+#bin:bin
 dotsyncrc
-##editrc
-##fasdrc
-##gitconfig
-##gitignore
-##gnupg
-##grc
-##hgrc
-##hushlogin
-##inputrc
-##screenrc
-##ssh
-##subversion
-##task
-##taskrc
-##tigrc
-##tmux.conf
-##tmuxinator
-##pythonrc
-##vim
-##vimrc
-##zlogin
-##zlogout
-##zprofile
-##zsh
-##zshenv
-##zshrc
+#apps/security/gnupg
+#apps/security/ssh
+#apps/chat/irssi
+#apps/todo/taskwarrior/task
+#apps/todo/taskwarrior/taskrc
+#apps/mux/screen/screenrc
+#apps/mux/tmux/tmux.conf
+#apps/mux/tmux/tmuxinator
+#apps/mail/mutt
+#apps/mail/muttrc
+#apps/mail/offlineimaprc
+#coding/python/pythonrc
+#coding/ruby/irbrc
+#coding/ruby/pryrc
+#coding/ruby/gemrc
+#coding/vcs/git/gitconfig
+#coding/vcs/git/gitignore
+#coding/vcs/git/tigrc
+#coding/vcs/mercurial/hgrc
+#coding/vcs/mercurial/hgignore
+#coding/vcs/subversion
+#editor/editrc
+#editor/inputrc
+#editor/vim/dotvim:.vim
+#editor/vim/vimrc
+#editor/vim/gvimrc
+#shell/grc
+#shell/hushlogin
+#shell/zsh/fasdrc
+#shell/zsh/dotzsh:.zsh
+#shell/zsh/zlogin
+#shell/zsh/zlogout
+#shell/zsh/zprofile
+#shell/zsh/zshenv
+#shell/zsh/zshrc
 [endfiles]
 
 # Hosts to sync
