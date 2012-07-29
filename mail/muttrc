@@ -10,7 +10,7 @@
 # Setup mailboxes
 
 set folder=$HOME/.mail/
-set spoolfile="+GMail/INBOX"
+set spoolfile="+Gmail/INBOX"
 
 set reverse_name=yes
 set from=bohara@gmail.com
@@ -22,7 +22,8 @@ source $HOME/.mutt/colors/solarized
 source $HOME/.mutt/config/global
 
 source ~/.mutt/mailboxes.offlineimap
+
 # account specific sources
-folder-hook GMail/* source ~/.mutt/gmail
+folder-hook Gmail/* source ~/.mutt/gmail
 folder-hook APNIC/* source ~/.mutt/work
 

@@ -11,26 +11,26 @@
 [general]
 # Controls how many accounts may be synced simultaneously
 maxsyncaccounts = 2
-accounts=GMail,Work
+accounts=Gmail,Work
 
 # In the account identifier
-[Account GMail]
+[Account Gmail]
 # Minutes between syncs
 autorefresh = 5
 # Number of quick-syncs between autorefreshes. Quick-syncs do not update if the
 # only changes were to IMAP flags
 quick = 10
-localrepository = GMail-local
-remoterepository = GMail-remote
+localrepository = Gmail-local
+remoterepository = Gmail-remote
 
-[Repository GMail-local]
+[Repository Gmail-local]
 type = Maildir
-localfolders = ~/.mail/GMail/
+localfolders = ~/.mail/Gmail/
 
-[Repository GMail-remote]
+[Repository Gmail-remote]
 type = Gmail
 remoteuser = bohara@gmail.com
-# "[GMail]/Some Folder" --> some_folder
+# "[Gmail]/Some Folder" --> some_folder
 nametrans = lambda folder: re.sub('^inbox$', 'INBOX',
                            re.sub(' +', '_',
                            re.sub(r'.*/(.*)$', r'\1', folder).lower()))
