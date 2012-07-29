@@ -30,6 +30,7 @@ dotsyncrc
 #coding/mercurial/hgrc
 #coding/mercurial/hgignore
 #coding/subversion
+#coding/sqlite/sqliterc
 #editor/editrc
 #editor/inputrc
 #editor/vim/dotvim:.vim
