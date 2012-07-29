@@ -4,6 +4,13 @@ dotphiles
 A framework of dotfiles for the usual terminal apps and shells designed to be
 cross platform and degrade for older machines
 
+### Why would I want my dotfiles on GitHub?
+
+  - **Backup**, **restore**, and **sync** the prefs and settings for your toolbox. Your dotfiles might be the most important files on your machine.
+  - **Learn** from the community. Discover new tools for your toolbox and new tricks for the ones you already use.
+  - **Share** what you've learned with the rest of us.
+
+
 Installation
 ------------
 
@@ -44,13 +51,21 @@ Add your name, email and gpg keyid to *gitconfig*
 
 Add your known hosts to *ssh/config* and your public key to *ssh/authorized_keys*
 
-Terminal
---------
+### Terminal
 
 dotphiles is set to use the solarized theme, so you need to install the
 colors scheme and fonts for your terminal,
 
 see the files in *~/.dotfiles/bootstrap*
+
+Updating
+--------
+
+To keep your fork upto date with additions to the dotphiles repo, do the following
+
+    cd ~/.dotfiles
+    git remote add upstream https://github.com/dotphiles/dotphiles
+    git pull --ff-only upstream master
 
 Contribute
 ----------
