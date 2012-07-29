@@ -5,5 +5,5 @@
 #
 
 cache/*
-.mailboxes
+mailboxes.offlineimap
 
