@@ -7,7 +7,7 @@ To use, add the following to **dotsyncrc**
 
     [files]
     ..
-    grc
+    shell/grc
     ..
     [endfiles]
 

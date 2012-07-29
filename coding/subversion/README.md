@@ -1,13 +1,13 @@
-python
-======
+subversion
+==========
 
-Adds tab completion for python
+Adds config for svn
 
 To use, add the following to **dotsyncrc**
 
     [files]
     ..
-    python/pythonrc
+    coding/subversion
     ..
     [endfiles]
 

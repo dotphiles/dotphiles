@@ -1,13 +1,13 @@
-ssh
-===
+python
+======
 
-Adds config for openssh
+Adds tab completion for python
 
 To use, add the following to **dotsyncrc**
 
     [files]
     ..
-    ssh
+    coding/python/pythonrc
     ..
     [endfiles]
 

@@ -1,15 +1,13 @@
-ruby
-====
+gnupg
+=====
 
-Configs for ruby related stuff
+Adds config for gnupg
 
 To use, add the following to **dotsyncrc**
 
     [files]
     ..
-    ruby/irbrc
-    ruby/pryrc
-    ruby/gemrc
+    apps/security/gnupg
     ..
     [endfiles]
 
