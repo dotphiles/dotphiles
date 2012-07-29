@@ -1,0 +1,29 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# Setup mutt sidebar
+#
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
+
+# Sidebar
+# set up the sidebar, default not visible
+set meta_key=yes
+set sidebar_width=35
+set sidebar_visible=no
+color sidebar_new color33 default
+set sidebar_delim=' '
+
+#Sidebar Navigation
+bind index \ep sidebar-prev
+bind index \en sidebar-next
+bind index \eo sidebar-open
+bind pager \ep sidebar-prev
+bind pager \en sidebar-next
+bind pager \eo sidebar-open
+
+# b toggles sidebar visibility
+macro index b '<enter-command>toggle sidebar_visible<enter>'
+macro pager b '<enter-command>toggle sidebar_visible<enter>'
+

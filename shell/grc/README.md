@@ -1,13 +1,13 @@
-bin
+grc
 ===
 
-Add any of your own local scripts to this dir, it will be added to the path
+Adds config for grc
 
 To use, add the following to **dotsyncrc**
 
     [files]
     ..
-    bin:bin
+    shell/grc
     ..
     [endfiles]
 

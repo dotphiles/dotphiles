@@ -1,13 +1,13 @@
-bin
+ssh
 ===
 
-Add any of your own local scripts to this dir, it will be added to the path
+Adds config for openssh
 
 To use, add the following to **dotsyncrc**
 
     [files]
     ..
-    bin:bin
+    apps/security/ssh
     ..
     [endfiles]
 
