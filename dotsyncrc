@@ -42,7 +42,7 @@ ruby/irbrc
 ruby/pryrc
 ruby/gemrc
 python/pythonrc
-vim/dotvim
+vim/dotvim:.vim
 vim/gvimrc
 vim/vimrc
 vim/fasdrc

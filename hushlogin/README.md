@@ -7,7 +7,7 @@ To use, add the following to **dotsyncrc**
 
     [files]
     ..
-    hushlogin/hushlogin:.hushlogin
+    hushlogin/hushlogin
     ..
     [endfiles]
 

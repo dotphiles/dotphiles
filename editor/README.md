@@ -7,8 +7,8 @@ To use, add the following to **dotsyncrc**
 
     [files]
     ..
-    editor/editrc:.editrc
-    editor/inputrc:.inputrc
+    editor/editrc
+    editor/inputrc
     ..
     [endfiles]
 

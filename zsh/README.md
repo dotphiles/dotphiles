@@ -8,11 +8,11 @@ To use, add the following to **dotsyncrc**
     [files]
     ..
     zsh/dotzsh:.zsh
-    zsh/zshrc:.zshrc
-    zsh/zshenv:.zshenv
-    zsh/zprofile:.zprofile
-    zsh/zlogin:.zlogin
-    zsh/zlogout:.zlogout
+    zsh/zshrc
+    zsh/zshenv
+    zsh/zprofile
+    zsh/zlogin
+    zsh/zlogout
     ..
     [endfiles]
 

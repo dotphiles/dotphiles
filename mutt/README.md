@@ -8,8 +8,8 @@ To use, add the following to **dotsyncrc**
     [files]
     ..
     mutt
-    mutt/muttrc:.muttrc
-    mutt/offlineimaprc:.offlineimaprc
+    mutt/muttrc
+    mutt/offlineimaprc
     ..
     [endfiles]
 

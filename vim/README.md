@@ -8,8 +8,8 @@ To use, add the following to **dotsyncrc**
     [files]
     ..
     vim/dotvim:.vim
-    vim/vimrc:.vimrc
-    vim/fasdrc:.fasdrc
+    vim/vimrc
+    vim/fasdrc
     ..
     [endfiles]
 

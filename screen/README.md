@@ -7,7 +7,7 @@ To use, add the following to **dotsyncrc**
 
     [files]
     ..
-    screen/screenrc:.screenrc
+    screen/screenrc
     ..
     [endfiles]
 

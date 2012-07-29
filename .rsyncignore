@@ -5,7 +5,6 @@
 #
 
 .git/
-backup/
 ssh/id*
 ssh/environment*
 ssh/known_hosts
