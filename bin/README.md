@@ -10,3 +10,4 @@ To use, add the following to **dotsyncrc**
     bin:bin
     ..
     [endfiles]
+

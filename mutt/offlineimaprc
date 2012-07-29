@@ -1,3 +1,12 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# Use offlineimap to pull mail
+#
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
+
 # In the general section
 [general]
 # Controls how many accounts may be synced simultaneously
@@ -53,3 +62,4 @@ header = "mailboxes "
 peritem = "=%(accountname)s/%(foldername)s"
 sep = " "
 footer = "\n"
+
