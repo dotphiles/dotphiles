@@ -7,9 +7,9 @@ To use, add the following to **dotsyncrc**
 
     [files]
     ..
-    ruby/irbrc
-    ruby/pryrc
-    ruby/gemrc
+    coding/ruby/irbrc
+    coding/ruby/pryrc
+    coding/ruby/gemrc
     ..
     [endfiles]
 

@@ -1,13 +1,13 @@
-subversion
-==========
+screen
+======
 
-Adds config for svn
+Adds configuration for screen
 
 To use, add the following to **dotsyncrc**
 
     [files]
     ..
-    subversion
+    apps/mux/screen/screenrc
     ..
     [endfiles]
 

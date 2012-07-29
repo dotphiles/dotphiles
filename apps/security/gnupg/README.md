@@ -1,13 +1,13 @@
-screen
-======
+gnupg
+=====
 
-Adds configuration for screen
+Adds config for gnupg
 
 To use, add the following to **dotsyncrc**
 
     [files]
     ..
-    screen/screenrc
+    apps/security/gnupg
     ..
     [endfiles]
 
