@@ -1,13 +1,13 @@
-gnupg
+irssi
 =====
 
-Adds config for gnupg
+Config for irssi
 
 To use, add the following to **dotsyncrc**
 
     [files]
     ..
-    security/gnupg
+    chat/irssi
     ..
     [endfiles]
 
