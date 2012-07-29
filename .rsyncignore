@@ -5,18 +5,18 @@
 #
 
 .git/
-apps/security/ssh/id*
-apps/security/ssh/environment*
-apps/security/ssh/known_hosts
-apps/security/ssh/master/*
-apps/security/gnupg/secring.gpg
-apps/security/gnupg/sshcontrol
-apps/security/gnupg/gpg-agent.env
-apps/security/gnupg/private*
+security/ssh/id*
+security/ssh/environment*
+security/ssh/known_hosts
+security/ssh/master/*
+security/gnupg/secring.gpg
+security/gnupg/sshcontrol
+security/gnupg/gpg-agent.env
+security/gnupg/private*
 editor/vim/.*
 editor/vim/*.swp
 editor/vim/backup/
-apps/mail/mutt/cache/.*
+mail/mutt/cache/.*
 coding/subversion/auth/
 shell/zsh/modules/*/cache.zsh
 
