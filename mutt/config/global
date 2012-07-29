@@ -41,7 +41,7 @@ set pager_index_lines=10
 macro index M "T.*\n;WN" "Mark all messages as read"
 
 # Settings
-source ~/.mutt/mailboxes
+source ~/.mutt/.mailboxes
 source ~/.mutt/config/pgp
 source ~/.mutt/config/smime
 source ~/.mutt/config/sidebar

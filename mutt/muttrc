@@ -19,9 +19,9 @@ alternates bohara@apnic.net
 
 source $HOME/.mutt/colors/solarized
 
-source $HOME/.mutt/global
+source $HOME/.mutt/config/global
 
 # account specific sources
 folder-hook GMail/* source ~/.mutt/gmail
-folder-hook APNIC/* source ~/.mutt/apnic
+folder-hook APNIC/* source ~/.mutt/work
 

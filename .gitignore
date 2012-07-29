@@ -1,27 +1,10 @@
 #
 # dotphiles : https://github.com/dotphiles/dotphiles
 #
-# Ignore these files in this repo.
+# Ignore these files globally in this repo.
 #
 
 *.local
 *.swp
 .DS_Store
-mutt/cache/
-mutt/mailboxes
-ssh/id*
-ssh/environment*
-ssh/known_hosts
-ssh/master/*
-subversion/README.txt
-subversion/auth/*
-gnupg/secring.gpg
-gnupg/pubring.gpg
-gnupg/trustdb.gpg
-gnupg/gpg-agent.env
-gnupg/sshcontrol
-gnupg/random*
-gnupg/private*
-gnupg/*~
-task/*.data
 

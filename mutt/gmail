@@ -1,6 +1,12 @@
-###
-# gmail specific options
-###
+#
+# dotphiles : https://github.com/dotphiles/dothiles
+#
+# GMail specific options
+#
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
+
 color status green default
 
 set folder=$HOME/.mail
