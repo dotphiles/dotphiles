@@ -21,6 +21,7 @@ source $HOME/.mutt/colors/solarized
 
 source $HOME/.mutt/config/global
 
+source ~/.mutt/mailboxes.offlineimap
 # account specific sources
 folder-hook GMail/* source ~/.mutt/gmail
 folder-hook APNIC/* source ~/.mutt/work
