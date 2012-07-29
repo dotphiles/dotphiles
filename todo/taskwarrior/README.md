@@ -7,8 +7,8 @@ To use, add the following to **dotsyncrc**
 
     [files]
     ..
-    apps/todo/taskwarrior/task
-    apps/todo/taskwarrior/taskrc
+    todo/taskwarrior/task
+    todo/taskwarrior/taskrc
     ..
     [endfiles]
 
