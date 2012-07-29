@@ -17,19 +17,9 @@
 #
 [files]
 # Uncomment examples below
-bin:bin
 dotsyncrc
-apps/security/gnupg
-apps/security/ssh
-apps/chat/irssi
-apps/todo/taskwarrior/task
-apps/todo/taskwarrior/taskrc
-apps/mux/screen/screenrc
-apps/mux/tmux/tmux.conf
-apps/mux/tmux/tmuxinator
-apps/mail/mutt
-apps/mail/muttrc
-apps/mail/offlineimaprc
+bin:bin
+chat/irssi
 coding/python/pythonrc
 coding/ruby/irbrc
 coding/ruby/pryrc
@@ -45,6 +35,17 @@ editor/inputrc
 editor/vim/dotvim:.vim
 editor/vim/vimrc
 editor/vim/gvimrc
+mail/mutt
+mail/muttrc
+mail/offlineimaprc
+mux/screen/screenrc
+mux/tmux/tmux.conf
+mux/tmux/tmuxinator
+mail/mutt
+mail/muttrc
+mail/offlineimaprc
+security/gnupg
+security/ssh
 shell/grc
 shell/hushlogin
 shell/zsh/fasdrc
@@ -54,6 +55,8 @@ shell/zsh/zlogout
 shell/zsh/zprofile
 shell/zsh/zshenv
 shell/zsh/zshrc
+todo/taskwarrior/task
+todo/taskwarrior/taskrc
 [endfiles]
 
 # Hosts to sync
