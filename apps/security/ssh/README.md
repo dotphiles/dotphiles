@@ -1,13 +1,13 @@
-subversion
-==========
+ssh
+===
 
-Adds config for svn
+Adds config for openssh
 
 To use, add the following to **dotsyncrc**
 
     [files]
     ..
-    subversion
+    apps/security/ssh
     ..
     [endfiles]
 

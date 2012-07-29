@@ -7,7 +7,7 @@ To use, add the following to **dotsyncrc**
 
     [files]
     ..
-    screen/screenrc
+    apps/mux/screen/screenrc
     ..
     [endfiles]
 

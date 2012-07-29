@@ -7,9 +7,9 @@ To use, add the following to **dotsyncrc**
 
     [files]
     ..
-    git/gitconfig
-    git/gitignore
-    git/tigrc
+    coding/git/gitconfig
+    coding/git/gitignore
+    coding/git/tigrc
     ..
     [endfiles]
 

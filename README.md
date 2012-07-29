@@ -45,19 +45,25 @@ Add the dotfiles and machines to sync into **dotsyncrc**
 
 ### [dotzsh](https://github.com/dotphiles/dotzsh)
 
-Add your own settings to **zsh/zshrc**, **zsh/zshenv**, **zsh/zlogin**, **zsh/zlogout** and **zsh/zprofile**
+Add your own settings to 
+
+  - **shell/zsh/zshrc**
+  - **shell/zsh/zshenv**
+  - **shell/zsh/zlogin**
+  - **shell/zsh/zlogout**
+  - **shell/zsh/zprofile**
 
 ### [dotvim](https://github.com/dotphiles/dotvim)
 
-Add your own settings to **vim/vimrc** and start vim to auto install plugins
+Add your own settings to **editor/vim/vimrc** and start vim to auto install plugins
 
 ### git
 
-Add your name, email and gpg keyid to **git/gitconfig**
+Add your name, email and gpg keyid to **coding/git/gitconfig**
 
 ### ssh
 
-Add your hosts to **ssh/config** and your public key to **ssh/authorized_keys**
+Add your hosts to **apps/security/ssh/config** and your public key to **apps/security/ssh/authorized_keys**
 
 Updating
 --------

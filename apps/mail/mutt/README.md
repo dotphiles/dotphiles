@@ -7,9 +7,9 @@ To use, add the following to **dotsyncrc**
 
     [files]
     ..
-    mutt
-    mutt/muttrc
-    mutt/offlineimaprc
+    apps/mail/mutt
+    apps/mail/muttrc
+    apps/mail/offlineimaprc
     ..
     [endfiles]
 
