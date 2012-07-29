@@ -1,7 +1,7 @@
 #
 # dotphiles : https://github.com/dotphiles/dothiles
 #
-# main muttrc to be sourced from ~/.muttrc
+# main global config to be sourced from ~/.muttrc
 #
 # Authors:
 #   Ben O'Hara <bohara@gmail.com>
