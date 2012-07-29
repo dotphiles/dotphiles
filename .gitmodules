@@ -7,10 +7,10 @@
 [submodule "dotsync"]
 	path = dotsync
 	url = https://github.com/dotphiles/dotsync.git
-[submodule "zsh"]
-	path = zsh
+[submodule "zsh/dotzsh"]
+	path = zsh/dotzsh
 	url = https://github.com/dotphiles/dotzsh.git
-[submodule "vim"]
-	path = vim
-    url = https://github.com/dotphiles/dotvim.git
+[submodule "vim/dotvim"]
+	path = vim/dotvim
+	url = https://github.com/dotphiles/dotvim.git
 

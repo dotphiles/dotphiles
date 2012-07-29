@@ -1,0 +1,12 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# mailcap for mutt
+#
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
+
+text/html;      links %s; nametemplate=%s.html
+text/html;      links -dump %s; nametemplate=%s.html; copiousoutput
+
