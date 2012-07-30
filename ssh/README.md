@@ -7,7 +7,7 @@ To use, add the following to **dotsyncrc**
 
     [files]
     ..
-    security/ssh
+    ssh
     ..
     [endfiles]
 

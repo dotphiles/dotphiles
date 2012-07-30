@@ -7,8 +7,9 @@ To use, add the following to **dotsyncrc**
 
     [files]
     ..
-    editor/vim/dotvim:.vim
-    editor/vim/vimrc
+    vim/dotvim:.vim
+    vim/vimrc
+    vim/gvimrc
     ..
     [endfiles]
 
