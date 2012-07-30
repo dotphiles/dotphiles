@@ -1,0 +1,11 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# Setup capistrano
+#
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
+
+require 'capistrano_colors'
+
