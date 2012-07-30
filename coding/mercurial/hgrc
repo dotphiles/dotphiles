@@ -8,7 +8,7 @@
 #
 
 [ui]
-username = Your Name <your@email.com>
+#username = Your Name <your@email.com>
 merge = internal:merge
 
 [extensions]
