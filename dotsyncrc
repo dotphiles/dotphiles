@@ -58,6 +58,8 @@ dotsyncrc
 #shell/zsh/zshrc
 #todo/taskwarrior/task
 #todo/taskwarrior/taskrc
+#www/wget/wgetrc
+#www/curl/curlrc
 [endfiles]
 
 # Hosts to sync
