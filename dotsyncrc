@@ -24,6 +24,7 @@ dotsyncrc
 #coding/ruby/irbrc
 #coding/ruby/pryrc
 #coding/ruby/gemrc
+#coding/ruby/aprc
 #coding/git/gitconfig
 #coding/git/gitignore
 #coding/git/gitattributes
