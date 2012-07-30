@@ -18,4 +18,5 @@ editor/vim/*.swp
 editor/vim/backup/
 mail/mutt/cache/.*
 coding/subversion/auth/
+apps/taskwarrior/task/*.data
 
