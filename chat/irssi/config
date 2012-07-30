@@ -1,3 +1,4 @@
+#B
 #
 # dotphiles : https://github.com/dotphiles/dotphiles
 #
@@ -36,6 +37,7 @@ servers = (
   {
     address = "roddenberry.freenode.net";
     chatnet = "Freenode";
+    password = "HS>H2|pL?rd#K&tc.[hV9qWki";
     port = "6667";
     autoconnect = "yes";
   },
@@ -110,8 +112,8 @@ chatnets = {
 };
 
 channels = (
-  { name = "#zsh"; chatnet = "freenode"; autojoin = "Yes"; },
-  { name = "#dotphiles"; chatnet = "freenode"; autojoin = "Yes"; }
+  { name = "#zsh"; chatnet = "Freenode"; autojoin = "yes"; },
+  { name = "#dotphiles"; chatnet = "Freenode"; autojoin = "yes"; }
 );
 
 aliases = {
@@ -285,7 +287,7 @@ statusbar = {
   };
 };
 settings = {
-  core = { real_name = "Ben"; user_name = "bohara"; nick = "Ben"; };
+  core = { real_name = "Ben"; user_name = "bohara"; nick = "benohara"; };
   "fe-text" = { actlist_sort = "refnum"; };
   "perl/core/scripts" = {
     ### For Solarized adv_windowlist.pl script
