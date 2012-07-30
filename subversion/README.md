@@ -7,7 +7,7 @@ To use, add the following to **dotsyncrc**
 
     [files]
     ..
-    coding/subversion
+    subversion
     ..
     [endfiles]
 
