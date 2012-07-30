@@ -7,7 +7,7 @@ To use, add the following to **dotsyncrc**
 
     [files]
     ..
-    coding/sqlite/sqliterc
+    sqlite/sqliterc
     ..
     [endfiles]
 

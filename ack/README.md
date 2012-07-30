@@ -7,7 +7,7 @@ To use, add the following to **dotsyncrc**
 
     [files]
     ..
-    coding/ack/ackrc
+    ack/ackrc
     ..
     [endfiles]
 

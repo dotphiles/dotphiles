@@ -7,9 +7,11 @@ To use, add the following to **dotsyncrc**
 
     [files]
     ..
-    coding/ruby/irbrc
-    coding/ruby/pryrc
-    coding/ruby/gemrc
+    ruby/irbrc
+    ruby/pryrc
+    ruby/gemrc
+    ruby/railsrc
+    ruby/rdebugrc
     ..
     [endfiles]
 
