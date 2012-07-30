@@ -48,9 +48,6 @@ mail/offlineimaprc
 mux/screen/screenrc
 mux/tmux/tmux.conf
 mux/tmux/tmuxinator
-mail/mutt
-mail/muttrc
-mail/offlineimaprc
 security/gnupg
 security/ssh
 shell/grc
