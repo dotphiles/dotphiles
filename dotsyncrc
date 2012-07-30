@@ -36,11 +36,13 @@ mercurial/hgrc
 mercurial/hgignore
 mutt
 mutt/muttrc
-offlineimap/offlineimaprc
+mutt/offlineimaprc
 python/pythonrc
 ruby/irbrc
 ruby/pryrc
 ruby/gemrc
+ruby/railsrc
+ruby/rdebugrc
 screen/screenrc
 shell/hushlogin
 ssh

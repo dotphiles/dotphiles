@@ -7,7 +7,7 @@ To use, add the following to **dotsyncrc**
 
     [files]
     ..
-    security/gnupg
+    gnupg
     ..
     [endfiles]
 

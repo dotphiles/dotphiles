@@ -7,10 +7,11 @@ To use, add the following to **dotsyncrc**
 
     [files]
     ..
-    coding/git/gitconfig
-    coding/git/gitignore
-    coding/git/tigrc
-    coding/git/gitk
+    git/gitconfig
+    git/gitignore
+    git/gitattributes
+    git/tigrc
+    git/gitk
     ..
     [endfiles]
 

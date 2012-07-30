@@ -7,8 +7,8 @@ To use, add the following to **dotsyncrc**
 
     [files]
     ..
-    mux/tmux/tmux.conf
-    mux/tmux/tmuxinator
+    tmux/tmux.conf
+    tmux/tmuxinator
     ..
     [endfiles]
 
