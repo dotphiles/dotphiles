@@ -337,8 +337,8 @@ defaults write com.apple.DiskUtility DUDebugMenuEnabled -bool true
 defaults write com.apple.terminal StringEncodings -array 4
 
 # Use the Pro theme by default in Terminal.app
-defaults write com.apple.Terminal "Default Window Settings" -string "Pro"
-defaults write com.apple.Terminal "Startup Window Settings" -string "Pro"
+defaults write com.apple.Terminal "Default Window Settings" -string "Solarized Dark"
+defaults write com.apple.Terminal "Startup Window Settings" -string "Solarized Dark"
 
 # Enable “focus follows mouse” for Terminal.app and all X11 apps
 # This means you can hover over a window and start typing in it without clicking first
@@ -379,6 +379,20 @@ defaults write com.twitter.twitter-mac ShowFullNames -bool true
 
 # Hide the app in the background if it’s not the front-most window
 defaults write com.twitter.twitter-mac HideInBackground -bool true
+
+###############################################################################
+# Macports                                                                    #
+###############################################################################
+
+if [[ -f macports ]]; then
+  exec<macports
+  while read line
+  do
+    if [[ ! "$line" =~ (^#|^$) ]]; then
+      sudo port install $line
+    fi
+  done
+fi
 
 ###############################################################################
 # Kill affected applications                                                  #
