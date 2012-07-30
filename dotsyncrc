@@ -55,8 +55,10 @@ dotsyncrc
 #zsh/zprofile
 #zsh/zshenv
 #zsh/zshrc
-#taskwarrior/task
-#taskwarrior/taskrc
+#task/task
+#task/taskrc
+#curl/curlrc
+#wget/wgetrc
 [endfiles]
 
 # Hosts to sync
