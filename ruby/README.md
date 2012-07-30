@@ -12,6 +12,8 @@ To use, add the following to **dotsyncrc**
     ruby/gemrc
     ruby/railsrc
     ruby/rdebugrc
+    ruby/aprc
+    ruby/caprc
     ..
     [endfiles]
 

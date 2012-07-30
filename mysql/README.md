@@ -7,7 +7,7 @@ To use, add the following to **dotsyncrc**
 
     [files]
     ..
-    coding/mysql/my.cnf
+    mysql/my.cnf
     ..
     [endfiles]
 
