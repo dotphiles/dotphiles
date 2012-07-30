@@ -38,7 +38,7 @@ mutt
 mutt/muttrc
 mutt/offlineimaprc
 python/pythonrc
-python/pythonrc
+python/pylintrc
 ruby/irbrc
 ruby/pryrc
 ruby/gemrc
