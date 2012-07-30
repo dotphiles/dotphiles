@@ -18,13 +18,13 @@
 [files]
 # Uncomment examples below
 dotsyncrc
-<<<<<<< HEAD
 bin:bin
 chat/irssi
 coding/python/pythonrc
 coding/ruby/irbrc
 coding/ruby/pryrc
 coding/ruby/gemrc
+coding/ruby/aprc
 coding/git/gitconfig
 coding/git/gitignore
 coding/git/gitattributes
