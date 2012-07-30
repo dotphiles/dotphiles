@@ -10,6 +10,7 @@ To use, add the following to **dotsyncrc**
     coding/git/gitconfig
     coding/git/gitignore
     coding/git/tigrc
+    coding/git/gitk
     ..
     [endfiles]
 
