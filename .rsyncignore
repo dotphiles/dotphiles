@@ -19,4 +19,5 @@ editor/vim/backup/
 mail/mutt/cache/.*
 coding/subversion/auth/
 shell/zsh/modules/*/cache.zsh
+apps/taskwarrior/task/*.data
 
