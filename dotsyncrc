@@ -26,6 +26,7 @@ dotsyncrc
 #coding/ruby/gemrc
 #coding/git/gitconfig
 #coding/git/gitignore
+#coding/git/gitattributes
 #coding/git/tigrc
 #coding/mercurial/hgrc
 #coding/mercurial/hgignore
