@@ -46,7 +46,7 @@ Add the dotfiles and machines to sync into *dotsyncrc*
 
 ### [dotzsh](https://github.com/dotphiles/dotzsh)
 
-Add your own settings to *zshrc*, *zshenv*, *zlogin*, *zlogout* and *zprofile* in **shell/zsh/**
+Add your own settings to *zshrc*, *zshenv*, *zlogin*, *zlogout* and *zprofile* in *shell/zsh/*
 
 ### [dotvim](https://github.com/dotphiles/dotvim)
 
@@ -55,6 +55,10 @@ Add your own settings to *vimrc* in **editor/vim/** and start vim to auto instal
 ### git
 
 Add your name, email and gpg keyid to *coding/git/gitconfig*
+
+### mercurial
+
+Add your name and email to *coding/mercurial/hgrc*
 
 ### ssh
 

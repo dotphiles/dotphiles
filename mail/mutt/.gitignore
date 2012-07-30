@@ -1,9 +1,0 @@
-#
-# dotphiles : https://github.com/dotphiles/dotphiles
-#
-# Ignore these files from mutt
-#
-
-cache/*
-mailboxes.offlineimap
-
