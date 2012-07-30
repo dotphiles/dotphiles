@@ -18,4 +18,5 @@ vim/*.swp
 vim/backup/
 mutt/cache/.*
 subversion/auth/
+task/*.data
 
