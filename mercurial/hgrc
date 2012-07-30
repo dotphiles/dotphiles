@@ -1,0 +1,46 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# Setup mercurial
+#
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
+
+[ui]
+#username = Your Name <your@email.com>
+merge = internal:merge
+
+[extensions]
+graphlog =
+mq =
+color =
+rebase =
+transplant =
+record =
+progress =
+# extdiff =
+
+[hooks]
+changegroup = hg diff --stat -r $HG_NODE -r tip
+
+[alias]
+slog = log --template '{rev}:{node|short} {desc|firstline}\n'
+show = log --color=always -pr
+
+[web]
+cacerts = /etc/ssl/certs/ca-certificates.crt
+
+[diff]
+git = True
+
+[color]
+status.added = green bold
+status.removed = red bold
+
+[defaults]
+outgoing = --style compact -v
+incoming = --style compact -v
+heads = --template '{rev}:{node|short}({branches}) {desc|firstline}\n'
+qseries = -s
+

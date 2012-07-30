@@ -5,18 +5,18 @@
 #
 
 .git/
-security/ssh/id*
-security/ssh/environment*
-security/ssh/known_hosts
-security/ssh/master/*
-security/gnupg/secring.gpg
-security/gnupg/sshcontrol
-security/gnupg/gpg-agent.env
-security/gnupg/private*
-editor/vim/.*
-editor/vim/*.swp
-editor/vim/backup/
-mail/mutt/cache/.*
-coding/subversion/auth/
-apps/taskwarrior/task/*.data
+ssh/id*
+ssh/environment*
+ssh/known_hosts
+ssh/master/*
+gnupg/secring.gpg
+gnupg/sshcontrol
+gnupg/gpg-agent.env
+gnupg/private*
+vim/.*
+vim/*.swp
+vim/backup/
+mutt/cache/.*
+subversion/auth/
+task/*.data
 
