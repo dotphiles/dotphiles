@@ -110,8 +110,8 @@ chatnets = {
 };
 
 channels = (
-  { name = "#irssi"; chatnet = "ircnet"; autojoin = "No"; },
-  { name = "silc"; chatnet = "silc"; autojoin = "No"; }
+  { name = "#zsh"; chatnet = "freenode"; autojoin = "Yes"; },
+  { name = "#dotphiles"; chatnet = "freenode"; autojoin = "Yes"; }
 );
 
 aliases = {
