@@ -27,7 +27,9 @@ dotsyncrc
 #ruby/gemrc
 #git/gitconfig
 #git/gitignore
+#git/gitattributes
 #git/tigrc
+#git/gitk
 #mercurial/hgrc
 #mercurial/hgignore
 #subversion
