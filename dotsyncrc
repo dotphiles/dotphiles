@@ -18,6 +18,8 @@
 [files]
 # Uncomment examples below
 dotsyncrc
+apps/taskwarrior/task
+apps/taskwarrior/taskrc
 bin:bin
 chat/irssi
 coding/ack/ackrc
@@ -59,8 +61,6 @@ shell/zsh/zlogout
 shell/zsh/zprofile
 shell/zsh/zshenv
 shell/zsh/zshrc
-todo/taskwarrior/task
-todo/taskwarrior/taskrc
 www/wget/wgetrc
 www/curl/curlrc
 [endfiles]
