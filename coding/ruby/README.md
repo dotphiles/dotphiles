@@ -10,6 +10,9 @@ To use, add the following to **dotsyncrc**
     coding/ruby/irbrc
     coding/ruby/pryrc
     coding/ruby/gemrc
+    coding/ruby/railsrc
+    coding/ruby/rdebugrc
+    coding/ruby/caprc
     ..
     [endfiles]
 
