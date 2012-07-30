@@ -18,6 +18,7 @@
 [files]
 # Uncomment examples below
 dotsyncrc
+<<<<<<< HEAD
 bin:bin
 chat/irssi
 coding/python/pythonrc
@@ -26,6 +27,7 @@ coding/ruby/pryrc
 coding/ruby/gemrc
 coding/git/gitconfig
 coding/git/gitignore
+coding/git/gitattributes
 coding/git/tigrc
 coding/mercurial/hgrc
 coding/mercurial/hgignore
@@ -58,6 +60,8 @@ shell/zsh/zshenv
 shell/zsh/zshrc
 todo/taskwarrior/task
 todo/taskwarrior/taskrc
+www/wget/wgetrc
+www/curl/curlrc
 [endfiles]
 
 # Hosts to sync
