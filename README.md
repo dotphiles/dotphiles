@@ -38,7 +38,7 @@ Settings
 dotphiles is set to use the solarized theme, so you need to install the
 colors scheme and fonts for your terminal,
 
-see the files in *~/.dotfiles/bootstrap*
+see the files in *bootstrap*
 
 ### [dotsync](https://github.com/dotphiles/dotsync)
 
@@ -46,23 +46,23 @@ Add the dotfiles and machines to sync into *dotsyncrc*
 
 ### [dotzsh](https://github.com/dotphiles/dotzsh)
 
-Add your own settings to *zshrc*, *zshenv*, *zlogin*, *zlogout* and *zprofile* in *shell/zsh/*
+Add your own settings to *zsh/zshrc*, *zsh/zshenv*, *zsh/zlogin*, *zsh/zlogout* and *zsh/zprofile* 
 
 ### [dotvim](https://github.com/dotphiles/dotvim)
 
-Add your own settings to *vimrc* in **editor/vim/** and start vim to auto install plugins
+Add your own settings to *vim/vimrc* and start vim to auto install plugins
 
 ### git
 
-Add your name, email and gpg keyid to *coding/git/gitconfig*
+Add your name, email and gpg keyid to *git/gitconfig*
 
 ### mercurial
 
-Add your name and email to *coding/mercurial/hgrc*
+Add your name and email to *mercurial/hgrc*
 
 ### ssh
 
-Add your known hosts to *apps/security/ssh/config* and your public key to *apps/security/ssh/authorized_keys*
+Add your known hosts to *ssh/config* and your public key to *ssh/authorized_keys*
 
 Updating
 --------
