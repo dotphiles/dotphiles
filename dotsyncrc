@@ -38,6 +38,7 @@ mutt
 mutt/muttrc
 mutt/offlineimaprc
 python/pythonrc
+python/pythonrc
 ruby/irbrc
 ruby/pryrc
 ruby/gemrc
@@ -47,6 +48,7 @@ ruby/aprc
 ruby/caprc
 screen/screenrc
 shell/hushlogin
+shell/urlview
 ssh
 subversion
 task/task
@@ -64,6 +66,7 @@ zsh/zlogout
 zsh/zprofile
 zsh/zshenv
 zsh/zshrc
+>>>>>>> upstream/develop
 [endfiles]
 
 # Hosts to sync
