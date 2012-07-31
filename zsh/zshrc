@@ -10,7 +10,6 @@
 
 zstyle ':dotzsh:load' timing 'yes'
 #zstyle ':dotzsh:module:*' timing 'yes'
-#zstyle ':dotzsh:module:local:*' timing 'yes'
 
 # Set the key mapping style to 'emacs' or 'vi'.
 zstyle ':dotzsh:module:editor' keymap 'emacs'
