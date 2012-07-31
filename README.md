@@ -12,7 +12,6 @@ cross platform and degrade for older machines
     tricks for the ones you already use.
   - **Share** what you've learned with the rest of us.
 
-
 Installation
 ------------
 
@@ -29,6 +28,9 @@ Installation
   5. Run dotsync `./.dotfiles/dotsync/bin/dotsync -L`
 
   6. Start a new login shell.
+
+Configuration
+-------------
 
 ### Dotfiles
 
