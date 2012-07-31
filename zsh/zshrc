@@ -41,10 +41,14 @@ zstyle ':dotzsh:load' zfunction 'zargs' 'zmv'
 
 # Set the Oh My Zsh modules to load (browse modules).
 # The order matters.
-zstyle ':dotzsh:load' dzmodule 'environment' 'terminal' 'macports' 'gnu-utility' \
-  'utility' 'completion' 'editor' 'history' 'directory' 'ssh' 'osx' \
-  'git' 'python' 'rails' 'yum' 'dpkg' 'tmux' 'screen' 'syntax-highlighting' \
-  'dotsync' 'history-substring-search' 'theme' \
+zstyle ':dotzsh:load' dzmodule \
+  'environment' \
+  'terminal' \
+  'editor' \
+  'history' \
+  'utility' \
+  'completion' \
+  'theme'
 
 # Set the theme to load.
 # Setting it to 'random' loads a random theme.
