@@ -40,7 +40,6 @@ if has("user_commands")
   Bundle 'PProvost/vim-markdown-jekyll'
   Bundle 'Zenburn'
   Bundle 'sudo.vim'
- 
 endif
 
 " Customize to your needs...
