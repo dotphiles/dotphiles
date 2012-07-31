@@ -59,9 +59,9 @@ Dotsync
 
 Dotsync can be used to link your dotfiles into place, with it in the path..
 
-  - `ds -L` symlink dotfiles into place
-  - `ds -U` update from github
-  - `ds -I -H hostname` initialise *hostname* with the set of dotfiles
+  - `dotsync -L` symlink dotfiles into place
+  - `dotsync -U` update from github
+  - `dotsync -I -H hostname` initialise *hostname* with the set of dotfiles
 
 See the documentation for [dotsync](https://github.com/dotphiles/dotsync) for more
 information.
