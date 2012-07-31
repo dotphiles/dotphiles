@@ -34,7 +34,6 @@ if has("user_commands")
     Bundle 'Indent-Guides'
   endif
   " Add extra bundles here...
-  "
   Bundle 'Indent-Guides'
   Bundle 'Puppet-Syntax-Highlighting'
   Bundle 'csexton/jekyll.vim'
