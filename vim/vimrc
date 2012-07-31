@@ -17,7 +17,6 @@ if has("user_commands")
   set rtp+=~/.vim/bundle/vundle/
   call vundle#rc()
   Bundle 'gmarik/vundle'
-  Bundle 'sudo.vim'
   Bundle 'kien/ctrlp.vim'
   Bundle 'scrooloose/nerdcommenter'
   Bundle 'scrooloose/nerdtree'
@@ -40,6 +39,7 @@ if has("user_commands")
   Bundle 'csexton/jekyll.vim'
   Bundle 'PProvost/vim-markdown-jekyll'
   Bundle 'Zenburn'
+  Bundle 'sudo.vim'
  
 endif
 
