@@ -24,7 +24,6 @@ Customisable, sane, default dotfiles for
   - tmux, screen
   - and many more...
 
->>>>>>> upstream/develop
 Installation
 ------------
 
