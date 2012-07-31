@@ -16,15 +16,17 @@ cross platform and degrade for older machines
 Installation
 ------------
 
-Sign up for an account on [github][1] and fork the project
+  - Sign up for an account on [github][1] and fork the project
 
-    git clone --recursive git@github.com:*username*/dotphiles.git ~/.dotfiles
+  - Clone your fork
 
-Edit *dotsyncrc* and select which dotfiles to use
+    `git clone --recursive git@github.com:*username*/dotphiles.git ~/.dotfiles`
 
-Then symlink then into place with
+  - Edit `dotsyncrc` and select which dotfiles to use
 
-    ./.dotfiles/dotsync/bin/dotsync -L
+  - then symlink then into place with
+
+        ./.dotfiles/dotsync/bin/dotsync -L
 
 *An existing ~/.dotfiles will be backed up into ~/.backup/dotfiles.old on init*
 
@@ -33,12 +35,10 @@ Then symlink then into place with
 Settings
 --------
 
-### deploy
+### `deploy`
 
 dotphiles is set to use the solarized theme, so you need to install the
 colors scheme and fonts for your terminal,
-
-see the files in *deploy*
 
   - terminal
 
@@ -54,33 +54,33 @@ see the files in *deploy*
 
      `deploy/osx` is based on .osx but will also install ports/brews as below
 
-      - `macports` Add ports to `deploy/macports` to be installed by osx
+      - `macports` add ports to `deploy/macports` to be installed by osx
 
-      - `homebrew` Add brews to `deploy/homebrew` to be installed by osx
+      - `homebrew` add brews to `deploy/homebrew` to be installed by osx
 
 ### [dotsync](https://github.com/dotphiles/dotsync)
 
-Add the dotfiles and machines to sync into *dotsyncrc*
+Add the dotfiles and machines to sync into `dotsyncrc`
 
 ### [dotzsh](https://github.com/dotphiles/dotzsh)
 
-Add your own settings to *zsh/zshrc*, *zsh/zshenv*, *zsh/zlogin*, *zsh/zlogout* and *zsh/zprofile* 
+Add your own settings to `zsh/zshrc`, `zsh/zshenv`, `zsh/zlogin`, `zsh/zlogout` and `zsh/zprofile` 
 
 ### [dotvim](https://github.com/dotphiles/dotvim)
 
-Add your own settings to *vim/vimrc* and start vim to auto install plugins
+Add your own settings to `vim/vimrc` and start vim to auto install plugins
 
 ### git
 
-Add your name, email and gpg keyid to *git/gitconfig*
+Add your name, email and gpg keyid to `git/gitconfig`
 
 ### mercurial
 
-Add your name and email to *mercurial/hgrc*
+Add your name and email to `mercurial/hgrc`
 
 ### ssh
 
-Add your known hosts to *ssh/config* and your public key to *ssh/authorized_keys*
+Add your known hosts to `ssh/config` and your public key to `ssh/authorized_keys`
 
 Updating
 --------
