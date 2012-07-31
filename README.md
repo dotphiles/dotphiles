@@ -35,17 +35,16 @@ Dotfiles
 
 These are the minimum files you'll need to change
 
-    .
-    ├── dotsyncrc               # settings for dotsync, dotfiles and hosts
-    ├── git
-    │   └── gitconfig           # add your name, email and gpg keyid
-    ├── ssh                     # add your settings for [ssh](http://www.openssh.org/)
-    │   ├── authorized_keys     # add your public key
-    │   └── config              # add your settings and hosts
-    ├── vim
-    │   └── vimrc               # add settings for [dotvim](https://github.com/dotphiles/dotvim)
-    └── zsh
-        └── zshrc               # add settings for [dotzsh](https://github.com/dotphiles/dotzsh)
+  - `dotsyncrc` settings for [dotsync](https://github.com/dotphiles/dotsync)
+  - `git` # add settings for [git](http://git-scm.org)
+    - `gitconfig` add your name, email and gpg keyid
+  - `ssh` add your settings for [ssh](http://www.openssh.org/)
+    - `authorized_keys` add your public key
+    -  `config` add your settings and hosts
+  - `vim` add settings for vim
+    - `vimrc` add settings for [dotvim](https://github.com/dotphiles/dotvim)
+  - `zsh` add settings for zsh
+    - `zshrc` add settings for [dotzsh](https://github.com/dotphiles/dotzsh)
 
 Terminal
 --------
