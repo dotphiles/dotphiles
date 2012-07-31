@@ -35,8 +35,11 @@ Backups
 
 An existing ~/.dotfiles will be backed up into `~/.backup/dotfiles/` if found
 
-Settings
+Terminal
 --------
+
+dotphiles uses the [solarized](http://ethanschoonover.com/solarized) color theme
+by default, see the files below to install.
 
   - `deploy/*`
     - `terminal/colors` the default colour scheme is solarized, install 
@@ -46,7 +49,11 @@ Settings
     - `osx` is based on .osx but will also install ports/brews as below
         - `macports` add ports to `deploy/macports` to be installed by osx
         - `homebrew` add brews to `deploy/homebrew` to be installed by osx
-  - `dotsyncrc` add the dotfiles and machines to sync into `dotsyncrc`
+
+Dotfiles
+--------
+
+  - `dotsyncrc` add your dotfiles and hosts for [dotsync](https://github.com/dotphiles/dotsync)
   - `zsh/*` add your settings for [dotzsh](https://github.com/dotphiles/dotzsh)
     - `zsh/zshrc`
     - `zsh/zshenv`
@@ -56,13 +63,29 @@ Settings
   - `vim/*` add your settings for [dotvim](https://github.com/dotphiles/dotvim)
     - `vimrc` add your settings for vim and bundles to install
     - `gvimrc` add your settings for gvim 
-  - `git/*` add your settings for git
+  - `git/*` add your settings for [git](http://git-scm.com/)
     - `gitconfig` add your name, email and gpg keyid
-  - `mercurial/*` add your settings for mercurial
+  - `mercurial/*` add your settings for [mercurial](http://mercurial.selenic.com/)
     - `hgrc` add your name and email
-  - `ssh/*` add your settings for ssh
+  - `ssh/*` add your settings for [ssh](http://www.openssh.org/)
     - `config` add your hosts and settings
     - `authorized_keys` add your public keys
+
+Terminal
+--------
+
+dotphiles uses the [solarized](http://ethanschoonover.com/solarized) color theme
+by default, see the files below to install.
+
+  - `deploy/*`
+    - `terminal/colors` the default colour scheme is solarized, install 
+      the terminal color scheme
+    - `terminal/fonts` powerline for vim is set to use fancy fonts, install 
+      the fonts 
+    - `osx` is based on .osx but will also install ports/brews as below
+        - `macports` add ports to `deploy/macports` to be installed by osx
+        - `homebrew` add brews to `deploy/homebrew` to be installed by osx
+
 
 Backups
 -------
