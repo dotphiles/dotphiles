@@ -63,13 +63,13 @@ information.
 
     Add dotfiles to `dotsyncrc` like
 
-       [files]
-       ...
-       dotfile
-       dir
-       dir/dotfile
-       ...
-       [endfiles]
+        [files]
+        ...
+        dotfile
+        dir
+        dir/dotfile
+        ...
+        [endfiles]
 
   - Usage
 
