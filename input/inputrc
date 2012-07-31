@@ -7,6 +7,8 @@
 #   Ben O'Hara <bohara@gmail.com>
 #
 
+$include /etc/inputrc
+
 # Set things up for python shell
 set editing-mode vi
 
@@ -44,6 +46,7 @@ $if Bash
 $endif
 
 $if Python
+    TAB: complete
 $endif
 
 # IPython needs this to appear at the bottom of the

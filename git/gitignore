@@ -5,6 +5,7 @@
 #
 # Authors:
 #   Ben O'Hara <bohara@gmail.com>
+#
 
 # Compiled source
 *.pyc
@@ -20,7 +21,7 @@
 *.tmproject
 
 # OS generated files
-#
+._*
 .Spotlight-V100
 .Trashes
 .DS_Store

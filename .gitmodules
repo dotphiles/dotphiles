@@ -1,9 +1,12 @@
 #
 # dotphiles : https://github.com/dotphiles/dotphiles
 #
+# Git submodules in this repo
+#
 # Authors:
 #   Ben O'Hara <bohara@gmail.com>
 #
+
 [submodule "dotsync"]
 	path = dotsync
 	url = https://github.com/dotphiles/dotsync.git
