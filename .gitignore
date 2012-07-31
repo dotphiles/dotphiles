@@ -19,5 +19,7 @@ gnupg/sshcontrol
 gnupg/random*
 gnupg/private*
 gnupg/*~
+mutt/cache/*
+mutt/mailboxes.*
 task/*.data
 
