@@ -59,29 +59,29 @@ by default, see the files below to install.
 See the documentation for [dotsync](https://github.com/dotphiles/dotsync) for more
 information.
 
-#### dotsyncrc
+  - dotsyncrc
 
-Add dotfiles to `dotsyncrc` like
+    Add dotfiles to `dotsyncrc` like
 
-   [files]
-   ...
-   dotfile
-   module
-   module/dotfile
-   ...
-   [endfiles]
+       [files]
+       ...
+       dotfile
+       dir
+       dir/dotfile
+       ...
+       [endfiles]
 
-#### Usage
+  - Usage
 
-Dotsync can be used to link your dotfiles into place, with it in the path..
+    Dotsync can be used to link your dotfiles into place, with it in the path..
 
-  - `dotsync -L` symlink dotfiles into place
-  - `dotsync -U` update from github
-  - `dotsync -I -H hostname` initialise *hostname* with the set of dotfiles
+    - `dotsync -L` symlink dotfiles into place
+    - `dotsync -U` update from github
+    - `dotsync -I -H hostname` initialise *hostname* with the set of dotfiles
 
-#### Backups
+  - Backups
 
-An existing ~/.dotfiles will be backed up into `~/.backup/dotfiles/` if found
+    An existing ~/.dotfiles will be backed up into `~/.backup/dotfiles/` if found
 
 Updating
 --------
