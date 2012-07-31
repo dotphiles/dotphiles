@@ -1,0 +1,23 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# brews to be install from homebrew
+#
+# Authors:
+#    Ben O'Hara <bohara@gmail.com>
+#
+
+coreutils
+screen
+elinks
+mutt-devel
+irssi
+proctools
+mtr
+wget
+tmux
+tmux-pasteboard
+gnupg
+ipcalc
+grc
+
