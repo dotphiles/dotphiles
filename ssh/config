@@ -20,6 +20,4 @@ ServerAliveInterval 30
 Host *
     StrictHostKeyChecking ask
     ControlMaster auto
-    ControlPersist yes
     ControlPath ~/.ssh/master/%r@%h:%p
-    ServerAliveInterval 600
