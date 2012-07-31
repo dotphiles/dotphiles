@@ -36,15 +36,11 @@ Dotfiles
 These are the minimum files you'll need to change
 
   - `dotsyncrc` settings for [dotsync](https://github.com/dotphiles/dotsync)
-  - `git` settings for [git](http://git-scm.org)
-    - `gitconfig` add your name, email and gpg keyid
-  - `ssh` settings for [ssh](http://www.openssh.org/)
-    - `authorized_keys` add your public key
-    -  `config` add your settings and hosts
-  - `vim` settings for [dotvim](https://github.com/dotphiles/dotvim)
-    - `vimrc` add bundles to install and run vim, will auto install
-  - `zsh` settings for [dotzsh](https://github.com/dotphiles/dotzsh)
-    - `zshrc` add settings for zsh
+  - `git/gitconfig` add your name, email and gpg keyid
+  - `ssh/authorized_keys` add your public key
+  - `ssh/config` add your settings and hosts
+  - `vim/vimrc` add settings for [dotvim](https://github.com/dotphiles/dotvim)
+  - `zsh/zshrc` add settings for [dotzsh](https://github.com/dotphiles/dotzsh)
 
 Terminal
 --------
@@ -52,15 +48,23 @@ Terminal
 dotphiles uses the [solarized](http://ethanschoonover.com/solarized) color theme
 by default, see the files below to install.
 
-  - `deploy/*`
-    - `terminal/colors` the default colour scheme is solarized, install 
-      the terminal color scheme
-    - `terminal/fonts` powerline for vim is set to use fancy fonts, install 
-      the fonts 
-    - `osx` is based on .osx but will also install ports/brews as below
-        - `macports` add ports to `deploy/macports` to be installed by osx
-        - `homebrew` add brews to `deploy/homebrew` to be installed by osx
+  - `deploy/terminal/colors` colour schemes for various terminals
+  - `deploy/terminal/fonts` fancy fonts, for vim-powerline
+  - `deploy/osx` is based on .osx but will also install ports/brews
+    - `macports` add ports to `deploy/macports` to be installed by osx
+    - `homebrew` add brews to `deploy/homebrew` to be installed by osx
 
+Dotsync
+-------
+
+Dotsync can be used to link your dotfiles into place, with it in the path..
+
+  - `ds -L` symlink dotfiles into place
+  - `ds -U` update from github
+  - `ds -I -H hostname` initialise *hostname* with the set of dotfiles
+
+See the documentation for [dotsync](https://github.com/dotphiles/dotsync) for more
+information.
 
 Backups
 -------
