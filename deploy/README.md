@@ -1,7 +1,7 @@
-bootstrap
-=========
+deploy
+======
 
-Scripts to bootstrap a new machine
+Scripts to deploy a new machine
 
 osx
 ---
@@ -21,10 +21,11 @@ Install required packages using homebrew
 terminal
 --------
 
+### colors
+
 Colour schemes for terminal programs, iTerm2, Apple Terminal etc
 
-fonts
------
+### fonts
 
 Fonts that maybe required, for powerline status bar etc
 
