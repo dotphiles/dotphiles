@@ -1,3 +1,13 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# ~/.osx - http://mths.be/osx with macports and brew setup
+#
+# Authors:
+#   Mathias Bynens
+#   Ben O'Hara <bohara@gmail.com>
+#
+
 ###############################################################################
 # General UI/UX                                                               #
 ###############################################################################
@@ -393,6 +403,21 @@ if [[ -f macports ]]; then
     fi
   done
 fi
+
+###############################################################################
+# Homebrew
+###############################################################################
+
+if [[ -f homebrew ]]; then
+  exec<homebrew
+  while read line
+  do
+    if [[ ! "$line" =~ (^#|^$) ]]; then
+      brew install $line
+    fi
+  done
+fi
+
 
 ###############################################################################
 # Kill affected applications                                                  #
