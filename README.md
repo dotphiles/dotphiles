@@ -20,7 +20,7 @@ Installation
 
   - Clone your fork
 
-    `git clone --recursive git@github.com:*username*/dotphiles.git ~/.dotfiles`
+        git clone --recursive git@github.com:*username*/dotphiles.git ~/.dotfiles
 
   - Edit `dotsyncrc` and select which dotfiles to use
 
