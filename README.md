@@ -30,11 +30,6 @@ Installation
 
   6. Start a new login shell.
 
-Backups
--------
-
-An existing ~/.dotfiles will be backed up into `~/.backup/dotfiles/` if found
-
 Dotfiles
 --------
 
