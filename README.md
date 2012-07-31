@@ -1,8 +1,8 @@
 dotphiles
 =========
 
-A framework of dotfiles for the usual terminal apps and shells designed to be
-cross platform and degrade for older machines
+A framework of dotfiles for the usual terminal apps and shells designed to work
+across multiple platforms and degrade for older versions of software or O/S.
 
 ### Why?
 
