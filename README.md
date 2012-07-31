@@ -33,12 +33,32 @@ Then symlink then into place with
 Settings
 --------
 
-### Terminal
+### deploy
 
 dotphiles is set to use the solarized theme, so you need to install the
 colors scheme and fonts for your terminal,
 
-see the files in *bootstrap*
+see the files in *deploy*
+
+#### terminal
+
+The default colour scheme is solarized, install the terminal color scheme from `deploy/terminal/colors/`
+
+##### fonts
+
+Powerline for vim is set to use fancy fonts, install the fonts from `deploy/terminal/fonts`
+
+#### osx
+
+`deploy/osx` is based on .osx but will also install ports/brews as below
+
+##### macports
+
+Add ports to `deploy/macports` to be installed by osx
+
+##### homebrew
+
+Add brews to `deploy/homebrew` to be installed by osx
 
 ### [dotsync](https://github.com/dotphiles/dotsync)
 
