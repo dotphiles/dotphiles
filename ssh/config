@@ -18,7 +18,6 @@ ServerAliveInterval 30
 
 # Default
 Host *
-    SendEnv LANG LC_*
     StrictHostKeyChecking ask
     ControlMaster auto
     ControlPersist yes
