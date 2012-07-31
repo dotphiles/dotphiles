@@ -38,6 +38,7 @@ mutt
 mutt/muttrc
 mutt/offlineimaprc
 python/pythonrc
+python/pylintrc
 ruby/irbrc
 ruby/pryrc
 ruby/gemrc
@@ -47,6 +48,7 @@ ruby/aprc
 ruby/caprc
 screen/screenrc
 shell/hushlogin
+shell/urlview
 ssh
 subversion
 task/task

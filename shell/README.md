@@ -1,13 +1,14 @@
-mysql
+shell
 =====
 
-Config for mysql client
+Adds configuration for shell
 
 To use, add the following to **dotsyncrc**
 
     [files]
     ..
-    mysql/my.cnf
+    shell/hushlogin
+    shell/urlview
     ..
     [endfiles]
 
