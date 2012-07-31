@@ -34,20 +34,30 @@ Dotfiles
 --------
 
   - `dotsyncrc` add your dotfiles and hosts for [dotsync](https://github.com/dotphiles/dotsync)
+
   - `zsh/*` add your settings for [dotzsh](https://github.com/dotphiles/dotzsh)
+
     - `zsh/zshrc`
     - `zsh/zshenv`
     - `zsh/zlogin`
     - `zsh/zlogout`
     - `zsh/zprofile`
+
   - `vim/*` add your settings for [dotvim](https://github.com/dotphiles/dotvim)
+
     - `vimrc` add your settings for vim and bundles to install
     - `gvimrc` add your settings for gvim 
+
   - `git/*` add your settings for [git](http://git-scm.com/)
+
     - `gitconfig` add your name, email and gpg keyid
+
   - `mercurial/*` add your settings for [mercurial](http://mercurial.selenic.com/)
+
     - `hgrc` add your name and email
+
   - `ssh/*` add your settings for [ssh](http://www.openssh.org/)
+
     - `config` add your hosts and settings
     - `authorized_keys` add your public keys
 
