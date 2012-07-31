@@ -59,7 +59,7 @@ by default, see the files below to install.
 See the documentation for [dotsync](https://github.com/dotphiles/dotsync) for more
 information.
 
-#### `dotsyncrc`
+#### dotsyncrc
 
 Add dotfiles to `dotsyncrc` like
 
