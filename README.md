@@ -28,9 +28,9 @@ Installation
 
         ./.dotfiles/dotsync/bin/dotsync -L
 
-*An existing ~/.dotfiles will be backed up into ~/.backup/dotfiles.old on init*
+    *An existing ~/.dotfiles will be backed up into ~/.backup/dotfiles.old on init*
 
-*Any existing files will be backed up into ~/.backup/dotfiles/*
+    *Any existing files will be backed up into ~/.backup/dotfiles/*
 
 Settings
 --------
