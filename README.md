@@ -24,7 +24,7 @@ Installation
 
   3. Edit `dotsyncrc` and enable dotfiles to use.
 
-  4. Edit the dotfiles your using, see below.
+  4. Setup your terminal and the dotfiles you want to use, see below.
 
   5. Run dotsync `./.dotfiles/dotsync/bin/dotsync -L`
 
@@ -34,21 +34,6 @@ Backups
 -------
 
 An existing ~/.dotfiles will be backed up into `~/.backup/dotfiles/` if found
-
-Terminal
---------
-
-dotphiles uses the [solarized](http://ethanschoonover.com/solarized) color theme
-by default, see the files below to install.
-
-  - `deploy/*`
-    - `terminal/colors` the default colour scheme is solarized, install 
-      the terminal color scheme
-    - `terminal/fonts` powerline for vim is set to use fancy fonts, install 
-      the fonts 
-    - `osx` is based on .osx but will also install ports/brews as below
-        - `macports` add ports to `deploy/macports` to be installed by osx
-        - `homebrew` add brews to `deploy/homebrew` to be installed by osx
 
 Dotfiles
 --------
