@@ -21,7 +21,6 @@
 *.tmproject
 
 # OS generated files
-#
 ._*
 .Spotlight-V100
 .Trashes
