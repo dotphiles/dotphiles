@@ -40,23 +40,23 @@ colors scheme and fonts for your terminal,
 
 see the files in *deploy*
 
-  1. terminal
+  - terminal
 
      The default colour scheme is solarized, install the terminal 
      color scheme from `deploy/terminal/colors/`
 
-  2. fonts
+  - fonts
 
      Powerline for vim is set to use fancy fonts, install the fonts 
      from `deploy/terminal/fonts`
 
-  3. osx
+  - osx
 
      `deploy/osx` is based on .osx but will also install ports/brews as below
 
-    - `macports` Add ports to `deploy/macports` to be installed by osx
+      - `macports` Add ports to `deploy/macports` to be installed by osx
 
-    - `homebrew` Add brews to `deploy/homebrew` to be installed by osx
+      - `homebrew` Add brews to `deploy/homebrew` to be installed by osx
 
 ### [dotsync](https://github.com/dotphiles/dotsync)
 
