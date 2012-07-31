@@ -30,8 +30,7 @@ Installation
 
   6. Start a new login shell.
 
-Dotfiles
---------
+### Dotfiles
 
 These are the minimum files you'll need to change
 
@@ -42,8 +41,7 @@ These are the minimum files you'll need to change
   - `vim/vimrc` add settings for [dotvim](https://github.com/dotphiles/dotvim)
   - `zsh/zshrc` add settings for [dotzsh](https://github.com/dotphiles/dotzsh)
 
-Terminal
---------
+### Terminal
 
 dotphiles uses the [solarized](http://ethanschoonover.com/solarized) color theme
 by default, see the files below to install.
@@ -54,8 +52,24 @@ by default, see the files below to install.
     - `macports` add ports to `deploy/macports` to be installed by osx
     - `homebrew` add brews to `deploy/homebrew` to be installed by osx
 
-Dotsync
--------
+### Dotsync
+
+See the documentation for [dotsync](https://github.com/dotphiles/dotsync) for more
+information.
+
+#### `dotsyncrc`
+
+Add dotfiles to `dotsyncrc` like
+
+   [files]
+   ...
+   dotfile
+   module
+   module/dotfile
+   ...
+   [endfiles]
+
+#### Usage
 
 Dotsync can be used to link your dotfiles into place, with it in the path..
 
@@ -63,11 +77,7 @@ Dotsync can be used to link your dotfiles into place, with it in the path..
   - `dotsync -U` update from github
   - `dotsync -I -H hostname` initialise *hostname* with the set of dotfiles
 
-See the documentation for [dotsync](https://github.com/dotphiles/dotsync) for more
-information.
-
-Backups
--------
+#### Backups
 
 An existing ~/.dotfiles will be backed up into `~/.backup/dotfiles/` if found
 
