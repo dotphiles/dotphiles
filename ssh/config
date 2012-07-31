@@ -18,6 +18,7 @@ ServerAliveInterval 30
 
 # Default
 Host *
+    #User username
     StrictHostKeyChecking ask
     ControlMaster auto
     ControlPath ~/.ssh/master/%r@%h:%p
