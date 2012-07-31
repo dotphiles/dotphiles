@@ -16,71 +16,58 @@ cross platform and degrade for older machines
 Installation
 ------------
 
-  - Sign up for an account on [github][1] and fork the project
+  1. Sign up for an account on [github][1] and fork the project.
 
-  - Clone your fork
+  2. Clone your fork.
 
         git clone --recursive git@github.com:*username*/dotphiles.git ~/.dotfiles
 
-  - Edit `dotsyncrc` and select which dotfiles to use
+  3. Edit `dotsyncrc` and enable dotfiles to use.
 
-  - then symlink then into place with
+  4. Edit the dotfiles your using, see below.
 
-        ./.dotfiles/dotsync/bin/dotsync -L
+  5. Run dotsync `./.dotfiles/dotsync/bin/dotsync -L`
 
-    *An existing ~/.dotfiles will be backed up into ~/.backup/dotfiles.old on init*
+  6. Start a new login shell.
 
-    *Any existing files will be backed up into ~/.backup/dotfiles/*
+Backups
+-------
+
+An existing ~/.dotfiles will be backed up into `~/.backup/dotfiles/` if found
 
 Settings
 --------
 
-### `deploy`
+  - `deploy/*`
+    - `terminal/colors` the default colour scheme is solarized, install 
+      the terminal color scheme
+    - `terminal/fonts` powerline for vim is set to use fancy fonts, install 
+      the fonts 
+    - `osx` is based on .osx but will also install ports/brews as below
+        - `macports` add ports to `deploy/macports` to be installed by osx
+        - `homebrew` add brews to `deploy/homebrew` to be installed by osx
+  - `dotsyncrc` add the dotfiles and machines to sync into `dotsyncrc`
+  - `zsh/*` add your settings for [dotzsh](https://github.com/dotphiles/dotzsh)
+    - `zsh/zshrc`
+    - `zsh/zshenv`
+    - `zsh/zlogin`
+    - `zsh/zlogout`
+    - `zsh/zprofile`
+  - `vim/*` add your settings for [dotvim](https://github.com/dotphiles/dotvim)
+    - `vimrc` add your settings for vim and bundles to install
+    - `gvimrc` add your settings for gvim 
+  - `git/*` add your settings for git
+    - `gitconfig` add your name, email and gpg keyid
+  - `mercurial/*` add your settings for mercurial
+    - `hgrc` add your name and email
+  - `ssh/*` add your settings for ssh
+    - `config` add your hosts and settings
+    - `authorized_keys` add your public keys
 
-dotphiles is set to use the solarized theme, so you need to install the
-colors scheme and fonts for your terminal,
+Backups
+-------
 
-  - terminal
-
-     The default colour scheme is solarized, install the terminal 
-     color scheme from `deploy/terminal/colors/`
-
-  - fonts
-
-     Powerline for vim is set to use fancy fonts, install the fonts 
-     from `deploy/terminal/fonts`
-
-  - osx
-
-     `deploy/osx` is based on .osx but will also install ports/brews as below
-
-      - `macports` add ports to `deploy/macports` to be installed by osx
-
-      - `homebrew` add brews to `deploy/homebrew` to be installed by osx
-
-### [dotsync](https://github.com/dotphiles/dotsync)
-
-Add the dotfiles and machines to sync into `dotsyncrc`
-
-### [dotzsh](https://github.com/dotphiles/dotzsh)
-
-Add your own settings to `zsh/zshrc`, `zsh/zshenv`, `zsh/zlogin`, `zsh/zlogout` and `zsh/zprofile` 
-
-### [dotvim](https://github.com/dotphiles/dotvim)
-
-Add your own settings to `vim/vimrc` and start vim to auto install plugins
-
-### git
-
-Add your name, email and gpg keyid to `git/gitconfig`
-
-### mercurial
-
-Add your name and email to `mercurial/hgrc`
-
-### ssh
-
-Add your known hosts to `ssh/config` and your public key to `ssh/authorized_keys`
+An existing ~/.dotfiles will be backed up into `~/.backup/dotfiles/` if found
 
 Updating
 --------
