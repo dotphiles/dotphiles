@@ -178,22 +178,16 @@ advantage of the changes made there, you can update your feature branch as
 follows:
 
   1. Ensure you have a remote configured for the upstream repository.
-     You can use 
-     
-        `git remote add upstream git://github.com/dotphiles/dotphiles.git`
-        
-     to add it if it doesn't already exist.
 
-  2. Type 
-  
-        `git pull upstream develop:develop`
-        
-     to update your local repository with the upstream refs.
+       git remote add upstream git://github.com/dotphiles/dotphiles.git
 
-  3. Type 
-        `git flow feature rebase <featurename>`
-        
-     to rebase your feature branch on top of the new `develop`.
+  2. Update your local repository with the upstream refs.
+
+        git pull upstream develop:develop`
+
+  3. Rebase your feature branch on top of the new `develop`.
+
+        git flow feature rebase <featurename>
 
 There is a lot of help available for Git Flow, which can be accessed by typing
 `git flow feature help`.
