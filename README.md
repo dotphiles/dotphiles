@@ -80,7 +80,7 @@ information.
 
   - Backups
 
-    An existing ~/.dotfiles will be backed up into `~/.backup/dotfiles/` if found
+    Any existing ~/.dotfiles will be backed up into `~/.backup/dotfiles/` if found
 
 Editing
 -------
