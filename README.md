@@ -133,7 +133,7 @@ We'll do a bit of a code review before accepting your patch.
 
 ### Git Flow
 
-We use the Git Flow branching model, [first described][15] by [nvie][16],
+We use the [Git Flow][10] branching model, [first described][15] by [nvie][16],
 so dotphiles's `master` branch moves on only at specific points, when we're
 really sure we want to promote something to production.
 
