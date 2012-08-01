@@ -133,11 +133,9 @@ We'll do a bit of a code review before accepting your patch.
 
 ### Git Flow
 
-You will notice when you fork the dotphiles repository that the default branch
-is `develop` rather than the more usual `master`.  We use the Git Flow 
-branching model, [first described][15] by [nvie][16], so dotphiles's `master`
-branch moves on only at specific points, when we're really sure we want to
-promote something to production.
+We use the Git Flow branching model, [first described][15] by [nvie][16],
+so dotphiles's `master` branch moves on only at specific points, when we're
+really sure we want to promote something to production.
 
 **Use of Git Flow is not required for contributing to dotphiles**, particularly
 if you're submitting a bug-fix or small feature.  Its use is recommended for
@@ -159,7 +157,7 @@ typing `git flow feature start <featurename>`.  This will create you a new
 git as usual from this point.
 
 Once your feature is finished, type `git flow feature publish <featurename>`.
-This will copy the *feature branch* to your `origin` repository on GitHub and 
+This will copy the *feature branch* to your `origin` repository on GitHub and
 you will then be able to submit a pull request to have it merged into dotphiles
 own `develop` branch.
 
