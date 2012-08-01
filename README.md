@@ -4,25 +4,11 @@ dotphiles
 A framework of dotfiles for the usual terminal apps and shells designed to work
 across multiple platforms and degrade for older versions of software or O/S.
 
-### Why?
-
-  - **Backup**, **restore**, and **sync** your dotfiles to all your machines
+  - **Backup**, **restore**, and **sync** the prefs and settings for your toolbox. 
+    Your dotfiles might be the most important files on your machine.
   - **Learn** from the community. Discover new tools for your toolbox and new 
     tricks for the ones you already use.
   - **Share** what you've learned with the rest of us.
-
-### What?
-
-Customisable, sane, default dotfiles for
-
-  - **zsh** configuration using [dotzsh][8]
-  - **vim** configuration using [dotvim][9]
-  - mutt
-  - irssi
-  - python, ruby
-  - git, mercurial, subversion
-  - tmux, screen
-  - and many more...
 
 Installation
 ------------
