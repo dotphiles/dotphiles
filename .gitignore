@@ -18,6 +18,7 @@ subversion/README.txt
 subversion/auth/*
 gnupg/secring.gpg
 gnupg/pubring.gpg
+gnupg/trustdb.gpg
 gnupg/gpg-agent.env
 gnupg/sshcontrol
 gnupg/random*
