@@ -1,12 +1,15 @@
 dotphiles
 =========
 
-A framework of dotfiles for the usual terminal apps and shells designed to work
-across multiple platforms and degrade for older versions of software or O/S.
+A community driven framework of dotfiles, for the usual terminal apps and
+shells, designed to work across multiple platforms and degrade for older
+versions of software or O/S, allowing you to use the same settings on all
+your machines.
 
-  - **Backup**, **restore**, and **sync** the prefs and settings for your toolbox. 
+  - **Backup**, **restore**, and **sync** the prefs and settings for your
+    toolbox.
     Your dotfiles might be the most important files on your machine.
-  - **Learn** from the community. Discover new tools for your toolbox and new 
+  - **Learn** from the community. Discover new tools for your toolbox and new
     tricks for the ones you already use.
   - **Share** what you've learned with the rest of us.
 
@@ -70,17 +73,36 @@ information.
         ...
         [endfiles]
 
+    dotsync will look for
+
+         ~/$DOTFILES/dotfile.d/localhost
+         ~/$DOTFILES/dotfile.d/$HOSTNAME
+         ~/$DOTFILES/dotfile.d/$DOMAIN
+         ~/$DOTFILES/dotfile
+
+   And link the first one it finds instead of the standard dotfile.  The
+   `localhost` dotfile will be excluded from your repo.
+
   - Usage
 
-    Dotsync can be used to link your dotfiles into place, with it in the path..
+    Dotsync can be used to link your dotfiles into place
 
     - `dotsync -L` symlink dotfiles into place
     - `dotsync -U` update from github
+
+    And update remote machines
+
     - `dotsync -I -H hostname` initialise *hostname* with the set of dotfiles
+    - `dotsync -U -H hostname` update dotfiles on *hostname* from github
+    - `dotsync -I -H hostname -r` initialise *hostname* with the set of
+      dotfiles with rsync
+    - `dotsync -U -H hostname -r` update dotfiles on *hostname* with rsync
+    - `dotsync -A` update dotfiles on **all hosts**
 
   - Backups
 
-    Any existing ~/.dotfiles will be backed up into `~/.backup/dotfiles/` if found
+    Any existing ~/.dotfiles will be backed up into `~/.backup/dotfiles/` if
+    found
 
 Editing
 -------
@@ -232,3 +254,4 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 [16]: http://www.twitter.com/nvie
 [17]: https://github.com/nvie/gitflow
 [18]: https://github.com/nvie/gitflow/wiki/Installation
+
