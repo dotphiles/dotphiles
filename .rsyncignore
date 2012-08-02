@@ -5,6 +5,7 @@
 #
 
 .git/
+*.d/localhost
 ssh/id*
 ssh/environment*
 ssh/known_hosts
