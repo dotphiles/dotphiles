@@ -5,6 +5,10 @@
 #
 
 .git/
+cmus/autosave
+cmus/cache
+cmus/*-history
+cmus/*.pl
 ssh/id*
 ssh/environment*
 ssh/known_hosts
