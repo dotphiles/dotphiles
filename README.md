@@ -4,11 +4,20 @@ dotphiles
 A framework of dotfiles for the usual terminal apps and shells designed to work
 across multiple platforms and degrade for older versions of software or O/S.
 
-  - **Backup**, **restore**, and **sync** the prefs and settings for your toolbox. 
+  - **Backup**, **restore**, and **sync** the prefs and settings for your toolbox.
     Your dotfiles might be the most important files on your machine.
-  - **Learn** from the community. Discover new tools for your toolbox and new 
+  - **Learn** from the community. Discover new tools for your toolbox and new
     tricks for the ones you already use.
   - **Share** what you've learned with the rest of us.
+
+Graciously stolen from around the interwebs such as [skwp/dotfiles][21],
+[sorin-ionescu/oh-myzsh][22], [robby-russell/oh-my-myzsh][23], [holman/dotfiles][24],
+[mathiasbynens/dotfiles][25] and numerous other bits of code copied
+and pasted over the years...
+
+Its currently at a 'works for me' state.  Theres probably bugs and lots of
+improvements that can be made, so send a pull request if you see anything
+that can be improved.  No bash, as I don't use it.
 
 Installation
 ------------
@@ -43,11 +52,14 @@ These are the minimum files you'll need to edit
 
 ### Terminal
 
-dotphiles uses the [solarized](http://ethanschoonover.com/solarized) color theme
-by default, see the files below to install.
+dotphiles uses the [solarized][19] color theme by default, see the files
+below to install, [zenburn][20] *should* also work but you'll needs to
+changes settings throughout currently
 
   - `deploy/terminal/colors` colour schemes for various terminals
   - `deploy/terminal/fonts` fancy fonts, for vim-powerline
+
+Optional, tweak OSXs settings
 
   - `deploy/osx` is based on .osx but will also install ports/brews
     - `macports` add ports to be installed by `osx`
@@ -55,8 +67,7 @@ by default, see the files below to install.
 
 ### Dotsync
 
-See the documentation for [dotsync][7] for more
-information.
+See the documentation for [dotsync][7] for more information.
 
   - dotsyncrc
 
@@ -232,3 +243,11 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 [16]: http://www.twitter.com/nvie
 [17]: https://github.com/nvie/gitflow
 [18]: https://github.com/nvie/gitflow/wiki/Installation
+[19]: http://ethanschoonover.com/solarized
+[20]: http://slinky.imukuppi.org/zenburnpage/
+[21]: https://github.com/skwp/dotfiles
+[22]: https://github.com/sorin-ionescu/oh-my-zsh
+[23]: https://github.com/robby-russell/oh-my-zsh
+[24]: https://github.com/holman/dotfiles
+[24]: https://github.com/mathiasbynens/dotfiles
+
