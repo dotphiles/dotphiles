@@ -249,5 +249,5 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 [22]: https://github.com/sorin-ionescu/oh-my-zsh
 [23]: https://github.com/robby-russell/oh-my-zsh
 [24]: https://github.com/holman/dotfiles
-[24]: https://github.com/mathiasbynens/dotfiles
+[25]: https://github.com/mathiasbynens/dotfiles
 
