@@ -23,7 +23,6 @@ if has("user_commands")
   Bundle 'jistr/vim-nerdtree-tabs'
   Bundle 'altercation/vim-colors-solarized'
   Bundle 'tpope/vim-fugitive'
-  Bundle 'vitaly/vim-gitignore'
   Bundle 'austintaylor/vim-indentobject'
   Bundle 'tpope/vim-markdown'
   Bundle 'Lokaltog/vim-powerline'

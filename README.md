@@ -10,15 +10,6 @@ across multiple platforms and degrade for older versions of software or O/S.
     tricks for the ones you already use.
   - **Share** what you've learned with the rest of us.
 
-Graciously stolen from around the interwebs such as [skwp/dotfiles][21],
-[sorin-ionescu/oh-myzsh][22], [robby-russell/oh-my-myzsh][23], [holman/dotfiles][24],
-[mathiasbynens/dotfiles][25] and numerous other bits of code copied
-and pasted over the years from various dotfile repos around the web.
-
-Its currently at a 'works for me' state.  Theres probably bugs and lots of
-improvements that can be made, so send a pull request if you see anything
-that can be improved.  No bash, as I don't use it.
-
 Installation
 ------------
 
@@ -57,7 +48,7 @@ below to install, [zenburn][20] *should* also work but you'll needs to
 changes settings throughout currently
 
   - `deploy/terminal/colors` colour schemes for various terminals
-  - `deploy/terminal/fonts` fancy fonts, for vim-powerline
+  - `deploy/terminal/fonts` fancy fonts, for vim-powerline, I'm using Menlo
 
 Optional, tweak OSXs settings
 
@@ -118,6 +109,11 @@ Contribute
 ----------
 
 This project would not exist without all of its users and [contributors][2].
+
+Lots of ideas and code stolen from around the interwebs such as [skwp/dotfiles][21],
+[sorin-ionescu/oh-myzsh][22], [robby-russell/oh-my-myzsh][23], [holman/dotfiles][24],
+[mathiasbynens/dotfiles][25], [spf13][26] and numerous other snippets of code copied
+and pasted over the years.
 
 If you have ideas on how to make the configuration easier to maintain or
 improve its performance, do not hesitate to fork and send pull requests.
@@ -250,4 +246,4 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 [23]: https://github.com/robby-russell/oh-my-zsh
 [24]: https://github.com/holman/dotfiles
 [25]: https://github.com/mathiasbynens/dotfiles
-
+[26]: http://vim.spf13.com
