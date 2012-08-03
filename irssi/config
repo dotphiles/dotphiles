@@ -113,6 +113,8 @@ chatnets = {
 
 channels = (
   { name = "#zsh"; chatnet = "Freenode"; autojoin = "yes"; },
+  { name = "#vim"; chatnet = "Freenode"; autojoin = "yes"; },
+  { name = "#linux"; chatnet = "Freenode"; autojoin = "yes"; },
   { name = "#dotphiles"; chatnet = "Freenode"; autojoin = "yes"; }
 );
 
