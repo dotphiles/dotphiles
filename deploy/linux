@@ -8,19 +8,26 @@
 #  Ben O'Hara <bohara@gmail.com>
 #
 
+if [[ "$OSTYPE" != "linux"* ]]; then
+  echo "$0 : Will only run on Linux"
+  exit 1
+fi
+
+DIR=$(cd $(dirname "$0"); pwd)
+
 ###############################################################################
 # apt-get
 ###############################################################################
 
-if [[ -f packages/apt ]]; then
-  exec<packages/apt
+if [[ -f $DIR/packages/apt ]]; then
+  exec<$DIR/packages/apt
   while read line
   do
     if [[ ! "$line" =~ (^#|^$) ]]; then
-      echo $line
-      #sudo apt-get install $line
+      packages="$packages $line"
     fi
   done
+  sudo apt-get install $packages
 fi
 
 

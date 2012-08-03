@@ -1,3 +1,4 @@
+#!/bin/bash
 #
 # dotphiles : https://github.com/dotphiles/dotphiles
 #
@@ -7,6 +8,11 @@
 #   Mathias Bynens
 #   Ben O'Hara <bohara@gmail.com>
 #
+
+if [[ "$OSTYPE" != "darwin"* ]]; then
+  echo "$0 : Will only run on Darwin"
+  exit 1
+fi
 
 ###############################################################################
 # General UI/UX                                                               #
@@ -390,12 +396,14 @@ defaults write com.twitter.twitter-mac ShowFullNames -bool true
 # Hide the app in the background if it’s not the front-most window
 defaults write com.twitter.twitter-mac HideInBackground -bool true
 
+DIR=$(cd $(dirname "$0"); pwd)
+
 ###############################################################################
 # Macports                                                                    #
 ###############################################################################
 
-if [[ -f packages/macports ]]; then
-  exec<packages/macports
+if [[ -f $DIR/packages/macports ]]; then
+  exec<$DIR/packages/macports
   while read line
   do
     if [[ ! "$line" =~ (^#|^$) ]]; then
@@ -408,8 +416,8 @@ fi
 # Homebrew
 ###############################################################################
 
-if [[ -f packages/homebrew ]]; then
-  exec<packages/homebrew
+if [[ -f $DIR/packages/homebrew ]]; then
+  exec<$DIR/packages/homebrew
   while read line
   do
     if [[ ! "$line" =~ (^#|^$) ]]; then
@@ -417,7 +425,6 @@ if [[ -f packages/homebrew ]]; then
     fi
   done
 fi
-
 
 ###############################################################################
 # Kill affected applications                                                  #
