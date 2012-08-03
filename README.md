@@ -13,7 +13,7 @@ across multiple platforms and degrade for older versions of software or O/S.
 Graciously stolen from around the interwebs such as [skwp/dotfiles][21],
 [sorin-ionescu/oh-myzsh][22], [robby-russell/oh-my-myzsh][23], [holman/dotfiles][24],
 [mathiasbynens/dotfiles][25] and numerous other bits of code copied
-and pasted over the years...
+and pasted over the years from various dotfile repos around the web.
 
 Its currently at a 'works for me' state.  Theres probably bugs and lots of
 improvements that can be made, so send a pull request if you see anything
