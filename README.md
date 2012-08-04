@@ -219,7 +219,7 @@ follows:
 
   1. Ensure you have a remote configured for the upstream repository.
 
-       git remote add upstream git://github.com/dotphiles/dotphiles.git
+        git remote add upstream git://github.com/dotphiles/dotphiles.git
 
   2. Update your local repository with the upstream refs.
 
