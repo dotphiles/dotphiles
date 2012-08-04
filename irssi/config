@@ -285,7 +285,7 @@ statusbar = {
   };
 };
 settings = {
-  core = { real_name = "Your Name"; user_name = "username"; nick = "nick"; };
+  core = { real_name = "**Your Name**"; user_name = "**Your Username**"; nick = "**Your Nickname**"; };
   "fe-text" = { actlist_sort = "refnum"; };
   "perl/core/scripts" = {
     ### For Solarized adv_windowlist.pl script
@@ -302,7 +302,7 @@ settings = {
     hilight_color = "= %R";
   };
 };
-hilights = ( { text = "Ben"; color = "%M"; nick = "yes"; word = "yes"; } );
+hilights = ( { text = "**Your Nickname**"; color = "%M"; nick = "yes"; word = "yes"; } );
 keyboard = ( 
   { key = "meta-[M"; id = "command"; data = "mouse_xterm "; }
 );
