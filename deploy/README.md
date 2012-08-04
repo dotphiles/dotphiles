@@ -8,25 +8,20 @@ osx
 
 Setup OSX with sensible default options
 
-macports
---------
+### packages/macports
 
 Install required packages using macports
 
-brew
-----
+### packages/brew
 
 Install required packages using homebrew
 
-terminal
---------
+linux
+-----
 
-### colors
+Setup Linux with sensible default options
 
-Colour schemes for terminal programs, iTerm2, Apple Terminal etc
+### packages/apt
 
-### fonts
-
-Fonts that maybe required, for powerline status bar etc
-
+Install required packages using apt
 
