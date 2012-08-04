@@ -61,7 +61,7 @@ zstyle ':dotzsh:load' dzmodule \
   'archive' \
   'git' \
   'yum' \
-  'tumx' \
+  'tmux' \
   'syntax-highlighting' \
   'perl' \
   'rsync' \
