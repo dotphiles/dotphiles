@@ -28,3 +28,4 @@ color cyan start=""""[^"]" end=""""" start="'''[^']" end="'''"
 
 # Comment Color
 color brightblue "#.*$"
+

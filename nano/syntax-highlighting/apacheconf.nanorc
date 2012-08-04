@@ -42,3 +42,4 @@ color brightcyan "</?[A-Za-z]+"
 color brightcyan "(<|</|>)"
 color green "\"(\\.|[^\"])*\""
 color white "#.*"
+

@@ -70,3 +70,4 @@ color green        "\-\-.*$"
 
 # Multiline comments
 color green         start="\-\-\[" end="]"
+

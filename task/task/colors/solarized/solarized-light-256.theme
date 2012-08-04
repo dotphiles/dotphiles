@@ -4,8 +4,6 @@
 # Solarized light color theme for taskwarrior
 #
 
-
-
 color=on
 
 color.active=color7 on color9
@@ -56,3 +54,4 @@ color.tagged=color6
 
 color.undo.after=color2
 color.undo.before=color1
+

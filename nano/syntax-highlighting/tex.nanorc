@@ -6,3 +6,4 @@ icolor green "\\.|\\[A-Z]*"
 color magenta "[{}]"
 color blue "%.*"
 color blue start="\\begin\{comment\}" end="\\end\{comment\}"
+

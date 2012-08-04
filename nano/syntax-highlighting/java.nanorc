@@ -10,3 +10,4 @@ color blue "//.*"
 color blue start="/\*" end="\*/"
 color brightblue start="/\*\*" end="\*/"
 color ,green "[[:space:]]+$"
+
