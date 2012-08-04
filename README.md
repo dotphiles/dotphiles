@@ -127,16 +127,17 @@ You can:
 
 If you would like to contribute code to the project:
 
-  1. A bit of background reading:
+  - A bit of background reading:
     - [Setting up Git for Windows and connecting to GitHub][11]
     - [The Simple Guide to Git][12]
     - [How to GitHub: Fork, Branch, Track, Squash and Pull Request][4]
-    - [Write good commit messages][5].
-  2. [Fork the repository][13]
-  3. Make some changes to the code base
-  4. [Send us a Pull Request once you're happy with it][14]
 
-We'll do a bit of a code review before accepting your patch.
+  1. [Fork the repository][13]
+  2. Create a feature branch to easily amend a pull request later, if necessary.
+  3. Make some changes to the code base, write [good commit messages][5].
+  4. Squash commits on the topic branch before opening a pull request.
+  5. Open a [pull request][14] that relates to but one subject with a clear
+     title and description in gramatically correct, complete sentences.
 
 ### Git Flow
 
@@ -247,3 +248,4 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 [24]: https://github.com/holman/dotfiles
 [25]: https://github.com/mathiasbynens/dotfiles
 [26]: http://vim.spf13.com
+
