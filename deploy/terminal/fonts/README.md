@@ -1,5 +1,0 @@
-fonts
-=====
-
-Font for powerline
-

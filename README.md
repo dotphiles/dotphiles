@@ -46,14 +46,12 @@ These are the minimum files you'll need to edit
 
 ### Terminal
 
-dotphiles uses the [solarized](http://ethanschoonover.com/solarized) color theme
+dotphiles uses the [solarized][19] color theme
 by default, install the colour scheme for your terminal.
 
 vim-powerline requires patched fonts for the 'fancy fonts' options, you can
-find links to them to install [here][27] and configure your terminal to use 
+find links to them to install [here][27] and configure your terminal to use
 one, Menlo works great.
-
-Optional, tweak OSXs settings
 
   - `deploy/osx` setup osx and install ports & brews (only use one)
   - `deploy/linux` setup linux and install packages

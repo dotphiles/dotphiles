@@ -1,0 +1,22 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# netrc, usernames and passwords for various applications.
+#
+# Authors:
+#  Ben O'Hara <bohara@gmail.com>
+#
+
+#
+# WARNING, dont save this in the repo...
+#
+#     cp netrc ~/.netrc
+#     chmod 600 ~/.netrc
+#
+#machine imap.gmail.com
+#  login username@gmail.com
+#  password yourgmailpassword
+#machine smtp.gmail.com
+#  login username@gmail.com
+#  password yourgmailpassword
+

@@ -8,6 +8,7 @@
 .DS_Store
 *.d/localhost
 aptitude/cache
+cmus/autosave
 cmus/cache
 cmus/*-history
 cmus/*.pl
