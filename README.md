@@ -47,14 +47,17 @@ These are the minimum files you'll need to edit
 ### Terminal
 
 dotphiles uses the [solarized](http://ethanschoonover.com/solarized) color theme
-by default, see the files below to install.
+by default, install the colour scheme for your terminal.
 
-  - `deploy/terminal/colors` colour schemes for various terminals
-  - `deploy/terminal/fonts` fancy fonts, for vim-powerline
+vim-powerline requires patched fonts for the 'fancy fonts' options, you can
+find links to them to install [here][19] and configure your terminal to use 
+one, Menlo works great.
 
-  - `deploy/osx` is based on .osx but will also install ports/brews
-    - `macports` add ports to be installed by `osx`
-    - `homebrew` add brews to be installed by `osx`
+  - `deploy/osx` setup osx and install ports & brews (only use one)
+  - `deploy/linux` setup linux and install packages
+    - `packages/macports` add ports to be installed by `osx` (select one)
+    - `packages/homebrew` add brews to be installed by `osx` (select one)
+    - `packages/apt` add packagess to be installed by `linux` on apt based systems
 
 ### Dotsync
 
@@ -254,4 +257,6 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 [16]: http://www.twitter.com/nvie
 [17]: https://github.com/nvie/gitflow
 [18]: https://github.com/nvie/gitflow/wiki/Installation
+[19]: https://github.com/Lokaltog/vim-powerline/wiki/Patched-fonts
+
 
