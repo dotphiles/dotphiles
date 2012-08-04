@@ -8,7 +8,7 @@
 #   Ben O'Hara <bohara@gmail.com>
 #
 
-zstyle ':dotzsh:load' timing 'yes'
+#zstyle ':dotzsh:load' timing 'yes'
 #zstyle ':dotzsh:module:*' timing 'yes'
 
 # Set the key mapping style to 'emacs' or 'vi'.
