@@ -3,7 +3,6 @@
 "
 " Setup vim and load required plugins before dotvim
 "
-"
 " Authors:
 "   Ben O'Hara <bohara@gmail.com>
 "
@@ -28,8 +27,10 @@ if has("user_commands")
   Bundle 'Lokaltog/vim-powerline'
   Bundle 'tsaleh/vim-tmux'
   Bundle 'SearchComplete'
+  Bundle 'scrooloose/snipmate-snippets'
   if v:version > 700
     Bundle 'Shougo/neocomplcache'
+    Bundle 'Shougo/neocomplcache-snippets-complete'
     Bundle 'Indent-Guides'
   endif
   " Add extra bundles here...

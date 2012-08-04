@@ -8,6 +8,7 @@
 .DS_Store
 *.d/localhost
 aptitude/cache
+cmus/autosave
 cmus/cache
 cmus/*-history
 cmus/*.pl
@@ -19,6 +20,7 @@ subversion/README.txt
 subversion/auth/*
 gnupg/secring.gpg
 gnupg/pubring.gpg
+gnupg/trustdb.gpg
 gnupg/gpg-agent.env
 gnupg/sshcontrol
 gnupg/random*

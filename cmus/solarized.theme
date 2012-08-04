@@ -1,3 +1,12 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# Solarized theme for cmus
+#
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
+
 set color_cmdline_bg=default
 set color_cmdline_fg=default
 set color_error=red
@@ -21,3 +30,4 @@ set color_win_sel_bg=yellow
 set color_win_sel_fg=darkgray
 set color_win_title_bg=black
 set color_win_title_fg=lightyellow
+

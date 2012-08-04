@@ -317,8 +317,6 @@ hardstatus alwayslastline "%{= kw} %-Lw%{=b Kw} %n%f %t %{-}%+Lw %=%{= dd}"
 #
  bind A title  # default!
 
- bind ^e source $HOME/projects/virtualisr/.screenrc-dev
-
 #
 # BUUG - Berlin Unix User Group - read some news about Unix
 #  bind B screen -t 'buug' 4 links www.buug.de
