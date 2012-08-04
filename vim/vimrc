@@ -15,29 +15,12 @@ if has("user_commands")
   filetype off
   set rtp+=~/.vim/bundle/vundle/
   call vundle#rc()
-  Bundle 'gmarik/vundle'
-  Bundle 'kien/ctrlp.vim'
-  Bundle 'scrooloose/nerdcommenter'
-  Bundle 'scrooloose/nerdtree'
-  Bundle 'jistr/vim-nerdtree-tabs'
-  Bundle 'altercation/vim-colors-solarized'
-  Bundle 'tpope/vim-fugitive'
-  Bundle 'austintaylor/vim-indentobject'
-  Bundle 'tpope/vim-markdown'
-  Bundle 'Lokaltog/vim-powerline'
-  Bundle 'tsaleh/vim-tmux'
-  Bundle 'SearchComplete'
-  Bundle 'scrooloose/snipmate-snippets'
-  Bundle 'Zenburn'
-  Bundle 'sudo.vim'
-  Bundle 'bronson/vim-trailing-whitespace'
-  if v:version > 700
-    Bundle 'Shougo/neocomplcache'
-    Bundle 'Shougo/neocomplcache-snippets-complete'
-    Bundle 'Indent-Guides'
-  endif
+  "let g:vundles=['general', 'programming', 'php', 'ruby', 'python', 'javascript', 'html', 'misc']
+  let g:vundles=['general']
+  " Load 'vundles'
+  source ~/.vim/vundles.vim
   " Add extra bundles here...
-
+  " Bundle 'reponame'
 endif
 
 " Customize to your needs...
