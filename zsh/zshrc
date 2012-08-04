@@ -82,6 +82,7 @@ zstyle ':dotzsh:module:theme' theme 'dotphiles'
 zstyle ':dotzsh:module:theme:hostname:natte.mcvax.org' theme 'dotphiles' 'soldark' 'magenta'
 zstyle ':dotzsh:module:theme:hostname:excession.mikegrice.com' theme 'dotphiles' 'soldark' 'violet'
 zstyle ':dotzsh:module:theme:hostname:mac-mini.benohara.net' theme 'dotphiles' 'soldark' 'blue'
+zstyle ':dotzsh:module:theme:hostname:raspberrypi' theme 'dotphiles' 'soldark' 'yellow'
 zstyle ':dotzsh:module:theme:domain:apnic.net' theme 'dotphiles' 'soldark' 'orange'
 
 # Load dotzsh

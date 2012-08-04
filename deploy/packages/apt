@@ -1,0 +1,13 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# packages to be install with apt-get
+#
+# Authors:
+#    Ben O'Hara <bohara@gmail.com>
+#
+
+zsh
+git
+vim
+

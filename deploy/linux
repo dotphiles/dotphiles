@@ -1,0 +1,26 @@
+#!/bin/bash
+##
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# Script to bootstrap a linux box
+#
+# Authors:
+#  Ben O'Hara <bohara@gmail.com>
+#
+
+###############################################################################
+# apt-get
+###############################################################################
+
+if [[ -f packages/apt ]]; then
+  exec<packages/apt
+  while read line
+  do
+    if [[ ! "$line" =~ (^#|^$) ]]; then
+      echo $line
+      #sudo apt-get install $line
+    fi
+  done
+fi
+
+
