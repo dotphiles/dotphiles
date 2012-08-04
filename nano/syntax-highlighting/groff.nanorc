@@ -22,3 +22,4 @@ color brightred "\\\(.."
 color brightred start="\\\[" end="]"
 ## Macro arguments
 color brightcyan "\\\\\$[1-9]"
+

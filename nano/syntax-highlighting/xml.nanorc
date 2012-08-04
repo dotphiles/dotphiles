@@ -9,3 +9,4 @@ color cyan   ">"
 color yellow start="<!DOCTYPE" end="[/]?>"
 color yellow start="<!--" end="-->"
 color red    "&[^;]*;"
+

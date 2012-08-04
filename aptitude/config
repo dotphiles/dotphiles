@@ -1,3 +1,12 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# Config for aptitude
+#
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
+
 Aptitude "";
 Aptitude::UI "";
 Aptitude::UI::Styles "";
@@ -6,3 +15,4 @@ Aptitude::UI::Styles::Default::bg "default";
 Aptitude::UI::Styles::DepBroken "";
 Aptitude::UI::Styles::DepBroken::fg "white";
 Aptitude::UI::Styles::DepBroken::bg "red";
+

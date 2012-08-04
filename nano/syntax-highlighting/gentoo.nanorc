@@ -48,3 +48,4 @@ color cyan "^[[:space:]]*.*/"
 color brightmagenta "^[[:space:]]*(=|~|<|<=|=<|>|>=|=>)"
 ## Comments:
 color yellow "#.*$"
+

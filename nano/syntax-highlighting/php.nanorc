@@ -18,3 +18,4 @@ color brightcyan "\$[]\[A-Za-z0-9_'\"]*"
 color green "//.*"
 color green "#.*"
 color green start="/\*" end="\*/"
+
