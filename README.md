@@ -1,8 +1,10 @@
 dotphiles
 =========
 
-A framework of dotfiles for the usual terminal apps and shells designed to work
-across multiple platforms and degrade for older versions of software or O/S.
+A community driven framework of dotfiles, for the usual terminal apps and
+shells, designed to work across multiple platforms and degrade for older
+versions of software or O/S, allowing you to use the same settings on all
+your machines.
 
   - **Backup**, **restore**, and **sync** the prefs and settings for your
     toolbox.
@@ -44,18 +46,18 @@ These are the minimum files you'll need to edit
 
 ### Terminal
 
-dotphiles uses the [solarized][19] color theme by default, see the files
-below to install, [zenburn][20] *should* also work but you'll needs to
-changes settings throughout currently
+dotphiles uses the [solarized][19] color theme
+by default, install the colour scheme for your terminal.
 
-  - `deploy/terminal/colors` colour schemes for various terminals
-  - `deploy/terminal/fonts` fancy fonts, for vim-powerline, I'm using Menlo
+vim-powerline requires patched fonts for the 'fancy fonts' options, you can
+find links to them to install [here][27] and configure your terminal to use
+one, Menlo works great.
 
-Optional, tweak OSXs settings
-
-  - `deploy/osx` is based on .osx but will also install ports/brews
-    - `macports` add ports to be installed by `osx`
-    - `homebrew` add brews to be installed by `osx`
+  - `deploy/osx` setup osx and install ports & brews (only use one)
+  - `deploy/linux` setup linux and install packages
+    - `packages/macports` add ports to be installed by `osx` (select one)
+    - `packages/homebrew` add brews to be installed by `osx` (select one)
+    - `packages/apt` add packagess to be installed by `linux` on apt based systems
 
 ### Dotsync
 
@@ -73,17 +75,36 @@ See the documentation for [dotsync][7] for more information.
         ...
         [endfiles]
 
+    dotsync will look for
+
+         ~/$DOTFILES/dotfile.d/localhost
+         ~/$DOTFILES/dotfile.d/$HOSTNAME
+         ~/$DOTFILES/dotfile.d/$DOMAIN
+         ~/$DOTFILES/dotfile
+
+   And link the first one it finds instead of the standard dotfile.  The
+   `localhost` dotfile will be excluded from your repo.
+
   - Usage
 
-    Dotsync can be used to link your dotfiles into place, with it in the path..
+    Dotsync can be used to link your dotfiles into place
 
     - `dotsync -L` symlink dotfiles into place
     - `dotsync -U` update from github
+
+    And update remote machines
+
     - `dotsync -I -H hostname` initialise *hostname* with the set of dotfiles
+    - `dotsync -U -H hostname` update dotfiles on *hostname* from github
+    - `dotsync -I -H hostname -r` initialise *hostname* with the set of
+      dotfiles with rsync
+    - `dotsync -U -H hostname -r` update dotfiles on *hostname* with rsync
+    - `dotsync -A` update dotfiles on **all hosts**
 
   - Backups
 
-    Any existing ~/.dotfiles will be backed up into `~/.backup/dotfiles/` if found
+    Any existing ~/.dotfiles will be backed up into `~/.backup/dotfiles/` if
+    found
 
 Editing
 -------
@@ -142,7 +163,7 @@ If you would like to contribute code to the project:
 
 ### Git Flow
 
-We use the Git Flow branching model, [first described][15] by [nvie][16],
+We use the [Git Flow][10] branching model, [first described][15] by [nvie][16],
 so dotphiles's `master` branch moves on only at specific points, when we're
 really sure we want to promote something to production.
 
@@ -249,4 +270,5 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 [24]: https://github.com/holman/dotfiles
 [25]: https://github.com/mathiasbynens/dotfiles
 [26]: http://vim.spf13.com
+[27]: https://github.com/Lokaltog/vim-powerline/wiki/Patched-fonts
 
