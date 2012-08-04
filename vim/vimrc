@@ -28,6 +28,9 @@ if has("user_commands")
   Bundle 'tsaleh/vim-tmux'
   Bundle 'SearchComplete'
   Bundle 'scrooloose/snipmate-snippets'
+  Bundle 'Zenburn'
+  Bundle 'sudo.vim'
+  Bundle 'bronson/vim-trailing-whitespace'
   if v:version > 700
     Bundle 'Shougo/neocomplcache'
     Bundle 'Shougo/neocomplcache-snippets-complete'
