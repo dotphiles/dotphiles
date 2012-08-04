@@ -19,6 +19,7 @@
 # Uncomment examples below
 dotsyncrc
 ack/ackrc
+aptitude
 bin:bin
 ctags/ctags
 curl/curlrc
