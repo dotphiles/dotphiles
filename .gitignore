@@ -6,7 +6,8 @@
 
 *.swp
 .DS_Store
-cmus/autosave
+*.d/localhost
+aptitude/cache
 cmus/cache
 cmus/*-history
 cmus/*.pl
