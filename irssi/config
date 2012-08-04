@@ -37,7 +37,6 @@ servers = (
   {
     address = "roddenberry.freenode.net";
     chatnet = "Freenode";
-    password = "HS>H2|pL?rd#K&tc.[hV9qWki";
     port = "6667";
     autoconnect = "yes";
   },
@@ -112,9 +111,9 @@ chatnets = {
 };
 
 channels = (
-  { name = "#zsh"; chatnet = "Freenode"; autojoin = "yes"; },
-  { name = "#vim"; chatnet = "Freenode"; autojoin = "yes"; },
-  { name = "#linux"; chatnet = "Freenode"; autojoin = "yes"; },
+  #{ name = "#zsh"; chatnet = "Freenode"; autojoin = "yes"; },
+  #{ name = "#vim"; chatnet = "Freenode"; autojoin = "yes"; },
+  #{ name = "#linux"; chatnet = "Freenode"; autojoin = "yes"; },
   { name = "#dotphiles"; chatnet = "Freenode"; autojoin = "yes"; }
 );
 
