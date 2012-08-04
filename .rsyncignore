@@ -5,6 +5,8 @@
 #
 
 .git/
+*.d/localhost
+cmus/autosave
 cmus/cache
 cmus/*-history
 cmus/*.pl

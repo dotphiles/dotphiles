@@ -50,8 +50,10 @@ dotphiles uses the [solarized](http://ethanschoonover.com/solarized) color theme
 by default, install the colour scheme for your terminal.
 
 vim-powerline requires patched fonts for the 'fancy fonts' options, you can
-find links to them to install [here][19] and configure your terminal to use 
+find links to them to install [here][27] and configure your terminal to use 
 one, Menlo works great.
+
+Optional, tweak OSXs settings
 
   - `deploy/osx` setup osx and install ports & brews (only use one)
   - `deploy/linux` setup linux and install packages
@@ -61,8 +63,7 @@ one, Menlo works great.
 
 ### Dotsync
 
-See the documentation for [dotsync][7] for more
-information.
+See the documentation for [dotsync][7] for more information.
 
   - dotsyncrc
 
@@ -133,6 +134,11 @@ Contribute
 
 This project would not exist without all of its users and [contributors][2].
 
+Lots of ideas and code stolen from around the interwebs such as [skwp/dotfiles][21],
+[sorin-ionescu/oh-myzsh][22], [robby-russell/oh-my-myzsh][23], [holman/dotfiles][24],
+[mathiasbynens/dotfiles][25], [spf13][26] and numerous other snippets of code copied
+and pasted over the years.
+
 If you have ideas on how to make the configuration easier to maintain or
 improve its performance, do not hesitate to fork and send pull requests.
 
@@ -145,16 +151,17 @@ You can:
 
 If you would like to contribute code to the project:
 
-  1. A bit of background reading:
+  - A bit of background reading:
     - [Setting up Git for Windows and connecting to GitHub][11]
     - [The Simple Guide to Git][12]
     - [How to GitHub: Fork, Branch, Track, Squash and Pull Request][4]
-    - [Write good commit messages][5].
-  2. [Fork the repository][13]
-  3. Make some changes to the code base
-  4. [Send us a Pull Request once you're happy with it][14]
 
-We'll do a bit of a code review before accepting your patch.
+  1. [Fork the repository][13]
+  2. Create a feature branch to easily amend a pull request later, if necessary.
+  3. Make some changes to the code base, write [good commit messages][5].
+  4. Squash commits on the topic branch before opening a pull request.
+  5. Open a [pull request][14] that relates to but one subject with a clear
+     title and description in gramatically correct, complete sentences.
 
 ### Git Flow
 
@@ -257,6 +264,13 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 [16]: http://www.twitter.com/nvie
 [17]: https://github.com/nvie/gitflow
 [18]: https://github.com/nvie/gitflow/wiki/Installation
-[19]: https://github.com/Lokaltog/vim-powerline/wiki/Patched-fonts
-
+[19]: http://ethanschoonover.com/solarized
+[20]: http://slinky.imukuppi.org/zenburnpage/
+[21]: https://github.com/skwp/dotfiles
+[22]: https://github.com/sorin-ionescu/oh-my-zsh
+[23]: https://github.com/robby-russell/oh-my-zsh
+[24]: https://github.com/holman/dotfiles
+[25]: https://github.com/mathiasbynens/dotfiles
+[26]: http://vim.spf13.com
+[27]: https://github.com/Lokaltog/vim-powerline/wiki/Patched-fonts
 
