@@ -13,7 +13,7 @@ color status cyan default
 set folder=$HOME/.mail/
 set spoolfile="+Work/INBOX"
 
-set from      = "username@apnic.net"
+set from      = "bohara@apnic.net"
 set smtp_url  = "smtp://bohara@asmtp.apnic.net:587/"
 set mbox      = "+Work/Archive"
 set record    = "+Work/Sent"
