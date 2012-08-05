@@ -13,8 +13,8 @@ color status cyan default
 set folder=$HOME/.mail/
 set spoolfile="+Work/INBOX"
 
-set from      = "username@work.com"
-set smtp_url  = "smtp://username@smtp.work.com:587/"
+set from      = "**Your Work Email**"
+set smtp_url  = "smtp://**Your Work Username**@smtp.work.com:587/"
 set mbox      = "+Work/Archive"
 set record    = "+Work/Sent"
 set postponed = "+Work/Drafts"

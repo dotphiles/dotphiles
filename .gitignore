@@ -6,6 +6,12 @@
 
 *.swp
 .DS_Store
+*.d/localhost
+aptitude/cache
+cmus/autosave
+cmus/cache
+cmus/*-history
+cmus/*.pl
 ssh/id*
 ssh/environment*
 ssh/known_hosts
@@ -14,6 +20,7 @@ subversion/README.txt
 subversion/auth/*
 gnupg/secring.gpg
 gnupg/pubring.gpg
+gnupg/trustdb.gpg
 gnupg/gpg-agent.env
 gnupg/sshcontrol
 gnupg/random*
@@ -21,5 +28,7 @@ gnupg/private*
 gnupg/*~
 mutt/cache/*
 mutt/mailboxes.*
+mutt/smime/*
+mutt/certificates
 task/*.data
 

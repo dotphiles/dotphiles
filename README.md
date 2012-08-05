@@ -1,12 +1,15 @@
 dotphiles
 =========
 
-A framework of dotfiles for the usual terminal apps and shells designed to work
-across multiple platforms and degrade for older versions of software or O/S.
+A community driven framework of dotfiles, for the usual terminal apps and
+shells, designed to work across multiple platforms and degrade for older
+versions of software or O/S, allowing you to use the same settings on all
+your machines.
 
-  - **Backup**, **restore**, and **sync** the prefs and settings for your toolbox. 
+  - **Backup**, **restore**, and **sync** the prefs and settings for your
+    toolbox.
     Your dotfiles might be the most important files on your machine.
-  - **Learn** from the community. Discover new tools for your toolbox and new 
+  - **Learn** from the community. Discover new tools for your toolbox and new
     tricks for the ones you already use.
   - **Share** what you've learned with the rest of us.
 
@@ -43,20 +46,22 @@ These are the minimum files you'll need to edit
 
 ### Terminal
 
-dotphiles uses the [solarized](http://ethanschoonover.com/solarized) color theme
-by default, see the files below to install.
+dotphiles uses the [solarized][19] color theme
+by default, install the colour scheme for your terminal.
 
-  - `deploy/terminal/colors` colour schemes for various terminals
-  - `deploy/terminal/fonts` fancy fonts, for vim-powerline
+vim-powerline requires patched fonts for the 'fancy fonts' options, you can
+find links to them to install [here][27] and configure your terminal to use
+one, Menlo works great.
 
-  - `deploy/osx` is based on .osx but will also install ports/brews
-    - `macports` add ports to be installed by `osx`
-    - `homebrew` add brews to be installed by `osx`
+  - `deploy/osx` setup osx and install ports & brews (only use one)
+  - `deploy/linux` setup linux and install packages
+    - `packages/macports` add ports to be installed by `osx` (select one)
+    - `packages/homebrew` add brews to be installed by `osx` (select one)
+    - `packages/apt` add packagess to be installed by `linux` on apt based systems
 
 ### Dotsync
 
-See the documentation for [dotsync][7] for more
-information.
+See the documentation for [dotsync][7] for more information.
 
   - dotsyncrc
 
@@ -70,17 +75,36 @@ information.
         ...
         [endfiles]
 
+    dotsync will look for
+
+         ~/$DOTFILES/dotfile.d/localhost
+         ~/$DOTFILES/dotfile.d/$HOSTNAME
+         ~/$DOTFILES/dotfile.d/$DOMAIN
+         ~/$DOTFILES/dotfile
+
+   And link the first one it finds instead of the standard dotfile.  The
+   `localhost` dotfile will be excluded from your repo.
+
   - Usage
 
-    Dotsync can be used to link your dotfiles into place, with it in the path..
+    Dotsync can be used to link your dotfiles into place
 
     - `dotsync -L` symlink dotfiles into place
     - `dotsync -U` update from github
+
+    And update remote machines
+
     - `dotsync -I -H hostname` initialise *hostname* with the set of dotfiles
+    - `dotsync -U -H hostname` update dotfiles on *hostname* from github
+    - `dotsync -I -H hostname -r` initialise *hostname* with the set of
+      dotfiles with rsync
+    - `dotsync -U -H hostname -r` update dotfiles on *hostname* with rsync
+    - `dotsync -A` update dotfiles on **all hosts**
 
   - Backups
 
-    Any existing ~/.dotfiles will be backed up into `~/.backup/dotfiles/` if found
+    Any existing ~/.dotfiles will be backed up into `~/.backup/dotfiles/` if
+    found
 
 Editing
 -------
@@ -108,6 +132,11 @@ Contribute
 
 This project would not exist without all of its users and [contributors][2].
 
+Lots of ideas and code stolen from around the interwebs such as [skwp/dotfiles][21],
+[sorin-ionescu/oh-myzsh][22], [robby-russell/oh-my-myzsh][23], [holman/dotfiles][24],
+[mathiasbynens/dotfiles][25], [spf13][26] and numerous other snippets of code copied
+and pasted over the years.
+
 If you have ideas on how to make the configuration easier to maintain or
 improve its performance, do not hesitate to fork and send pull requests.
 
@@ -120,20 +149,21 @@ You can:
 
 If you would like to contribute code to the project:
 
-  1. A bit of background reading:
+  - A bit of background reading:
     - [Setting up Git for Windows and connecting to GitHub][11]
     - [The Simple Guide to Git][12]
     - [How to GitHub: Fork, Branch, Track, Squash and Pull Request][4]
-    - [Write good commit messages][5].
-  2. [Fork the repository][13]
-  3. Make some changes to the code base
-  4. [Send us a Pull Request once you're happy with it][14]
 
-We'll do a bit of a code review before accepting your patch.
+  1. [Fork the repository][13]
+  2. Create a feature branch to easily amend a pull request later, if necessary.
+  3. Make some changes to the code base, write [good commit messages][5].
+  4. Squash commits on the topic branch before opening a pull request.
+  5. Open a [pull request][14] that relates to but one subject with a clear
+     title and description in gramatically correct, complete sentences.
 
 ### Git Flow
 
-We use the Git Flow branching model, [first described][15] by [nvie][16],
+We use the [Git Flow][10] branching model, [first described][15] by [nvie][16],
 so dotphiles's `master` branch moves on only at specific points, when we're
 really sure we want to promote something to production.
 
@@ -177,7 +207,7 @@ follows:
 
   1. Ensure you have a remote configured for the upstream repository.
 
-       git remote add upstream git://github.com/dotphiles/dotphiles.git
+        git remote add upstream git://github.com/dotphiles/dotphiles.git
 
   2. Update your local repository with the upstream refs.
 
@@ -232,3 +262,13 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 [16]: http://www.twitter.com/nvie
 [17]: https://github.com/nvie/gitflow
 [18]: https://github.com/nvie/gitflow/wiki/Installation
+[19]: http://ethanschoonover.com/solarized
+[20]: http://slinky.imukuppi.org/zenburnpage/
+[21]: https://github.com/skwp/dotfiles
+[22]: https://github.com/sorin-ionescu/oh-my-zsh
+[23]: https://github.com/robby-russell/oh-my-zsh
+[24]: https://github.com/holman/dotfiles
+[25]: https://github.com/mathiasbynens/dotfiles
+[26]: http://vim.spf13.com
+[27]: https://github.com/Lokaltog/vim-powerline/wiki/Patched-fonts
+

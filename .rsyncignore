@@ -5,6 +5,12 @@
 #
 
 .git/
+*.d/localhost
+aptitude/cache
+cmus/autosave
+cmus/cache
+cmus/*-history
+cmus/*.pl
 ssh/id*
 ssh/environment*
 ssh/known_hosts
@@ -17,6 +23,9 @@ vim/.*
 vim/*.swp
 vim/backup/
 mutt/cache/.*
+mutt/mailboxes.*
+mutt/smime/*
+mutt/certificates
 subversion/auth/
 task/*.data
 

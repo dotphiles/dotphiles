@@ -1,3 +1,4 @@
+#!/bin/bash
 #
 # dotphiles : https://github.com/dotphiles/dotphiles
 #
@@ -8,14 +9,19 @@
 #   Ben O'Hara <bohara@gmail.com>
 #
 
+if [[ "$OSTYPE" != "darwin"* ]]; then
+  echo "$0 : Will only run on Darwin"
+  exit 1
+fi
+
 ###############################################################################
 # General UI/UX                                                               #
 ###############################################################################
 
 # Set computer name (as done via System Preferences → Sharing)
-#scutil --set ComputerName "My Host Name"
-#scutil --set HostName "my-hostname"
-#scutil --set LocalHostName "my-hostname"
+scutil --set ComputerName "Bens MacBook Pro"
+scutil --set HostName "bens-macbook-pro"
+scutil --set LocalHostName "bens-macbook-pro"
 
 # Menu bar: disable transparency
 defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
@@ -390,12 +396,14 @@ defaults write com.twitter.twitter-mac ShowFullNames -bool true
 # Hide the app in the background if it’s not the front-most window
 defaults write com.twitter.twitter-mac HideInBackground -bool true
 
+DIR=$(cd $(dirname "$0"); pwd)
+
 ###############################################################################
 # Macports                                                                    #
 ###############################################################################
 
-if [[ -f macports ]]; then
-  exec<macports
+if [[ -f $DIR/packages/macports ]]; then
+  exec<$DIR/packages/macports
   while read line
   do
     if [[ ! "$line" =~ (^#|^$) ]]; then
@@ -408,8 +416,8 @@ fi
 # Homebrew
 ###############################################################################
 
-if [[ -f homebrew ]]; then
-  exec<homebrew
+if [[ -f $DIR/packages/homebrew ]]; then
+  exec<$DIR/packages/homebrew
   while read line
   do
     if [[ ! "$line" =~ (^#|^$) ]]; then
@@ -417,7 +425,6 @@ if [[ -f homebrew ]]; then
     fi
   done
 fi
-
 
 ###############################################################################
 # Kill affected applications                                                  #
