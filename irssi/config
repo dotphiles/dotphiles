@@ -305,7 +305,7 @@ settings = {
     hilight_color = "= %R";
   };
 };
-hilights = ( { text = "Ben"; color = "%M"; nick = "yes"; word = "yes"; } );
+hilights = ( { text = "benohara"; color = "%M"; nick = "yes"; word = "yes"; } );
 keyboard = ( 
   { key = "meta-[M"; id = "command"; data = "mouse_xterm "; }
 );
