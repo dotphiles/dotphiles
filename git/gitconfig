@@ -9,8 +9,8 @@
 
 # Global Config
 [user]
-  name = "**Your Name**"
-  email = "**Your Email**"
+  #name = "**Your Name**"
+  #email = "**Your Email**"
   #signingkey = **Your GPG ID**
 
 [branch "master"]
