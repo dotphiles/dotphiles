@@ -17,3 +17,6 @@
 	path = vim/dotvim
 	url = https://github.com/dotphiles/dotvim.git
 
+[submodule "tmux/powerline"]
+	path = tmux/powerline
+	url = git://github.com/erikw/tmux-powerline.git
