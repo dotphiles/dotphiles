@@ -16,7 +16,8 @@ if has("user_commands")
   set rtp+=~/.vim/bundle/vundle/
   call vundle#rc()
   "let g:vundles=['general', 'programming', 'php', 'ruby', 'python', 'javascript', 'html', 'misc']
-  let g:vundles=['general']
+  let g:neocomplcache_enable_at_startup = 1
+  let g:vundles=['general', 'programming']
   " Load 'vundles'
   source ~/.vim/vundles.vim
   " Add extra bundles here...
