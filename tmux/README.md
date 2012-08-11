@@ -12,3 +12,8 @@ To use, add the following to **dotsyncrc**
     ..
     [endfiles]
 
+Powerline
+---------
+
+To use the tmux-powerline you'll need a version of bash install > 4.
+
