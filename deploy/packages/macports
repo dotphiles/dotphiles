@@ -7,17 +7,17 @@
 #    Ben O'Hara <bohara@gmail.com>
 #
 
-coreutils
-screen
-elinks +col256
-mutt-devel +sasl +ssl +smtp +sidebar +headercache +tokyocabinet +gpgme
-irssi
-proctools
-mtr
-wget
-tmux
-tmux-pasteboard
-gnupg
-ipcalc
-grc
+#coreutils
+#screen
+#elinks +col256
+#mutt-devel +sasl +ssl +smtp +sidebar +headercache +tokyocabinet +gpgme
+#irssi
+#proctools
+#mtr
+#wget
+#tmux
+#tmux-pasteboard
+#gnupg
+#ipcalc
+#grc
 
