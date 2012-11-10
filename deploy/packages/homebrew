@@ -7,17 +7,20 @@
 #    Ben O'Hara <bohara@gmail.com>
 #
 
-#coreutils
+coreutils
 #screen
 #elinks
 #mutt-devel
 #irssi
 #proctools
-#mtr
+mtr
 #wget
-#tmux
+tmux
 #tmux-pasteboard
 #gnupg
-#ipcalc
-#grc
+ipcalc
+grc
+nmap
+htop
+pv
 

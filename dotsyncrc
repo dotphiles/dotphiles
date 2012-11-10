@@ -130,5 +130,6 @@ rrs.apnic.net                   rsync=bens-macbook-pro
 ns3.apnic.net                   rsync=bens-macbook-pro
 sec3.apnic.net                  rsync=bens-macbook-pro
 logstash.apnic.net              rsync=bens-macbook-pro
+nagios.apnic.net                rsync=bens-macbook-pro
 [endhosts]
 
