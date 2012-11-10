@@ -1,0 +1,22 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# ~/.tmuxinator/desktop.yml
+#
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
+
+project_name: desktop
+project_root: ~/
+cli_args: -C
+tabs:
+  - main:
+  - vi: vi ~
+  - scratch:
+      layout: vertical
+      panes:
+        -
+        -
+  - network: ssh -t parsley tmux attach
+
