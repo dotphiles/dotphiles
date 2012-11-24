@@ -83,7 +83,7 @@ zstyle ':dotzsh:module:theme:hostname:natte.mcvax.org' theme 'dotphiles' 'soldar
 zstyle ':dotzsh:module:theme:hostname:excession.mikegrice.com' theme 'dotphiles' 'soldark' 'violet'
 zstyle ':dotzsh:module:theme:hostname:mac-mini.benohara.net' theme 'dotphiles' 'soldark' 'blue'
 zstyle ':dotzsh:module:theme:hostname:pi.benohara.net' theme 'dotphiles' 'soldark' 'yellow'
-zstyle ':dotzsh:module:theme:hostname:nas.benohara.net' theme 'dotphiles' 'soldark' 'yellow'
+zstyle ':dotzsh:module:theme:hostname:nas' theme 'dotphiles' 'soldark' 'yellow'
 zstyle ':dotzsh:module:theme:domain:apnic.net' theme 'dotphiles' 'soldark' 'orange'
 
 # Load dotzsh

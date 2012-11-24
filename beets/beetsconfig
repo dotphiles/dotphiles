@@ -1,3 +1,6 @@
 [beets]
 directory: /c/Music
-plugins = bpd lastgenre fetchart embedart rdm
+plugins = bpd lastgenre fetchart embedart rdm importfeeds
+[importfeeds]
+feeds_formats: link
+feeds_dir: ~/Music/iTunes/iTunes\ Media/
