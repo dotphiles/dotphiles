@@ -8,9 +8,9 @@ cwd=$(dirname $0)
 source "${cwd}/config.sh"
 
 # Source lib functions.
-source "${cwd}/powerline/lib.sh"
+source "${cwd}/lib.sh"
 
-segments_path="${cwd}/powerline/${segments_dir}"
+segments_path="${cwd}/${segments_dir}"
 
 # Mute this statusbar?
 mute_status_check "right"

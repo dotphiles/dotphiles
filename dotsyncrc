@@ -79,6 +79,7 @@ mac-mini                        git=bens-macbook-pro
 excession.mikegrice.com         rsync=bens-macbook-pro
 chunk.benohara.net              rsync=bens-macbook-pro
 nas.benohara.net                rsync=bens-macbook-pro
+pi.benohara.net                 rsync=bens-macbook-pro
 parsley.apnic.net               rsync=bens-macbook-pro
 natto.apnic.net                 rsync=bens-macbook-pro
 fennel.apnic.net                rsync=bens-macbook-pro
