@@ -1,0 +1,37 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# ~/.tmuxinator/desktop.yml
+#
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
+
+project_name: network
+project_root: ~/
+tabs:
+  - configs:
+      layout: vertical
+      panes:
+        - cd /data/rancid/configs
+        - cd /opt/tftpboot/acls
+  - scratch:
+      layout: vertical
+      panes:
+        -
+        -
+  - routers:
+      layout: tiled
+      panes:
+        -
+        -
+        -
+        -
+  - switches:
+      layout: tiled
+      panes:
+        -
+        -
+        -
+        -
+

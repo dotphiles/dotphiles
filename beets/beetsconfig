@@ -1,0 +1,3 @@
+[beets]
+directory: /c/Music
+plugins = bpd lastgenre fetchart embedart rdm

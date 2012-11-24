@@ -9,14 +9,11 @@
 
 project_name: desktop
 project_root: ~/
-cli_args: -C
 tabs:
-  - main:
-  - vi: vi ~
-  - scratch:
-      layout: vertical
+  - vim: vim
+  - editor:
+      layout: main-vertical
       panes:
-        -
-        -
-  - network: ssh -t parsley tmux attach
-
+        - vim
+        - #empty, will just run plain bash
+        - top
