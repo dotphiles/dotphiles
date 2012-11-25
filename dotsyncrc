@@ -75,7 +75,7 @@ zsh/zshrc
 # Hosts to sync
 ## hostname                     type=masterhost, ANY or NONE
 [hosts]
-mac-mini                        git=bens-macbook-pro
+mac-mini.benohara.net           git=bens-macbook-pro
 
 excession.mikegrice.com         rsync=bens-macbook-pro
 chunk.benohara.net              rsync=bens-macbook-pro
