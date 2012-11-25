@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Prints the WAN IP address. The result is cached and updated according to $update_period.
 
 # Cache file.
