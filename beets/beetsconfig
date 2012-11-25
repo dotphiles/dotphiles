@@ -1,3 +1,6 @@
 [beets]
-directory: /Users/Shared/Music
-plugins = bpd lastgenre fetchart embedart rdm scrub
+directory: /nas/Music
+plugins = lastgenre fetchart embedart rdm scrub
+#plugins = chroma lastgenre fetchart embedart rdm scrub
+[acoustid]
+apikey=IkH0JkBR
