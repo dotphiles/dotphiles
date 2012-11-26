@@ -4,16 +4,6 @@
 # The powerline root directory.
 cwd=$(dirname $0)
 
-ps | grep $0 | grep -v grep > /var/tmp/$0.pid
-pids=$(cat /var/tmp/$0.pid | cut -d ' ' -f 1)
-for pid in $pids
-do
-   if [ $pid -ne $$ ]; then
-      logprint " $0 is already running. Exiting"
-      exit 7
-   fi
-done
-
 # Source global configurations.
 source "${cwd}/config.sh"
 
@@ -36,13 +26,13 @@ pwd+=(["separator"]="${separator_left_bold}")
 #register_segment "pwd"
 
 declare -A mail_count
-mail_count+=(["script"]="${segments_path}/mail_count_maildir.sh")
+#mail_count+=(["script"]="${segments_path}/mail_count_maildir.sh")
 #mail_count+=(["script"]="${segments_path}/mail_count_gmail.sh")
 #mail_count+=(["script"]="${segments_path}/mail_count_apple_mail.sh")
 mail_count+=(["foreground"]="white")
 mail_count+=(["background"]="red")
 mail_count+=(["separator"]="${separator_left_bold}")
-register_segment "mail_count"
+#register_segment "mail_count"
 
 declare -A now_playing
 if [ "$PLATFORM" == "linux" ]; then
@@ -61,7 +51,7 @@ if [[ ${now_playing["script"]} ]]; then
 	now_playing+=(["foreground"]="colour37")
 	now_playing+=(["background"]="colour234")
 	now_playing+=(["separator"]="${separator_left_bold}")
-	register_segment "now_playing"
+#	register_segment "now_playing"
 fi
 
 declare -A cpu
@@ -87,7 +77,7 @@ fi
 battery+=(["foreground"]="colour127")
 battery+=(["background"]="colour137")
 battery+=(["separator"]="${separator_left_bold}")
-register_segment "battery"
+#register_segment "battery"
 
 declare -A weather
 weather+=(["script"]="${segments_path}/weather_yahoo.sh")
@@ -95,7 +85,7 @@ weather+=(["script"]="${segments_path}/weather_yahoo.sh")
 weather+=(["foreground"]="colour255")
 weather+=(["background"]="colour37")
 weather+=(["separator"]="${separator_left_bold}")
-register_segment "weather"
+#register_segment "weather"
 
 declare -A xkb_layout
 if [ "$PLATFORM" == "linux" ]; then
@@ -132,5 +122,4 @@ register_segment "time"
 # Print the status line in the order of registration above.
 print_status_line_right
 
-rm -f /var/tmp/$0.pid
 exit 0

@@ -48,13 +48,14 @@ print_status_line_right() {
 	# Can't be declared local if we want the exit code.
 	output=$(${script})
 	local exit_code="$?"
-      if [ "$exit_code" -ne 0 ] && [ "$DEBUG_MODE" = "true" ]; then
-	      	local seg_name="${script##*/}"
-	        echo "Segment '${seg_name}' exited with code ${exit_code}. Aborting."
+  if [ "$DEBUG_MODE" != "false" ]; then
+      if [ "$exit_code" -ne 0 ]; then
+	        echo "Segment ${script} exited with code ${exit_code}. Aborting."
     	    exit 1
     	elif [ -z "$output" ]; then
 	      continue
     	fi
+  fi
 	__ui_right "$prev_bg" "$background" "$foreground" "$separator" "$separator_fg"
 	echo -n "$output"
 	unset output
@@ -141,7 +142,7 @@ __ui_left() {
 
 # Get the current path in the segment.
 get_tmux_cwd() {
-    local env_name=$(tmux display -p "TMUXPWD_#D" | tr -d %)
+    local env_name=$(tmux display -p "TMUXPWD_#I_#P")
     local env_val=$(tmux show-environment | grep "$env_name")
     # The version below is still quite new for tmux. Uncommented this in the future :-)
     #local env_val=$(tmux show-environment "$env_name" 2>&1)

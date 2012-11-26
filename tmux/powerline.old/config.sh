@@ -8,11 +8,7 @@ fi
 
 if [ -z "$PLATFORM" ]; then
 	# You platform \in {linux,bsd,mac}.
-  if [[ $(uname) == "Darwin" ]] ; then
-    export PLATFORM="mac"
-  else
-    export PLATFORM="linux"
-  fi
+	export PLATFORM="mac"
 fi
 
 if [ -z "$USE_PATCHED_FONT" ]; then
