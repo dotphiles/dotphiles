@@ -4,15 +4,9 @@
 # The powerline root directory.
 cwd=$(dirname $0)
 
-ps | grep $0 | grep -v grep > /var/tmp/$0.pid
-pids=$(cat /var/tmp/$0.pid | cut -d ' ' -f 1)
-for pid in $pids
-do
-   if [ $pid -ne $$ ]; then
-      logprint " $0 is already running. Exiting"
-      exit 7
-   fi
-done
+if pgrep status-left.sh > /dev/null; then 
+  exit
+fi
 
 # Source global configurations.
 source "${cwd}/config.sh"
@@ -95,5 +89,4 @@ register_segment "vcs_others"
 # Print the status line in the order of registration above.
 print_status_line_left
 
-rm -f /var/tmp/$0.pid
 exit 0
