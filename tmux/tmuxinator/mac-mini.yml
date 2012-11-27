@@ -13,6 +13,6 @@ tabs:
   - shell:
       layout: main-vertical
       panes:
-        - ssh parsley.apnic.net
+        - #empty, will just run plain $SHELL
         - #empty, will just run plain $SHELL
         - #empty, will just run plain $SHELL
