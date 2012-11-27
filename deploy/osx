@@ -23,6 +23,9 @@ scutil --set ComputerName "Bens MacBook Pro"
 scutil --set HostName "bens-macbook-pro"
 scutil --set LocalHostName "bens-macbook-pro"
 
+# Disable creating .AppleDouble everywhere on the network shares
+defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+
 # Menu bar: disable transparency
 defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
 
