@@ -1,0 +1,19 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# ~/.tmuxinator/macbook-pro.yml
+#
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
+
+project_name: macbook-pro
+project_root: ~/
+tabs:
+  - home: ssh home.benohara.net
+  - work:
+      layout: main-vertical
+      panes:
+        - ssh parsley.apnic.net
+        - #empty, will just run plain $SHELL
+        - #empty, will just run plain $SHELL
