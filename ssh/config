@@ -29,7 +29,7 @@ Host aox1 iax1 scx1 scx2 scx3 scx4
 # Default
 Host *
     User bohara
-    StrictHostKeyChecking ask
-    ControlMaster auto
-    ControlPath ~/.ssh/master/%r@%h:%p
+#    StrictHostKeyChecking ask
+#    ControlMaster auto
+#    ControlPath ~/.ssh/master/%r@%h:%p
 
