@@ -6,5 +6,9 @@ if [[ "$host" == "" ]]; then
   exit 1
 fi
 
-tmux new-window -n $host -d "ssh -t $host \"tmux attach -t $host || tmux new-session -s $host\""
+# change to existing tmux window, or
+# create a new window and
+# ssh to host
+# reattach or start a tmux session
+tmux select-window -t wrapper:$host || tmux new-window -t wrapper -n $host "ssh -t $host \"tmux attach -t $host || tmux new-session -s $host\""
 
