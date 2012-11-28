@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# exit if no $host
+host=$1
+if [[ "$host" == "" ]]; then
+  exit 1
+fi
+
+tmux new-window -n $host -d "ssh -t $host"
+
