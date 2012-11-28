@@ -10,5 +10,5 @@
 project_name: wrapper
 project_root: ~/
 tabs:
-  - macbook: tmux rename-window macbook && unset TMUX && tmux attach -t macbook || tmux new-session -s macbook
+  - macbook: unset TMUX && tmux attach -t macbook || tmux new-session -s macbook
 
