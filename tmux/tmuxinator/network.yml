@@ -1,0 +1,39 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# ~/.tmuxinator/wrapper.yml
+#
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
+
+project_name: network
+project_root: ~/
+tabs:
+  - configs:
+      layout: even-horizontal
+      panes:
+        - #empty, will just run plain bash
+        - #empty, will just run plain bash
+  - office:
+      layout: tiled
+      panes:
+        - #empty, will just run plain bash
+        - #empty, will just run plain bash
+        - #empty, will just run plain bash
+        - #empty, will just run plain bash
+  - nextdc:
+      layout: tiled
+      panes:
+        - #empty, will just run plain bash
+        - #empty, will just run plain bash
+        - #empty, will just run plain bash
+        - #empty, will just run plain bash
+  - interactive:
+      layout: tiled
+      panes:
+        - #empty, will just run plain bash
+        - #empty, will just run plain bash
+        - #empty, will just run plain bash
+        - #empty, will just run plain bash
+
