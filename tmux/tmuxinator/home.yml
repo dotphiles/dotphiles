@@ -10,6 +10,7 @@
 project_name: home
 project_root: ~/
 tabs:
-  - localhost: unset TMUX; tmux attach -t $HOST || tmux new-session -s $HOST
+  - mac-mini: unset TMUX; tmux attach -t mac-mini || tmux new-session -s mac-mini
   - nas: ssh -t nas "tmux attach -t nas || tmux new-session -s nas"
   - pi: ssh -t pi "tmux attach -t pi || tmux new-session -s pi"
+
