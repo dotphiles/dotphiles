@@ -1,0 +1,15 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# ~/.tmuxinator/wrapper.yml
+#
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
+
+project_name: macbook
+project_root: ~/
+tabs:
+  - home: unset TMUX; tmuxinator start home
+  - work: unset TMUX; tmuxinator start work
+

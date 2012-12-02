@@ -1,0 +1,14 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# ~/.tmuxinator/work.yml
+#
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
+
+project_name: work
+project_root: ~/
+tabs:
+  - racktables: unset TMUX; tmuxinator start racktables
+
