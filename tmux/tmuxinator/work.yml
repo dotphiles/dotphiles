@@ -10,5 +10,5 @@
 project_name: work
 project_root: ~/
 tabs:
-  - racktables: unset TMUX; tmuxinator start racktables
+  - racktables: unset TMUX; tmux attach -t racktables || tmux new-session -s racktables
 
