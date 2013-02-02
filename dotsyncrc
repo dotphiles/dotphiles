@@ -36,9 +36,6 @@ input/inputrc
 irssi
 mercurial/hgrc
 mercurial/hgignore
-mutt
-mutt/muttrc
-mutt/offlineimaprc
 python/pythonrc
 python/pylintrc
 rpmmacros
@@ -107,7 +104,7 @@ whois-node3.apnic.net           rsync=racktables.apnic.net
 whois-node4.apnic.net           rsync=racktables.apnic.net
 whois-node5.apnic.net           rsync=racktables.apnic.net
 wasabi.apnic.net                rsync=racktables.apnic.net
-parsley.apnic.net               rsync=racktables.apnic.net
+parsley.apnic.net            rsync=racktables.apnic.net
 puppet.apnic.net                rsync=racktables.apnic.net
 puppetvc.apnic.net              rsync=racktables.apnic.net
 kumera5.apnic.net               rsync=racktables.apnic.net
