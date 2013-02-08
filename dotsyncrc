@@ -104,7 +104,7 @@ whois-node3.apnic.net           rsync=racktables.apnic.net
 whois-node4.apnic.net           rsync=racktables.apnic.net
 whois-node5.apnic.net           rsync=racktables.apnic.net
 wasabi.apnic.net                rsync=racktables.apnic.net
-parsley.apnic.net            rsync=racktables.apnic.net
+parsley.apnic.net               rsync=racktables.apnic.net
 puppet.apnic.net                rsync=racktables.apnic.net
 puppetvc.apnic.net              rsync=racktables.apnic.net
 kumera5.apnic.net               rsync=racktables.apnic.net
@@ -133,5 +133,6 @@ ns3.apnic.net                   rsync=racktables.apnic.net
 sec3.apnic.net                  rsync=racktables.apnic.net
 logstash.apnic.net              rsync=racktables.apnic.net
 nagios.apnic.net                rsync=racktables.apnic.net
+nexus.apnic.net                 rsync=bens-macbook-pro
 [endhosts]
 
