@@ -20,9 +20,9 @@
 dotsyncrc
 ack/ackrc
 aptitude
+beets/beetsconfig
 bin:bin
 ctags/ctags
-curl/curlrc
 cmus
 git/gitconfig
 git/gitignore
@@ -36,11 +36,9 @@ input/inputrc
 irssi
 mercurial/hgrc
 mercurial/hgignore
-mutt
-mutt/muttrc
-mutt/offlineimaprc
 python/pythonrc
 python/pylintrc
+rpmmacros
 ruby/irbrc
 ruby/pryrc
 ruby/gemrc
@@ -73,11 +71,17 @@ zsh/zshrc
 # Hosts to sync
 ## hostname                     type=masterhost, ANY or NONE
 [hosts]
-mac-mini                        git=bens-macbook-pro
+mac-mini.benohara.net           git=bens-macbook-pro
+
 excession.mikegrice.com         rsync=bens-macbook-pro
-parsley.apnic.net               rsync=bens-macbook-pro
+chunk.benohara.net              rsync=bens-macbook-pro
+nas.benohara.net                rsync=bens-macbook-pro
+pi.benohara.net                 rsync=bens-macbook-pro
+racktables.apnic.net            rsync=bens-macbook-pro
+
 natto.apnic.net                 rsync=bens-macbook-pro
 fennel.apnic.net                rsync=bens-macbook-pro
+licorice.apnic.net              rsync=bens-macbook-pro
 cron.apnic.net                  rsync=bens-macbook-pro
 svc-ia1.apnic.net               rsync=bens-macbook-pro
 svc-ia2.apnic.net               rsync=bens-macbook-pro
@@ -100,7 +104,7 @@ whois-node3.apnic.net           rsync=bens-macbook-pro
 whois-node4.apnic.net           rsync=bens-macbook-pro
 whois-node5.apnic.net           rsync=bens-macbook-pro
 wasabi.apnic.net                rsync=bens-macbook-pro
-racktables.apnic.net            rsync=bens-macbook-pro
+parsley.apnic.net               rsync=bens-macbook-pro
 puppet.apnic.net                rsync=bens-macbook-pro
 puppetvc.apnic.net              rsync=bens-macbook-pro
 kumera5.apnic.net               rsync=bens-macbook-pro
@@ -127,5 +131,8 @@ mace.apnic.net                  rsync=bens-macbook-pro
 rrs.apnic.net                   rsync=bens-macbook-pro
 ns3.apnic.net                   rsync=bens-macbook-pro
 sec3.apnic.net                  rsync=bens-macbook-pro
+logstash.apnic.net              rsync=bens-macbook-pro
+nagios.apnic.net                rsync=bens-macbook-pro
+nexus.apnic.net                 rsync=bens-macbook-pro
 [endhosts]
 

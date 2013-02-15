@@ -7,3 +7,4 @@ color brightred "\.(BR?|I[PR]?).*$"
 color brightblue "\.(BR?|I[PR]?|PP)"
 color brightwhite "\\f[BIPR]"
 color yellow "\.(br|DS|RS|RE|PD)"
+

@@ -13,6 +13,16 @@ your machines.
     tricks for the ones you already use.
   - **Share** what you've learned with the rest of us.
 
+Example dotfiles for:
+
+  - `zsh`
+  - `vim` `nano`
+  - `git` `mercurial` `subversion`
+  - `python` `ruby` `perl`
+  - `screen` `tmux`
+  - `mutt` `irssi`
+  - and many more...
+
 Installation
 ------------
 
@@ -33,18 +43,16 @@ Installation
 Configuration
 -------------
 
-### Dotfiles
+### dotfiles
 
-These are the minimum files you'll need to edit
+These are the minimum files you'll want to edit
 
   - `dotsyncrc` settings for [dotsync][7]
   - `zsh/zshrc` settings for [dotzsh][8]
   - `vim/vimrc` settings for [dotvim][9]
-  - `git/gitconfig` add your name, email and gpg keyid
-  - `ssh/authorized_keys` add your public ssh key
-  - `ssh/config` add your settings and hosts
+  - and any dotfiles you enable in `dotsyncrc`
 
-### Terminal
+### terminal
 
 dotphiles uses the [solarized][19] color theme
 by default, install the colour scheme for your terminal.
@@ -53,13 +61,17 @@ vim-powerline requires patched fonts for the 'fancy fonts' options, you can
 find links to them to install [here][27] and configure your terminal to use
 one, Menlo works great.
 
+### deploy
+
+Experimental!
+
   - `deploy/osx` setup osx and install ports & brews (only use one)
   - `deploy/linux` setup linux and install packages
     - `packages/macports` add ports to be installed by `osx` (select one)
     - `packages/homebrew` add brews to be installed by `osx` (select one)
     - `packages/apt` add packagess to be installed by `linux` on apt based systems
 
-### Dotsync
+### dotsync
 
 See the documentation for [dotsync][7] for more information.
 
@@ -174,7 +186,7 @@ larger changes where `develop` might move on whilst you're completing your work.
 #### Configuring Git Flow
 
 There is a set of [helper scripts][17] that will work on both Unix-based
-operating systems and Windows.  Follow the appropriate 
+operating systems and Windows.  Follow the appropriate
 [installation instructions][18] for your operating system, and configure your
 working copy repository for use with Git Flow by typing `git flow init`.
 Accept all the default options to the questions that it asks you.
@@ -207,7 +219,7 @@ follows:
 
   1. Ensure you have a remote configured for the upstream repository.
 
-       git remote add upstream git://github.com/dotphiles/dotphiles.git
+        git remote add upstream git://github.com/dotphiles/dotphiles.git
 
   2. Update your local repository with the upstream refs.
 

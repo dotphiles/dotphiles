@@ -15,3 +15,4 @@ color brightblue "//.*"
 color brightblue start="/\*" end="\*/"
 ## Highlight trailing whitespace
 color ,green "[[:space:]]+$"
+

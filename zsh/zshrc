@@ -47,7 +47,7 @@ zstyle ':dotzsh:load' zfunction 'zargs' 'zmv'
 # Set the dotzsh modules to load (browse modules).
 # The order matters.
 zstyle ':dotzsh:load' dzmodule \
-  'macports' \
+  'homebrew' \
   'gnu-utility' \
   'environment' \
   'terminal' \
@@ -61,11 +61,12 @@ zstyle ':dotzsh:load' dzmodule \
   'archive' \
   'git' \
   'yum' \
-  'tumx' \
+  'tmux' \
   'syntax-highlighting' \
   'perl' \
   'rsync' \
   'grc' \
+  'node' \
   'mercurial' \
   'notify' \
   'dotsync' \
@@ -82,7 +83,9 @@ zstyle ':dotzsh:module:theme' theme 'dotphiles'
 zstyle ':dotzsh:module:theme:hostname:natte.mcvax.org' theme 'dotphiles' 'soldark' 'magenta'
 zstyle ':dotzsh:module:theme:hostname:excession.mikegrice.com' theme 'dotphiles' 'soldark' 'violet'
 zstyle ':dotzsh:module:theme:hostname:mac-mini.benohara.net' theme 'dotphiles' 'soldark' 'blue'
-zstyle ':dotzsh:module:theme:hostname:raspberrypi' theme 'dotphiles' 'soldark' 'yellow'
+zstyle ':dotzsh:module:theme:hostname:chunk' theme 'dotphiles' 'soldark' 'magenta'
+zstyle ':dotzsh:module:theme:hostname:pi' theme 'dotphiles' 'soldark' 'yellow'
+zstyle ':dotzsh:module:theme:hostname:nas' theme 'dotphiles' 'soldark' 'yellow'
 zstyle ':dotzsh:module:theme:domain:apnic.net' theme 'dotphiles' 'soldark' 'orange'
 
 # Load dotzsh

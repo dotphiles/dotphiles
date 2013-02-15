@@ -37,7 +37,6 @@ servers = (
   {
     address = "roddenberry.freenode.net";
     chatnet = "Freenode";
-    password = "HS>H2|pL?rd#K&tc.[hV9qWki";
     port = "6667";
     autoconnect = "yes";
   },
@@ -112,9 +111,9 @@ chatnets = {
 };
 
 channels = (
-  { name = "#zsh"; chatnet = "Freenode"; autojoin = "yes"; },
-  { name = "#vim"; chatnet = "Freenode"; autojoin = "yes"; },
-  { name = "#linux"; chatnet = "Freenode"; autojoin = "yes"; },
+  #{ name = "#zsh"; chatnet = "Freenode"; autojoin = "yes"; },
+  #{ name = "#vim"; chatnet = "Freenode"; autojoin = "yes"; },
+  #{ name = "#linux"; chatnet = "Freenode"; autojoin = "yes"; },
   { name = "#dotphiles"; chatnet = "Freenode"; autojoin = "yes"; }
 );
 
@@ -306,10 +305,13 @@ settings = {
     hilight_color = "= %R";
   };
 };
-hilights = ( { text = "Ben"; color = "%M"; nick = "yes"; word = "yes"; } );
+hilights = (
+  { text = "benohara"; color = "%M"; nick = "yes"; word = "yes"; }
+);
 keyboard = ( 
   { key = "meta-[M"; id = "command"; data = "mouse_xterm "; }
 );
 
 windows = { 1 = { immortal = "yes"; name = "(status)"; level = "ALL"; }; };
 mainwindows = { 1 = { first_line = "1"; lines = "40"; }; };
+

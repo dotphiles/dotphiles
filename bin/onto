@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# exit if no $host
+host=$1
+if [[ "$host" == "" ]]; then
+  exit 1
+fi
+
+if [[ "$TMUX" ]]; then
+  # change to existing tmux window, or
+  # create a new window and
+  # ssh to host
+  # reattach or start a tmux session
+  tmux select-window -t wraooer:$host || tmux new-window -t wrapper -n $host "ssh -t $host \"tmux attach -t $host || tmux new-session -s $host\""
+else
+  ssh -t $host tmux attach -t $host || tmux new-session -s $host
+fi

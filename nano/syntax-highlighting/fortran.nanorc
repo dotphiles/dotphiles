@@ -47,3 +47,4 @@ icolor brightblue "<[^=     ]*>" ""(\\.|[^"])*""
 
 ## Comment highlighting
 icolor brightred "!.*$" "(^[Cc]| [Cc]) .*$"
+

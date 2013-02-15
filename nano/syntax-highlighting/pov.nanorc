@@ -13,3 +13,4 @@ color brightmagenta "\<(union|group|subgroup)\>"
 ## Comment highlighting
 color brightblue "//.*"
 color brightblue start="/\*" end="\*/"
+

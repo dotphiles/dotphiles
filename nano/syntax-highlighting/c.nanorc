@@ -34,3 +34,4 @@ color cyan start=""(\\.|[^"])*\\[[:space:]]*$" end="^(\\.|[^"])*""
 ## Comment highlighting
 color brightblue "//.*"
 color brightblue start="/\*" end="\*/"
+

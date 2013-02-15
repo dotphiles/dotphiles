@@ -7,3 +7,4 @@
 [global]
 # Password / passphrase caching parameters:
 store-plaintext-passwords = no
+
