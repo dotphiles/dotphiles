@@ -145,7 +145,7 @@ Contribute
 This project would not exist without all of its users and [contributors][2].
 
 Lots of ideas and code stolen from around the interwebs such as [skwp/dotfiles][21],
-[sorin-ionescu/oh-myzsh][22], [robby-russell/oh-my-myzsh][23], [holman/dotfiles][24],
+[sorin-ionescu/prezto][22], [robby-russell/oh-my-zsh][23], [holman/dotfiles][24],
 [mathiasbynens/dotfiles][25], [spf13][26] and numerous other snippets of code copied
 and pasted over the years.
 
@@ -277,7 +277,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 [19]: http://ethanschoonover.com/solarized
 [20]: http://slinky.imukuppi.org/zenburnpage/
 [21]: https://github.com/skwp/dotfiles
-[22]: https://github.com/sorin-ionescu/oh-my-zsh
+[22]: https://github.com/sorin-ionescu/prezto
 [23]: https://github.com/robby-russell/oh-my-zsh
 [24]: https://github.com/holman/dotfiles
 [25]: https://github.com/mathiasbynens/dotfiles
