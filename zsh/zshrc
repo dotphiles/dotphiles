@@ -9,8 +9,8 @@
 #
 
 # debug: see with `dzinfo`
-#zstyle ':dotzsh:load' timing 'yes'
-#zstyle ':dotzsh:module:*' timing 'yes'
+##zstyle ':dotzsh:load' timing 'yes'
+##zstyle ':dotzsh:module:*' timing 'yes'
 
 # Set the Zsh modules to load (man zshmodules).
 zstyle ':dotzsh:load' zmodule 'stat'
@@ -52,10 +52,8 @@ zstyle ':dotzsh:load' dzmodule \
 ### Global settings
 # Color output (auto set to 'no' on dumb terminals).
 zstyle ':dotzsh:module:*' color 'yes'
-
 # Setup aliases for modules (disable per module below).
 zstyle ':dotzsh:module:*' aliases 'yes'
-###
 
 ### Environment module
 # Set which PAGER to use less or more
