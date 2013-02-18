@@ -71,7 +71,7 @@ zstyle ':dotzsh:module:editor' keymap 'emacs'
 # Set EDITOR to 'emacs' or 'vi'.
 zstyle ':dotzsh:module:editor' editor 'vi'
 # Auto convert .... to ../..
-zstyle ':dotzsh:module:editor' dot-expansion 'yes'
+zstyle ':dotzsh:module:editor' dot-expansion 'no'
 
 ### Utility Module
 # Disable `diff` highlighting
