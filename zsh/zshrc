@@ -4,7 +4,6 @@
 # Sets dotzsh options.
 #
 # Authors:
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
 #   Ben O'Hara <bohara@gmail.com>
 #
 
@@ -96,7 +95,7 @@ zstyle ':dotzsh:module:ssh:agent' forwarding 'yes'
 
 ### Syntax Highlighting module
 #zstyle ':dotzsh:module:syntax-highlighting' highlighters 'main' 'brackets' 'pattern' \
-  'cursor' 'root' \
+#  'cursor' 'root' \
 
 ### Theme module
 # Set default theme to load.
