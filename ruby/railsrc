@@ -2,7 +2,10 @@
 #
 # dotphiles : https://github.com/dotphiles/dotphiles
 #
+# Authors:
+#   Ben O'Hara <boahra@gmail.com>
 #
+
 puts '-> loaded ~/.railsrc'
 
 if defined?(Pry)
