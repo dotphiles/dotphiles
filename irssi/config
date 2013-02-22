@@ -1,3 +1,4 @@
+#B
 #
 # dotphiles : https://github.com/dotphiles/dotphiles
 #
@@ -110,8 +111,10 @@ chatnets = {
 };
 
 channels = (
-  { name = "#irssi"; chatnet = "ircnet"; autojoin = "No"; },
-  { name = "silc"; chatnet = "silc"; autojoin = "No"; }
+  #{ name = "#zsh"; chatnet = "Freenode"; autojoin = "yes"; },
+  #{ name = "#vim"; chatnet = "Freenode"; autojoin = "yes"; },
+  #{ name = "#linux"; chatnet = "Freenode"; autojoin = "yes"; },
+  { name = "#dotphiles"; chatnet = "Freenode"; autojoin = "yes"; }
 );
 
 aliases = {
@@ -285,7 +288,7 @@ statusbar = {
   };
 };
 settings = {
-  core = { real_name = "**Your Name**"; user_name = "**Your Username**"; nick = "**Your Nickname**"; };
+  core = { real_name = "Ben"; user_name = "bohara"; nick = "benohara"; };
   "fe-text" = { actlist_sort = "refnum"; };
   "perl/core/scripts" = {
     ### For Solarized adv_windowlist.pl script
@@ -302,7 +305,9 @@ settings = {
     hilight_color = "= %R";
   };
 };
-hilights = ( { text = "**Your Nickname**"; color = "%M"; nick = "yes"; word = "yes"; } );
+hilights = (
+  { text = "benohara"; color = "%M"; nick = "yes"; word = "yes"; }
+);
 keyboard = ( 
   { key = "meta-[M"; id = "command"; data = "mouse_xterm "; }
 );

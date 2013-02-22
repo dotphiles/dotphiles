@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #
 # dotphiles : https://github.com/dotphiles/dotphiles
 #
@@ -19,9 +19,12 @@ fi
 ###############################################################################
 
 # Set computer name (as done via System Preferences → Sharing)
-scutil --set ComputerName "Bens MacBook Pro"
-scutil --set HostName "bens-macbook-pro"
-scutil --set LocalHostName "bens-macbook-pro"
+#scutil --set ComputerName "**your-computer-name**"
+#scutil --set HostName "**your-hostname**"
+#scutil --set LocalHostName "**your-hostname**"
+
+# Disable creating .AppleDouble everywhere on the network shares
+defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 
 # Menu bar: disable transparency
 defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
