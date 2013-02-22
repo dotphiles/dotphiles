@@ -1,0 +1,65 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# Use offlineimap to pull mail
+#
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
+
+# In the general section
+[general]
+# Controls how many accounts may be synced simultaneously
+maxsyncaccounts = 2
+accounts=Gmail,Work
+
+# In the account identifier
+[Account Gmail]
+# Minutes between syncs
+autorefresh = 5
+# Number of quick-syncs between autorefreshes. Quick-syncs do not update if the
+# only changes were to IMAP flags
+quick = 10
+localrepository = Gmail-local
+remoterepository = Gmail-remote
+
+[Repository Gmail-local]
+type = Maildir
+localfolders = ~/.mail/Gmail/
+
+[Repository Gmail-remote]
+type = Gmail
+remoteuser = username@gmail.com
+# "[Gmail]/Some Folder" --> some_folder
+nametrans = lambda folder: re.sub('^inbox$', 'INBOX',
+                           re.sub(' +', '_',
+                           re.sub(r'.*/(.*)$', r'\1', folder).lower()))
+
+# In the account identifier
+[Account Work]
+# Minutes between syncs
+autorefresh = 5
+# Number of quick-syncs between autorefreshes. Quick-syncs do not update if the
+# only changes were to IMAP flags
+quick = 10
+localrepository = Work-local
+remoterepository = Work-remote
+
+[Repository Work-local]
+type = Maildir
+localfolders = ~/.mail/Work/
+
+[Repository Work-remote]
+type = IMAP
+remotehost = imap.work.com
+remoteuser = username
+ssl = yes
+
+[mbnames]
+enabled = yes
+filename = ~/.mutt/mailboxes.offlineimap
+header = "mailboxes "
+peritem = "=%(accountname)s/%(foldername)s"
+sep = " "
+footer = "\n"
+

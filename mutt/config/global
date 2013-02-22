@@ -1,0 +1,47 @@
+#
+# dotphiles : https://github.com/dotphiles/dothiles
+#
+# main global config to be sourced from ~/.muttrc
+#
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
+
+# General
+set header_cache=~/.mutt/cache/headers
+set message_cachedir=~/.mutt/cache/bodies
+set certificate_file=~/.mutt/certificates
+
+set folder_format="%2C %t %5N %8s %d %f"
+
+set move=no
+set edit_headers=yes
+set editor='vim +/^$ "+normal j"'
+set markers=no
+
+set sort='threads'
+set sort_aux=last-date-received
+set imap_check_subscribed
+set imap_keepalive=60
+set mail_check=60
+set timeout=15
+set quit=ask-yes
+set nobeep
+set mailcap_path=~/.mutt/mailcap
+auto_view text/html
+
+ignore "Authentication-Results:"
+ignore "DomainKey-Signature:"
+ignore "DKIM-Signature:"
+hdr_order Date From To Cc
+
+set pager_index_lines=10
+
+# Macros
+macro index M "T.*\n;WN" "Mark all messages as read"
+
+# Settings
+source ~/.mutt/config/pgp
+source ~/.mutt/config/smime
+source ~/.mutt/config/sidebar
+

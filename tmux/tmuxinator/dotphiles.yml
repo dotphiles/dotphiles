@@ -1,0 +1,31 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# ~/.tmuxinator/dotphiles.yml
+#
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
+
+project_name: dotphiles
+project_root: ~/.dotfiles
+socket_name: dotphiles # Not needed.  Remove to use default socket
+tabs:
+  - editor:
+      layout: even-horizontal
+      panes:
+        - vim .
+        - #empty, will just run plain shell
+  - testing1:
+      layout: tiled
+      panes:
+        - #sshcd debian1 .dotfiles
+        - #sshcd ubuntu1 .dotfiles
+        - #sshcd centos1 .dotfiles
+        - #sshcd freebsd1 .dotfiles
+  - testing2:
+      layout: tiled
+      panes:
+        - #sshcd solaris1 .dotfiles
+        - #empty
+

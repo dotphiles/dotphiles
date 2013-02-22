@@ -1,0 +1,32 @@
+#
+# dotphiles : https://github.com/dotphiles/dothiles
+#
+# Gmail specific options
+#
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
+
+color status green default
+
+set folder=$HOME/.mail
+set spoolfile="+Gmail/INBOX"
+
+set from      = "**Your Gmail Account**"
+set smtp_url  = "smtp://**Your Gmail Username**@smtp.gmail.com:587/"
+set mbox      = "+Gmail/archive"
+unset record
+set postponed = "+Gmail/drafts"
+
+macro index E \
+    "<change-folder>+Gmail/archive<enter><limit>~B " \
+    "search everything"
+
+macro index D \
+    "<save-message>+Gmail/trash<enter>" \
+    "move message to the trash"
+
+macro index S \
+    "<save-message>+Gmail/spam<enter>"  \
+        "mark message as spam"
+
