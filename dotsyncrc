@@ -36,6 +36,9 @@ dotsyncrc
 #irssi
 #mercurial/hgrc
 #mercurial/hgignore
+#mutt
+#mutt/muttrc
+#mutt/offlineimaprc
 #python/pythonrc
 #python/pylintrc
 #rpm/rpmmacros
