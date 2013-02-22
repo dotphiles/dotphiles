@@ -9,8 +9,8 @@
 #
 
 # debug: see with `dzinfo`
-zstyle ':dotzsh:load' timing 'yes'
-zstyle ':dotzsh:module:*' timing 'yes'
+##zstyle ':dotzsh:load' timing 'yes'
+##zstyle ':dotzsh:module:*' timing 'yes'
 
 # Set the Zsh modules to load (man zshmodules).
 zstyle ':dotzsh:load' zmodule 'stat'
@@ -28,25 +28,6 @@ zstyle ':dotzsh:load' dzmodule \
   'history' \
   'utility' \
   'completion' \
-  'directory' \
-  'ssh' \
-  'gnupg' \
-  'osx' \
-  'archive' \
-  'git' \
-  'yum' \
-  'tmux' \
-  'syntax-highlighting' \
-  'perl' \
-  'rsync' \
-  'grc' \
-  'node' \
-  'mercurial' \
-  'notify' \
-  'dotsync' \
-  'fasd' \
-  'taskwarrior' \
-  'history-substring-search' \
   'theme'
 
 ### Global settings
@@ -73,7 +54,7 @@ zstyle ':dotzsh:module:editor' keymap 'emacs'
 # Set EDITOR to 'emacs' or 'vi'.
 zstyle ':dotzsh:module:editor' editor 'vi'
 # Auto convert .... to ../..
-zstyle ':dotzsh:module:editor' dot-expansion 'yes'
+#zstyle ':dotzsh:module:editor' dot-expansion 'yes'
 
 ### Utility Module
 # Disable `diff` highlighting
@@ -85,11 +66,11 @@ zstyle ':dotzsh:module:editor' dot-expansion 'yes'
 
 ### Completion module
 # Expand global aliases automatically
-zstyle ':dotzsh:module:completion' expand-global-aliases 'yes'
+#zstyle ':dotzsh:module:completion' expand-global-aliases 'yes'
 
 ### SSH module
 zstyle ':dotzsh:module:ssh:agent' forwarding 'yes'
-zstyle ':dotzsh:module:ssh:aliases' hosts 'yes'
+#zstyle ':dotzsh:module:ssh:aliases' hosts 'yes'
 ##zstyle ':dotzsh:module:ssh:agent' identities 'id_rsa' 'id_rsa2' 'id_github'
 
 ### GNUPG module
@@ -111,10 +92,10 @@ zstyle ':dotzsh:module:ssh:aliases' hosts 'yes'
 # Setting it to 'local' only starts a session for local terminals.
 # Setting it to 'remote' only starts a session for SSH connections.
 ##zstyle ':dotzsh:module:tmux' auto-start 'no'
-zstyle ':dotzsh:module:tmux:aliases' tmuxinator 'yes'
+#zstyle ':dotzsh:module:tmux:aliases' tmuxinator 'yes'
 
 ### Syntax Highlighting module
-zstyle ':dotzsh:module:syntax-highlighting' highlighters 'main' 'brackets' 'pattern' \
+#zstyle ':dotzsh:module:syntax-highlighting' highlighters 'main' 'brackets' 'pattern' \
   'cursor' 'root' \
 
 ### Theme module
@@ -123,13 +104,9 @@ zstyle ':dotzsh:module:syntax-highlighting' highlighters 'main' 'brackets' 'patt
 # Auto set to 'off' on dumb terminals.
 zstyle ':dotzsh:module:theme' theme 'dotphiles'
 ### Set custom theme based on hostname or domain
-zstyle ':dotzsh:module:theme:hostname:natte.mcvax.org' theme 'dotphiles' 'soldark' 'magenta'
-zstyle ':dotzsh:module:theme:hostname:excession.mikegrice.com' theme 'dotphiles' 'soldark' 'violet'
-zstyle ':dotzsh:module:theme:hostname:mac-mini.benohara.net' theme 'dotphiles' 'soldark' 'blue'
-zstyle ':dotzsh:module:theme:hostname:chunk' theme 'dotphiles' 'soldark' 'magenta'
-zstyle ':dotzsh:module:theme:hostname:pi' theme 'dotphiles' 'soldark' 'yellow'
-zstyle ':dotzsh:module:theme:hostname:nas' theme 'dotphiles' 'soldark' 'yellow'
-zstyle ':dotzsh:module:theme:domain:apnic.net' theme 'dotphiles' 'soldark' 'orange'
+# zstyle ':dotzsh:module:theme:hostname:your-host-here' theme 'dotphiles' 'soldark' 'magenta'
+# zstyle ':dotzsh:module:theme:hostname:your-other-host-here' theme 'dotphiles' 'soldark' 'violet'
+# zstyle ':dotzsh:module:theme:domain:your-domain-here' theme 'dotphiles' 'soldark' 'orange'
 
 ### Load dotzsh
 source "$DOTZSH/init.zsh"
