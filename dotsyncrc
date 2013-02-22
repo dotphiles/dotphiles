@@ -16,6 +16,7 @@
 # dstfile will be '.$srcfile' by default (with path removed)
 #
 [files]
+# Uncomment examples below
 dotsyncrc
 #ack/ackrc
 #aptitude
@@ -67,6 +68,7 @@ dotsyncrc
 #zsh/zshrc
 [endfiles]
 
+# Hosts to sync
 ## hostname                     type=masterhost, ANY or NONE
 [hosts]
 #host1.example.com               git=ANY                 #git repo, pull from anywhere
