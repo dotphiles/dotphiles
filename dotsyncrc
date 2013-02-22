@@ -7,7 +7,7 @@
 #   Ben O'Hara <bohara@gmail.com>
 #
 
-# Location of your dotfiles
+# Location of your dotfiles in $HOME
 # DOTFILES=.dotfiles
 
 # dotfiles to symlink
