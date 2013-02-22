@@ -54,6 +54,8 @@ zstyle ':dotzsh:load' dzmodule \
 zstyle ':dotzsh:module:*' color 'yes'
 # Setup aliases for modules (disable per module below).
 zstyle ':dotzsh:module:*' aliases 'yes'
+# Set case-sensitivity for completion, history lookup, etc.
+zstyle ':dotzsh:module:*' case-sensitive 'no'
 
 ### Environment module
 # Set which PAGER to use less or more
@@ -82,8 +84,8 @@ zstyle ':dotzsh:module:editor' dot-expansion 'no'
 ##zstyle ':dotzsh:module:utility:make' color 'no'
 
 ### Completion module
-# Set case-sensitivity for completion, history lookup, etc.
-zstyle ':dotzsh:module:*' case-sensitive 'no'
+# Expand global aliases automatically
+zstyle ':dotzsh:module:completion' expand-global-aliases 'yes'
 
 ### SSH module
 zstyle ':dotzsh:module:ssh:agent' forwarding 'yes'
