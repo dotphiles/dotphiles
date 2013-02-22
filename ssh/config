@@ -3,33 +3,25 @@
 #
 # Description:  Config for ssh client
 #
-
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
 # Global Settings
 ForwardAgent yes
+#VisualHostKey yes
 HashKnownHosts no
+#ConnectTimeout 2
 ServerAliveCountMax 6
 ServerAliveInterval 30
-KeepAlive yes
 
 # My Hosts
-Host home home.benohara.net
-    Hostname home.benohara.net
-Host mac-mini mac-mini.benohara.net
-    Hostname bens-mac-mini.local
-Host excession excession.mikegrice.com
-    User benoh
-    Hostname excession.mikegrice.com
-
-# Work
-Host ialb1 sclb1 iagb1 scgb1
-    User admin
-Host aox1 iax1 scx1 scx2 scx3 scx4
-    User netops
+#Host hostname hostname.fqdn.com
+#    Hostname hostname.fqdn.com
 
 # Default
 Host *
-    User bohara
-#    StrictHostKeyChecking ask
-#    ControlMaster auto
-#    ControlPath ~/.ssh/master/%r@%h:%p
+    #User username
+    StrictHostKeyChecking ask
+    #ControlMaster auto
+    #ControlPath ~/.ssh/master/%r@%h:%p
 
