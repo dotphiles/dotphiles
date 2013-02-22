@@ -38,7 +38,7 @@ mercurial/hgrc
 mercurial/hgignore
 python/pythonrc
 python/pylintrc
-rpmmacros
+rpm/rpmmacros
 ruby/irbrc
 ruby/pryrc
 ruby/gemrc

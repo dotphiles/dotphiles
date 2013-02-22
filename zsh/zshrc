@@ -9,8 +9,8 @@
 #
 
 # debug: see with `dzinfo`
-##zstyle ':dotzsh:load' timing 'yes'
-##zstyle ':dotzsh:module:*' timing 'yes'
+zstyle ':dotzsh:load' timing 'yes'
+zstyle ':dotzsh:module:*' timing 'yes'
 
 # Set the Zsh modules to load (man zshmodules).
 zstyle ':dotzsh:load' zmodule 'stat'
