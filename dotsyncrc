@@ -24,8 +24,8 @@ aptitude
 beets/beetsconfig
 bin:bin
 ctags/ctags
-#curl/curlrc
 cmus
+#curl/curlrc
 git/gitconfig
 git/gitignore
 git/gitattributes
