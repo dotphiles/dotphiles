@@ -6,6 +6,7 @@
 # Authors:
 #   Ben O'Hara <bohara@gmail.com>
 #
+
 # Global Settings
 ForwardAgent yes
 #VisualHostKey yes
@@ -13,6 +14,7 @@ HashKnownHosts no
 #ConnectTimeout 2
 ServerAliveCountMax 6
 ServerAliveInterval 30
+Keepalive yes
 
 # My Hosts
 #Host hostname hostname.fqdn.com
