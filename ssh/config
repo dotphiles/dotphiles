@@ -3,6 +3,9 @@
 #
 # Description:  Config for ssh client
 #
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
 
 # Global Settings
 ForwardAgent yes
