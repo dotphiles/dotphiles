@@ -52,6 +52,38 @@ These are the minimum files you'll want to edit
   - `vim/vimrc` settings for [dotvim][9]
   - and any dotfiles you enable in `dotsyncrc`
 
+These are stable and reported working...
+
+  - `aptitude` - Configure aptitude
+  - `bin` - ~/bin for scripts etc
+  - `ctags` - Configure ctags
+  - `git` - Configure git
+  - `gnupg` - Configure gnupg
+  - `grc` - Configure grc
+  - `input` - Configure input
+  - `mercurial` - Configure mercurial
+  - `mysql` - Configure mysql client
+  - `python` - Configure python
+  - `rpm` - Configure rpm
+  - `ruby` - Configure ruby
+  - `screen` - Configure screen
+  - `shell` - Generic shell config files
+  - `sqlite` - Configure sqlite client
+  - `ssh` - Configure ssh client
+  - `subversion` - Configure subversion
+  - `tmux` - Configure tmux
+
+These probably work...
+
+  - `ack` - Configure ack - i dont use it
+  - `cmus` - Configure cmus - i dont use it
+  - `curl` - Configure curl - didnt work multiplatform, i dont use it anymore
+  - `irssi` - Configure irssi - i dont use it
+  - `mutt` - Configure mutt - i dont use it
+  - `nano` - Configure nano - i dont use it, should work though
+  - `task` - Configure taskwarrior - i dont use it
+  - `wget` - Configure wget - didnt work multiplatform, i dont use it anymore
+
 ### terminal
 
 dotphiles uses the [solarized][19] color theme
@@ -61,9 +93,15 @@ vim-powerline requires patched fonts for the 'fancy fonts' options, you can
 find links to them to install [here][27] and configure your terminal to use
 one, Menlo works great.
 
-### deploy
+### ignores
 
-Experimental!
+Some files that will be auto generated into the symlinked dotfiles directory
+should *never* be commited and uploaded to github.
+
+The included `templates/*ignore` files, ignore the majority, but make sure when
+commiting that you dont include any personal info you dont want in public!
+
+### deploy
 
   - `deploy/osx` setup osx and install ports & brews (only use one)
   - `deploy/linux` setup linux and install packages
@@ -91,11 +129,14 @@ See the documentation for [dotsync][7] for more information.
 
          ~/$DOTFILES/dotfile.d/localhost
          ~/$DOTFILES/dotfile.d/$HOSTNAME
+         ~/$DOTFILES/dotfile.d/$DZHOST
          ~/$DOTFILES/dotfile.d/$DOMAIN
          ~/$DOTFILES/dotfile
 
    And link the first one it finds instead of the standard dotfile.  The
    `localhost` dotfile will be excluded from your repo.
+
+   $DZHOST is passed to remote hosts and contains the hostname as entered in `dotsyncrc`
 
   - Usage
 
