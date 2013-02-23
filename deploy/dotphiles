@@ -41,3 +41,4 @@ if [[ ! -d ~/$DOTPHILES ]]; then
   echo "Done, edit ~/$DOTPHILES/dotsyncrc to enable dotfiles"
   echo "and symlink into place with dotsync -L"
 fi
+
