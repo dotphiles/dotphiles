@@ -1,3 +1,12 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# Setup grc for `diff`
+#
+# Authors:
+#   Ben O'Hara <bohrara@gmail.com>
+#
+
 # new lines and filenames (unified diff)
 regexp=^\+(.*$)
 colours=bold green
@@ -22,3 +31,4 @@ count=more
 regexp=^@@ .* @@$
 colours=magenta
 count=more
+

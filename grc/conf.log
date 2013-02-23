@@ -1,4 +1,11 @@
-# this configuration file is suitable for displaying kernel log files
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# Setup grc for log files
+#
+# Authors:
+#   Ben O'Hara <bohrara@gmail.com>
+#
 
 # display this line in yellow and stop further processing
 regexp=.*last message repeated \d+ times$
@@ -39,3 +46,4 @@ count=more
 regexp=connect
 colours=on_red
 count=more
+
