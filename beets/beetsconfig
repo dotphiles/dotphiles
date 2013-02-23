@@ -1,6 +1,16 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# Config for beets
+#
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
+
 [beets]
 directory: /Users/Shared/Music
 plugins = scrub lastgenre fetchart embedart rdm
 #plugins = chroma lastgenre fetchart embedart rdm scrub
 [acoustid]
 apikey=IkH0JkBR
+

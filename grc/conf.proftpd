@@ -1,5 +1,11 @@
-# this configuration file is suitable for displaying proftpd log files
-# submitted by Pavol Domin
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# Setup grc for proftpd logfiles
+#
+# Authors:
+#   Ben O'Hara <bohrara@gmail.com>
+#
 
 # everything in brakets
 regexp=\[.+?\]
@@ -29,3 +35,4 @@ count=more
 # first tree fields separated by space
 regexp=^([\w\.]+?\s)([\w\.]+?\s)([\w\.]+?\s)
 colours=bold blue, bold yellow, bold magenta
+

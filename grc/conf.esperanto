@@ -1,6 +1,12 @@
-# cxi tia dosiero estas treege nekompleta kaj nur mallonga ekzemplo
-# kial skribi regulojn por kolorigo de tekstoj
 #
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# Setup grc for `esperanto`
+#
+# Authors:
+#   Ben O'Hara <bohrara@gmail.com>
+#
+
 # substantivoj
 regexp=(?i)\b\w+(?=(o|oj|on|ojn)\b)
 colours=green
@@ -52,3 +58,4 @@ colours=yellow
 # kelkaj kurtaj vortoj
 regexp=(?i)\b(de|en|kun|sen|la|pli|plej|plu)\b
 colours=bold yellow
+

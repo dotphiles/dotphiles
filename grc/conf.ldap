@@ -1,3 +1,12 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# Setup grc for ldap
+#
+# Authors:
+#   Ben O'Hara <bohrara@gmail.com>
+#
+
 # Intended for colouring LDIF output (from ldap tools)
 # comments 
 regexp=^#.*
@@ -13,3 +22,4 @@ count=stop
 regexp=^.*?:
 colours=blue
 count=stop
+

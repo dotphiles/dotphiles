@@ -3,6 +3,9 @@
 #
 # Allow access from the following keys
 #
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
 
 # Add your ssh key here
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCr3N6Sk/QKMwZ50QXgcZWSqD9cHgpJwBTxbFO/cQIu1Um+vftGIF/GxmNfmTwcPhZxjwv/x2/XyUuS+f+MXcCB+5dx4Rqg86c+694OOGgKgTLjNugrH1TdLBYIDIHs2dtxg0VPYHKqOMMecIm8bT2NbiYKeQc8O+qQmc5vEzIoa/oA6QhwvkVzKUnjFxTS/+1ha+n9A8tRHwqREDsw0Tvvxus7xHUiAqVhKkhudea8rawoAcK9HTddF/44xzW+jyN0GjaNsMjXy8JWOMXBGhymsXw0AsH+VrFsPDr+xXZSlO4igbeE2Cn8/Fk3JxBb9iOHadqnb6hEFJaxdE4w55BV bohara@gmail.com

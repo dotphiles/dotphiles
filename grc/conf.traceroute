@@ -1,3 +1,12 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# Setup grc for `traceroute`
+#
+# Authors:
+#   Ben O'Hara <bohrara@gmail.com>
+#
+
 # hostname
 regexp=\s\w+[\w\-\.]+\w+
 colours=bold yellow
@@ -40,3 +49,4 @@ colours=red
 # parenthesis
 regexp=\(|\)
 colours=yellow
+
