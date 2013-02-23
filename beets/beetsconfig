@@ -1,6 +1,0 @@
-[beets]
-directory: /Users/Shared/Music
-plugins = scrub lastgenre fetchart embedart rdm
-#plugins = chroma lastgenre fetchart embedart rdm scrub
-[acoustid]
-apikey=IkH0JkBR
