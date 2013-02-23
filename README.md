@@ -47,9 +47,9 @@ Configuration
 
 These are the minimum files you'll want to edit
 
-  - `dotsyncrc` settings for [dotsync][7]
-  - `zsh/zshrc` settings for [dotzsh][8]
-  - `vim/vimrc` settings for [dotvim][9]
+  - `dotsyncrc` settings for [dotsync][2]
+  - `zsh/zshrc` settings for [dotzsh][3]
+  - `vim/vimrc` settings for [dotvim][4]
   - and any dotfiles you enable in `dotsyncrc`
 
 These are stable and reported working...
@@ -86,11 +86,11 @@ These probably work...
 
 ### terminal
 
-dotphiles uses the [solarized][19] color theme
+dotphiles uses the [solarized][5] color theme
 by default, install the colour scheme for your terminal.
 
 vim-powerline requires patched fonts for the 'fancy fonts' options, you can
-find links to them to install [here][27] and configure your terminal to use
+find links to them to install [here][6] and configure your terminal to use
 one, Menlo works great.
 
 ### ignores
@@ -111,7 +111,7 @@ commiting that you dont include any personal info you dont want in public!
 
 ### dotsync
 
-See the documentation for [dotsync][7] for more information.
+See the documentation for [dotsync][2] for more information.
 
   - dotsyncrc
 
@@ -205,30 +205,9 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 [1]: https://github.com
-[2]: https://github.com/dotphiles/dotphiles/contributors
-[3]: https://github.com/dotphiles/dotphiles/issues
-[4]: http://gun.io/blog/how-to-github-fork-branch-and-pull-request
-[5]: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
-[6]: https://help.github.com/articles/using-pull-requests
-[7]: https://github.com/dotphiles/dotsync
-[8]: https://github.com/dotphiles/dotzsh
-[9]: https://github.com/dotphiles/dotvim
-[10]: http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/
-[11]: http://help.github.com/win-set-up-git/
-[12]: http://rogerdudler.github.com/git-guide/
-[13]: http://help.github.com/fork-a-repo/
-[14]: http://help.github.com/send-pull-requests/
-[15]: http://nvie.com/posts/a-successful-git-branching-model/
-[16]: http://www.twitter.com/nvie
-[17]: https://github.com/nvie/gitflow
-[18]: https://github.com/nvie/gitflow/wiki/Installation
-[19]: http://ethanschoonover.com/solarized
-[20]: http://slinky.imukuppi.org/zenburnpage/
-[21]: https://github.com/skwp/dotfiles
-[22]: https://github.com/sorin-ionescu/prezto
-[23]: https://github.com/robby-russell/oh-my-zsh
-[24]: https://github.com/holman/dotfiles
-[25]: https://github.com/mathiasbynens/dotfiles
-[26]: http://vim.spf13.com
-[27]: https://github.com/Lokaltog/vim-powerline/wiki/Patched-fonts
+[2]: https://github.com/dotphiles/dotsync
+[3]: https://github.com/dotphiles/dotzsh
+[4]: https://github.com/dotphiles/dotvim
+[5]: http://ethanschoonover.com/solarized
+[6]: https://github.com/Lokaltog/vim-powerline/wiki/Patched-fonts
 
