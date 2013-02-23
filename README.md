@@ -111,7 +111,7 @@ commiting that you dont include any personal info you dont want in public!
 
 ### dotsync
 
-See the documentation for [dotsync][7] for more information.
+See the documentation for [dotsync][2] for more information.
 
   - dotsyncrc
 
