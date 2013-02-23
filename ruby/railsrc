@@ -3,7 +3,7 @@
 # dotphiles : https://github.com/dotphiles/dotphiles
 #
 # Authors:
-#   Ben O'Hara <boahra@gmail.com>
+#   Ben O'Hara <bohara@gmail.com>
 #
 
 puts '-> loaded ~/.railsrc'
