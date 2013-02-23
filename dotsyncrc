@@ -17,7 +17,6 @@
 #
 [files]
 # Uncomment examples below
-#
 dotsyncrc
 ack/ackrc
 aptitude
