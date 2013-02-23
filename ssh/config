@@ -14,7 +14,7 @@ HashKnownHosts no
 #ConnectTimeout 2
 ServerAliveCountMax 6
 ServerAliveInterval 30
-Keepalive yes
+KeepAlive yes
 
 # My Hosts
 #Host hostname hostname.fqdn.com
