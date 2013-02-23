@@ -35,8 +35,8 @@ cacerts = ~/.mercurial/ssl/certs/ca-certificates.crt
 git = True
 
 [color]
-status.added = green bold
-status.removed = red bold
+status.added = green
+status.removed = red
 
 [defaults]
 outgoing = --style compact -v
