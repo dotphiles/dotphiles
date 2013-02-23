@@ -9,7 +9,9 @@
 
 # Global Settings
 ForwardAgent yes
+#VisualHostKey yes
 HashKnownHosts no
+#ConnectTimesout 2
 ServerAliveCountMax 6
 ServerAliveInterval 30
 KeepAlive yes
