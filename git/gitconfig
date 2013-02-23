@@ -28,18 +28,20 @@
 [color "branch"]
   current = yellow reverse
   local = yellow
-  remote = green
+  remote = magenta
 
 [color "diff"]
   meta = yellow
   frag = magenta
   old = red
   new = green
+  whitespace = white reverse
 
 [color "status"]
   added = yellow
   changed = green
   untracked = cyan
+  branch = magenta
 
 [core]
   pager = less -FRSX
