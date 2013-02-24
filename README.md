@@ -183,7 +183,7 @@ To keep your fork upto date with additions to the dotphiles repo, do the followi
 License
 -------
 
-Copyright (c) 2012 Ben O'Hara <bohara@gmail.com>
+Copyright (c) 2012 [dotphiles cotributers][7]
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -210,4 +210,5 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 [4]: https://github.com/dotphiles/dotvim
 [5]: http://ethanschoonover.com/solarized
 [6]: https://github.com/Lokaltog/vim-powerline/wiki/Patched-fonts
+[7]: https://github.com/dotphiles/dotphiles/graphs/contributors
 
