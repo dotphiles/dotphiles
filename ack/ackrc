@@ -7,6 +7,19 @@
 #   Ben O'Hara <bohara@gmail.com>
 #
 
+# Flush output immediately, even when piped
+--flush
+
+# Force color and header, even in less -R.
+--color
+--color-match=red
+--group
+
+# Custom types and abbreviatinos.
+--type-set=py=.py
+--type-set=sass=.sass
+--type-set=coffee=.coffee
+
 --type-add
 ruby=.haml,.builder,.rake
 --type-add
