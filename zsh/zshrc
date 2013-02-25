@@ -4,34 +4,12 @@
 # Sets dotzsh options.
 #
 # Authors:
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
 #   Ben O'Hara <bohara@gmail.com>
 #
 
-# Set the key mapping style to 'emacs' or 'vi'.
-zstyle ':dotzsh:module:editor' keymap 'emacs'
-zstyle ':dotzsh:module:editor' editor 'vi'
-
-# Auto convert .... to ../..
-zstyle ':dotzsh:module:editor' dot-expansion 'no'
-
-# Set case-sensitivity for completion, history lookup, etc.
-zstyle ':dotzsh:module:*' case-sensitive 'no'
-
-# Color output (auto set to 'no' on dumb terminals).
-zstyle ':dotzsh:module:*' color 'yes'
-
-# Setup aliases for modules (disable per module below).
-zstyle ':dotzsh:module:*' aliases 'yes'
-
-# Auto set the tab and window titles.
-zstyle ':dotzsh:module:terminal' auto-title 'yes'
-
-zstyle ':dotzsh:module:ssh:agent' forwarding 'yes'
-zstyle ':dotzsh:module:ssh:aliases' hosts 'yes'
-
-zstyle ':dotzsh:module:syntax-highlighting' highlighters 'main' 'brackets' 'pattern' \
-  'cursor' 'root' \
+# debug: see with `dzinfo`
+##zstyle ':dotzsh:load' timing 'yes'
+##zstyle ':dotzsh:module:*' timing 'yes'
 
 # Set the Zsh modules to load (man zshmodules).
 zstyle ':dotzsh:load' zmodule 'stat'
@@ -42,6 +20,7 @@ zstyle ':dotzsh:load' zfunction 'zargs' 'zmv'
 # Set the dotzsh modules to load (browse modules).
 # The order matters.
 zstyle ':dotzsh:load' dzmodule \
+  'gnu-utility' \
   'environment' \
   'terminal' \
   'editor' \
@@ -50,17 +29,86 @@ zstyle ':dotzsh:load' dzmodule \
   'completion' \
   'theme'
 
-# Set the theme to load.
+### Global settings
+# Color output (auto set to 'no' on dumb terminals).
+zstyle ':dotzsh:module:*' color 'yes'
+# Setup aliases for modules (disable per module below).
+zstyle ':dotzsh:module:*' aliases 'yes'
+# Set case-sensitivity for completion, history lookup, etc.
+zstyle ':dotzsh:module:*' case-sensitive 'no'
+
+### Environment module
+# Set which PAGER to use less or more
+##zstyle ':dotzsh:module:environment' pager 'less'
+# Enable mouse scrolling in less, add the following to *zshrc*
+##zstyle ':dotzsh:module:environment:pager:less' mousescroll 'false'
+
+### Terminal Module
+# Auto set the tab and window titles.
+zstyle ':dotzsh:module:terminal' auto-title 'yes'
+
+### Editor module
+# Set the key mapping style to 'emacs' or 'vi'.
+zstyle ':dotzsh:module:editor' keymap 'emacs'
+# Set EDITOR to 'emacs' or 'vi'.
+zstyle ':dotzsh:module:editor' editor 'vi'
+# Auto convert .... to ../..
+#zstyle ':dotzsh:module:editor' dot-expansion 'yes'
+
+### Utility Module
+# Disable `diff` highlighting
+##zstyle ':dotzsh:module:utility:diff' color 'no'
+# Disable `wdiff` highlighting
+##zstyle ':dotzsh:module:utility:wdiff' color 'no'
+# Disable `make` highlighting
+##zstyle ':dotzsh:module:utility:make' color 'no'
+
+### Completion module
+# Expand global aliases automatically
+#zstyle ':dotzsh:module:completion' expand-global-aliases 'yes'
+
+### SSH module
+zstyle ':dotzsh:module:ssh:agent' forwarding 'yes'
+#zstyle ':dotzsh:module:ssh:aliases' hosts 'yes'
+##zstyle ':dotzsh:module:ssh:agent' identities 'id_rsa' 'id_rsa2' 'id_github'
+
+### GNUPG module
+# Enable ssh-agent protocol emulation for gpg-agent
+##zstyle ':dotzsh:module:gnupg' agent-ssh-support 'yes'
+
+### OSX module
+# Add aliases for Applications
+##zstyle ':dotzsh:module:osx' launcher 'yes'
+# Open/Resume temrinal in correct dir
+##zstyle ':dotzsh:module:osx' terminal-resume 'yes'
+
+### Git module
+# Disable all git aliases
+##zstyle ':dotzsh:module:git' aliases 'no'
+
+### TMUX module
+# Auto start a session when Zsh is launched.
+# Setting it to 'local' only starts a session for local terminals.
+# Setting it to 'remote' only starts a session for SSH connections.
+##zstyle ':dotzsh:module:tmux' auto-start 'no'
+#zstyle ':dotzsh:module:tmux:aliases' tmuxinator 'yes'
+
+### Syntax Highlighting module
+#zstyle ':dotzsh:module:syntax-highlighting' highlighters 'main' 'brackets' 'pattern' \
+#  'cursor' 'root' \
+
+### Theme module
+# Set default theme to load.
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
 zstyle ':dotzsh:module:theme' theme 'dotphiles'
-# Set custom scheme based on hostname or domain
-#zstyle ':dotzsh:module:theme:host:hostname' theme 'dotphiles' 'soldark' 'yellow'
-#zstyle ':dotzsh:module:theme:host:hostname2.example2.com' theme 'dotphiles' 'soldark' 'violet'
-#zstyle ':dotzsh:module:theme:domain:example.net' theme 'dotphiles' 'soldark' 'red'
+### Set custom theme based on hostname or domain
+# zstyle ':dotzsh:module:theme:hostname:your-host-here' theme 'dotphiles' 'soldark' 'magenta'
+# zstyle ':dotzsh:module:theme:hostname:your-other-host-here' theme 'dotphiles' 'soldark' 'violet'
+# zstyle ':dotzsh:module:theme:domain:your-domain-here' theme 'dotphiles' 'soldark' 'orange'
 
-# Load dotzsh
+### Load dotzsh
 source "$DOTZSH/init.zsh"
 
-# Customize to your needs...
+### Customize to your needs...
 

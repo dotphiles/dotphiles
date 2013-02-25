@@ -289,7 +289,7 @@ hardstatus alwayslastline "%{= kw} %-Lw%{=b Kw} %n%f %t %{-}%+Lw %=%{= dd}"
 # bind X remove
 # bind Z reset
 #
-# I suggest that you don't change the bindings for
+# I suggest that you don't change the bidnings for
 # 'H' ("log") and 'M' ("monitor") as they are really
 # useful and you might want to use them a lot;
 # in this case it is recommended to use

@@ -1,0 +1,34 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# Setup grc for `cvs`
+#
+# Authors:
+#   Ben O'Hara <bohrara@gmail.com>
+#
+
+# conflict
+regexp=^C .*$
+colours=bold red
+count=more
+======
+# modified
+regexp=^M .*$
+colours=bold blue
+count=more
+======
+# added
+regexp=^A .*$
+colours=cyan
+count=more
+======
+# removed
+regexp=^R .*$
+colours=cyan
+count=more
+======
+# unlisted
+regexp=^\? .*$
+colours=bold
+count=more
+

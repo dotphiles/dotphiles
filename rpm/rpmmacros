@@ -1,12 +1,11 @@
 #
 # dotphiles : https://github.com/dotphiles/dotphiles
 #
-# Executes commands at logout.
+# Config for rpmbuild
 #
 # Authors:
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
 #   Ben O'Hara <bohara@gmail.com>
 #
 
-# Customize to your needs...
+%_topdir $HOME/rpmbuild
 

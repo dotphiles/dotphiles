@@ -1,0 +1,24 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# Setup grc for `configure`
+#
+# Authors:
+#   Ben O'Hara <bohrara@gmail.com>
+#
+
+regexp=^checking
+colours=bold blue
+.........
+regexp=\.\.\. .*$
+colours=bold yellow
+.........
+regexp=\.\.\. yes$
+colours=bold cyan
+.........
+regexp=\.\.\. no$
+colours=bold red
+.........
+regexp=\.\.\.[ ]
+colours=default
+

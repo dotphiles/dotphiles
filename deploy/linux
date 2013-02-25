@@ -1,11 +1,11 @@
-#!/bin/bash
-##
+#!/usr/bin/env bash
+#
 # dotphiles : https://github.com/dotphiles/dotphiles
 #
 # Script to bootstrap a linux box
 #
 # Authors:
-#  Ben O'Hara <bohara@gmail.com>
+#   Ben O'Hara <bohara@gmail.com>
 #
 
 if [[ "$OSTYPE" != "linux"* ]]; then
@@ -29,5 +29,4 @@ if [[ -f $DIR/packages/apt ]]; then
   done
   sudo apt-get install $packages
 fi
-
 

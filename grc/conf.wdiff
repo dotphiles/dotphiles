@@ -1,0 +1,19 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# Setup grc for `wdiff`
+#
+# Authors:
+#   Ben O'Hara <bohrara@gmail.com>
+#
+
+# new words
+regexp=\{\+.+\+\}
+colours=bold green
+count=more
+=======
+# deleted words
+regexp=\[\-.+\-\]
+colours=bold green
+count=more
+

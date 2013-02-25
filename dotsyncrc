@@ -7,7 +7,7 @@
 #   Ben O'Hara <bohara@gmail.com>
 #
 
-# Location of your dotfiles
+# Location of your dotfiles in $HOME
 # DOTFILES=.dotfiles
 
 # dotfiles to symlink
@@ -19,8 +19,10 @@
 # Uncomment examples below
 dotsyncrc
 #ack/ackrc
+#aptitude
 #bin:bin
 #ctags/ctags
+#cmus
 #curl/curlrc
 #git/gitconfig
 #git/gitignore
@@ -39,6 +41,7 @@ dotsyncrc
 #mutt/offlineimaprc
 #python/pythonrc
 #python/pylintrc
+#rpm/rpmmacros
 #ruby/irbrc
 #ruby/pryrc
 #ruby/gemrc
