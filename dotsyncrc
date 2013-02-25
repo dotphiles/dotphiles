@@ -93,7 +93,6 @@ nsadmin.apnic.net               rsync=bens-macbook-pro
 shell.apnic.net                 rsync=bens-macbook-pro
 software.apnic.net              rsync=bens-macbook-pro
 chilli.apnic.net                rsync=bens-macbook-pro
-chilli-old.apnic.net            rsync=bens-macbook-pro
 matrix-db.apnic.net             rsync=bens-macbook-pro
 matrix-auth.apnic.net           rsync=bens-macbook-pro
 matrix-proxy1.apnic.net         rsync=bens-macbook-pro
