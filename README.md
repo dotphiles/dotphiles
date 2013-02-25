@@ -47,23 +47,61 @@ Configuration
 
 These are the minimum files you'll want to edit
 
-  - `dotsyncrc` settings for [dotsync][7]
-  - `zsh/zshrc` settings for [dotzsh][8]
-  - `vim/vimrc` settings for [dotvim][9]
+  - `dotsyncrc` settings for [dotsync][2]
+  - `zsh/zshrc` settings for [dotzsh][3]
+  - `vim/vimrc` settings for [dotvim][4]
   - and any dotfiles you enable in `dotsyncrc`
+
+These are stable and reported working...
+
+  - `aptitude` - Configure aptitude
+  - `bin` - ~/bin for scripts etc
+  - `ctags` - Configure ctags
+  - `git` - Configure git
+  - `gnupg` - Configure gnupg
+  - `grc` - Configure grc
+  - `input` - Configure input
+  - `mercurial` - Configure mercurial
+  - `mysql` - Configure mysql client
+  - `python` - Configure python
+  - `rpm` - Configure rpm
+  - `ruby` - Configure ruby
+  - `screen` - Configure screen
+  - `shell` - Generic shell config files
+  - `sqlite` - Configure sqlite client
+  - `ssh` - Configure ssh client
+  - `subversion` - Configure subversion
+  - `tmux` - Configure tmux
+
+These probably work...
+
+  - `ack` - Configure ack - i dont use it
+  - `cmus` - Configure cmus - i dont use it
+  - `curl` - Configure curl - didnt work multiplatform, i dont use it anymore
+  - `irssi` - Configure irssi - i dont use it
+  - `mutt` - Configure mutt - i dont use it
+  - `nano` - Configure nano - i dont use it, should work though
+  - `task` - Configure taskwarrior - i dont use it
+  - `wget` - Configure wget - didnt work multiplatform, i dont use it anymore
 
 ### terminal
 
-dotphiles uses the [solarized][19] color theme
+dotphiles uses the [solarized][5] color theme
 by default, install the colour scheme for your terminal.
 
 vim-powerline requires patched fonts for the 'fancy fonts' options, you can
-find links to them to install [here][27] and configure your terminal to use
+find links to them to install [here][6] and configure your terminal to use
 one, Menlo works great.
 
-### deploy
+### ignores
 
-Experimental!
+Some files that will be auto generated into the symlinked dotfiles directory
+should *never* be commited and uploaded to github.
+
+The included `templates/*ignore` files, ignore the majority, but make sure when
+commiting that you dont include any personal info you dont want in public!
+
+### deploy
 
   - `deploy/osx` setup osx and install ports & brews (only use one)
   - `deploy/linux` setup linux and install packages
@@ -73,7 +111,7 @@ Experimental!
 
 ### dotsync
 
-See the documentation for [dotsync][7] for more information.
+See the documentation for [dotsync][2] for more information.
 
   - dotsyncrc
 
@@ -91,11 +129,14 @@ See the documentation for [dotsync][7] for more information.
 
          ~/$DOTFILES/dotfile.d/localhost
          ~/$DOTFILES/dotfile.d/$HOSTNAME
+         ~/$DOTFILES/dotfile.d/$DZHOST
          ~/$DOTFILES/dotfile.d/$DOMAIN
          ~/$DOTFILES/dotfile
 
    And link the first one it finds instead of the standard dotfile.  The
    `localhost` dotfile will be excluded from your repo.
+
+   $DZHOST is passed to remote hosts and contains the hostname as entered in `dotsyncrc`
 
   - Usage
 
@@ -142,7 +183,7 @@ To keep your fork upto date with additions to the dotphiles repo, do the followi
 License
 -------
 
-Copyright (c) 2012 Ben O'Hara <bohara@gmail.com>
+Copyright (c) 2012 [dotphiles cotributers][7]
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -164,30 +205,10 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 [1]: https://github.com
-[2]: https://github.com/dotphiles/dotphiles/contributors
-[3]: https://github.com/dotphiles/dotphiles/issues
-[4]: http://gun.io/blog/how-to-github-fork-branch-and-pull-request
-[5]: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
-[6]: https://help.github.com/articles/using-pull-requests
-[7]: https://github.com/dotphiles/dotsync
-[8]: https://github.com/dotphiles/dotzsh
-[9]: https://github.com/dotphiles/dotvim
-[10]: http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/
-[11]: http://help.github.com/win-set-up-git/
-[12]: http://rogerdudler.github.com/git-guide/
-[13]: http://help.github.com/fork-a-repo/
-[14]: http://help.github.com/send-pull-requests/
-[15]: http://nvie.com/posts/a-successful-git-branching-model/
-[16]: http://www.twitter.com/nvie
-[17]: https://github.com/nvie/gitflow
-[18]: https://github.com/nvie/gitflow/wiki/Installation
-[19]: http://ethanschoonover.com/solarized
-[20]: http://slinky.imukuppi.org/zenburnpage/
-[21]: https://github.com/skwp/dotfiles
-[22]: https://github.com/sorin-ionescu/prezto
-[23]: https://github.com/robby-russell/oh-my-zsh
-[24]: https://github.com/holman/dotfiles
-[25]: https://github.com/mathiasbynens/dotfiles
-[26]: http://vim.spf13.com
-[27]: https://github.com/Lokaltog/vim-powerline/wiki/Patched-fonts
+[2]: https://github.com/dotphiles/dotsync
+[3]: https://github.com/dotphiles/dotzsh
+[4]: https://github.com/dotphiles/dotvim
+[5]: http://ethanschoonover.com/solarized
+[6]: https://github.com/Lokaltog/vim-powerline/wiki/Patched-fonts
+[7]: https://github.com/dotphiles/dotphiles/graphs/contributors
 
