@@ -98,7 +98,7 @@ one, Menlo works great.
 Some files that will be auto generated into the symlinked dotfiles directory
 should *never* be commited and uploaded to github.
 
-The included `templates/*ignore` files, ignore the majority, but make sure when
+The included `.gitignore` and `.rsyncignore` files, ignore the majority, but make sure when
 commiting that you dont include any personal info you dont want in public!
 
 ### deploy
