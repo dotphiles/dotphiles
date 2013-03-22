@@ -86,6 +86,7 @@ racktables.apnic.net            rsync=bens-macbook-pro
 natto.apnic.net                 rsync=bens-macbook-pro
 fennel.apnic.net                rsync=bens-macbook-pro
 curry.apnic.net                 rsync=bens-macbook-pro
+jira.apnic.net                  rsync=bens-macbook-pro
 #licorice.apnic.net              rsync=bens-macbook-pro
 cron.apnic.net                  rsync=bens-macbook-pro
 svc-ia1.apnic.net               rsync=bens-macbook-pro
