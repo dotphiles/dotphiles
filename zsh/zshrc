@@ -37,6 +37,7 @@ zstyle ':dotzsh:load' dzmodule \
   'tmux' \
   'syntax-highlighting' \
   'perl' \
+  'python' \
   'rsync' \
   'grc' \
   'node' \
