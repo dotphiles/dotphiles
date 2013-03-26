@@ -36,6 +36,7 @@ Host aogw* aocs* aos* aol* nxgw* nxcs* nxs* iagw* iacs* ias*
     PubkeyAuthentication no
 Host nxgw1
     Protocol 1
+
 # Default
 Host *
     User bohara
