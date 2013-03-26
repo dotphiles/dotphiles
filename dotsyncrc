@@ -74,7 +74,7 @@ zsh/zshrc
 # Hosts to sync
 ## hostname                     type=masterhost, ANY or NONE    files=dotfile:tolink,another:tolink
 [hosts]
-bens-macbook-pro                git=NONE                        files=beets/beetsconfig,test/testconfig
+bens-macbook-pro                git=NONE
 bens-mac-mini.local             git=bens-macbook-pro            files=beets/beetsconfig
 
 excession.mikegrice.com         rsync=bens-macbook-pro
