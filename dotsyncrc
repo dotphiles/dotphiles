@@ -145,6 +145,8 @@ nexus.apnic.net                 rsync=bens-macbook-pro
 hk-sec4.apnic.net               rsync=bens-macbook-pro
 hk-ns4.apnic.net                rsync=bens-macbook-pro
 hk-anycollect.apnic.net         rsync=bens-macbook-pro
+hk-anysec1.apnic.net            rsync=bens-macbook-pro
+hk-anysec2.apnic.net            rsync=bens-macbook-pro
 cassia.apnic.net                rsync=bens-macbook-pro
 jaggery.apnic.net               rsync=bens-macbook-pro
 smtp.tst.apnic.net              rsync=bens-macbook-pro
@@ -155,5 +157,8 @@ jp-anysec1.apnic.net            rsync=bens-macbook-pro
 jp-anysec2.apnic.net            rsync=bens-macbook-pro
 au-anysec1.apnic.net            rsync=bens-macbook-pro
 au-anysec2.apnic.net            rsync=bens-macbook-pro
+karashi.apnic.net               rsync=bens-macbook-pro
+cinnamon.apnic.net              rsync=bens-macbook-pro
+jicama.apnic.net                rsync=bens-macbook-pro
 [endhosts]
 
