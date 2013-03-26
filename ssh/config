@@ -26,15 +26,21 @@ Host excession excession.mikegrice.com
     Hostname excession.mikegrice.com
 
 # Work
-Host ialb1 sclb1 iagb1 scgb1
+Host *lb1 *gb1
     User admin
-Host aox1 iax1 scx1 scx2 scx3 scx4
+    PubkeyAuthentication no
+Host aox* aox* nxx*
     User netops
+    PubkeyAuthentication no
+Host aogw* aocs* aos* aol* nxgw* nxcs* nxs* iagw* iacs* ias*
+    PubkeyAuthentication no
+Host nxgw1
+    Protocol 1
 
 # Default
 Host *
     User bohara
-#    StrictHostKeyChecking ask
+    StrictHostKeyChecking ask
 #    ControlMaster auto
 #    ControlPath ~/.ssh/master/%r@%h:%p
 
