@@ -41,6 +41,6 @@ Host nxgw1
 Host *
     User bohara
     StrictHostKeyChecking ask
-#    ControlMaster auto
-#    ControlPath ~/.ssh/master/%r@%h:%p
+    #ControlMaster auto
+    #ControlPath ~/.ssh/master/%r@%h:%p
 
