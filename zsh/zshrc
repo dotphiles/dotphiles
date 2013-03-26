@@ -130,7 +130,7 @@ zstyle ':dotzsh:module:theme:hostname:pi' theme 'dotphiles' 'soldark' 'yellow'
 zstyle ':dotzsh:module:theme:hostname:nas' theme 'dotphiles' 'soldark' 'yellow'
 zstyle ':dotzsh:module:theme:domain:apnic.net' theme 'dotphiles' 'soldark' 'red'
 zstyle ':dotzsh:module:theme:domain:tst.apnic.net' theme 'dotphiles' 'soldark' 'yellow'
-zstyle ':dotzsh:module:theme:domain:dev.apnic.net' theme 'dotphiles' 'soldark' 'magenta'
+zstyle ':dotzsh:module:theme:domain:stg.apnic.net' theme 'dotphiles' 'soldark' 'magenta'
 
 ### Load dotzsh
 source "$DOTZSH/init.zsh"
