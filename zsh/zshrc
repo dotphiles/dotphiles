@@ -123,14 +123,11 @@ zstyle ':dotzsh:module:syntax-highlighting' highlighters 'main' 'brackets' 'patt
 # Auto set to 'off' on dumb terminals.
 zstyle ':dotzsh:module:theme' theme 'dotphiles'
 ### Set custom theme based on hostname or domain
-zstyle ':dotzsh:module:theme:hostname:natte.mcvax.org' theme 'dotphiles' 'soldark' 'magenta'
 zstyle ':dotzsh:module:theme:hostname:excession.mikegrice.com' theme 'dotphiles' 'soldark' 'violet'
-zstyle ':dotzsh:module:theme:hostname:mac-mini.benohara.net' theme 'dotphiles' 'soldark' 'blue'
-zstyle ':dotzsh:module:theme:hostname:pi' theme 'dotphiles' 'soldark' 'yellow'
-zstyle ':dotzsh:module:theme:hostname:nas' theme 'dotphiles' 'soldark' 'yellow'
+zstyle ':dotzsh:module:theme:hostname:benohara.net' theme 'dotphiles' 'soldark' 'blue'
 zstyle ':dotzsh:module:theme:domain:apnic.net' theme 'dotphiles' 'soldark' 'red'
 zstyle ':dotzsh:module:theme:domain:tst.apnic.net' theme 'dotphiles' 'soldark' 'yellow'
-zstyle ':dotzsh:module:theme:domain:stg.apnic.net' theme 'dotphiles' 'soldark' 'magenta'
+zstyle ':dotzsh:module:theme:domain:stg.apnic.net' theme 'dotphiles' 'soldark' 'orange'
 
 ### Load dotzsh
 source "$DOTZSH/init.zsh"
