@@ -41,7 +41,7 @@ setenv SSH_AUTH_SOCK "/tmp/ssh-agent-$USER"
   nethack               on              # default: off
   startup_message       off             # default: on
   vbell                 off             # default: ???
-   
+
 #
 # ===============================================================
 # VARIABLES - Number values

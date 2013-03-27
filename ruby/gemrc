@@ -7,7 +7,7 @@
 #   Ben O'Hara <bohara@gmail.com>
 #
 
---- 
+---
 :verbose: true
 gem: --no-ri --no-rdoc
 :update_sources: true
