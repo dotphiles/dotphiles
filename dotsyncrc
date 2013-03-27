@@ -177,6 +177,7 @@ jp-sec3.apnic.net               rsync=bens-macbook-pro
 jp-anycollect.apnic.net         rsync=bens-macbook-pro
 jp-anysec1.apnic.net            rsync=bens-macbook-pro
 jp-anysec2.apnic.net            rsync=bens-macbook-pro
+au-anycollect.apnic.net         rsync=bens-macbook-pro
 au-anysec1.apnic.net            rsync=bens-macbook-pro
 au-anysec2.apnic.net            rsync=bens-macbook-pro
 karashi.apnic.net               rsync=bens-macbook-pro
