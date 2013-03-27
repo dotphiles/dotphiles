@@ -69,7 +69,7 @@ vimdiff.executable = vim
 vimdiff.args = -d $base $local $output $other +close +close
 
 [web]
-cacerts = ~/.mercurial/ssl/certs/ca-certificates.crt
+#cacerts = ~/.mercurial/ssl/certs/ca-certificates.crt
 
 [diff]
 git = True
