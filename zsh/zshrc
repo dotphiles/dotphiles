@@ -126,8 +126,9 @@ zstyle ':dotzsh:module:theme' theme 'dotphiles'
 zstyle ':dotzsh:module:theme:hostname:excession.mikegrice.com' theme 'dotphiles' 'soldark' 'violet'
 zstyle ':dotzsh:module:theme:domain:benohara.net' theme 'dotphiles' 'soldark' 'blue'
 zstyle ':dotzsh:module:theme:domain:apnic.net' theme 'dotphiles' 'soldark' 'red'
-zstyle ':dotzsh:module:theme:domain:tst.apnic.net' theme 'dotphiles' 'soldark' 'yellow'
+zstyle ':dotzsh:module:theme:domain:dev.apnic.net' theme 'dotphiles' 'soldark' 'yellow'
 zstyle ':dotzsh:module:theme:domain:stg.apnic.net' theme 'dotphiles' 'soldark' 'orange'
+zstyle ':dotzsh:module:theme:domain:stg.apnic.net' theme 'dotphiles' 'soldark' 'magenta'
 
 ### Load dotzsh
 source "$DOTZSH/init.zsh"
