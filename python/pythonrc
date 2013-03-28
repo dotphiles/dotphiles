@@ -109,7 +109,7 @@ Sheesh, I thought he'd never leave. Who invited that guy?
 
 # Django Helpers
 def SECRET_KEY():
-    "Generates a new SECRET_KEY that can be used in a project settings file." 
+    "Generates a new SECRET_KEY that can be used in a project settings file."
 
     from random import choice
     return ''.join(

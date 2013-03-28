@@ -5,12 +5,12 @@
 ###############################################
 
 # Zenbarn irssi theme
-# 
+#
 # This theme makes sense only in the context of Zenburn color
 # pallete. You can find color schemes for all popular terminal
 # emulators on the Zenburn homepage:
 #   - http://slinky.imukuppi.org/zenburnpage/
-# 
+#
 # I personally use nm.pl for aligning nicknames, which also provides
 # complete coloring for them. Again, this theme was written with that
 # in mind, without it it could or would not look like crap.
@@ -56,7 +56,7 @@ abstracts = {
   reason = "{comment $*}";
   # mode change is printed ([+o nick])
   mode = "{comment $*}";
-  
+
 
   # Channel specific
   #
@@ -74,7 +74,7 @@ abstracts = {
 
   # Messages
   #
-  # the basic styling of how to print message, $0 = nick mode, $1 = nick  
+  # the basic styling of how to print message, $0 = nick mode, $1 = nick
   msgnick = "$0$1-%w|%n %|";
   # $0 = nick mode, $1 = nick
   ownmsgnick = "{msgnick $0 $1-%R}%n";

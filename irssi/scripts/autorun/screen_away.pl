@@ -67,7 +67,7 @@ my %away = ();
 # Register formats
 Irssi::theme_register(
 [
- 'screen_away_crap', 
+ 'screen_away_crap',
  '{line_start}{hilight ' . $IRSSI{'name'} . ':} $0'
 ]);
 

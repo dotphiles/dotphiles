@@ -183,7 +183,7 @@ To keep your fork upto date with additions to the dotphiles repo, do the followi
 License
 -------
 
-Copyright (c) 2012 [dotphiles cotributers][7]
+Copyright (c) 2012 [dotphiles contributers][7]
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

@@ -8,12 +8,12 @@
 
 use Irssi;
 use POSIX;
-use vars qw($VERSION %IRSSI); 
+use vars qw($VERSION %IRSSI);
 
 $VERSION = "0.02";
 %IRSSI = (
     authors     => "Timo \'cras\' Sirainen, Mark \'znx\' Sangster",
-    contact     => "tss\@iki.fi, znxster\@gmail.com", 
+    contact     => "tss\@iki.fi, znxster\@gmail.com",
     name        => "hilightwin",
     description => "Print hilighted messages to window named \"hilight\"",
     license     => "Public Domain",
@@ -29,13 +29,13 @@ sub sig_printtext {
     if(Irssi::settings_get_bool('hilightwin_showprivmsg')) {
         $opt = MSGLEVEL_HILIGHT|MSGLEVEL_MSGS;
     }
-    
+
     if(
         ($dest->{level} & ($opt)) &&
         ($dest->{level} & MSGLEVEL_NOHILIGHT) == 0
     ) {
         $window = Irssi::window_find_name('hilight');
-        
+
         if ($dest->{level} & MSGLEVEL_PUBLIC) {
             $text = $dest->{target}.": ".$text;
         }

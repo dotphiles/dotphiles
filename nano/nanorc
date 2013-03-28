@@ -89,12 +89,12 @@ unset preserve
 # followed by closing brackets, can end sentences. The default value is "!.?".
 set punct "!.?"
 
-# Do quick statusbar blanking. Statusbar messages will disappear after 1 
+# Do quick statusbar blanking. Statusbar messages will disappear after 1
 # keystroke instead of 25.
 unset quickblank
 
 # The email-quote string, used to justify email-quoted paragraphs. This is an
-# extended regular expression if your system supports them, otherwise a 
+# extended regular expression if your system supports them, otherwise a
 # literal string. The default value is "^([ \t]*[#:>\|}])+" if you have
 # extended regular expression support, or "> " otherwise. Note that '\t'
 # stands for a literal Tab character.
