@@ -231,5 +231,6 @@ int.tst.apnic.net               rsync=bens-macbook-pro
 api.apnic.net                   rsync=bens-macbook-pro
 api.tst.apnic.net               rsync=bens-macbook-pro
 db.tst.apnic.net                rsync=bens-macbook-pro
+celery2-ragay.dev.apnic.net     rsync=bens-macbook-pro
 [endhosts]
 
