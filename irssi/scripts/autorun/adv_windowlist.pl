@@ -72,7 +72,7 @@ $VERSION = '0.6ca';
 # # qerub@home.se      Extra chanact_show_mode and chanact_chop_status
 # # }}}
 # }}}
-# 
+#
 # {{{ FURTHER THANKS TO
 # ############
 # # buu, fxn, Somni, Khisanth, integral, tybalt89   for much support in any aspect perl
@@ -106,7 +106,7 @@ $VERSION = '0.6ca';
 # Please help me find a solution to this:
 # this be your statusbar, it is using up the maximum term size
 # [[1=1]#abc [2=2]#defghi]
-# 
+#
 # now consider this example:i
 # "ascii" characters are marked with ., utf-8 characters with *
 # [[1=1]#... [2=2]#...***]
@@ -737,7 +737,7 @@ sub remake () {
 		$custSort = $1;
 	}
 
-	my @wins = 
+	my @wins =
 		sort {
 			(
 				( (int($a->{$custSort}) <=> int($b->{$custSort})) * $custSortDir )
@@ -864,7 +864,7 @@ sub remake () {
 						((Irssi::settings_get_str('fancy_abbrev') =~ /^head/i) ?
 								length($name) :
 						(length($name) / 2));
-					my $cut = int($middle - (abs($diff) / 2) + .55); 
+					my $cut = int($middle - (abs($diff) / 2) + .55);
 					$cut = 1 if $cut < 1;
 					$cut = length($name) - abs($diff) - 1 if $cut > (length($name) -
 						abs($diff) - 1);
@@ -1023,7 +1023,7 @@ sub screenSize { # from nicklist.pl
 	# set screen width
 	$screenWidth = $col-1;
 	$screenHeight = $row-1;
-	
+
 	# on some recent systems, "screen -X fit; screen -X width -w 50" doesn't work, needs a sleep in between the 2 commands
 	# so we wait a second before setting the width
 	Irssi::timeout_add_once(100, sub {
@@ -1262,7 +1262,7 @@ Irssi::command_bind(
 		screenFullRedraw();
 	}
 );
-		
+
 
 # }}}
 
@@ -2129,9 +2129,9 @@ Irssi::command_bind(
 
 	sub Class::Classless::X::AUTOLOAD {
 	  # This's the big dispatcher.
-	  
+
 	  my $it = shift @_;
-	  my $m =  ($Class::Classless::X::AUTOLOAD =~ m/([^:]+)$/s ) 
+	  my $m =  ($Class::Classless::X::AUTOLOAD =~ m/([^:]+)$/s )
 					 ? $1 : $Class::Classless::X::AUTOLOAD;
 
 	  croak "Can't call Class::Classless methods (like $m) without an object"
@@ -2163,7 +2163,7 @@ Irssi::command_bind(
 	  #             : &Class::Classless::X::ISA_TREE($it);
 	  # # Get the linearization of the ISA tree
 	  # # ISA-memoization happens in the ISA_TREE function.
-	  
+
 	  for(; $i < @$lineage; ++$i) {
 
 		 if( !defined($no_fail) and exists($lineage->[$i]{'NO_FAIL'}) ) {
@@ -2181,7 +2181,7 @@ Irssi::command_bind(
 			if(ref($v) eq 'CODE') { # normal case, I expect!
 			  # Used to have copying of the arglist here.
 			  #  But it was apparently useless, so I deleted it
-			  unshift @_, 
+			  unshift @_,
 				 $it,                   # $_[0]    -- target object
 				 # a NEW callstate
 				 bless([$m, $i, $lineage, $no_fail, $prevstate ? 1 : 0],
@@ -2224,19 +2224,19 @@ Irssi::command_bind(
 	  # I stopped being able to understand this algorithm about five
 	  #  minutes after I wrote it.
 	  use strict;
-	  
+
 	  my $set_cache = 0; # flag to set the cache on the way out
-	  
+
 	  if(exists($_[0]{'ISA_CACHE'})) {
 		 return    @{$_[0]{'ISA_CACHE'}}
 		  if defined $_[0]{'ISA_CACHE'}
 			  and ref $_[0]{'ISA_CACHE'};
-		  
+
 		 # Otherwise, if exists but is not a ref, it's a signal that it should
 		 #  be replaced at the earliest, with a listref
 		 $set_cache = 1;
 	  }
-	  
+
 	  my $has_mi = 0; # set to 0 on the first node we see with 2 parents!
 	  # First, just figure out what's in the tree.
 	  my %last_child = ($_[0] => 1); # as if already seen
@@ -2246,7 +2246,7 @@ Irssi::command_bind(
 	  #  2) $x is the last child of $y,
 	  #     so that means that $y can be pushed to the stack only after
 	  #      we've pushed $x to the stack.
-	  
+
 	  my @tree_nodes;
 	  {
 		 my $current;
@@ -2331,7 +2331,7 @@ Irssi::command_bind(
 		 }
 	  }
 	  #print "Contents of out: ", nodelist(@out), "\n";
-	  
+
 	  $_[0]{'ISA_CACHE'} = \@out if $set_cache;
 	  return @out;
 	}
@@ -2362,7 +2362,7 @@ Irssi::command_bind(
 	  # Returns true for $X->isa($Y) iff $Y is $X or is an ancestor of $X.
 
 	  return unless ref($_[0]) && ref($_[1]);
-	  return scalar(grep {$_ eq $_[1]} &Class::Classless::X::ISA_TREE($_[0])); 
+	  return scalar(grep {$_ eq $_[1]} &Class::Classless::X::ISA_TREE($_[0]));
 	}
 
 	###########################################################################
@@ -2449,7 +2449,7 @@ Irssi::command_bind(
 # - fixed bug in handling channel #$$
 # - typo on line 200 spotted by f0rked
 # - reset background colour at the beginning of an entry
-# 
+#
 # 0.4d
 # - fixed order of disabling statusbars
 # - several attempts at special chars, without any real success
@@ -2460,7 +2460,7 @@ Irssi::command_bind(
 # - make it so the dynamic sub is actually deleted
 # - fix a bug with removing of the last separator
 # - take into consideration parse_special
-# 
+#
 # 0.3b
 # - automatically kill old statusbars
 # - reset on /reload

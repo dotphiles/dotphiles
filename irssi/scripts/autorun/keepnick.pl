@@ -1,4 +1,4 @@
-# keepnick - irssi 0.7.98.CVS 
+# keepnick - irssi 0.7.98.CVS
 #
 #    $Id: keepnick.pl,v 1.17 2003/01/04 10:18:42 peder Exp $
 #
@@ -49,16 +49,16 @@ sub check_nick {
     my($server,$net,$nick);
 
     %getnick = ();	# clear out any old entries
-    
+
     for $net (keys %keepnick) {
 	next if $inactive{$net};
 	$server = Irssi::server_find_chatnet($net);
 	next unless $server;
 	next if lc $server->{nick} eq lc $keepnick{$net};
-	
+
 	$getnick{$net} = $keepnick{$net};
     }
-    
+
     for $net (keys %getnick) {
 	$server = Irssi::server_find_chatnet($net);
 	next unless $server;
@@ -79,7 +79,7 @@ sub load_nicks {
     my($file) = Irssi::get_irssi_dir."/keepnick";
     my($count) = 0;
     local(*CONF);
-    
+
     %keepnick = ();
     open CONF, "< $file";
     while (<CONF>) {
@@ -90,7 +90,7 @@ sub load_nicks {
 	}
     }
     close CONF;
-    
+
     Irssi::printformat(MSGLEVEL_CLIENTCRAP, 'keepnick_crap',
 		       "Loaded $count nicks from $file");
 }
@@ -102,16 +102,16 @@ sub save_nicks {
     my($file) = Irssi::get_irssi_dir."/keepnick";
     my($count) = 0;
     local(*CONF);
-    
+
     return if $auto && !Irssi::settings_get_bool('keepnick_autosave');
-    
+
     open CONF, "> $file";
     for my $net (sort keys %keepnick) {
 	print CONF "$net\t$keepnick{$net}\n";
 	$count++;
     }
     close CONF;
-    
+
     Irssi::printformat(MSGLEVEL_CLIENTCRAP, 'keepnick_crap',
 		       "Saved $count nicks to $file")
 	unless $auto;
@@ -160,7 +160,7 @@ sub sig_message_own_nick {
 	delete $getnick{$chatnet};
 	if ($inactive{$chatnet}) {
 	    delete $inactive{$chatnet};
-	    Irssi::printformat(MSGLEVEL_CLIENTCRAP, 'keepnick_unhold', 
+	    Irssi::printformat(MSGLEVEL_CLIENTCRAP, 'keepnick_unhold',
 			       $newnick, $chatnet);
 	}
     } elsif (lc $oldnick eq lc $keepnick{$chatnet} &&
@@ -258,7 +258,7 @@ sub cmd_keepnick {
     if ($chatnet) {
 	my($cn) = Irssi::chatnet_find($chatnet);
 	unless ($cn) {
-	    Irssi::printformat(MSGLEVEL_CLIENTCRAP, 'keepnick_crap', 
+	    Irssi::printformat(MSGLEVEL_CLIENTCRAP, 'keepnick_crap',
 			       "Unknown chat network: $chatnet");
 	    return;
 	}
@@ -268,7 +268,7 @@ sub cmd_keepnick {
 
     # if we need a server, check if the one we got is connected.
     unless ($server || ($nick && $chatnet)) {
-	Irssi::printformat(MSGLEVEL_CLIENTCRAP, 'keepnick_crap', 
+	Irssi::printformat(MSGLEVEL_CLIENTCRAP, 'keepnick_crap',
 			   "Not connected to server");
 	return;
     }
@@ -283,7 +283,7 @@ sub cmd_keepnick {
 			   "Unable to find a chatnet");
 	return;
     }
-	
+
     if ($inactive{lc $chatnet}) {
 	delete $inactive{lc $chatnet};
 	Irssi::printformat(MSGLEVEL_CLIENTCRAP, 'keepnick_unhold',
@@ -304,13 +304,13 @@ sub cmd_keepnick {
 # Usage: /UNKEEPNICK [<chatnet>]
 sub cmd_unkeepnick {
     my($chatnet,$server) = @_;
-    
+
     # check if the ircnet specified (if any) is valid, and if so get the
     # server for it
     if ($chatnet) {
 	my($cn) = Irssi::chatnet_find($chatnet);
 	unless ($cn) {
-	    Irssi::printformat(MSGLEVEL_CLIENTCRAP, 'keepnick_crap', 
+	    Irssi::printformat(MSGLEVEL_CLIENTCRAP, 'keepnick_crap',
 			       "Unknown chat network: $chatnet");
 	    return;
 	}
@@ -369,10 +369,10 @@ Irssi::settings_add_bool('keepnick', 'keepnick_quiet', 0);
 
 Irssi::theme_register(
 [
- 'keepnick_crap', 
+ 'keepnick_crap',
  '{line_start}{hilight Keepnick:} $0',
 
- 'keepnick_add', 
+ 'keepnick_add',
  '{line_start}{hilight Keepnick:} Now keeping {nick $0} on [$1]',
 
  'keepnick_remove',
@@ -384,21 +384,21 @@ Irssi::theme_register(
  'keepnick_unhold',
  '{line_start}{hilight Keepnick:} Nickkeeping reactivated on [$1]',
 
- 'keepnick_list_empty', 
+ 'keepnick_list_empty',
  '{line_start}{hilight Keepnick:} No nicks in keep list',
 
- 'keepnick_list_header', 
+ 'keepnick_list_header',
  '',
 
- 'keepnick_list_line', 
+ 'keepnick_list_line',
  '{line_start}{hilight Keepnick:} Keeping {nick $0} in [$1] ($2)',
 
- 'keepnick_list_footer', 
+ 'keepnick_list_footer',
  '',
 
  'keepnick_got_nick',
  '{hilight Keepnick:} Nickstealer left [$1], got {nick $0} back',
- 
+
 ]);
 
 # --------[ Register signals ]------------------------------------------
