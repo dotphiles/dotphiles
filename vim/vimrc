@@ -30,3 +30,4 @@ endif
 Bundle 'django.vim'
 Bundle 'nvie/vim-flake8'
 Bundle 'hynek/vim-python-pep8-indent'
+
