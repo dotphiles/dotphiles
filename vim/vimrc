@@ -27,7 +27,5 @@ if has("user_commands")
 endif
 
 " Customize to your needs...
-Bundle 'django.vim'
-Bundle 'nvie/vim-flake8'
 Bundle 'hynek/vim-python-pep8-indent'
 
