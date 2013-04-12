@@ -43,4 +43,4 @@ Host *
     StrictHostKeyChecking ask
     #ControlMaster auto
     #ControlPath ~/.ssh/master/%r@%h:%p
-
+    SendEnv LC_IDENTIFICATION
