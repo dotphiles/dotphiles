@@ -29,3 +29,4 @@ endif
 " Customize to your needs...
 Bundle 'hynek/vim-python-pep8-indent'
 
+let g:syntastic_python_flake8_args='--ignore=E501'
