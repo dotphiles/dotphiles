@@ -1,0 +1,33 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# ~/.tmuxinator/switches.yml
+#
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
+
+project_name: switches
+project_root: ~/
+tabs:
+  - office:
+      layout: even-horizontal
+      panes:
+        - #empty
+        - #empty
+  - nextdc:
+      layout: even-horizontal
+      panes:
+        - #empty
+        - #empty
+  - interactive:
+      layout: even-horizontal
+      panes:
+        - #empty
+        - #empty
+  - other:
+      layout: even-horizontal
+      panes:
+        - #empty
+        - #empty
+
