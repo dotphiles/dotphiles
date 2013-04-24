@@ -10,16 +10,19 @@
 project_name: virtualisr
 project_root: ~/Projects/virtualisr
 tabs:
-  - zsh: workon virtualisr
-  - editor: workon virtualisr && vim .
-  - shell: workon virtualisr && ./virtualisr/manage.py shell
-  - database: workon virtualisr && ./virtualisr/manage.py dbshell
-  - server: workon virtualisr && ./virtualisr/manage.py runserver 0.0.0.0:8000
-  #- logs:
-  #    layout: even-horizonal
-  #    panes:
-  #      - tail -f /opt/local/var/log/nginx/access.log
-  #      - tail -f /opt/local/var/log/nginx/error.log
-  #      - sudo python -m smtpd -n -c DebuggingServer localhost:25
-
-
+  - zsh:
+      layout: even-horizontal
+      panes:
+        - workon virtualisr && cd virtualisr
+        - workon virtualisr && cd virtualisr
+  - editor: workon virtualisr && vim virtualisr
+  - logs:
+      layout: even-vertical
+      panes:
+        - workon virtualisr && cd virtualisr && ./manage.py runserver 0.0.0.0:8000
+        - workon virtualisr && cd virtualisr && ./manage.py celeryd
+  - django:
+      layout: even-horizontal
+      panes:
+        - workon virtualisr && cd virtualisr && ./manage.py shell
+        - workon virtualisr && cd virtualisr && ./manage.py dbshell

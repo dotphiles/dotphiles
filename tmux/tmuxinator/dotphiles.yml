@@ -13,7 +13,7 @@ tabs:
   - editor:
       layout: even-horizontal
       panes:
-        - vim .
+        - #empty, will just run plain shell
         - #empty, will just run plain shell
   - testing:
       layout: tiled

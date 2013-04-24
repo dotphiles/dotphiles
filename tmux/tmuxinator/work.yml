@@ -10,7 +10,7 @@
 project_name: work
 project_root: ~/
 tabs:
-  - editor: vim
+  - editor:
   - shell:
   - network:
       layout: even-horizontal
