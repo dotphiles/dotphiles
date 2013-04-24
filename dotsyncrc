@@ -55,7 +55,7 @@ shell/urlview
 ssh
 subversion
 task/task
-tasc/taskrc
+task/taskrc
 tmux/tmux.conf
 tmux/tmuxinator
 vim/dotvim:.vim
