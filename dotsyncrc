@@ -39,6 +39,7 @@ mercurial/hgignore
 #mutt
 #mutt/muttrc
 #mutt/offlineimaprc
+psql/psqlrc
 python/pythonrc
 python/pylintrc
 rpm/rpmmacros
