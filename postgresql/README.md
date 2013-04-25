@@ -7,7 +7,7 @@ To use, add the following to **dotsyncrc**
 
     [files]
     ..
-    psql/psqlrc
+    postgresql/psqlrc
     ..
     [endfiles]
 
