@@ -8,21 +8,43 @@
 #   Ben O'Hara <bohara@gmail.com>
 #
 
-# Imports we need
-import sys
 import os
-import readline, rlcompleter
-import atexit
-import pprint
-from tempfile import mkstemp
-from code import InteractiveConsole
 
-# Imports we want
-import datetime
-import pdb
+try:
+    import readline
+    import rlcompleter
+    import atexit
+except ImportError:
+    print("You need readline, rlcompleter, and atexit")
 
-AUTHOR = 'Seth House <seth@eseth.com>'
 
+# Make this work properly in Darwin and Linux
+if 'libedit' in readline.__doc__:
+    readline.parse_and_bind("bind ^I rl_complete")
+else:
+    readline.parse_and_bind("tab: complete")
+
+class Completer(object):
+    def __init__(self):
+        # Enable a History
+        self.HISTFILE=os.path.expanduser("%s/.history/python" % os.environ["HOME"])
+
+        # Read the existing history if there is one
+        if os.path.exists(self.HISTFILE):
+            readline.read_history_file(self.HISTFILE)
+
+        # Set maximum number of items that will be written to the history file
+        readline.set_history_length(300)
+        atexit.register(self.savehist)
+
+    def savehist(self):
+        import readline
+        readline.write_history_file(self.HISTFILE)
+
+
+c = Completer()
+
+WELCOME=''
 # Color Support
 class TermColors(dict):
     """Gives easy access to ANSI color codes. Attempts to fall back to no color
@@ -37,8 +59,7 @@ class TermColors(dict):
         ("Purple"      , "0;35"),
         ("Cyan"        , "0;36"),
         ("LightGray"   , "0;37"),
-        ("DarkGray"    , "1;30"),
-        ("LightRed"    , "1;31"),
+        ("DarkGray"    , "1;30"), ("LightRed"    , "1;31"),
         ("LightGreen"  , "1;32"),
         ("Yellow"      , "1;33"),
         ("LightBlue"   , "1;34"),
@@ -59,27 +80,12 @@ class TermColors(dict):
             self.update(dict([(k, self.NoColor) for k,v in self.COLOR_TEMPLATES]))
 _c = TermColors()
 
-# Enable a History
-HISTFILE="%s/.history/python" % os.environ["HOME"]
-HISTDIR = os.path.dirname(HISTFILE)
-if not os.path.exists(HISTDIR):
-   os.makedirs(HISTDIR)
 
-# Read the existing history if there is one
-if os.path.exists(HISTFILE):
-    readline.read_history_file(HISTFILE)
 
-# Set maximum number of items that will be written to the history file
-readline.set_history_length(300)
-
-def savehist():
-    readline.write_history_file(HISTFILE)
-
-atexit.register(savehist)
-
+import sys
 # Enable Color Prompts
-sys.ps1 = "%s>>> %s" % (_c['Green'], _c['Normal'])
-sys.ps2 = "%s... %s" % (_c['Red'], _c['Normal'])
+sys.ps1 = '%s>>> %s' % (_c['Green'], _c['Normal'])
+sys.ps2 = '%s... %s' % (_c['Red'], _c['Normal'])
 
 # Enable Pretty Printing for stdout
 def my_displayhook(value):
@@ -90,22 +96,11 @@ def my_displayhook(value):
         except ImportError:
             __builtins__._ = value
 
+        import pprint
         pprint.pprint(value)
+        del pprint
+
 sys.displayhook = my_displayhook
-
-# Welcome message
-WELCOME = """\
-%(Cyan)s
-You've got color, history, and pretty printing.
-(If your ~/.inputrc doesn't suck, you've also
-got completion and vi-mode keybindings.)
-%(Brown)s
-Type \e to get an external editor.
-%(Normal)s""" % _c
-
-atexit.register(lambda: sys.stdout.write("""%(DarkGray)s
-Sheesh, I thought he'd never leave. Who invited that guy?
-%(Normal)s""" % _c))
 
 # Django Helpers
 def SECRET_KEY():
@@ -133,7 +128,7 @@ if 'DJANGO_SETTINGS_MODULE' in os.environ:
     C = Client()
 
     WELCOME += """%(Green)s
-Django environment detected.
+    Django environment detected.
 * Your INSTALLED_APPS models are available as `A`.
 * Your project settings are available as `S`.
 * The Django test client is available as `C`.
@@ -150,8 +145,13 @@ Warning: DEBUG_PROPAGATE_EXCEPTIONS has been set to True.
 %(Normal)s""" % _c
 
 # Start an external editor with \e
-EDITOR = os.environ.get('EDITOR', 'vi')
+# http://aspn.activestate.com/ASPN/Cookbook/Python/Recipe/438813/
+
+EDITOR = os.environ.get('EDITOR', 'vim')
 EDIT_CMD = '\e'
+
+from tempfile import mkstemp
+from code import InteractiveConsole
 
 class EditableBufferInteractiveConsole(InteractiveConsole):
     def __init__(self, *args, **kwargs):
@@ -159,7 +159,7 @@ class EditableBufferInteractiveConsole(InteractiveConsole):
         InteractiveConsole.__init__(self, *args, **kwargs)
 
     def runsource(self, source, *args):
-        self.last_buffer = [ source.encode('utf-8') ]
+        self.last_buffer = [ source.encode('latin-1') ]
         return InteractiveConsole.runsource(self, source, *args)
 
     def raw_input(self, *args):
@@ -177,9 +177,12 @@ class EditableBufferInteractiveConsole(InteractiveConsole):
             line = lines[-1]
         return line
 
+# clean up namespace
+del sys
+
 c = EditableBufferInteractiveConsole(locals=locals())
 c.interact(banner=WELCOME)
 
 # Exit the Python shell on exiting the InteractiveConsole
+import sys
 sys.exit()
-
