@@ -39,6 +39,7 @@ mercurial/hgignore
 #mutt
 #mutt/muttrc
 #mutt/offlineimaprc
+mysql/my.cnf
 postgresql/psqlrc
 python/pythonrc
 python/pylintrc
