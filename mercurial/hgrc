@@ -69,7 +69,15 @@ vimdiff.executable = vim
 vimdiff.args = -d $base $local $output $other +close +close
 
 [web]
-#cacerts = ~/.mercurial/ssl/certs/ca-certificates.crt
+cacerts=
+
+[hostfingerprints]
+puppetvc.apnic.net=96:DB:09:17:3A:7A:FD:83:2F:76:01:C7:6E:E4:EF:76:9F:65:95:09
+
+[auth]
+puppetvc.prefix = puppetvc.apnic.net
+puppetvc.cert = ~/.mercurial/certs/bohara.pem
+puppetvc.key = ~/.mercurial/certs/bohara.key
 
 [diff]
 git = True

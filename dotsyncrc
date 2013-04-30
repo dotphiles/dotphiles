@@ -52,7 +52,7 @@ ruby/rdebugrc
 ruby/aprc
 ruby/caprc
 screen/screenrc
-shell/hushlogin
+#shell/hushlogin
 shell/urlview
 ssh
 subversion
