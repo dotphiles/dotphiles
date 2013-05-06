@@ -33,4 +33,4 @@ let g:syntastic_python_flake8_args='--ignore=E501'
 
 autocmd BufRead,BufNewFile /data/rancid/configs/* set syntax=cisco
 autocmd BufRead,BufNewFile /opt/tftpboot/acl/* set syntax=cisco
-Bundle 'file:///Users/bohara/Projects/cisco.vim'
+Bundle 'benohara/cisco.vim'
