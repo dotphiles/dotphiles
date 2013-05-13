@@ -31,4 +31,4 @@ mutt/mailboxes.*
 mutt/smime/*
 mutt/certificates
 task/*.data
-
+mercurial/certs/

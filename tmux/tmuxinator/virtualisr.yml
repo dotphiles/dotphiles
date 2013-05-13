@@ -19,10 +19,10 @@ tabs:
   - logs:
       layout: even-vertical
       panes:
-        - workon virtualisr && cd virtualisr; ./manage.py runserver 0.0.0.0:8000
-        - workon virtualisr && cd virtualisr; ./manage.py celeryd
+        - workon virtualisr && cd virtualisr && ./manage.py runserver 0.0.0.0:8000
+        - workon virtualisr && cd virtualisr && ./manage.py celeryd
   - django:
       layout: even-horizontal
       panes:
-        - workon virtualisr && cd virtualisr; ./manage.py shell_plus
-        - workon virtualisr && cd virtualisr; ./manage.py dbshell
+        - workon virtualisr && cd virtualisr && ./manage.py shell_plus
+        - workon virtualisr && cd virtualisr && ./manage.py dbshell
