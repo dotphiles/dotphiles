@@ -26,7 +26,7 @@ Host excession excession.mikegrice.com
 Host *lb1 *gb1
     User admin
     PubkeyAuthentication no
-Host aox* aox* nxx*
+Host aox* aox* nxx* *cube1
     User netops
     PubkeyAuthentication no
 Host aogw* aocs* aos* aol* nxgw* nxcs* nxs* iagw* iacs* ias*
