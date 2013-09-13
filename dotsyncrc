@@ -236,5 +236,6 @@ db.tst.apnic.net                rsync=bens-macbook-pro
 lookingglass.apnic.net          rsync=bens-macbook-pro
 cgi1.apnic.net                  rsync=bens-macbook-pro
 squiz-proxy.apnic.net           rsync=bens-macbook-pro
+puppetvcs.apnic.net             rsync=bens-macbook-pro
 [endhosts]
 
