@@ -132,3 +132,5 @@
   rex = remote rm
   rem = remote rename
 
+[init]
+	templatedir = ~/.git
