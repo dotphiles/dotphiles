@@ -30,5 +30,5 @@ mutt/cache/*
 mutt/mailboxes.*
 mutt/smime/*
 mutt/certificates
-task/*.data
+task/task/*.data
 mercurial/certs/
