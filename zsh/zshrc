@@ -47,6 +47,7 @@ zstyle ':dotzsh:load' dzmodule \
   'dotsync' \
   'fasd' \
   'taskwarrior' \
+  'vagrant' \
   'history-substring-search' \
   'theme'
 
