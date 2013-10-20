@@ -58,6 +58,7 @@ ssh
 subversion
 task/task
 task/taskrc
+terminfo
 tmux/tmux.conf
 tmux/tmuxinator
 vim/dotvim:.vim
@@ -88,7 +89,7 @@ natto.apnic.net                 rsync=bens-macbook-pro
 fennel.apnic.net                rsync=bens-macbook-pro
 curry.apnic.net                 rsync=bens-macbook-pro
 jira.apnic.net                  rsync=bens-macbook-pro
-#licorice.apnic.net              rsync=bens-macbook-pro
+licorice.apnic.net              rsync=bens-macbook-pro
 cron.apnic.net                  rsync=bens-macbook-pro
 svc-ia1.apnic.net               rsync=bens-macbook-pro
 svc-ia2.apnic.net               rsync=bens-macbook-pro
@@ -234,5 +235,8 @@ whoisv4-node6.apnic.net         rsync=bens-macbook-pro
 whoisv4-node7.apnic.net         rsync=bens-macbook-pro
 whoisv4-node8.apnic.net         rsync=bens-macbook-pro
 hedloc.apnic.net                rsync=bens-macbook-pro
+bamboo-agent1.apnic.net         rsync=bens-macbook-pro
+bamboo-agent2.apnic.net         rsync=bens-macbook-pro
+bamboo-agent3.apnic.net         rsync=bens-macbook-pro
 [endhosts]
 
