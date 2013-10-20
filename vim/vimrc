@@ -30,3 +30,4 @@ endif
 autocmd BufRead,BufNewFile /data/rancid/configs/* set syntax=cisco
 autocmd BufRead,BufNewFile /opt/tftpboot/acl/* set syntax=cisco
 Bundle 'benohara/cisco.vim'
+
