@@ -1,0 +1,56 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# ~/.tmuxinator/work.yml
+#
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
+
+project_name: bgplab
+project_root: ~/bgplab
+tabs:
+  - dynagen:
+      panes:
+        - ./run-dynamips && dynagen topology.net
+  - configs:
+      layout: main-horizontal
+      panes:
+        - #empty
+        - vi -p labs/configs/*.cfg
+  - as64991:
+      layout: tiled
+      panes:
+        - sleep 10 && telnet localhost 2911
+        - sleep 10 && telnet localhost 2912
+        - sleep 10 && telnet localhost 2913
+        - sleep 10 && telnet localhost 2914
+  - as64992:
+      layout: tiled
+      panes:
+        - sleep 10 && telnet localhost 2921
+        - sleep 10 && telnet localhost 2922
+        - sleep 10 && telnet localhost 2923
+        - sleep 10 && telnet localhost 2924
+  - as65001:
+      layout: tiled
+      panes:
+        - sleep 10 && telnet localhost 2011
+        - sleep 10 && telnet localhost 2012
+        - sleep 10 && telnet localhost 2013
+        - sleep 10 && telnet localhost 2014
+  - as65002:
+      layout: tiled
+      panes:
+        - sleep 10 && telnet localhost 2021
+        - sleep 10 && telnet localhost 2022
+        - sleep 10 && telnet localhost 2023
+        - sleep 10 && telnet localhost 2024
+  - as65003:
+      layout: tiled
+      panes:
+        - sleep 10 && telnet localhost 2031
+        - sleep 10 && telnet localhost 2032
+        - sleep 10 && telnet localhost 2033
+        - sleep 10 && telnet localhost 2034
+
