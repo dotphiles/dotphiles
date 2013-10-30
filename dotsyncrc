@@ -238,5 +238,6 @@ hedloc.apnic.net                rsync=bens-macbook-pro
 bamboo-agent1.apnic.net         rsync=bens-macbook-pro
 bamboo-agent2.apnic.net         rsync=bens-macbook-pro
 bamboo-agent3.apnic.net         rsync=bens-macbook-pro
+bgplab.apnic.net                rsync=bens-macbook-pro
 [endhosts]
 
