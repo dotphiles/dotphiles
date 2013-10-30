@@ -17,7 +17,7 @@ tabs:
       layout: main-horizontal
       panes:
         - #empty
-        - vi -p labs/configs/*.cfg
+        - vi labs/configs
   - as64991:
       layout: tiled
       panes:
