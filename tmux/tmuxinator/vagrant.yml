@@ -1,0 +1,42 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# ~/.tmuxinator/vagrant.yml
+#
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
+
+project_name: vagrant
+project_root: ~/Projects/apnic/vagrant
+tabs:
+  - editor:
+      layout: main-vertical
+      panes:
+        - #empty
+        - vim
+  - svc-ia:
+      layout: even-horizontal
+      panes:
+        - vst svc-ia1
+        - vst svc-ia2
+  - svc-nx:
+      layout: even-horizontal
+      panes:
+        - vst svc-nx1
+        - vst svc-nx2
+  - svc-ao:
+      layout: even-horizontal
+      panes:
+        - vst svc-ao1
+        - vst svc-ao2
+  - noc:
+      layout: even-horizontal
+      panes:
+        - vst racktables
+        - vst lookingglass
+  - int:
+      layout: even-horizontal
+      panes:
+        - vst int1
+        - vst int2

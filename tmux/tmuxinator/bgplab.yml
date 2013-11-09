@@ -9,48 +9,116 @@
 
 project_name: bgplab
 project_root: ~/bgplab
-tabs:
-  - dynagen:
-      panes:
-        - ./run-dynamips && dynagen topology.net
-  - configs:
-      layout: main-horizontal
-      panes:
-        - #empty
-        - vi labs/configs
-  - as64991:
+windows:
+  - AS64991:
       layout: tiled
       panes:
-        - sleep 10 && telnet localhost 2911
-        - sleep 10 && telnet localhost 2912
-        - sleep 10 && telnet localhost 2913
-        - sleep 10 && telnet localhost 2914
-  - as64992:
+        - transit1.eu:
+          - telnet bgplab.apnic.net 2911
+        - transit1.na:
+          - telnet bgplab.apnic.net 2912
+        - transit1.oc:
+          - telnet bgplab.apnic.net 2913
+        - transit1.as:
+          - telnet bgplab.apnic.net 2914
+  - AS64992:
       layout: tiled
       panes:
-        - sleep 10 && telnet localhost 2921
-        - sleep 10 && telnet localhost 2922
-        - sleep 10 && telnet localhost 2923
-        - sleep 10 && telnet localhost 2924
-  - as65001:
+      panes:
+        - transit1.eu:
+          - telnet bgplab.apnic.net 2921
+        - transit1.na:
+          - telnet bgplab.apnic.net 2922
+        - transit1.oc:
+          - telnet bgplab.apnic.net 2923
+        - transit1.as:
+          - telnet bgplab.apnic.net 2924
+  - AS65001:
       layout: tiled
       panes:
-        - sleep 10 && telnet localhost 2011
-        - sleep 10 && telnet localhost 2012
-        - sleep 10 && telnet localhost 2013
-        - sleep 10 && telnet localhost 2014
-  - as65002:
+        - core1:
+          - telnet bgplab.apnic.net 2011
+        - core2:
+          - telnet bgplab.apnic.net 2012
+        - border1:
+          - telnet bgplab.apnic.net 2013
+        - border2:
+          - telnet bgplab.apnic.net 2014
+  - AS65002:
       layout: tiled
       panes:
-        - sleep 10 && telnet localhost 2021
-        - sleep 10 && telnet localhost 2022
-        - sleep 10 && telnet localhost 2023
-        - sleep 10 && telnet localhost 2024
-  - as65003:
+        - core1:
+          - telnet bgplab.apnic.net 2021
+        - core2:
+          - telnet bgplab.apnic.net 2022
+        - border1:
+          - telnet bgplab.apnic.net 2023
+        - border2:
+          - telnet bgplab.apnic.net 2024
+  - AS65003:
       layout: tiled
       panes:
-        - sleep 10 && telnet localhost 2031
-        - sleep 10 && telnet localhost 2032
-        - sleep 10 && telnet localhost 2033
-        - sleep 10 && telnet localhost 2034
+        - core1:
+          - telnet bgplab.apnic.net 2031
+        - core2:
+          - telnet bgplab.apnic.net 2032
+        - border1:
+          - telnet bgplab.apnic.net 2033
+        - border2:
+          - telnet bgplab.apnic.net 2034
+  - AS65004:
+      layout: tiled
+      panes:
+        - core1:
+          - telnet bgplab.apnic.net 2041
+        - core2:
+          - telnet bgplab.apnic.net 2042
+        - border1:
+          - telnet bgplab.apnic.net 2043
+        - border2:
+          - telnet bgplab.apnic.net 2044
+  - AS65005:
+      layout: tiled
+      panes:
+        - core1:
+          - telnet bgplab.apnic.net 2051
+        - core2:
+          - telnet bgplab.apnic.net 2052
+        - border1:
+          - telnet bgplab.apnic.net 2053
+        - border2:
+          - telnet bgplab.apnic.net 2054
+  - AS65006:
+      layout: tiled
+      panes:
+        - core1:
+          - telnet bgplab.apnic.net 2061
+        - core2:
+          - telnet bgplab.apnic.net 2062
+        - border1:
+          - telnet bgplab.apnic.net 2063
+        - border2:
+          - telnet bgplab.apnic.net 2064
+  - AS65007:
+      layout: tiled
+      panes:
+        - core1:
+          - telnet bgplab.apnic.net 2071
+        - core2:
+          - telnet bgplab.apnic.net 2072
+        - border1:
+          - telnet bgplab.apnic.net 2073
+        - border2:
+          - telnet bgplab.apnic.net 2074
+  - AS65008:
+      layout: tiled
+      panes:
+        - core1:
+          - telnet bgplab.apnic.net 2081
+        - core2:
+          - telnet bgplab.apnic.net 2082
+        - border1:
+          - telnet bgplab.apnic.net 2083
+        - border2:
+          - telnet bgplab.apnic.net 2084
 
