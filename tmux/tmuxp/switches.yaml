@@ -1,0 +1,35 @@
+session_name: switches
+start_directory: ~/
+windows:
+  - window_name: nextdc-core
+    panes:
+      - ssh nxcs1
+      - ssh nxcs2
+  - window_name: nextdc-access
+    panes:
+      - ssh nxs1
+      - ssh nxs2
+  - window_name: interactive-core
+    panes:
+      - ssh iacs1
+      - ssh iacs2
+  - window_name: interactive-access
+    panes:
+      - ssh ias1
+      - ssh ias2
+  - window_name: office-core
+    panes:
+      - ssh aoc1
+      - ssh aoc2
+  - window_name: office-access
+    layout: tiled
+    panes:
+      - ssh aos1
+      - ssh aos4
+      - ssh aos3
+      - ssh aos2
+  - window_name: office-lan
+    panes:
+      - ssh aol1
+      - ssh aol4
+

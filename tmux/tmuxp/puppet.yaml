@@ -1,0 +1,15 @@
+session_name: puppet
+start_directory: ~/Projects/apnic/vagrant
+windows:
+  - window_name: editor
+    layout: main-horizontal
+    panes:
+    -
+    - vim .
+  - window_name: machines
+    layout: tiled
+    panes:
+    -
+    -
+    -
+    -

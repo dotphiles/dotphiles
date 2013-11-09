@@ -1,0 +1,89 @@
+session_name: bgplab
+start_directory: ~/
+windows:
+  - window_name: as64991
+    layout: tiled
+    panes:
+      - telnet bgplab.apnic.net 2911
+      - telnet bgplab.apnic.net 2914
+      - telnet bgplab.apnic.net 2913
+      - telnet bgplab.apnic.net 2912
+  - window_name: as64992
+    layout: tiled
+    panes:
+      - telnet bgplab.apnic.net 2921
+      - telnet bgplab.apnic.net 2924
+      - telnet bgplab.apnic.net 2923
+      - telnet bgplab.apnic.net 2922
+  - window_name: as65001
+    layout: tiled
+    panes:
+      - telnet bgplab.apnic.net 2011
+      - telnet bgplab.apnic.net 2016
+      - telnet bgplab.apnic.net 2015
+      - telnet bgplab.apnic.net 2014
+      - telnet bgplab.apnic.net 2013
+      - telnet bgplab.apnic.net 2012
+  - window_name: as65002
+    layout: tiled
+    panes:
+      - telnet bgplab.apnic.net 2021
+      - telnet bgplab.apnic.net 2026
+      - telnet bgplab.apnic.net 2025
+      - telnet bgplab.apnic.net 2024
+      - telnet bgplab.apnic.net 2023
+      - telnet bgplab.apnic.net 2022
+  - window_name: as65003
+    layout: tiled
+    panes:
+      - telnet bgplab.apnic.net 2031
+      - telnet bgplab.apnic.net 2036
+      - telnet bgplab.apnic.net 2035
+      - telnet bgplab.apnic.net 2034
+      - telnet bgplab.apnic.net 2033
+      - telnet bgplab.apnic.net 2032
+  - window_name: as65004
+    layout: tiled
+    panes:
+      - telnet bgplab.apnic.net 2041
+      - telnet bgplab.apnic.net 2046
+      - telnet bgplab.apnic.net 2045
+      - telnet bgplab.apnic.net 2044
+      - telnet bgplab.apnic.net 2043
+      - telnet bgplab.apnic.net 2042
+  - window_name: as65005
+    layout: tiled
+    panes:
+      - telnet bgplab.apnic.net 2051
+      - telnet bgplab.apnic.net 2056
+      - telnet bgplab.apnic.net 2055
+      - telnet bgplab.apnic.net 2054
+      - telnet bgplab.apnic.net 2053
+      - telnet bgplab.apnic.net 2052
+  - window_name: as65006
+    layout: tiled
+    panes:
+      - telnet bgplab.apnic.net 2061
+      - telnet bgplab.apnic.net 2066
+      - telnet bgplab.apnic.net 2065
+      - telnet bgplab.apnic.net 2064
+      - telnet bgplab.apnic.net 2063
+      - telnet bgplab.apnic.net 2062
+  - window_name: as65007
+    layout: tiled
+    panes:
+      - telnet bgplab.apnic.net 2071
+      - telnet bgplab.apnic.net 2076
+      - telnet bgplab.apnic.net 2075
+      - telnet bgplab.apnic.net 2074
+      - telnet bgplab.apnic.net 2073
+      - telnet bgplab.apnic.net 2072
+  - window_name: as65008
+    layout: tiled
+    panes:
+      - telnet bgplab.apnic.net 2081
+      - telnet bgplab.apnic.net 2086
+      - telnet bgplab.apnic.net 2085
+      - telnet bgplab.apnic.net 2084
+      - telnet bgplab.apnic.net 2083
+      - telnet bgplab.apnic.net 2082

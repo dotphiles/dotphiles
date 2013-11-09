@@ -9,25 +9,41 @@
 
 project_name: switches
 project_root: ~/
-tabs:
-  - office:
+windows:
+  - nextdc-core:
       layout: even-horizontal
       panes:
-        - #empty
-        - #empty
-  - nextdc:
+        - ssh nxcs1
+        - ssh nxcs2
+  - nextdc-access:
       layout: even-horizontal
       panes:
-        - #empty
-        - #empty
-  - interactive:
+        - ssh nxs1
+        - ssh nxs2
+  - interactive-core:
       layout: even-horizontal
       panes:
-        - #empty
-        - #empty
-  - other:
+        - ssh iacs1
+        - ssh iacs2
+  - interactive-access:
       layout: even-horizontal
       panes:
-        - #empty
-        - #empty
-
+        - ssh ias1
+        - ssh ias2
+  - office-core:
+      layout: even-horizontal
+      panes:
+        - ssh aoc1
+        - ssh aoc2
+  - office-access:
+      layout: tiled
+      panes:
+        - ssh aos1
+        - ssh aos2
+        - ssh aos3
+        - ssh aos4
+  - office-lan:
+      layout: even-horizontal
+      panes:
+        - ssh aol1
+        - ssh aol4

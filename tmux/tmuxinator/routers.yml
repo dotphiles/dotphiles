@@ -9,25 +9,33 @@
 
 project_name: routers
 project_root: ~/
-tabs:
-  - office:
-      layout: even-horizontal
-      panes:
-        - #empty
-        - #empty
+windows:
   - nextdc:
       layout: even-horizontal
       panes:
-        - #empty
-        - #empty
+        - ssh nxgw1
   - interactive:
       layout: even-horizontal
       panes:
-        - #empty
-        - #empty
-  - other:
+        - ssh iagw1
+        - ssh iagw2
+  - office:
       layout: even-horizontal
       panes:
-        - #empty
-        - #empty
+        - ssh aogw1
+        - ssh aogw2
+  - hongkong:
+      layout: even-horizontal
+      panes:
+        - ssh hkgw1
+        - ssh hkgw2
+  - japan:
+      layout: even-horizontal
+      panes:
+        - ssh hkgw1
+        - ssh hkgw2
+  - unitedstates:
+      layout: even-horizontal
+      panes:
+        - ssh usgw
 

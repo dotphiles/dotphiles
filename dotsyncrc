@@ -60,6 +60,7 @@ task/taskrc
 terminfo
 tmux/tmux.conf
 tmux/tmuxinator
+tmux/tmuxp
 vim/dotvim:.vim
 vim/vimrc
 vim/gvimrc
