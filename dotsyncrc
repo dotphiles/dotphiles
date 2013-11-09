@@ -54,7 +54,6 @@ ruby/caprc
 screen/screenrc
 #shell/hushlogin
 shell/urlview
-ssh
 subversion
 task/task
 task/taskrc
@@ -78,13 +77,13 @@ zsh/zshrc
 ## hostname                     type=masterhost, ANY or NONE    files=dotfile:tolink,another:tolink
 [hosts]
 bens-macbook-pro                git=NONE
-mac-mini.benohara.net           git=bens-macbook-pro            files=beets/beetsconfig
+mac-mini.benohara.net           git=bens-macbook-pro            files=beets/beetsconfig,ssh
 
-excession.mikegrice.com         rsync=bens-macbook-pro
-nas.benohara.net                rsync=bens-macbook-pro
-pi.benohara.net                 rsync=bens-macbook-pro
+excession.mikegrice.com         rsync=bens-macbook-pro          files=ssh
+nas.benohara.net                rsync=bens-macbook-pro          files=ssh
+pi.benohara.net                 rsync=bens-macbook-pro          files=ssh
+
 racktables.apnic.net            rsync=bens-macbook-pro
-
 natto.apnic.net                 rsync=bens-macbook-pro
 fennel.apnic.net                rsync=bens-macbook-pro
 curry.apnic.net                 rsync=bens-macbook-pro
@@ -94,7 +93,7 @@ cron.apnic.net                  rsync=bens-macbook-pro
 svc-ia1.apnic.net               rsync=bens-macbook-pro
 svc-ia2.apnic.net               rsync=bens-macbook-pro
 nsadmin.apnic.net               rsync=bens-macbook-pro
-shell.apnic.net                 rsync=bens-macbook-pro
+shell.apnic.net                 rsync=bens-macbook-pro:
 software.apnic.net              rsync=bens-macbook-pro
 chilli.apnic.net                rsync=bens-macbook-pro
 matrix-db.apnic.net             rsync=bens-macbook-pro

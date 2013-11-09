@@ -34,6 +34,14 @@ Host aogw* aocs* aos* aol* nxgw* nxcs* nxs* iagw* iacs* ias*
 Host nxgw1
     Protocol 1
 
+# Local development
+Host *.dev.apnic.net
+    UserKnownHostsFile /dev/null
+    StrictHostKeyChecking no
+Host localhost
+    UserKnownHostsFile /dev/null
+    StrictHostKeyChecking no
+
 # Default
 Host *
     User bohara

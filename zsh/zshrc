@@ -29,7 +29,6 @@ zstyle ':dotzsh:load' dzmodule \
   'completion' \
   'directory' \
   'ssh' \
-  'gnupg' \
   'osx' \
   'archive' \
   'git' \
@@ -138,6 +137,6 @@ zstyle ':dotzsh:module:theme:domain:stg.apnic.net' theme 'dotphiles' 'soldark' '
 source "$DOTZSH/init.zsh"
 
 ### Customize to your needs...
-export PROJECT_HOME="~/Projects"
+export PROJECT_HOME="$HOME/Projects"
 export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
 
