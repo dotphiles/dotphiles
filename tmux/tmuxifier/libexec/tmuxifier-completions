@@ -1,0 +1,36 @@
+#! /usr/bin/env bash
+set -e
+[ -n "$TMUXIFIER_DEBUG" ] && set -x
+
+# Load internal utility functions.
+source "$TMUXIFIER/lib/util.sh"
+
+# Provide tmuxifier help
+if calling-help "$@"; then
+  echo "usage: tmuxifier completion <command>
+
+Print a list of available completions for specified command."
+  exit
+fi
+
+# Provide tmuxifier completions
+if calling-complete "$@"; then
+  tmuxifier-commands
+  exit
+fi
+
+has-completions() {
+  grep -i "^# Provide tmuxifier completions" "$1" >/dev/null
+}
+
+if [ -z "$1" ]; then
+  echo "$(tmuxifier-help completions $@)" >&2
+  exit 1
+fi
+
+! command_path="$(tmuxifier-resolve-command-path "$1")"
+
+if [ -n "$command_path" ] && has-completions "$command_path"; then
+  shift
+  exec "$command_path" --complete "$@"
+fi

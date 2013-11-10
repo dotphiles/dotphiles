@@ -51,39 +51,39 @@ windows:
       - telnet bgplab.apnic.net 2044
       - telnet bgplab.apnic.net 2043
       - telnet bgplab.apnic.net 2042
-  - window_name: as65005
-    layout: tiled
-    panes:
-      - telnet bgplab.apnic.net 2051
-      - telnet bgplab.apnic.net 2056
-      - telnet bgplab.apnic.net 2055
-      - telnet bgplab.apnic.net 2054
-      - telnet bgplab.apnic.net 2053
-      - telnet bgplab.apnic.net 2052
-  - window_name: as65006
-    layout: tiled
-    panes:
-      - telnet bgplab.apnic.net 2061
-      - telnet bgplab.apnic.net 2066
-      - telnet bgplab.apnic.net 2065
-      - telnet bgplab.apnic.net 2064
-      - telnet bgplab.apnic.net 2063
-      - telnet bgplab.apnic.net 2062
-  - window_name: as65007
-    layout: tiled
-    panes:
-      - telnet bgplab.apnic.net 2071
-      - telnet bgplab.apnic.net 2076
-      - telnet bgplab.apnic.net 2075
-      - telnet bgplab.apnic.net 2074
-      - telnet bgplab.apnic.net 2073
-      - telnet bgplab.apnic.net 2072
-  - window_name: as65008
-    layout: tiled
-    panes:
-      - telnet bgplab.apnic.net 2081
-      - telnet bgplab.apnic.net 2086
-      - telnet bgplab.apnic.net 2085
-      - telnet bgplab.apnic.net 2084
-      - telnet bgplab.apnic.net 2083
-      - telnet bgplab.apnic.net 2082
+#  - window_name: as65005
+#    layout: tiled
+#    panes:
+#      - telnet bgplab.apnic.net 2051
+#      - telnet bgplab.apnic.net 2056
+#      - telnet bgplab.apnic.net 2055
+#      - telnet bgplab.apnic.net 2054
+#      - telnet bgplab.apnic.net 2053
+#      - telnet bgplab.apnic.net 2052
+#  - window_name: as65006
+#    layout: tiled
+#    panes:
+#      - telnet bgplab.apnic.net 2061
+#      - telnet bgplab.apnic.net 2066
+#      - telnet bgplab.apnic.net 2065
+#      - telnet bgplab.apnic.net 2064
+#      - telnet bgplab.apnic.net 2063
+#      - telnet bgplab.apnic.net 2062
+#  - window_name: as65007
+#    layout: tiled
+#    panes:
+#      - telnet bgplab.apnic.net 2071
+#      - telnet bgplab.apnic.net 2076
+#      - telnet bgplab.apnic.net 2075
+#      - telnet bgplab.apnic.net 2074
+#      - telnet bgplab.apnic.net 2073
+#      - telnet bgplab.apnic.net 2072
+#  - window_name: as65008
+#    layout: tiled
+#    panes:
+#      - telnet bgplab.apnic.net 2081
+#      - telnet bgplab.apnic.net 2086
+#      - telnet bgplab.apnic.net 2085
+#      - telnet bgplab.apnic.net 2084
+#      - telnet bgplab.apnic.net 2083
+#      - telnet bgplab.apnic.net 2082

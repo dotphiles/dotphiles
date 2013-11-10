@@ -1,0 +1,38 @@
+#! /usr/bin/env bash
+set -e
+[ -n "$TMUXIFIER_DEBUG" ] && set -x
+
+# Load internal utility functions.
+source "$TMUXIFIER/lib/util.sh"
+
+# Provide tmuxifier help
+if calling-help "$@"; then
+  echo "usage: tmuxifier load-window <layout_name | file_path>
+
+Aliases: window, win, w
+
+Create a new window using the specified window layout in the current session."
+  exit
+fi
+
+# Provide tmuxifier completions
+if calling-complete "$@"; then
+  tmuxifier-list-windows
+  exit
+fi
+
+if [ -z "$1" ]; then
+  echo "$(tmuxifier-help load-window $@)" >&2
+  exit 1
+fi
+
+# Load runtime functions.
+source "$TMUXIFIER/lib/runtime.sh"
+
+if [ ! -z $TMUX ]; then
+  session="$(tmuxifier-current-session)"
+  load_window "$1"
+else
+  echo "tmuxifier: 'load-window' command can only be used from within Tmux."
+  exit 1
+fi

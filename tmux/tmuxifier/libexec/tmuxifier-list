@@ -1,0 +1,28 @@
+#! /usr/bin/env bash
+set -e
+[ -n "$TMUXIFIER_DEBUG" ] && set -x
+
+# Load internal utility functions.
+source "$TMUXIFIER/lib/util.sh"
+
+# Provide tmuxifier help
+if calling-help "$@"; then
+  echo "usage: tmuxifier list
+
+Aliases: l
+
+List all available session and window layouts."
+  exit
+fi
+
+echo ""
+echo "Sessions:"
+for item in $(tmuxifier-list-sessions); do
+  echo " - $item"
+done
+echo ""
+echo "Windows:"
+for item in $(tmuxifier-list-windows); do
+  echo " - $item"
+done
+echo ""

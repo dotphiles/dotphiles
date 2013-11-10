@@ -1,0 +1,34 @@
+#! /usr/bin/env bash
+set -e
+[ -n "$TMUXIFIER_DEBUG" ] && set -x
+
+# Load internal utility functions.
+source "$TMUXIFIER/lib/util.sh"
+
+# Provide tmuxifier help
+if calling-help "$@"; then
+  echo "usage: tmuxifier load-session <layout_name | file_path>
+
+Aliases: session, ses, s
+
+Create a session using the session layout, unless the session already exists
+in which case, we simply attach/switch to the existing one."
+  exit
+fi
+
+# Provide tmuxifier completions
+if calling-complete "$@"; then
+  tmuxifier-list-sessions
+  exit
+fi
+
+if [ -z "$1" ]; then
+  echo "$(tmuxifier-help load-session $@)" >&2
+  exit 1
+fi
+
+# Load runtime functions.
+source "$TMUXIFIER/lib/runtime.sh"
+
+# Load session file.
+load_session "$1"

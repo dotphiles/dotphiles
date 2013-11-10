@@ -1,0 +1,46 @@
+#! /usr/bin/env bash
+set -e
+[ -n "$TMUXIFIER_DEBUG" ] && set -x
+
+# Load internal utility functions.
+source "$TMUXIFIER/lib/util.sh"
+
+# Provide tmuxifier help
+if calling-help "$@"; then
+  echo "usage: tmuxifier edit-window <layout_name>
+
+Aliases: edit-win, ewin, ew
+
+Open specified window layout for editing in \$EDITOR."
+  exit
+fi
+
+# Provide tmuxifier completions
+if calling-complete "$@"; then
+  tmuxifier-list-windows
+  exit
+fi
+
+if [ -z "$1" ]; then
+  echo "$(tmuxifier-help edit-window $@)" >&2
+  exit 1
+fi
+
+layout_name="$1"
+layout_file="$TMUXIFIER_LAYOUT_PATH/${layout_name}.window.sh"
+
+if [ ! -f "$layout_file" ]; then
+  echo "tmuxifier: window layout '$layout_name' does not exist." >&2
+  echo "" >&2
+  echo "You can create it with:" >&2
+  echo "  tmuxifier new-window '$layout_name'" >&2
+  exit 1
+fi
+
+if [ -n "$EDITOR" ]; then
+  exec "$EDITOR" "$layout_file"
+else
+  echo "'\$EDITOR' is not set. Please manually open the layout for editing:"
+  echo "$layout_file"
+  echo
+fi

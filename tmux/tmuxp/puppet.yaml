@@ -3,13 +3,28 @@ start_directory: ~/Projects/apnic/vagrant
 windows:
   - window_name: editor
     layout: main-horizontal
+    options:
+      main-pane-height: 40
     panes:
-    -
     - vim .
-  - window_name: machines
+    -
+  - window_name: svc-dev
     layout: tiled
     panes:
-    -
-    -
-    -
-    -
+      - echo 'svc-ao1'
+      - echo 'svc-ao1'
+      - echo 'svc-ia1'
+      - echo 'svc-ia1'
+      - echo 'svc-nx1'
+      - echo 'svc-nx2'
+  - window_name: int-dev
+    panes:
+      - echo 'int1'
+      - echo 'int2'
+  - window_name: noc-dev
+    layout: tiled
+    panes:
+      - echo 'parsley'
+      - echo 'cacti'
+      - echo 'racktables'
+      - echo 'lookingglass'
