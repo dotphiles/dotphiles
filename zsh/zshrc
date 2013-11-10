@@ -66,9 +66,7 @@ zstyle ':dotzsh:module:*' case-sensitive 'no'
 
 ### Terminal Module
 # Auto set the tab and window titles.
-if [[ -z $TMUX ]]; then
-  zstyle ':dotzsh:module:terminal' auto-title 'yes'
-fi
+zstyle ':dotzsh:module:terminal' auto-title 'yes'
 
 ### Editor module
 # Set the key mapping style to 'emacs' or 'vi'.
