@@ -11,7 +11,7 @@ new_window "bgplab-configs"
 split_h 30
 
 # Run commands.
-run_cmd "vim ." 1     # runs in pane 1
+run_cmd "vi" 1     # runs in pane 1
 
 # Paste text
 #send_keys "top"    # paste into active pane

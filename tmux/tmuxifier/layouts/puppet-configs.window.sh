@@ -11,7 +11,7 @@ new_window "puppet-configs"
 split_h 30
 
 # Run commands.
-run_cmd "vim ." 1     # runs in pane 1
+run_cmd "vi" 1     # runs in pane 1
 run_cmd "vagrant status" 2  # runs in pane 2
 
 # Paste text
