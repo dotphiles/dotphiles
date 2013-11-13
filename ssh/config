@@ -22,22 +22,7 @@ Host excession excession.mikegrice.com
     User benoh
     Hostname excession.mikegrice.com
 
-# Work
-Host *lb1 *gb1
-    User admin
-    PubkeyAuthentication no
-Host aox* aox* nxx* *cube1
-    User netops
-    PubkeyAuthentication no
-Host aogw* aocs* aos* aol* nxgw* nxcs* nxs* iagw* iacs* ias*
-    PubkeyAuthentication no
-Host nxgw1
-    Protocol 1
-
 # Local development
-Host *.dev.apnic.net
-    UserKnownHostsFile /dev/null
-    StrictHostKeyChecking no
 Host localhost
     UserKnownHostsFile /dev/null
     StrictHostKeyChecking no

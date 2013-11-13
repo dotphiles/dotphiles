@@ -54,7 +54,7 @@ ruby/caprc
 screen/screenrc
 #shell/hushlogin
 shell/urlview
-#ssh
+ssh
 subversion
 task/task
 task/taskrc
@@ -79,167 +79,10 @@ zsh/zshrc
 # Hosts to sync
 ## hostname                     type=masterhost, ANY or NONE    files=dotfile:tolink,another:tolink
 [hosts]
-bens-macbook-pro                git=NONE                        files=ssh
-mac-mini.benohara.net           git=bens-macbook-pro            files=ssh,beets/beetsconfig
-
-excession.mikegrice.com         rsync=bens-macbook-pro          files=ssh
-nas.benohara.net                rsync=bens-macbook-pro          files=ssh
-pi.benohara.net                 rsync=bens-macbook-pro          files=ssh
-
-racktables.apnic.net            rsync=bens-macbook-pro
-natto.apnic.net                 rsync=bens-macbook-pro
-fennel.apnic.net                rsync=bens-macbook-pro
-curry.apnic.net                 rsync=bens-macbook-pro
-jira.apnic.net                  rsync=bens-macbook-pro
-licorice.apnic.net              rsync=bens-macbook-pro
-cron.apnic.net                  rsync=bens-macbook-pro
-svc-ia1.apnic.net               rsync=bens-macbook-pro
-svc-ia2.apnic.net               rsync=bens-macbook-pro
-nsadmin.apnic.net               rsync=bens-macbook-pro
-shell.apnic.net                 rsync=bens-macbook-pro:
-software.apnic.net              rsync=bens-macbook-pro
-chilli.apnic.net                rsync=bens-macbook-pro
-matrix-db.apnic.net             rsync=bens-macbook-pro
-matrix-auth.apnic.net           rsync=bens-macbook-pro
-matrix-proxy1.apnic.net         rsync=bens-macbook-pro
-matrix-proxy2.apnic.net         rsync=bens-macbook-pro
-svc-ao1.apnic.net               rsync=bens-macbook-pro
-svc-ao2.apnic.net               rsync=bens-macbook-pro
-svc-nx1.apnic.net               rsync=bens-macbook-pro
-svc-nx2.apnic.net               rsync=bens-macbook-pro
-master.apnic.net                rsync=bens-macbook-pro
-mugwort.apnic.net               rsync=bens-macbook-pro
-whois-node1.apnic.net           rsync=bens-macbook-pro
-whois-node2.apnic.net           rsync=bens-macbook-pro
-wasabi.apnic.net                rsync=bens-macbook-pro
-parsley.apnic.net               rsync=bens-macbook-pro
-puppet.apnic.net                rsync=bens-macbook-pro
-puppetvc.apnic.net              rsync=bens-macbook-pro
-puppetdb.apnic.net              rsync=bens-macbook-pro
-puppetdash.apnic.net            rsync=bens-macbook-pro
-ra2.apnic.net                   rsync=bens-macbook-pro
-ra2.tst.apnic.net               rsync=bens-macbook-pro
-kumera5.apnic.net               rsync=bens-macbook-pro
-kumera5.tst.apnic.net           rsync=bens-macbook-pro
-clove.apnic.net                 rsync=bens-macbook-pro
-chive.apnic.net                 rsync=bens-macbook-pro
-chive.tst.apnic.net             rsync=bens-macbook-pro
-rocket.apnic.net                rsync=bens-macbook-pro
-paprika.apnic.net               rsync=bens-macbook-pro
-celery2.apnic.net               rsync=bens-macbook-pro
-soursop.apnic.net               rsync=bens-macbook-pro
-soba.apnic.net                  rsync=bens-macbook-pro
-jwhois1.apnic.net               rsync=bens-macbook-pro
-oregano.apnic.net               rsync=bens-macbook-pro
-elasticsearch1.apnic.net        rsync=bens-macbook-pro
-elasticsearch2.apnic.net        rsync=bens-macbook-pro
-cacti.apnic.net                 rsync=bens-macbook-pro
-foswiki.apnic.net               rsync=bens-macbook-pro
-nutmeg5.apnic.net               rsync=bens-macbook-pro
-nutmeg64.apnic.net              rsync=bens-macbook-pro
-o3-stats.apnic.net              rsync=bens-macbook-pro
-onion.apnic.net                 rsync=bens-macbook-pro
-pacificigf.apnic.net            rsync=bens-macbook-pro
-pepper.apnic.net                rsync=bens-macbook-pro
-wakame.apnic.net                rsync=bens-macbook-pro
-graphite.apnic.net              rsync=bens-macbook-pro
-rabbitmq.apnic.net              rsync=bens-macbook-pro
-repo.apnic.net                  rsync=bens-macbook-pro
-nori.apnic.net                  rsync=bens-macbook-pro
-nori.tst.apnic.net              rsync=bens-macbook-pro
-events.apnic.net                rsync=bens-macbook-pro
-events.stg.apnic.net            rsync=bens-macbook-pro
-events.tst.apnic.net            rsync=bens-macbook-pro
-fellowship.apnic.net            rsync=bens-macbook-pro
-forms.apnic.net                 rsync=bens-macbook-pro
-forms.tst.apnic.net             rsync=bens-macbook-pro
-forms.stg.apnic.net             rsync=bens-macbook-pro
-mace.apnic.net                  rsync=bens-macbook-pro
-mace.tst.apnic.net              rsync=bens-macbook-pro
-rpki1.apnic.net                 rsync=bens-macbook-pro
-rpki2.apnic.net                 rsync=bens-macbook-pro
-rpki1.tst.apnic.net             rsync=bens-macbook-pro
-rpki2.tst.apnic.net             rsync=bens-macbook-pro
-rpki-repo1.apnic.net            rsync=bens-macbook-pro
-rpki-repo2.apnic.net            rsync=bens-macbook-pro
-rpki-signer1.apnic.net          rsync=bens-macbook-pro
-rpki-signer2.apnic.net          rsync=bens-macbook-pro
-rpki-signer1.tst.apnic.net      rsync=bens-macbook-pro
-rpki-signer2.tst.apnic.net      rsync=bens-macbook-pro
-rpki-validator.apnic.net        rsync=bens-macbook-pro
-rtdb.apnic.net                  rsync=bens-macbook-pro
-rtdb-slave.apnic.net            rsync=bens-macbook-pro
-sake.apnic.net                  rsync=bens-macbook-pro
-ns3.apnic.net                   rsync=bens-macbook-pro
-sec3.apnic.net                  rsync=bens-macbook-pro
-logstash.apnic.net              rsync=bens-macbook-pro
-nagios.apnic.net                rsync=bens-macbook-pro
-nexus.apnic.net                 rsync=bens-macbook-pro
-hk-sec4.apnic.net               rsync=bens-macbook-pro
-hk-ns4.apnic.net                rsync=bens-macbook-pro
-hk-anycollect.apnic.net         rsync=bens-macbook-pro
-hk-anysec1.apnic.net            rsync=bens-macbook-pro
-hk-anysec2.apnic.net            rsync=bens-macbook-pro
-cassia.apnic.net                rsync=bens-macbook-pro
-jaggery.apnic.net               rsync=bens-macbook-pro
-smtp.tst.apnic.net              rsync=bens-macbook-pro
-jp-ns3.apnic.net                rsync=bens-macbook-pro
-jp-sec3.apnic.net               rsync=bens-macbook-pro
-jp-anycollect.apnic.net         rsync=bens-macbook-pro
-jp-anysec1.apnic.net            rsync=bens-macbook-pro
-jp-anysec2.apnic.net            rsync=bens-macbook-pro
-au-anycollect.apnic.net         rsync=bens-macbook-pro
-au-anysec1.apnic.net            rsync=bens-macbook-pro
-au-anysec2.apnic.net            rsync=bens-macbook-pro
-karashi.apnic.net               rsync=bens-macbook-pro
-cinnamon.apnic.net              rsync=bens-macbook-pro
-jicama.apnic.net                rsync=bens-macbook-pro
-sanog.apnic.net                 rsync=bens-macbook-pro
-sensu.apnic.net                 rsync=bens-macbook-pro
-shallot.apnic.net               rsync=bens-macbook-pro
-submission.apnic.net            rsync=bens-macbook-pro
-sugarcrm.apnic.net              rsync=bens-macbook-pro
-tamarind.apnic.net              rsync=bens-macbook-pro
-tinnie.apnic.net                rsync=bens-macbook-pro
-wakame.apnic.net                rsync=bens-macbook-pro
-weirds-pilot.apnic.net          rsync=bens-macbook-pro
-wiki.apnic.net                  rsync=bens-macbook-pro
-6to4.nro.net                    rsync=bens-macbook-pro
-apricot.apnic.net               rsync=bens-macbook-pro
-apricot.stg.apnic.net           rsync=bens-macbook-pro
-apricot.tst.apnic.net           rsync=bens-macbook-pro
-au-ns1.apnic.net                rsync=bens-macbook-pro
-au-sec1.apnic.net               rsync=bens-macbook-pro
-au-nsdata.apnic.net             rsync=bens-macbook-pro
-bokbunju.apnic.net              rsync=bens-macbook-pro
-ca2.apnic.net                   rsync=bens-macbook-pro
-collectd.apnic.net              rsync=bens-macbook-pro
-cron.apnic.net                  rsync=bens-macbook-pro
-cron.tst.apnic.net              rsync=bens-macbook-pro
-db-slave.apnic.net              rsync=bens-macbook-pro
-int1.apnic.net                  rsync=bens-macbook-pro
-int2.apnic.net                  rsync=bens-macbook-pro
-int.stg.apnic.net               rsync=bens-macbook-pro
-int.tst.apnic.net               rsync=bens-macbook-pro
-api.apnic.net                   rsync=bens-macbook-pro
-api.tst.apnic.net               rsync=bens-macbook-pro
-db.tst.apnic.net                rsync=bens-macbook-pro
-lookingglass.apnic.net          rsync=bens-macbook-pro
-cgi1.apnic.net                  rsync=bens-macbook-pro
-squiz-proxy.apnic.net           rsync=bens-macbook-pro
-puppetvcs.apnic.net             rsync=bens-macbook-pro
-whoisv4-node1.apnic.net         rsync=bens-macbook-pro
-whoisv4-node2.apnic.net         rsync=bens-macbook-pro
-whoisv4-node3.apnic.net         rsync=bens-macbook-pro
-whoisv4-node4.apnic.net         rsync=bens-macbook-pro
-whoisv4-node5.apnic.net         rsync=bens-macbook-pro
-whoisv4-node6.apnic.net         rsync=bens-macbook-pro
-whoisv4-node7.apnic.net         rsync=bens-macbook-pro
-whoisv4-node8.apnic.net         rsync=bens-macbook-pro
-hedloc.apnic.net                rsync=bens-macbook-pro
-bamboo-agent1.apnic.net         rsync=bens-macbook-pro
-bamboo-agent2.apnic.net         rsync=bens-macbook-pro
-bamboo-agent3.apnic.net         rsync=bens-macbook-pro
-bgplab.apnic.net                rsync=bens-macbook-pro
+bens-macbook-pro                git=NONE
+mac-mini.benohara.net           git=bens-macbook-pro            files=beets/beetsconfig
+excession.mikegrice.com         rsync=bens-macbook-pro
+nas.benohara.net                rsync=bens-macbook-pro
+pi.benohara.net                 rsync=bens-macbook-pro
 [endhosts]
 
