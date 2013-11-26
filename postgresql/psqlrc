@@ -12,7 +12,7 @@
 \set PROMPT1 '(%n@%M:%>) [%/] > '
 \set PROMPT2 ''
 \set PAGER OFF
-\set HISTFILE ~/.history/psql- :HOST - : DBNAME -- Remove space between : and DBNAME
+\set HISTFILE ~/.history/psql- :HOST - :DBNAME
 \set HISTSIZE 2000
 \set ECHO_HIDDEN ON
 \set COMP_KEYWORD_CASE upper
