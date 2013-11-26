@@ -42,6 +42,7 @@ nmap
 #readline
 reattach-to-user-namespace
 #tcptraceroute
+terminal-notifier
 tmux
 vim
 #vnstat
