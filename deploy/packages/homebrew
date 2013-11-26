@@ -16,6 +16,7 @@ ctags
 #erlang
 #gdbm
 #gettext
+git
 #glib
 grc
 htop-osx
