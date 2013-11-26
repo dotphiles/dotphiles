@@ -12,9 +12,6 @@ ForwardAgent yes
 #VisualHostKey yes
 HashKnownHosts no
 #ConnectTimeout 2
-ServerAliveCountMax 6
-ServerAliveInterval 30
-KeepAlive yes
 
 # My Hosts
 #Host hostname hostname.fqdn.com
@@ -24,6 +21,9 @@ KeepAlive yes
 Host *
     #User username
     StrictHostKeyChecking ask
+    ServerAliveCountMax 6
+    ServerAliveInterval 30
+    KeepAlive yes
     #ControlMaster auto
     #ControlPath ~/.ssh/master/%r@%h:%p
 

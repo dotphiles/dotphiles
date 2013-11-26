@@ -18,8 +18,6 @@ if has("user_commands")
   "let g:vundles=['general', 'programming', 'php', 'ruby', 'python', 'javascript', 'html', 'misc']
   let g:vundles=['general', 'programming']
   let g:neocomplcache_enable_at_startup = 1
-  " Tell Neosnippet about the other snippets
-  let g:neosnippet#snippets_directory='~/.vim/bundle/snipmate-snippets/snippets'
   " Load 'vundles'
   source ~/.vim/vundles.vim
   " Add extra bundles here...

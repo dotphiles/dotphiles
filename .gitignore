@@ -26,9 +26,10 @@ gnupg/sshcontrol
 gnupg/random*
 gnupg/private*
 gnupg/*~
+mercurial/certs/
 mutt/cache/*
 mutt/mailboxes.*
 mutt/smime/*
 mutt/certificates
-task/*.data
+task/task/*.data
 
