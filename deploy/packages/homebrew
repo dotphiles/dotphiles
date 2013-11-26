@@ -10,7 +10,7 @@
 #aacgain
 #autoconf
 #automake
-#bash
+bash
 coreutils
 ctags
 #erlang
@@ -42,6 +42,7 @@ nmap
 reattach-to-user-namespace
 #tcptraceroute
 tmux
+vim
 #vnstat
 wget
 #xz
