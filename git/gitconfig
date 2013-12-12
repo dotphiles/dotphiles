@@ -18,17 +18,22 @@
   merge = refs/heads/master
 
 [color]
-  diff = auto
-  status = auto
-  branch = auto
-  interactive = auto
-  ui = true
+  branch = always
+  diff = always
+  grep = always
+  interactive = always
   pager = true
+  showbranch = auto
+  status = auto
+  ui = always
+
+[color "interactive"]
+error = red bold
 
 [color "branch"]
   current = yellow reverse
   local = yellow
-  remote = magenta
+  remote = green
 
 [color "diff"]
   meta = yellow
