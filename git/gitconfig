@@ -133,4 +133,5 @@
   rem = remote rename
 
 [push]
-	default = matching
+    default = matching
+
