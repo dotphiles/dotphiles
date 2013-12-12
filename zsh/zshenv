@@ -7,6 +7,8 @@
 #   Ben O'Hara <bohara@gmail.com>
 #
 
+unsetopt GLOBAL_RCS
+
 # Set the path to dotzsh.
 export DOTZSH="$HOME/.zsh"
 
