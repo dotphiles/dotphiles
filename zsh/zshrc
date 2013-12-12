@@ -125,11 +125,11 @@ zstyle ':dotzsh:module:syntax-highlighting' highlighters 'main' 'brackets' 'patt
 # Set default theme to load.
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
-zstyle ':dotzsh:module:theme' theme 'dotphiles' 'soldark'
+zstyle ':dotzsh:module:theme' theme 'dotphiles'
 zstyle ':dotzsh:module:theme:hostname:macbook-air.benohara.net' theme 'dotphiles'
 ### Set custom theme based on hostname or domain
 zstyle ':dotzsh:module:theme:hostname:excession.mikegrice.com' theme 'dotphiles' 'soldark' 'violet'
-zstyle ':dotzsh:module:theme:domain:benohara.net' theme 'dotphiles' 'soldark' 'blue'
+zstyle ':dotzsh:module:theme:domain:benohara.net' theme 'dotphiles'
 
 ### Load dotzsh
 source "$DOTZSH/init.zsh"
