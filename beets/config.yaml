@@ -1,0 +1,90 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# Description: Setup beets for tagging music
+#
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
+
+# Store music in here
+directory: /Volumes/Music/Library
+
+# Set options for matching
+match:
+    preferred:
+        countries: ['US', 'GB|UK']
+        media: ['CD', 'Digital Media|File']
+        original_year: yes
+
+# Paths where music will go
+paths:
+    default: Albums/%the{$albumartist}/($year) $album%aunique{}/%if{$multidisc,$disc-}$track - $artist - $title
+    singleton: Non-Album/%the{$artist}/$title
+    comp: Compilations/($year) $album%aunique{}/%if{$multidisc,$disc-}$track - $artist - $title
+    albumtype:soundtrack: Soundtracks/($year) $album%aunique{}/%if{$multidisc,$disc-}$track - $artist - $title
+
+# Item fields for multidisc
+item_fields:
+    multidisc: 1 if disctotal > 1 else 0
+
+# Options for importing
+import:
+    copy: no
+    move: yes
+    write: yes
+    resume: ask
+    quiet_fallback: skip
+    timid: no
+    log: beetslog.txt
+
+# Ignore these files
+ignore: .AppleDouble ._* *~ .DS_Store
+
+# Use these plugins
+plugins: inline the lyrics echonest_tempo chroma scrub mbsync replaygain missing duplicates lastgenre fromfilename info fetchart embedart
+
+# Run multi threaded
+threaded: no
+
+# Use color in output
+color: yes
+
+# Number by disc
+per_disc_numbering: yes
+
+# Plugin options
+
+# Options for fetchart
+#fetchart:
+#    maxwidth: 1500
+
+# Options for embedart
+#embedart:
+#    maxwidth: 900
+
+# Options for replaygain
+replaygain:
+    overwrite: no
+    auto: yes
+    albumgain: yes
+
+# Options for lyrics
+lyrics:
+    auto: no
+    fallback: 'No lyrics found'
+
+# Options for chroma
+chroma:
+    auto: true
+acoustid:
+    apikey: IkH0JkBR
+
+# Options for scrub
+scrub:
+    auto: no
+
+# Options for tempo
+echonest_tempo:
+    auto: yes
+
