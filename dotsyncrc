@@ -79,8 +79,8 @@ zsh/zshrc
 # Hosts to sync
 ## hostname                     type=masterhost, ANY or NONE    files=dotfile:tolink,another:tolink
 [hosts]
-macbook-air.benohara.net        git=NONE                                files=beets/config.yaml:.config/beets/config.yaml
-mac-mini.benohara.net           git=macbook-air.benohara.net            files=beets/beetsconfig
+macbook-air.benohara.net        git=NONE
+mac-mini.benohara.net           git=macbook-air.benohara.net            files=beets/config.yaml:.config/beets/config.yaml
 excession.mikegrice.com         rsync=macbook-air.benohara.net
 nas.benohara.net                rsync=macbook-air.benohara.net
 pi.benohara.net                 rsync=macbook-air.benohara.net
