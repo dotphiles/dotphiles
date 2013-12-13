@@ -4882,7 +4882,7 @@
 	<key>HiddenAdvancedFontRendering</key>
 	<false/>
 	<key>HideActivityIndicator</key>
-	<true/>
+	<false/>
 	<key>HideMenuBarInFullscreen</key>
 	<true/>
 	<key>HideScrollbar</key>
@@ -4890,7 +4890,7 @@
 	<key>HideTab</key>
 	<true/>
 	<key>HighlightTabLabels</key>
-	<true/>
+	<false/>
 	<key>HotKeyBookmark</key>
 	<string>59EFC51D-1C32-4236-90B5-0B9F01B80178</string>
 	<key>HotKeyTogglesWindow</key>
