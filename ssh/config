@@ -34,6 +34,7 @@ Host *
     ServerAliveCountMax 6
     ServerAliveInterval 30
     KeepAlive yes
-    #ControlMaster auto
-    #ControlPath ~/.ssh/master/%r@%h:%p
+    ControlMaster auto
+    ControlPath ~/.ssh/master/%r@%h:%p
+    ControlPersist 8h
 
