@@ -82,6 +82,6 @@ zsh/zshrc
 macbook-air.benohara.net        git=NONE
 mac-mini.benohara.net           git=macbook-air.benohara.net            files=beets/config.yaml:.config/beets/config.yaml
 nas.benohara.net                rsync=macbook-air.benohara.net
-pi.benohara.net                 rsync=macbook-air.benohara.net
+#pi.benohara.net                 rsync=macbook-air.benohara.net
 [endhosts]
 
