@@ -4930,7 +4930,7 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>465 257 924 485 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 361 650 501 0 0 1440 878 </string>
+	<string>0 4 1440 874 0 0 1440 878 </string>
 	<key>NeverWarnAboutShortLivedSessions_16C503FD-77E7-43DA-B3CD-5795EAE74C90</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_19F01142-D2A0-4384-BA92-FBE73EDE1D65</key>
@@ -8461,7 +8461,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MesloLGM-RegularForPowerline 14</string>
+			<string>Menlo-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -22537,7 +22537,7 @@
 			<key>Use Italic Font</key>
 			<false/>
 			<key>Vertical Spacing</key>
-			<real>0.90128803253173828</real>
+			<real>0.90417808294296265</real>
 			<key>Visual Bell</key>
 			<false/>
 			<key>Window Type</key>
