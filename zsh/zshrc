@@ -22,6 +22,7 @@ zstyle ':dotzsh:load' zfunction 'zargs' 'zmv'
 zstyle ':dotzsh:load' dzmodule \
   'gnu-utility' \
   'environment' \
+  'autoenv' \
   'terminal' \
   'editor' \
   'history' \
