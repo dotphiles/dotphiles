@@ -4932,7 +4932,7 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>465 257 924 485 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 412 650 451 0 0 1440 878 </string>
+	<string>0 74 1440 804 0 0 1440 878 </string>
 	<key>NeverWarnAboutShortLivedSessions_16C503FD-77E7-43DA-B3CD-5795EAE74C90</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_19F01142-D2A0-4384-BA92-FBE73EDE1D65</key>
@@ -22379,7 +22379,7 @@
 			<key>Right Option Key Sends</key>
 			<integer>0</integer>
 			<key>Rows</key>
-			<integer>50</integer>
+			<integer>45</integer>
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
@@ -22548,6 +22548,8 @@
 			<string>/Users/bohara</string>
 		</dict>
 	</array>
+	<key>NoSyncNeverRemindPrefsChangesCopy</key>
+	<true/>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
