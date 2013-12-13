@@ -19,9 +19,6 @@ Host home home.benohara.net
     Hostname home.benohara.net
 Host mac-mini mac-mini.benohara.net
     Hostname mac-mini.local
-Host excession excession.mikegrice.com
-    User benoh
-    Hostname excession.mikegrice.com
 
 # Local development
 Host localhost
