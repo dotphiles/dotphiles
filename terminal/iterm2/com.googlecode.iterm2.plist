@@ -4861,6 +4861,8 @@
 			</dict>
 		</dict>
 	</dict>
+	<key>Default Arrangement Name</key>
+	<string>Default</string>
 	<key>Default Bookmark Guid</key>
 	<string>5CDA2599-2969-4A66-80EE-987A86DDA97F</string>
 	<key>DimBackgroundWindows</key>
@@ -4930,7 +4932,7 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>465 257 924 485 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 4 1440 874 0 0 1440 878 </string>
+	<string>0 412 650 451 0 0 1440 878 </string>
 	<key>NeverWarnAboutShortLivedSessions_16C503FD-77E7-43DA-B3CD-5795EAE74C90</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_19F01142-D2A0-4384-BA92-FBE73EDE1D65</key>
@@ -22377,7 +22379,7 @@
 			<key>Right Option Key Sends</key>
 			<integer>0</integer>
 			<key>Rows</key>
-			<integer>45</integer>
+			<integer>50</integer>
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
@@ -22549,7 +22551,7 @@
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
-	<false/>
+	<true/>
 	<key>OpenBookmark</key>
 	<false/>
 	<key>OpenTmuxWindowsIn</key>
@@ -22645,6 +22647,11 @@
 	<integer>11</integer>
 	<key>WebKitStandardFont</key>
 	<string>Lucida Grande</string>
+	<key>Window Arrangements</key>
+	<dict>
+		<key>Default</key>
+		<array/>
+	</dict>
 	<key>WindowNumber</key>
 	<false/>
 	<key>WindowStyle</key>
