@@ -27,12 +27,12 @@ Host localhost
 
 # Default
 Host *
-    User bohara
+#    User bohara
     StrictHostKeyChecking ask
     ServerAliveCountMax 6
     ServerAliveInterval 30
     KeepAlive yes
-    ControlMaster auto
-    ControlPath ~/.ssh/master/%r@%h:%p
-    ControlPersist 8h
+#    ControlMaster auto
+#    ControlPath ~/.ssh/master/%r@%h:%p
+#    ControlPersist 8h
 
