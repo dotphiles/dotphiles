@@ -131,6 +131,10 @@ zstyle ':dotzsh:module:theme:hostname:macbook-air.benohara.net' theme 'dotphiles
 ### Set custom theme based on hostname or domain
 zstyle ':dotzsh:module:theme:hostname:excession.mikegrice.com' theme 'dotphiles'
 zstyle ':dotzsh:module:theme:domain:benohara.net' theme 'dotphiles'
+zstyle ':dotzsh:module:theme:domain:mel.arsrs.local' theme 'dotphiles' 'green'
+zstyle ':dotzsh:module:theme:domain:mel.ardns.local' theme 'dotphiles' 'green'
+zstyle ':dotzsh:module:theme:domain:syd.arsrs.local' theme 'dotphiles' 'red'
+zstyle ':dotzsh:module:theme:domain:syd.ardns.local' theme 'dotphiles' 'red'
 
 ### Load dotzsh
 source "$DOTZSH/init.zsh"

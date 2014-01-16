@@ -28,8 +28,10 @@ Host localhost
 # Work machines
 Host *.arsrs.local
    User ben.ohara
+   IdentityFile ~/.ssh/id_rsa.work
 Host *.ardns.local
    User ben.ohara
+   IdentityFile ~/.ssh/id_rsa.work
 
 # Default
 Host *

@@ -4932,7 +4932,7 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>465 257 924 485 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 4 1440 874 0 0 1440 878 </string>
+	<string>0 26 1440 852 0 0 1440 878 </string>
 	<key>NeverWarnAboutShortLivedSessions_16C503FD-77E7-43DA-B3CD-5795EAE74C90</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_19F01142-D2A0-4384-BA92-FBE73EDE1D65</key>
@@ -23346,7 +23346,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2013-12-14T00:46:44Z</date>
+	<date>2014-01-16T01:50:25Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -23397,6 +23397,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>1.0.0.20131124</string>
+	<string>1.0.0.20131228</string>
 </dict>
 </plist>
