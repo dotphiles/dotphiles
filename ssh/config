@@ -25,6 +25,12 @@ Host localhost
     UserKnownHostsFile /dev/null
     StrictHostKeyChecking no
 
+# Work machines
+Host *.arsrs.local
+   User ben.ohara
+Host *.ardns.local
+   User ben.ohara
+
 # Default
 Host *
 #    User bohara
