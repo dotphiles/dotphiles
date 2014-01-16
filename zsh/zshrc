@@ -50,7 +50,6 @@ zstyle ':dotzsh:load' dzmodule \
   'vagrant' \
   'zaw' \
   'history-substring-search' \
-  'aliaster' \
   'theme'
 
 ### Global settings
