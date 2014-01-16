@@ -8,7 +8,7 @@
 #
 
 # Store music in here
-directory: /Volumes/Music/Library
+directory: /Volumes/PORTABLE/Music/Library
 
 # Set options for matching
 match:
@@ -19,10 +19,13 @@ match:
 
 # Paths where music will go
 paths:
-    default: Albums/%the{$albumartist}/($year) $album%aunique{}/%if{$multidisc,$disc-}$track - $artist - $title
-    singleton: Non-Album/%the{$artist}/$title
-    comp: Compilations/($year) $album%aunique{}/%if{$multidisc,$disc-}$track - $artist - $title
-    albumtype:soundtrack: Soundtracks/($year) $album%aunique{}/%if{$multidisc,$disc-}$track - $artist - $title
+    default: Albums/%the{$albumartist}/($year) $album%aunique{}/%if{$multidisc,$disc-}$track - $artist - $title [$bitrate]
+    singleton: Non-Album/%the{$artist}/$artist - %if{$year,($year}%if{$month,-$month}%if{$day,-$day}%if{$year,)} $title [$bitrate]
+    comp: Compilations/($year) $album%aunique{}/%if{$multidisc,$disc-}$track - $artist - $title [$bitrate]
+    albumtype:soundtrack: Soundtracks/($year) $album%aunique{}/%if{$multidisc,$disc-}$track - $artist - $title [$bitrate]
+
+pluginpath:
+  - ~/Projects/
 
 # Item fields for multidisc
 item_fields:
@@ -42,10 +45,10 @@ import:
 ignore: .AppleDouble ._* *~ .DS_Store
 
 # Use these plugins
-plugins: inline the lyrics echonest_tempo chroma scrub mbsync replaygain missing duplicates lastgenre fromfilename info fetchart embedart
+plugins: mbcollection inline the lyrics echonest chroma scrub mbsync replaygain missing duplicates lastgenre fromfilename info fetchart embedart
 
 # Run multi threaded
-threaded: no
+threaded: yes
 
 # Use color in output
 color: yes
@@ -84,7 +87,19 @@ acoustid:
 scrub:
     auto: no
 
-# Options for tempo
-echonest_tempo:
-    auto: yes
+# Options for echonest
+echonest:
+    apikey: RCWGGPLO5BI5DE2RB
+    codegen: /usr/local/bin/echoprint-codegen
+    auto: no
+    upload: no
+    convert: no
 
+# Options for importfeeds
+importfeeds:
+    formats: link
+    dir: /Volumes/Music/imports/
+
+musicbrainz:
+    user: benohara
+    pass: br34kb34t
