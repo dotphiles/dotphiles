@@ -156,5 +156,7 @@ stealth1.mel.arsrs.local        rsync=mgmt1.mel.arsrs.local
 stealth2.mel.arsrs.local        rsync=mgmt1.mel.arsrs.local
 stealth1.syd.arsrs.local        rsync=mgmt1.mel.arsrs.local
 stealth2.syd.arsrs.local        rsync=mgmt1.mel.arsrs.local
+build1.mel.arsrs.local          rsync=mgmt1.mel.arsrs.local
+office-backup.stkildard.vic.ausregistry.com.au  rsync=mgmt1.mel.arsrs.local
 [endhosts]
 
