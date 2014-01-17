@@ -152,5 +152,9 @@ dns3.tor.ardns.local            rsync=mgmt1.mel.arsrs.local
 dns4.tor.ardns.local            rsync=mgmt1.mel.arsrs.local
 dns5.tor.ardns.local            rsync=mgmt1.mel.arsrs.local
 mgmt1.tor.ardns.local           rsync=mgmt1.mel.arsrs.local
+stealth1.mel.arsrs.local        rsync=mgmt1.mel.arsrs.local
+stealth2.mel.arsrs.local        rsync=mgmt1.mel.arsrs.local
+stealth1.syd.arsrs.local        rsync=mgmt1.mel.arsrs.local
+stealth2.syd.arsrs.local        rsync=mgmt1.mel.arsrs.local
 [endhosts]
 
