@@ -28,7 +28,7 @@
   ui = always
 
 [color "interactive"]
-error = red bold
+  error = red bold
 
 [color "branch"]
   current = yellow reverse
@@ -138,5 +138,5 @@ error = red bold
   rem = remote rename
 
 [push]
-    default = matching
+  default = matching
 
