@@ -28,4 +28,5 @@ autocmd BufRead,BufNewFile */acls/* set filetype=cisco
 autocmd BufRead,BufNewFile */configs/* set filetype=cisco
 
 Bundle 'benohara/cisco.vim'
+Bundle 'justinmk/vim-sneak'
 
