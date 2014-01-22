@@ -12,7 +12,7 @@ ForwardAgent yes
 #VisualHostKey yes
 HashKnownHosts no
 #ConnectTimeout 2
-SendEnv LC_TERM_PROGRAM LC_ITERM_PROFILE
+SendEnv LC_TERM_PROGRAM LC_TERM_PROFILE
 
 # My Hosts
 Host home home.benohara.net
