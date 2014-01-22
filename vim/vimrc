@@ -20,13 +20,9 @@ if has("user_commands")
   " Load 'vundles'
   source ~/.vim/vundles.vim
   " Add extra bundles here...
-  " Bundle 'reponame'
+  Bundle 'benohara/cisco.vim'
+  Bundle 'justinmk/vim-sneak'
 endif
 
 " Customize to your needs...
-autocmd BufRead,BufNewFile */acls/* set filetype=cisco
-autocmd BufRead,BufNewFile */configs/* set filetype=cisco
-
-Bundle 'benohara/cisco.vim'
-Bundle 'justinmk/vim-sneak'
 
