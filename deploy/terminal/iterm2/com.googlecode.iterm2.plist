@@ -5352,7 +5352,7 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>516 181 924 485 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 218 1440 660 0 0 1440 878 </string>
+	<string>0 26 1440 852 0 0 1440 878 </string>
 	<key>NeverWarnAboutShortLivedSessions_12E5BB2C-6F82-46D7-B079-63293E0A3EE7</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_16C503FD-77E7-43DA-B3CD-5795EAE74C90</key>
@@ -5415,7 +5415,7 @@
 			<key>Allow Title Reporting</key>
 			<false/>
 			<key>Ambiguous Double Width</key>
-			<true/>
+			<false/>
 			<key>Ansi 0 Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -5963,11 +5963,11 @@
 			<key>Name</key>
 			<string>base16-3024.dark</string>
 			<key>Non Ascii Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -6147,7 +6147,7 @@
 			<key>Allow Title Reporting</key>
 			<false/>
 			<key>Ambiguous Double Width</key>
-			<true/>
+			<false/>
 			<key>Ansi 0 Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -6695,11 +6695,11 @@
 			<key>Name</key>
 			<string>base16-bright.dark</string>
 			<key>Non Ascii Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -6879,7 +6879,7 @@
 			<key>Allow Title Reporting</key>
 			<false/>
 			<key>Ambiguous Double Width</key>
-			<true/>
+			<false/>
 			<key>Ansi 0 Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -7427,11 +7427,11 @@
 			<key>Name</key>
 			<string>base16-chalk.dark</string>
 			<key>Non Ascii Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -7611,7 +7611,7 @@
 			<key>Allow Title Reporting</key>
 			<false/>
 			<key>Ambiguous Double Width</key>
-			<true/>
+			<false/>
 			<key>Ansi 0 Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -8159,11 +8159,11 @@
 			<key>Name</key>
 			<string>base16-default.dark</string>
 			<key>Non Ascii Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -8343,7 +8343,7 @@
 			<key>Allow Title Reporting</key>
 			<false/>
 			<key>Ambiguous Double Width</key>
-			<true/>
+			<false/>
 			<key>Ansi 0 Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -8891,11 +8891,11 @@
 			<key>Name</key>
 			<string>base16-eighties.dark</string>
 			<key>Non Ascii Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -9075,7 +9075,7 @@
 			<key>Allow Title Reporting</key>
 			<false/>
 			<key>Ambiguous Double Width</key>
-			<true/>
+			<false/>
 			<key>Ansi 0 Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -9623,11 +9623,11 @@
 			<key>Name</key>
 			<string>base16-greenscreen.dark</string>
 			<key>Non Ascii Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -9807,7 +9807,7 @@
 			<key>Allow Title Reporting</key>
 			<false/>
 			<key>Ambiguous Double Width</key>
-			<true/>
+			<false/>
 			<key>Ansi 0 Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -10355,11 +10355,11 @@
 			<key>Name</key>
 			<string>base16-mocha.dark</string>
 			<key>Non Ascii Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -10539,7 +10539,7 @@
 			<key>Allow Title Reporting</key>
 			<false/>
 			<key>Ambiguous Double Width</key>
-			<true/>
+			<false/>
 			<key>Ansi 0 Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -11087,11 +11087,11 @@
 			<key>Name</key>
 			<string>base16-monokai.dark</string>
 			<key>Non Ascii Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -11271,7 +11271,7 @@
 			<key>Allow Title Reporting</key>
 			<false/>
 			<key>Ambiguous Double Width</key>
-			<true/>
+			<false/>
 			<key>Ansi 0 Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -11819,11 +11819,11 @@
 			<key>Name</key>
 			<string>base16-ocean.dark</string>
 			<key>Non Ascii Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -12003,7 +12003,7 @@
 			<key>Allow Title Reporting</key>
 			<false/>
 			<key>Ambiguous Double Width</key>
-			<true/>
+			<false/>
 			<key>Ansi 0 Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -12551,11 +12551,11 @@
 			<key>Name</key>
 			<string>base16-pop.dark</string>
 			<key>Non Ascii Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -12735,7 +12735,7 @@
 			<key>Allow Title Reporting</key>
 			<false/>
 			<key>Ambiguous Double Width</key>
-			<true/>
+			<false/>
 			<key>Ansi 0 Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -13283,11 +13283,11 @@
 			<key>Name</key>
 			<string>base16-railscasts.dark</string>
 			<key>Non Ascii Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -13467,7 +13467,7 @@
 			<key>Allow Title Reporting</key>
 			<false/>
 			<key>Ambiguous Double Width</key>
-			<true/>
+			<false/>
 			<key>Ansi 0 Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -14015,11 +14015,11 @@
 			<key>Name</key>
 			<string>base16-solarized.dark</string>
 			<key>Non Ascii Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -14199,7 +14199,7 @@
 			<key>Allow Title Reporting</key>
 			<false/>
 			<key>Ambiguous Double Width</key>
-			<true/>
+			<false/>
 			<key>Ansi 0 Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -14747,11 +14747,11 @@
 			<key>Name</key>
 			<string>base16-tomorrow.dark</string>
 			<key>Non Ascii Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -14931,7 +14931,7 @@
 			<key>Allow Title Reporting</key>
 			<false/>
 			<key>Ambiguous Double Width</key>
-			<true/>
+			<false/>
 			<key>Ansi 0 Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -15479,11 +15479,11 @@
 			<key>Name</key>
 			<string>base16-3024.light</string>
 			<key>Non Ascii Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -15663,7 +15663,7 @@
 			<key>Allow Title Reporting</key>
 			<false/>
 			<key>Ambiguous Double Width</key>
-			<true/>
+			<false/>
 			<key>Ansi 0 Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -16211,11 +16211,11 @@
 			<key>Name</key>
 			<string>base16-bright.light</string>
 			<key>Non Ascii Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -16395,7 +16395,7 @@
 			<key>Allow Title Reporting</key>
 			<false/>
 			<key>Ambiguous Double Width</key>
-			<true/>
+			<false/>
 			<key>Ansi 0 Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -16943,11 +16943,11 @@
 			<key>Name</key>
 			<string>base16-chalk.light</string>
 			<key>Non Ascii Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -17127,7 +17127,7 @@
 			<key>Allow Title Reporting</key>
 			<false/>
 			<key>Ambiguous Double Width</key>
-			<true/>
+			<false/>
 			<key>Ansi 0 Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -17675,11 +17675,11 @@
 			<key>Name</key>
 			<string>base16-default.light</string>
 			<key>Non Ascii Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -17859,7 +17859,7 @@
 			<key>Allow Title Reporting</key>
 			<false/>
 			<key>Ambiguous Double Width</key>
-			<true/>
+			<false/>
 			<key>Ansi 0 Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -18407,11 +18407,11 @@
 			<key>Name</key>
 			<string>base16-eighties.light</string>
 			<key>Non Ascii Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -18591,7 +18591,7 @@
 			<key>Allow Title Reporting</key>
 			<false/>
 			<key>Ambiguous Double Width</key>
-			<true/>
+			<false/>
 			<key>Ansi 0 Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -19139,11 +19139,11 @@
 			<key>Name</key>
 			<string>base16-greenscreen.light</string>
 			<key>Non Ascii Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -19323,7 +19323,7 @@
 			<key>Allow Title Reporting</key>
 			<false/>
 			<key>Ambiguous Double Width</key>
-			<true/>
+			<false/>
 			<key>Ansi 0 Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -19871,11 +19871,11 @@
 			<key>Name</key>
 			<string>base16-mocha.light</string>
 			<key>Non Ascii Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -20055,7 +20055,7 @@
 			<key>Allow Title Reporting</key>
 			<false/>
 			<key>Ambiguous Double Width</key>
-			<true/>
+			<false/>
 			<key>Ansi 0 Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -20603,11 +20603,11 @@
 			<key>Name</key>
 			<string>base16-monokai.light</string>
 			<key>Non Ascii Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -20787,7 +20787,7 @@
 			<key>Allow Title Reporting</key>
 			<false/>
 			<key>Ambiguous Double Width</key>
-			<true/>
+			<false/>
 			<key>Ansi 0 Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -21335,11 +21335,11 @@
 			<key>Name</key>
 			<string>base16-ocean.light</string>
 			<key>Non Ascii Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -21519,7 +21519,7 @@
 			<key>Allow Title Reporting</key>
 			<false/>
 			<key>Ambiguous Double Width</key>
-			<true/>
+			<false/>
 			<key>Ansi 0 Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -22067,11 +22067,11 @@
 			<key>Name</key>
 			<string>base16-railscasts.light</string>
 			<key>Non Ascii Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -22251,7 +22251,7 @@
 			<key>Allow Title Reporting</key>
 			<false/>
 			<key>Ambiguous Double Width</key>
-			<true/>
+			<false/>
 			<key>Ansi 0 Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -22799,11 +22799,11 @@
 			<key>Name</key>
 			<string>base16-solarized.light</string>
 			<key>Non Ascii Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -22983,7 +22983,7 @@
 			<key>Allow Title Reporting</key>
 			<false/>
 			<key>Ambiguous Double Width</key>
-			<true/>
+			<false/>
 			<key>Ansi 0 Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -23531,11 +23531,11 @@
 			<key>Name</key>
 			<string>base16-tomorrow.light</string>
 			<key>Non Ascii Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -23715,7 +23715,7 @@
 			<key>Allow Title Reporting</key>
 			<false/>
 			<key>Ambiguous Double Width</key>
-			<true/>
+			<false/>
 			<key>Ansi 0 Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -24263,11 +24263,11 @@
 			<key>Name</key>
 			<string>Hotkey Window</string>
 			<key>Non Ascii Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>EssentialPragmataPro 14</string>
+			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -24275,7 +24275,7 @@
 			<key>Right Option Key Sends</key>
 			<integer>0</integer>
 			<key>Rows</key>
-			<integer>55</integer>
+			<integer>45</integer>
 			<key>Screen</key>
 			<integer>0</integer>
 			<key>Scrollback Lines</key>
