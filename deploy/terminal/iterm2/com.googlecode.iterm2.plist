@@ -46727,7 +46727,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>~/.dotfiles/deploy/terminal/iterm2</string>
+	<string>~/.dotfiles/deploy/terminal/iterm2/</string>
 	<key>PromptOnClose</key>
 	<true/>
 	<key>PromptOnQuit</key>
