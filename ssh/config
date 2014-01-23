@@ -32,6 +32,10 @@ Host *.arsrs.local
 Host *.ardns.local
    User ben.ohara
    IdentityFile ~/.ssh/id_rsa.work
+Host *.ausregistry.com.au
+   User ben.ohara
+   IdentityFile ~/.ssh/id_rsa.work
+
 
 # Default
 Host *

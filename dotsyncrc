@@ -83,8 +83,8 @@ macbook-air.benohara.net        git=NONE                        files=beets/conf
 #mac-mini.benohara.net           git=macbook-air.benohara.net    files=beets/config.yaml:.config/beets/config.yaml
 #nas.benohara.net                rsync=macbook-air.benohara.net
 #pi.benohara.net                 rsync=macbook-air.benohara.net
-mgmt1.mel.arsrs.local           git=macbook-air.benohara.net
-mgmt1.syd.arsrs.local           git=macbook-air.benohara.net
+mgmt1.mel.arsrs.local           rsync=macbook-air.benohara.net
+mgmt1.syd.arsrs.local           rsync=macbook-air.benohara.net
 dns1.akl.ardns.local            rsync=mgmt1.mel.arsrs.local
 dns2.akl.ardns.local            rsync=mgmt1.mel.arsrs.local
 dns1.ams.ardns.local            rsync=mgmt1.mel.arsrs.local
