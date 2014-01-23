@@ -7,7 +7,7 @@
 	<key>AllowClipboardAccess</key>
 	<false/>
 	<key>AnimateDimming</key>
-	<true/>
+	<false/>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
 	<key>AppleScrollAnimationEnabled</key>
