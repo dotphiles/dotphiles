@@ -86,12 +86,13 @@ These probably work...
 
 ### terminal
 
-dotphiles uses the [solarized][5] color theme
-by default, install the colour scheme for your terminal.
+dotphiles uses the [base16][5] color theme
+by default, install the colour schemes for your terminal.
+See `deploy/terminal`
 
-vim-powerline requires patched fonts for the 'fancy fonts' options, you can
+vim-airline requires patched fonts for the 'fancy fonts' options, you can
 find links to them to install [here][6] and configure your terminal to use
-one, Menlo works great.
+one, Meslo works great.
 
 ### ignores
 
@@ -107,7 +108,7 @@ commiting that you dont include any personal info you dont want in public!
   - `deploy/linux` setup linux and install packages
     - `packages/macports` add ports to be installed by `osx` (select one)
     - `packages/homebrew` add brews to be installed by `osx` (select one)
-    - `packages/apt` add packagess to be installed by `linux` on apt based systems
+    - `packages/apt` add packages to be installed by `linux` on apt based systems
 
 ### dotsync
 
@@ -208,7 +209,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 [2]: https://github.com/dotphiles/dotsync
 [3]: https://github.com/dotphiles/dotzsh
 [4]: https://github.com/dotphiles/dotvim
-[5]: http://ethanschoonover.com/solarized
-[6]: https://github.com/Lokaltog/vim-powerline/wiki/Patched-fonts
+[5]: https://github.com/chriskempson/base16
+[6]: https://github.com/Lokaltog/powerline-fonts
 [7]: https://github.com/dotphiles/dotphiles/graphs/contributors
 
