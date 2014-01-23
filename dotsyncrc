@@ -158,5 +158,13 @@ stealth1.syd.arsrs.local        rsync=mgmt1.mel.arsrs.local
 stealth2.syd.arsrs.local        rsync=mgmt1.mel.arsrs.local
 build1.mel.arsrs.local          rsync=mgmt1.mel.arsrs.local
 office-backup.stkildard.vic.ausregistry.com.au  rsync=mgmt1.mel.arsrs.local
+db1.mel.arsrs.local             rsync=mgmt1.mel.arsrs.local
+db3.mel.arsrs.local             rsync=mgmt1.mel.arsrs.local
+db3.syd.arsrs.local             rsync=mgmt1.mel.arsrs.local
+dnsstats1.mel.arsrs.local       rsync=mgmt1.mel.arsrs.local
+webdns1.mel.arsrs.local         rsync=mgmt1.mel.arsrs.local
+webdns2.mel.arsrs.local         rsync=mgmt1.mel.arsrs.local
+webdns1.syd.arsrs.local         rsync=mgmt1.mel.arsrs.local
+webdns2.syd.arsrs.local         rsync=mgmt1.mel.arsrs.local
 [endhosts]
 
