@@ -166,5 +166,9 @@ webdns1.mel.arsrs.local         rsync=mgmt1.mel.arsrs.local
 webdns2.mel.arsrs.local         rsync=mgmt1.mel.arsrs.local
 webdns1.syd.arsrs.local         rsync=mgmt1.mel.arsrs.local
 webdns2.syd.arsrs.local         rsync=mgmt1.mel.arsrs.local
+db1.stag.arsrs.local            rsync=mgmt1.mel.arsrs.local
+db2.stag.arsrs.local            rsync=mgmt1.mel.arsrs.local
+otedb1.stag.arsrs.local         rsync=mgmt1.mel.arsrs.local
+occ1.stag.arsrs.local           rsync=mgmt1.mel.arsrs.local
 [endhosts]
 
