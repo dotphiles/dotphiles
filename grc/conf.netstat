@@ -7,14 +7,6 @@
 #   Ben O'Hara <bohrara@gmail.com>
 #
 
-# ip number
-regexp=\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}
-colours=magenta
-=======
-# ipv6 number
-regexp=(([0-9a-fA-F]{1,4})?\:\:?[0-9a-fA-F]{1,4})+
-colours=magenta
-=======
 # hostname:service
 regexp=([\w\.\-]+):([\w\-]+)\b
 colours=yellow, bold green, bold yellow
@@ -26,6 +18,14 @@ colours=yellow, bold green, bold red
 # *:service
 regexp=(\*):([\w\-]+)\b
 colours=yellow, blue, bold yellow
+=======
+# ip number
+regexp=\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}
+colours=magenta
+=======
+# ipv6 number
+regexp=(([0-9a-fA-F]{1,4})?\:\:?[0-9a-fA-F]{1,4})+
+colours=magenta
 =======
 # ipx hostname
 regexp=^IPX.*[\dABCDEF]+:[\dABCDEF]+
