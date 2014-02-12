@@ -54,7 +54,6 @@ ruby/caprc
 screen/screenrc
 #shell/hushlogin
 shell/urlview
-ssh
 subversion
 task/task
 task/taskrc
@@ -79,10 +78,10 @@ zsh/zshrc
 # Hosts to sync
 ## hostname                     type=masterhost, ANY or NONE    files=dotfile:tolink,another:tolink
 [hosts]
-macbook-air.benohara.net        git=NONE                        files=beets/config.yaml:.config/beets/config.yaml
-#mac-mini.benohara.net           git=macbook-air.benohara.net    files=beets/config.yaml:.config/beets/config.yaml
-#nas.benohara.net                rsync=macbook-air.benohara.net
-#pi.benohara.net                 rsync=macbook-air.benohara.net
+macbook-air.benohara.net        git=NONE                        files=beets/config.yaml:.config/beets/config.yaml,ssh
+mac-mini.benohara.net           git=macbook-air.benohara.net    files=beets/config.yaml:.config/beets/config.yaml,ssh
+nas.benohara.net                rsync=macbook-air.benohara.net,ssh
+pi.benohara.net                 rsync=macbook-air.benohara.net,ssh
 mgmt1.mel.arsrs.local           rsync=macbook-air.benohara.net
 mgmt1.syd.arsrs.local           rsync=macbook-air.benohara.net
 dns1.akl.ardns.local            rsync=mgmt1.mel.arsrs.local
