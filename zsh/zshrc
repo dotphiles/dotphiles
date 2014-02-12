@@ -22,7 +22,6 @@ zstyle ':dotzsh:load' zfunction 'zargs' 'zmv'
 zstyle ':dotzsh:load' dzmodule \
   'gnu-utility' \
   'environment' \
-  'autoenv' \
   'terminal' \
   'editor' \
   'history' \
@@ -129,8 +128,8 @@ zstyle ':dotzsh:module:syntax-highlighting' highlighters 'main' 'brackets' 'patt
 # <theme> [colorscheme.background] [hostcolor]
 zstyle ':dotzsh:module:theme' theme 'dotphiles'
 ### Set custom theme based on hostname or domain, <theme> <colorscheme.background> <hostcolor>
-zstyle ':dotzsh:module:theme:hostname:macbook-air.benohara.net' theme 'dotphiles' 'base16-default.dark' 'orange'
-zstyle ':dotzsh:module:theme:domain:benohara.net' theme 'dotphiles'
+zstyle ':dotzsh:module:theme:hostname:macbook-air.benohara.net' theme 'dotphiles' 'base16-default.dark' 'green'
+zstyle ':dotzsh:module:theme:domain:benohara.net' theme 'dotphiles' 'base16-default.dark' 'orange'
 
 ### Load dotzsh
 source "$DOTZSH/init.zsh"
