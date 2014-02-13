@@ -151,6 +151,7 @@ dns3.tor.ardns.local            rsync=macbook-air.benohara.net
 dns4.tor.ardns.local            rsync=macbook-air.benohara.net
 dns5.tor.ardns.local            rsync=macbook-air.benohara.net
 mgmt1.tor.ardns.local           rsync=macbook-air.benohara.net
+stealth1.stag.arsrs.local       rsync=macbook-air.benohara.net
 stealth1.mel.arsrs.local        rsync=macbook-air.benohara.net
 stealth2.mel.arsrs.local        rsync=macbook-air.benohara.net
 stealth1.syd.arsrs.local        rsync=macbook-air.benohara.net
