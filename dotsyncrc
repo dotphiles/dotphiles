@@ -161,6 +161,7 @@ db1.mel.arsrs.local             rsync=mgmt1.mel.arsrs.local
 db2.mel.arsrs.local             rsync=mgmt1.mel.arsrs.local
 db3.mel.arsrs.local             rsync=mgmt1.mel.arsrs.local
 dnsstats1.mel.arsrs.local       rsync=mgmt1.mel.arsrs.local
+dnsstats1.syd.arsrs.local       rsync=mgmt1.mel.arsrs.local
 webdns1.mel.arsrs.local         rsync=mgmt1.mel.arsrs.local
 webdns2.mel.arsrs.local         rsync=mgmt1.mel.arsrs.local
 webdns1.syd.arsrs.local         rsync=mgmt1.mel.arsrs.local
