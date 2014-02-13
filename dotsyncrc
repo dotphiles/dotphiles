@@ -170,7 +170,7 @@ db1.stag.arsrs.local            rsync=macbook-air.benohara.net
 db2.stag.arsrs.local            rsync=macbook-air.benohara.net
 otedb1.stag.arsrs.local         rsync=macbook-air.benohara.net
 occ1.stag.arsrs.local           rsync=macbook-air.benohara.net
-confluence.office               rsync=macbook-air.benohara.net
+psg-confluence.stkildard.vic.ausregistry.com.au rsync=macbook-air.benohara.net
 staging-db.office               rsync=macbook-air.benohara.net
 jde.office                      rsync=macbook-air.benohara.net
 occ1.mel.arsrs.local            rsync=macbook-air.benohara.net
@@ -183,5 +183,8 @@ db2.syd.arsrs.local             rsync=macbook-air.benohara.net
 db3.syd.arsrs.local             rsync=macbook-air.benohara.net
 storage.stag.arsrs.local        rsync=macbook-air.benohara.net
 satellite1.mel.arsrs.local      rsync=macbook-air.benohara.net
+dns1.stag.ardns.local           rsync=macbook-air.benohara.net
+backup1.mel.arsrs.local         rsync=macbook-air.benohara.net
+backup1.syd.arsrs.local         rsync=macbook-air.benohara.net
 [endhosts]
 
