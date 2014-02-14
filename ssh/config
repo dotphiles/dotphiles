@@ -26,16 +26,7 @@ Host localhost
     StrictHostKeyChecking no
 
 # Work machines
-Host *.arsrs.local
-   User ben.ohara
-   IdentityFile ~/.ssh/id_rsa.work
-Host *.ardns.local
-   User ben.ohara
-   IdentityFile ~/.ssh/id_rsa.work
-Host *.ausregistry.com.au
-   User ben.ohara
-   IdentityFile ~/.ssh/id_rsa.work
-Host *.office
+Host *.arsrs.local *.ardns.local *.ausregistry.com.au *.office
    User ben.ohara
    IdentityFile ~/.ssh/id_rsa.work
 

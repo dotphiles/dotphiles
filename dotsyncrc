@@ -187,5 +187,6 @@ satellite1.mel.arsrs.local      rsync=macbook-air.benohara.net
 dns1.stag.ardns.local           rsync=macbook-air.benohara.net
 backup1.mel.arsrs.local         rsync=macbook-air.benohara.net
 backup1.syd.arsrs.local         rsync=macbook-air.benohara.net
+psg-apps.stkildard.vic.ausregistry.com.au  rsync=macbook-air.benohara.net
 [endhosts]
 
