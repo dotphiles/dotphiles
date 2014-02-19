@@ -1,0 +1,5 @@
+regexp=^((rootfs|tmpfs|udev)|(.*))\s+(\S+)\s+(\S+)\s+(\S+)\s+(\d+%)\s+(\S+)$
+colours=default,default,cyan,green,magenta,default,default,blue,yellow
+-
+regexp=100%|9\d%
+colours=red

@@ -1,0 +1,2 @@
+regexp=^(.*) on (.*) type (.*) \((.*)\)
+colours=default,green,yellow,blue,magenta
