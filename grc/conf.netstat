@@ -32,8 +32,8 @@ regexp=^IPX.*[\dABCDEF]+:[\dABCDEF]+
 colours=green
 =======
 # protocols
-regexp=(^tcp|^udp|^unix|^IPX|STREAM|DGRAM)
-colours=bold blue
+regexp=(^tcp46|^udp46|^icm46|^tcp4|^udp4|^icm4|^tcp6|^tcp|^udp6|^udp|^icm6|^icm|^unix|^IPX|STREAM|DGRAM)
+colours=blue
 =======
 # status
 regexp=FIN_WAIT.*
@@ -45,7 +45,7 @@ colours=bold red
 =======
 # status
 regexp=LISTEN(ING)?
-colours=bold blue
+colours=cyan
 =======
 # status
 regexp=TIME_WAIT
