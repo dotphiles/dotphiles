@@ -193,5 +193,20 @@ backup1.mel.arsrs.local         rsync=macbook-air.benohara.net
 backup1.syd.arsrs.local         rsync=macbook-air.benohara.net
 psg-apps.stkildard.vic.ausregistry.com.au  rsync=macbook-air.benohara.net
 ldap2.burnleyst.vic.ausregistry.com.au     rsync=macbook-air.benohara.net
+au-epp1.mel.arsrs.local         rsync=macbook-air.benohara.net
+au-epp2.mel.arsrs.local         rsync=macbook-air.benohara.net
+au-epp3.mel.arsrs.local         rsync=macbook-air.benohara.net
+au-epp1.syd.arsrs.local         rsync=macbook-air.benohara.net
+au-epp2.syd.arsrs.local         rsync=macbook-air.benohara.net
+au-epp3.syd.arsrs.local         rsync=macbook-air.benohara.net
+epp1.mel.arsrs.local            rsync=macbook-air.benohara.net
+epp2.mel.arsrs.local            rsync=macbook-air.benohara.net
+epp1.syd.arsrs.local            rsync=macbook-air.benohara.net
+epp2.syd.arsrs.local            rsync=macbook-air.benohara.net
+registry1.stag.arsrs.local      rsync=macbook-air.benohara.net
+webdns1.stag.arsrs.local        rsync=macbook-air.benohara.net
+stealth1.stag.arsrs.local       rsync=macbook-air.benohara.net
+ca-test.stag.arsrs.local        rsync=macbook-air.benohara.net
+netmon2.syd.arsrs.local         rsync=macbook-air.benohara.net
 [endhosts]
 
