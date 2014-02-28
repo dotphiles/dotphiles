@@ -8,11 +8,12 @@
 #
 
 # domain
-regexp=([a-zA-Z]+\.)+(com|org|net|edu)
+regexp=[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,6}?\.
+#([a-zA-Z]+\.)+(com|org|net|edu)
 colours=magenta
 =======
 # dns result
-regexp=(\d+\s){0,1}IN\s(A|AAAA|AFSDB|APL|CERT|CNAME|DHCID|DLV|DNAME|DNSKEY|DS|HIP|IPSECKEY|KEY|KX|LOC|MX|NAPTR|NS|NSEC|NSEC3|NSEC3PARAM|PTR|RRSIG|RP|SIG|SOA|SPF|SRV|SSHFP|TA|TKEY|TSIG|TXT)
+regexp=(\d+\s){0,1}IN\s(AAAA|A|AFSDB|APL|CERT|CNAME|DHCID|DLV|DNAME|DNSKEY|DS|HIP|IPSECKEY|KEY|KX|LOC|MX|NAPTR|NS|NSEC|NSEC3|NSEC3PARAM|PTR|RRSIG|RP|SIG|SOA|SPF|SRV|SSHFP|TA|TKEY|TSIG|TXT)
 colours=green
 =======
 # ip number
@@ -49,7 +50,7 @@ colours=yellow
 =======
 # move stuff to background
 regexp=(flags:\s([a-z\s]+);)|opcode:|,\sstatus:|,\sid:|Got\sanswer:|global\soptions:.*$
-colours=black
+colours=bold blue
 =======
 # #number
 regexp=#[0-9]+
