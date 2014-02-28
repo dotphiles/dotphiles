@@ -10,10 +10,10 @@ windows:
   - shell_command: 
     - reset
     - vim
-    - :Ex
+    - :NERDTree
     focus: true
   - pane 
-- window_name: docs
+- window_name: testing
   layout: main-horizontal
   options:
     main-pane-height: 35

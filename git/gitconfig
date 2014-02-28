@@ -11,7 +11,7 @@
 [user]
   name = Ben O'Hara
   email = "bohara@gmail.com"
-  signingkey = 38774E40
+  signingkey = B2D779CE
 
 [branch "master"]
   remote = origin
