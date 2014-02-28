@@ -138,5 +138,10 @@
   rem = remote rename
 
 [push]
-  default = matching
+    default = matching
+
+[url "git@github.com:"]
+  insteadof = github:
+[url "git@git.stkildard.vic.ausregistry.com.au:"]
+  insteadof = arsgit:
 
