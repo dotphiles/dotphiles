@@ -33,7 +33,7 @@ gnupg
 grc
 input/editrc
 input/inputrc
-#irssi
+irssi
 mercurial/hgrc
 mercurial/hgignore
 #mutt
@@ -82,6 +82,8 @@ macbook-air.benohara.net        git=NONE                        files=beets/conf
 mac-mini.benohara.net           git=macbook-air.benohara.net    files=beets/config.yaml:.config/beets/config.yaml,ssh
 nas.benohara.net                rsync=macbook-air.benohara.net  files=ssh
 pi.benohara.net                 rsync=macbook-air.benohara.net  files=ssh
+linux.ausregistrygroup.local    rsync=macbook-air.benohara.net  files=ssh
+
 mgmt1.mel.arsrs.local           rsync=macbook-air.benohara.net
 mgmt1.syd.arsrs.local           rsync=macbook-air.benohara.net
 dns1.akl.ardns.local            rsync=macbook-air.benohara.net

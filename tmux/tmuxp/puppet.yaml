@@ -1,0 +1,22 @@
+session_name: puppet
+start_directory: ~/Projects/AusRegistry/puppet # load session relative to config location (project root).
+windows:
+- window_name: editor
+  focus: True
+  layout: main-horizontal
+  options:
+    main-pane-height: 35
+  panes:
+  - shell_command: 
+    - reset
+    - vim
+    - :NERDTree
+    focus: true
+  - pane 
+- window_name: testing
+  layout: main-horizontal
+  options:
+    main-pane-height: 35
+  panes:
+  - pane
+  - pane

@@ -5367,9 +5367,9 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>307 274 214 309 0 0 1440 878 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>307 443 924 485 0 0 1920 1058 </string>
+	<string>307 263 924 485 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 154 1920 904 0 0 1920 1058 </string>
+	<string>0 4 1440 874 0 0 1440 878 </string>
 	<key>NeverWarnAboutShortLivedSessions_12E5BB2C-6F82-46D7-B079-63293E0A3EE7</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_16C503FD-77E7-43DA-B3CD-5795EAE74C90</key>
@@ -5986,7 +5986,7 @@
 			<key>Normal Font</key>
 			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
 			<integer>0</integer>
 			<key>Right Option Key Sends</key>
@@ -6718,7 +6718,7 @@
 			<key>Normal Font</key>
 			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
 			<integer>0</integer>
 			<key>Right Option Key Sends</key>
@@ -7450,7 +7450,7 @@
 			<key>Normal Font</key>
 			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
 			<integer>0</integer>
 			<key>Right Option Key Sends</key>
@@ -8182,7 +8182,7 @@
 			<key>Normal Font</key>
 			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
 			<integer>0</integer>
 			<key>Right Option Key Sends</key>
@@ -8914,7 +8914,7 @@
 			<key>Normal Font</key>
 			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
 			<integer>0</integer>
 			<key>Right Option Key Sends</key>
@@ -9646,7 +9646,7 @@
 			<key>Normal Font</key>
 			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
 			<integer>0</integer>
 			<key>Right Option Key Sends</key>
@@ -10378,7 +10378,7 @@
 			<key>Normal Font</key>
 			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
 			<integer>0</integer>
 			<key>Right Option Key Sends</key>
@@ -11110,7 +11110,7 @@
 			<key>Normal Font</key>
 			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
 			<integer>0</integer>
 			<key>Right Option Key Sends</key>
@@ -11842,7 +11842,7 @@
 			<key>Normal Font</key>
 			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
 			<integer>0</integer>
 			<key>Right Option Key Sends</key>
@@ -12574,7 +12574,7 @@
 			<key>Normal Font</key>
 			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
 			<integer>0</integer>
 			<key>Right Option Key Sends</key>
@@ -13306,7 +13306,7 @@
 			<key>Normal Font</key>
 			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
 			<integer>0</integer>
 			<key>Right Option Key Sends</key>
@@ -14038,7 +14038,7 @@
 			<key>Normal Font</key>
 			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
 			<integer>0</integer>
 			<key>Right Option Key Sends</key>
@@ -14770,7 +14770,7 @@
 			<key>Normal Font</key>
 			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
 			<integer>0</integer>
 			<key>Right Option Key Sends</key>
@@ -15502,7 +15502,7 @@
 			<key>Normal Font</key>
 			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
 			<integer>0</integer>
 			<key>Right Option Key Sends</key>
@@ -16234,7 +16234,7 @@
 			<key>Normal Font</key>
 			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
 			<integer>0</integer>
 			<key>Right Option Key Sends</key>
@@ -16966,7 +16966,7 @@
 			<key>Normal Font</key>
 			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
 			<integer>0</integer>
 			<key>Right Option Key Sends</key>
@@ -17698,7 +17698,7 @@
 			<key>Normal Font</key>
 			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
 			<integer>0</integer>
 			<key>Right Option Key Sends</key>
@@ -18430,7 +18430,7 @@
 			<key>Normal Font</key>
 			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
 			<integer>0</integer>
 			<key>Right Option Key Sends</key>
@@ -19162,7 +19162,7 @@
 			<key>Normal Font</key>
 			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
 			<integer>0</integer>
 			<key>Right Option Key Sends</key>
@@ -19894,7 +19894,7 @@
 			<key>Normal Font</key>
 			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
 			<integer>0</integer>
 			<key>Right Option Key Sends</key>
@@ -20626,7 +20626,7 @@
 			<key>Normal Font</key>
 			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
 			<integer>0</integer>
 			<key>Right Option Key Sends</key>
@@ -21358,7 +21358,7 @@
 			<key>Normal Font</key>
 			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
 			<integer>0</integer>
 			<key>Right Option Key Sends</key>
@@ -22090,7 +22090,7 @@
 			<key>Normal Font</key>
 			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
 			<integer>0</integer>
 			<key>Right Option Key Sends</key>
@@ -22822,7 +22822,7 @@
 			<key>Normal Font</key>
 			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
 			<integer>0</integer>
 			<key>Right Option Key Sends</key>
@@ -23554,7 +23554,7 @@
 			<key>Normal Font</key>
 			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
 			<integer>0</integer>
 			<key>Right Option Key Sends</key>
@@ -24286,7 +24286,7 @@
 			<key>Normal Font</key>
 			<string>MesloLGS-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
 			<integer>0</integer>
 			<key>Right Option Key Sends</key>
@@ -24527,7 +24527,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-02-26T23:21:41Z</date>
+	<date>2014-02-28T01:13:22Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
