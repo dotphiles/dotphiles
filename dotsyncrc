@@ -52,7 +52,7 @@ ruby/rdebugrc
 ruby/aprc
 ruby/caprc
 screen/screenrc
-#shell/hushlogin
+shell/hushlogin
 shell/urlview
 subversion
 task/task
@@ -160,6 +160,7 @@ stealth1.syd.arsrs.local        rsync=macbook-air.benohara.net
 stealth2.syd.arsrs.local        rsync=macbook-air.benohara.net
 build1.mel.arsrs.local          rsync=macbook-air.benohara.net
 office-backup.stkildard.vic.ausregistry.com.au  rsync=macbook-air.benohara.net
+backup1.office.arsrs.local      rsync=macbook-air.benohara.net
 db1.mel.arsrs.local             rsync=macbook-air.benohara.net
 db2.mel.arsrs.local             rsync=macbook-air.benohara.net
 db3.mel.arsrs.local             rsync=macbook-air.benohara.net
