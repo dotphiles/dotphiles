@@ -6,6 +6,7 @@ windows:
   layout: main-horizontal
   options:
     main-pane-height: 35
+    allow-rename: off
   panes:
   - shell_command: 
     - reset
@@ -17,6 +18,8 @@ windows:
   layout: main-horizontal
   options:
     main-pane-height: 35
+    allow-rename: off
   panes:
   - pane
   - pane
+

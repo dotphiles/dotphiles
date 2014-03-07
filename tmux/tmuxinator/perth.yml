@@ -1,0 +1,18 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# ~/.tmuxinator/dns.yml
+#
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
+
+project_name: perth
+project_root: ~/
+windows:
+  - mgmt1.per:
+    - ssh mgmt1.per.ardns.local
+  - dns1.per:
+    - ssh dns1.per.ardns.local
+  - dns2.per:
+    - ssh dns2.per.ardns.local

@@ -1,0 +1,25 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# ~/.tmuxinator/dns.yml
+#
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
+
+project_name: madrid
+project_root: ~/
+windows:
+  - mgmt1.mad:
+    - ssh mgmt1.mad.ardns.local
+  - dns1.mad:
+    - ssh dns1.mad.ardns.local
+  - dns2.mad:
+    - ssh dns2.mad.ardns.local
+  - dns3.mad:
+    - ssh dns3.mad.ardns.local
+  - dns4.mad:
+    - ssh dns4.mad.ardns.local
+  - dns5.mad:
+    - ssh dns5.mad.ardns.local
+

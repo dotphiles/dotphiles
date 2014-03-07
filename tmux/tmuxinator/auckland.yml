@@ -1,0 +1,18 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# ~/.tmuxinator/dns.yml
+#
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
+
+project_name: auckland
+project_root: ~/
+windows:
+  - mgmt1.akl:
+    - ssh mgmt1.akl.ardns.local
+  - dns1.akl:
+    - ssh dns1.akl.ardns.local
+  - dns2.akl:
+    - ssh dns2.akl.ardns.local

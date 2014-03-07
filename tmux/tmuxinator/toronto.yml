@@ -1,0 +1,25 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# ~/.tmuxinator/dns.yml
+#
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
+
+project_name: toronto
+project_root: ~/
+windows:
+  - mgmt1.tor:
+    - ssh mgmt1.tor.ardns.local
+  - dns1.tor:
+    - ssh dns1.tor.ardns.local
+  - dns2.tor:
+    - ssh dns2.tor.ardns.local
+  - dns3.tor:
+    - ssh dns3.tor.ardns.local
+  - dns4.tor:
+    - ssh dns4.tor.ardns.local
+  - dns5.tor:
+    - ssh dns5.tor.ardns.local
+

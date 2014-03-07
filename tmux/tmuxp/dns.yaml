@@ -4,6 +4,8 @@ windows:
 - window_name: melbourne
   focus: True
   layout: tiled
+  options:
+    allow-rename: off
   panes:
   - ssh dns1.mel.ardns.local
   - ssh dns2.mel.ardns.local
@@ -12,6 +14,8 @@ windows:
   - ssh dns5.mel.ardns.local
 - window_name: sydney
   layout: tiled
+  options:
+    allow-rename: off
   panes:
   - ssh dns1.syd.ardns.local
   - ssh dns2.syd.ardns.local
@@ -20,6 +24,8 @@ windows:
   - ssh dns5.syd.ardns.local
 - window_name: amsterdam
   layout: tiled
+  options:
+    allow-rename: off
   panes:
   - ssh dns1.ams.ardns.local
   - ssh dns2.ams.ardns.local
@@ -28,6 +34,8 @@ windows:
   - ssh dns5.ams.ardns.local
 - window_name: miami
   layout: tiled
+  options:
+    allow-rename: off
   panes:
   - ssh dns1.mia.ardns.local
   - ssh dns2.mia.ardns.local
@@ -36,6 +44,8 @@ windows:
   - ssh dns5.mia.ardns.local
 - window_name: madrid
   layout: tiled
+  options:
+    allow-rename: off
   panes:
   - ssh dns1.mad.ardns.local
   - ssh dns2.mad.ardns.local
@@ -44,6 +54,8 @@ windows:
   - ssh dns5.mad.ardns.local
 - window_name: toronto
   layout: tiled
+  options:
+    allow-rename: off
   panes:
   - ssh dns1.tor.ardns.local
   - ssh dns2.tor.ardns.local
@@ -52,6 +64,8 @@ windows:
   - ssh dns5.tor.ardns.local
 - window_name: tokyo
   layout: tiled
+  options:
+    allow-rename: off
   panes:
   - ssh dns1.tky.ardns.local
   - ssh dns2.tky.ardns.local
@@ -60,6 +74,8 @@ windows:
   - ssh dns5.tky.ardns.local
 - window_name: sanjose
   layout: tiled
+  options:
+    allow-rename: off
   panes:
   - ssh dns1.sjc.ardns.local
   - ssh dns2.sjc.ardns.local
@@ -68,51 +84,71 @@ windows:
   - ssh dns5.sjc.ardns.local
 - window_name: bogota
   layout: tiled
+  options:
+    allow-rename: off
   panes:
   - ssh dns1.bog.ardns.local
   - ssh dns2.bog.ardns.local
 - window_name: nairobi
   layout: tiled
+  options:
+    allow-rename: off
   panes:
   - ssh dns1.nbo.ardns.local
   - ssh dns2.nbo.ardns.local
 - window_name: stokholm
   layout: tiled
+  options:
+    allow-rename: off
   panes:
   - ssh dns1.sto.ardns.local
   - ssh dns2.sto.ardns.local
 - window_name: saopaulo
   layout: tiled
+  options:
+    allow-rename: off
   panes:
   - ssh dns1.sao.ardns.local
   - ssh dns2.sao.ardns.local
 - window_name: perth
   layout: tiled
+  options:
+    allow-rename: off
   panes:
   - ssh dns1.per.ardns.local
   - ssh dns2.per.ardns.local
 - window_name: brisbane
   layout: tiled
+  options:
+    allow-rename: off
   panes:
   - ssh dns1.bne.ardns.local
   - ssh dns2.bne.ardns.local
 - window_name: auckland
   layout: tiled
+  options:
+    allow-rename: off
   panes:
   - ssh dns1.akl.ardns.local
   - ssh dns2.akl.ardns.local
 - window_name: hongkong
   layout: tiled
+  options:
+    allow-rename: off
   panes:
   - ssh dns1.hkg.ardns.local
   - ssh dns2.hkg.ardns.local
 - window_name: istanbul
   layout: tiled
+  options:
+    allow-rename: off
   panes:
   - ssh dns1.ist.ardns.local
   - ssh dns2.ist.ardns.local
 - window_name: johanesberg
   layout: tiled
+  options:
+    allow-rename: off
   panes:
   - ssh dns1.jbo.ardns.local
   - ssh dns2.jbo.ardns.local

@@ -7,17 +7,16 @@
 #   Ben O'Hara <bohara@gmail.com>
 #
 
-project_name: dns
+project_name: melbourne
 project_root: ~/
 windows:
   - melbourne:
-      layout: tiled
-      panes:
-        - ssh dns1.mel.ardns.local
-        - ssh dns2.mel.ardns.local
-        - ssh dns3.mel.ardns.local
-        - ssh dns4.mel.ardns.local
-        - ssh dns5.mel.ardns.local
+    - ssh dns1.mel.ardns.local
+    - ssh dns2.mel.ardns.local
+    - ssh dns3.mel.ardns.local
+    - ssh dns4.mel.ardns.local
+    - ssh dns5.mel.ardns.local
+project_name: sydney
   - sydney:
       layout: tiled
       panes:

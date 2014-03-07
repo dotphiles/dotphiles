@@ -1,0 +1,18 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# ~/.tmuxinator/dns.yml
+#
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
+
+project_name: istanbul
+project_root: ~/
+windows:
+  - mgmt1.ist:
+    - ssh mgmt1.ist.ardns.local
+  - dns1.ist:
+    - ssh dns1.ist.ardns.local
+  - dns2.ist:
+    - ssh dns2.ist.ardns.local

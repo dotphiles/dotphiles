@@ -1,0 +1,18 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# ~/.tmuxinator/dns.yml
+#
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
+
+project_name: stokholm
+project_root: ~/
+windows:
+  - mgmt1.sto:
+    - ssh mgmt1.sto.ardns.local
+  - dns1.sto:
+    - ssh dns1.sto.ardns.local
+  - dns2.sto:
+    - ssh dns2.sto.ardns.local
