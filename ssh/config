@@ -26,21 +26,23 @@ Host localhost
     StrictHostKeyChecking no
 
 # Work machines
-Host *.arsrs.local
-   User ben.ohara
-   IdentityFile ~/.ssh/id_rsa.work
-Host *.ardns.local
-   User ben.ohara
-   IdentityFile ~/.ssh/id_rsa.work
+Host *.arsrs.local *.ardns.local *.ausregistry.com.au *.office *.ausregistrygroup.local linux
+    User ben.ohara
+    IdentityFile ~/.ssh/id_rsa.work
+
+# NLNOG Ring
+Host *.ring.nlnog.net
+    User ausregistry
+    IdentityFile ~/.ssh/id_rsa.work
 
 # Default
 Host *
-#    User bohara
+    User bohara
     StrictHostKeyChecking ask
     ServerAliveCountMax 6
     ServerAliveInterval 30
     KeepAlive yes
-#    ControlMaster auto
-#    ControlPath ~/.ssh/master/%r@%h:%p
-#    ControlPersist 8h
+    ControlMaster auto
+    ControlPath ~/.ssh/master/%r@%h:%p
+    #ControlPersist 8h
 

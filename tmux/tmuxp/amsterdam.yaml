@@ -1,0 +1,15 @@
+session_name: amsterdam
+start_directory: ~/ # load session relative to config location (project root).
+windows:
+- window_name: amsterdam
+  focus: True
+  layout: tiled
+  options:
+    automatic-rename: off
+  panes:
+  - ssh dns1.ams.ardns.local
+  - ssh dns2.ams.ardns.local
+  - ssh dns3.ams.ardns.local
+  - ssh dns4.ams.ardns.local
+  - ssh dns5.ams.ardns.local
+

@@ -1,0 +1,12 @@
+session_name: test
+windows:
+- window_name: testwin
+  focus: True
+  layout: main-horizontal
+  options:
+    main-pane-height: 35
+  panes:
+  - pane
+  - pane
+  shell_command_before:
+    - tmux link-window -s puppet:testing -t 2

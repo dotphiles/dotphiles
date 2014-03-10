@@ -33,7 +33,7 @@ gnupg
 grc
 input/editrc
 input/inputrc
-#irssi
+irssi
 mercurial/hgrc
 mercurial/hgignore
 #mutt
@@ -52,9 +52,8 @@ ruby/rdebugrc
 ruby/aprc
 ruby/caprc
 screen/screenrc
-#shell/hushlogin
+shell/hushlogin
 shell/urlview
-ssh
 subversion
 task/task
 task/taskrc
@@ -79,84 +78,170 @@ zsh/zshrc
 # Hosts to sync
 ## hostname                     type=masterhost, ANY or NONE    files=dotfile:tolink,another:tolink
 [hosts]
-macbook-air.benohara.net        git=NONE                        files=beets/config.yaml:.config/beets/config.yaml
-#mac-mini.benohara.net           git=macbook-air.benohara.net    files=beets/config.yaml:.config/beets/config.yaml
-#nas.benohara.net                rsync=macbook-air.benohara.net
-#pi.benohara.net                 rsync=macbook-air.benohara.net
-mgmt1.mel.arsrs.local           git=macbook-air.benohara.net
-mgmt1.syd.arsrs.local           git=macbook-air.benohara.net
-dns1.akl.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns2.akl.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns1.ams.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns2.ams.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns3.ams.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns4.ams.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns5.ams.ardns.local            rsync=mgmt1.mel.arsrs.local
-mgmt1.ams.ardns.local           rsync=mgmt1.mel.arsrs.local
-dns1.bne.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns2.bne.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns1.bog.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns2.bog.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns1.hkg.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns2.hkg.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns1.ist.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns2.ist.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns1.jbo.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns2.jbo.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns1.mad.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns2.mad.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns3.mad.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns4.mad.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns5.mad.ardns.local            rsync=mgmt1.mel.arsrs.local
-mgmt1.mad.ardns.local           rsync=mgmt1.mel.arsrs.local
-dns1.mel.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns2.mel.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns3.mel.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns4.mel.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns5.mel.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns1.mia.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns2.mia.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns3.mia.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns4.mia.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns5.mia.ardns.local            rsync=mgmt1.mel.arsrs.local
-mgmt1.mia.ardns.local           rsync=mgmt1.mel.arsrs.local
-dns1.nbo.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns2.nbo.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns1.per.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns2.per.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns1.sao.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns2.sao.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns1.sjc.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns2.sjc.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns3.sjc.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns4.sjc.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns5.sjc.ardns.local            rsync=mgmt1.mel.arsrs.local
-mgmt1.sjc.ardns.local           rsync=mgmt1.mel.arsrs.local
-dns1.sto.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns2.sto.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns1.syd.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns2.syd.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns3.syd.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns4.syd.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns5.syd.ardns.local            rsync=mgmt1.mel.arsrs.local
-mgmt1.syd.ardns.local           rsync=mgmt1.mel.arsrs.local
-dns1.tky.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns2.tky.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns3.tky.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns4.tky.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns5.tky.ardns.local            rsync=mgmt1.mel.arsrs.local
-mgmt1.tky.ardns.local           rsync=mgmt1.mel.arsrs.local
-dns1.tor.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns2.tor.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns3.tor.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns4.tor.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns5.tor.ardns.local            rsync=mgmt1.mel.arsrs.local
-mgmt1.tor.ardns.local           rsync=mgmt1.mel.arsrs.local
-stealth1.mel.arsrs.local        rsync=mgmt1.mel.arsrs.local
-stealth2.mel.arsrs.local        rsync=mgmt1.mel.arsrs.local
-stealth1.syd.arsrs.local        rsync=mgmt1.mel.arsrs.local
-stealth2.syd.arsrs.local        rsync=mgmt1.mel.arsrs.local
-build1.mel.arsrs.local          rsync=mgmt1.mel.arsrs.local
-office-backup.stkildard.vic.ausregistry.com.au  rsync=mgmt1.mel.arsrs.local
+macbook-air.benohara.net        git=NONE                        files=beets/config.yaml:.config/beets/config.yaml,ssh
+mac-mini.benohara.net           git=macbook-air.benohara.net    files=beets/config.yaml:.config/beets/config.yaml,ssh
+nas.benohara.net                rsync=macbook-air.benohara.net  files=ssh
+pi.benohara.net                 rsync=macbook-air.benohara.net  files=ssh
+linux.ausregistrygroup.local    rsync=macbook-air.benohara.net  files=ssh
+
+mgmt1.mel.arsrs.local           rsync=linux.ausregistrygroup.local
+mgmt1.syd.arsrs.local           rsync=linux.ausregistrygroup.local
+dns1.akl.ardns.local            rsync=linux.ausregistrygroup.local
+dns2.akl.ardns.local            rsync=linux.ausregistrygroup.local
+dns1.ams.ardns.local            rsync=linux.ausregistrygroup.local
+dns2.ams.ardns.local            rsync=linux.ausregistrygroup.local
+dns3.ams.ardns.local            rsync=linux.ausregistrygroup.local
+dns4.ams.ardns.local            rsync=linux.ausregistrygroup.local
+dns5.ams.ardns.local            rsync=linux.ausregistrygroup.local
+mgmt1.ams.ardns.local           rsync=linux.ausregistrygroup.local
+dns1.bne.ardns.local            rsync=linux.ausregistrygroup.local
+dns2.bne.ardns.local            rsync=linux.ausregistrygroup.local
+dns1.bog.ardns.local            rsync=linux.ausregistrygroup.local
+dns2.bog.ardns.local            rsync=linux.ausregistrygroup.local
+dns1.hkg.ardns.local            rsync=linux.ausregistrygroup.local
+dns2.hkg.ardns.local            rsync=linux.ausregistrygroup.local
+dns1.ist.ardns.local            rsync=linux.ausregistrygroup.local
+dns2.ist.ardns.local            rsync=linux.ausregistrygroup.local
+dns1.jbo.ardns.local            rsync=linux.ausregistrygroup.local
+dns2.jbo.ardns.local            rsync=linux.ausregistrygroup.local
+dns1.mad.ardns.local            rsync=linux.ausregistrygroup.local
+dns2.mad.ardns.local            rsync=linux.ausregistrygroup.local
+dns3.mad.ardns.local            rsync=linux.ausregistrygroup.local
+dns4.mad.ardns.local            rsync=linux.ausregistrygroup.local
+dns5.mad.ardns.local            rsync=linux.ausregistrygroup.local
+mgmt1.mad.ardns.local           rsync=linux.ausregistrygroup.local
+dns1.mel.ardns.local            rsync=linux.ausregistrygroup.local
+dns2.mel.ardns.local            rsync=linux.ausregistrygroup.local
+dns3.mel.ardns.local            rsync=linux.ausregistrygroup.local
+dns4.mel.ardns.local            rsync=linux.ausregistrygroup.local
+dns5.mel.ardns.local            rsync=linux.ausregistrygroup.local
+dns1.mia.ardns.local            rsync=linux.ausregistrygroup.local
+dns2.mia.ardns.local            rsync=linux.ausregistrygroup.local
+dns3.mia.ardns.local            rsync=linux.ausregistrygroup.local
+dns4.mia.ardns.local            rsync=linux.ausregistrygroup.local
+dns5.mia.ardns.local            rsync=linux.ausregistrygroup.local
+mgmt1.mia.ardns.local           rsync=linux.ausregistrygroup.local
+dns1.nbo.ardns.local            rsync=linux.ausregistrygroup.local
+dns2.nbo.ardns.local            rsync=linux.ausregistrygroup.local
+dns1.per.ardns.local            rsync=linux.ausregistrygroup.local
+dns2.per.ardns.local            rsync=linux.ausregistrygroup.local
+dns1.sao.ardns.local            rsync=linux.ausregistrygroup.local
+dns2.sao.ardns.local            rsync=linux.ausregistrygroup.local
+dns1.sjc.ardns.local            rsync=linux.ausregistrygroup.local
+dns2.sjc.ardns.local            rsync=linux.ausregistrygroup.local
+dns3.sjc.ardns.local            rsync=linux.ausregistrygroup.local
+dns4.sjc.ardns.local            rsync=linux.ausregistrygroup.local
+dns5.sjc.ardns.local            rsync=linux.ausregistrygroup.local
+mgmt1.sjc.ardns.local           rsync=linux.ausregistrygroup.local
+dns1.sto.ardns.local            rsync=linux.ausregistrygroup.local
+dns2.sto.ardns.local            rsync=linux.ausregistrygroup.local
+dns1.syd.ardns.local            rsync=linux.ausregistrygroup.local
+dns2.syd.ardns.local            rsync=linux.ausregistrygroup.local
+dns3.syd.ardns.local            rsync=linux.ausregistrygroup.local
+dns4.syd.ardns.local            rsync=linux.ausregistrygroup.local
+dns5.syd.ardns.local            rsync=linux.ausregistrygroup.local
+mgmt1.syd.ardns.local           rsync=linux.ausregistrygroup.local
+dns1.tky.ardns.local            rsync=linux.ausregistrygroup.local
+dns2.tky.ardns.local            rsync=linux.ausregistrygroup.local
+dns3.tky.ardns.local            rsync=linux.ausregistrygroup.local
+dns4.tky.ardns.local            rsync=linux.ausregistrygroup.local
+dns5.tky.ardns.local            rsync=linux.ausregistrygroup.local
+mgmt1.tky.ardns.local           rsync=linux.ausregistrygroup.local
+dns1.tor.ardns.local            rsync=linux.ausregistrygroup.local
+dns2.tor.ardns.local            rsync=linux.ausregistrygroup.local
+dns3.tor.ardns.local            rsync=linux.ausregistrygroup.local
+dns4.tor.ardns.local            rsync=linux.ausregistrygroup.local
+dns5.tor.ardns.local            rsync=linux.ausregistrygroup.local
+mgmt1.tor.ardns.local           rsync=linux.ausregistrygroup.local
+stealth1.stag.arsrs.local       rsync=linux.ausregistrygroup.local
+stealth1.mel.arsrs.local        rsync=linux.ausregistrygroup.local
+stealth2.mel.arsrs.local        rsync=linux.ausregistrygroup.local
+stealth1.syd.arsrs.local        rsync=linux.ausregistrygroup.local
+stealth2.syd.arsrs.local        rsync=linux.ausregistrygroup.local
+build1.mel.arsrs.local          rsync=linux.ausregistrygroup.local
+office-backup.stkildard.vic.ausregistry.com.au  rsync=linux.ausregistrygroup.local
+backup1.office.arsrs.local      rsync=linux.ausregistrygroup.local
+db1.mel.arsrs.local             rsync=linux.ausregistrygroup.local
+db2.mel.arsrs.local             rsync=linux.ausregistrygroup.local
+db3.mel.arsrs.local             rsync=linux.ausregistrygroup.local
+dnsstats1.mel.arsrs.local       rsync=linux.ausregistrygroup.local
+dnsstats2.mel.arsrs.local       rsync=linux.ausregistrygroup.local
+dnsstats3.mel.arsrs.local       rsync=linux.ausregistrygroup.local
+dnsstats1.syd.arsrs.local       rsync=linux.ausregistrygroup.local
+dnsstats2.syd.arsrs.local       rsync=linux.ausregistrygroup.local
+dnsstats3.syd.arsrs.local       rsync=linux.ausregistrygroup.local
+webdns1.mel.arsrs.local         rsync=linux.ausregistrygroup.local
+webdns2.mel.arsrs.local         rsync=linux.ausregistrygroup.local
+webdns1.syd.arsrs.local         rsync=linux.ausregistrygroup.local
+webdns2.syd.arsrs.local         rsync=linux.ausregistrygroup.local
+db1.stag.arsrs.local            rsync=linux.ausregistrygroup.local
+db2.stag.arsrs.local            rsync=linux.ausregistrygroup.local
+otedb1.stag.arsrs.local         rsync=linux.ausregistrygroup.local
+occ1.stag.arsrs.local           rsync=linux.ausregistrygroup.local
+psg-confluence.stkildard.vic.ausregistry.com.au rsync=linux.ausregistrygroup.local
+staging-db.stkildard.vic.ausregistry.com.au rsync=linux.ausregistrygroup.local
+jde.stkildard.vic.ausregistry.com.au rsync=linux.ausregistrygroup.local
+occ1.mel.arsrs.local            rsync=linux.ausregistrygroup.local
+occ1.syd.arsrs.local            rsync=linux.ausregistrygroup.local
+otedb1.mel.arsrs.local          rsync=linux.ausregistrygroup.local
+otedb1.syd.arsrs.local          rsync=linux.ausregistrygroup.local
+webdns1.stag.arsrs.local        rsync=linux.ausregistrygroup.local
+db1.syd.arsrs.local             rsync=linux.ausregistrygroup.local
+db2.syd.arsrs.local             rsync=linux.ausregistrygroup.local
+db3.syd.arsrs.local             rsync=linux.ausregistrygroup.local
+storage.stag.arsrs.local        rsync=linux.ausregistrygroup.local
+satellite1.mel.arsrs.local      rsync=linux.ausregistrygroup.local
+dns1.stag.ardns.local           rsync=linux.ausregistrygroup.local
+backup1.mel.arsrs.local         rsync=linux.ausregistrygroup.local
+backup1.syd.arsrs.local         rsync=linux.ausregistrygroup.local
+psg-apps.stkildard.vic.ausregistry.com.au  rsync=linux.ausregistrygroup.local
+ldap2.burnleyst.vic.ausregistry.com.au     rsync=linux.ausregistrygroup.local
+au-epp1.mel.arsrs.local         rsync=linux.ausregistrygroup.local
+au-epp2.mel.arsrs.local         rsync=linux.ausregistrygroup.local
+au-epp3.mel.arsrs.local         rsync=linux.ausregistrygroup.local
+au-epp1.syd.arsrs.local         rsync=linux.ausregistrygroup.local
+au-epp2.syd.arsrs.local         rsync=linux.ausregistrygroup.local
+au-epp3.syd.arsrs.local         rsync=linux.ausregistrygroup.local
+epp1.mel.arsrs.local            rsync=linux.ausregistrygroup.local
+epp2.mel.arsrs.local            rsync=linux.ausregistrygroup.local
+epp1.syd.arsrs.local            rsync=linux.ausregistrygroup.local
+epp2.syd.arsrs.local            rsync=linux.ausregistrygroup.local
+registry1.stag.arsrs.local      rsync=linux.ausregistrygroup.local
+webdns1.stag.arsrs.local        rsync=linux.ausregistrygroup.local
+stealth1.stag.arsrs.local       rsync=linux.ausregistrygroup.local
+ca-test.stag.arsrs.local        rsync=linux.ausregistrygroup.local
+netmon2.syd.arsrs.local         rsync=linux.ausregistrygroup.local
+slamon1.mel.arsrs.local         rsync=linux.ausregistrygroup.local
+slamon1.syd.arsrs.local         rsync=linux.ausregistrygroup.local
+ids1.mel.arsrs.local            rsync=linux.ausregistrygroup.local
+ids1.syd.arsrs.local            rsync=linux.ausregistrygroup.local
+syslog1.mel.arsrs.local         rsync=linux.ausregistrygroup.local
+syslog1.syd.arsrs.local         rsync=linux.ausregistrygroup.local
+au-web-app1.mel.arsrs.local     rsync=linux.ausregistrygroup.local
+au-web-app2.mel.arsrs.local     rsync=linux.ausregistrygroup.local
+au-web-app3.mel.arsrs.local     rsync=linux.ausregistrygroup.local
+au-web-app1.syd.arsrs.local     rsync=linux.ausregistrygroup.local
+au-web-app2.syd.arsrs.local     rsync=linux.ausregistrygroup.local
+au-web-app3.syd.arsrs.local     rsync=linux.ausregistrygroup.local
+whois1.mel.arsrs.local          rsync=linux.ausregistrygroup.local
+whois2.mel.arsrs.local          rsync=linux.ausregistrygroup.local
+whois1.syd.arsrs.local          rsync=linux.ausregistrygroup.local
+whois2.syd.arsrs.local          rsync=linux.ausregistrygroup.local
+ote1.mel.arsrs.local            rsync=linux.ausregistrygroup.local
+ote2.mel.arsrs.local            rsync=linux.ausregistrygroup.local
+ote1.syd.arsrs.local            rsync=linux.ausregistrygroup.local
+ote2.syd.arsrs.local            rsync=linux.ausregistrygroup.local
+registry1.mel.arsrs.local       rsync=linux.ausregistrygroup.local
+registry2.mel.arsrs.local       rsync=linux.ausregistrygroup.local
+registry1.syd.arsrs.local       rsync=linux.ausregistrygroup.local
+registry2.syd.arsrs.local       rsync=linux.ausregistrygroup.local
+escrow1.mel.arsrs.local         rsync=linux.ausregistrygroup.local
+escrow1.syd.arsrs.local         rsync=linux.ausregistrygroup.local
+reseller1.mel.arsrs.local       rsync=linux.ausregistrygroup.local
+reseller1.syd.arsrs.local       rsync=linux.ausregistrygroup.local
+ote-reseller1.mel.arsrs.local   rsync=linux.ausregistrygroup.local
+ote-reseller1.syd.arsrs.local   rsync=linux.ausregistrygroup.local
+build1.mel.arsrs.local          rsync=linux.ausregistrygroup.local
+dev-cer-testing2.stkildard.vic.ausregistry.com.au rsync=linux.ausregistrygroup.local
 [endhosts]
 
