@@ -26,4 +26,5 @@ Host *
     KeepAlive yes
     #ControlMaster auto
     #ControlPath ~/.ssh/master/%r@%h:%p
+    #ControlPersist 8h
 
