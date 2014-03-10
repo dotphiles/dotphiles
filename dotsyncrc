@@ -82,7 +82,7 @@ macbook-air.benohara.net        git=NONE                        files=beets/conf
 mac-mini.benohara.net           git=macbook-air.benohara.net    files=beets/config.yaml:.config/beets/config.yaml,ssh
 nas.benohara.net                rsync=macbook-air.benohara.net  files=ssh
 pi.benohara.net                 rsync=macbook-air.benohara.net  files=ssh
-linux.ausregistrygroup.local    rsync=macbook-air.benohara.net  files=ssh
+desktop-vm                      rsync=macbook-air.benohara.net  files=ssh
 
 mgmt1.mel.arsrs.local           rsync=linux.ausregistrygroup.local
 mgmt1.syd.arsrs.local           rsync=linux.ausregistrygroup.local
