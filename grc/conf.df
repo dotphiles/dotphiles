@@ -1,0 +1,16 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# Setup grc for `df`
+#
+# Authors:
+#   Ben O'Hara <bohrara@gmail.com>
+#
+
+# filesystem
+regexp=^((rootfs|tmpfs|udev)|(.*))\s+(\S+)\s+(\S+)\s+(\S+)\s+(\d+%)\s+(\S+)$
+colours=default,default,cyan,green,magenta,default,default,blue,yellow
+-
+# full
+regexp=100%|9\d%
+colours=red
