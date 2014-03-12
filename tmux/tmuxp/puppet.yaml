@@ -5,7 +5,7 @@ windows:
   focus: True
   layout: main-horizontal
   options:
-    main-pane-height: 35
+    main-pane-height: 30
     allow-rename: off
   panes:
   - shell_command: 
@@ -17,7 +17,7 @@ windows:
 - window_name: testing
   layout: main-horizontal
   options:
-    main-pane-height: 35
+    main-pane-height: 30
     allow-rename: off
   panes:
   - pane

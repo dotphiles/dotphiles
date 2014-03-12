@@ -5,7 +5,7 @@ windows:
   focus: True
   layout: main-horizontal
   options:
-    main-pane-height: 35
+    main-pane-height: 30
   panes:
   - shell_command: 
     - reset
@@ -16,7 +16,7 @@ windows:
 - window_name: testing
   layout: main-horizontal
   options:
-    main-pane-height: 35
+    main-pane-height: 30
   panes:
   - pane
   - pane

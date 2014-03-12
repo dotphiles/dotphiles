@@ -5,7 +5,7 @@ windows:
   focus: True
   layout: main-horizontal
   options:
-    main-pane-height: 35
+    main-pane-height: 30
   panes:
   - shell_command: 
     - reset
@@ -13,10 +13,10 @@ windows:
     - :NERDTree
     focus: true
   - pane 
-- window_name: testing
+- window_name: docs
   layout: main-horizontal
   options:
-    main-pane-height: 35
+    main-pane-height: 30
   panes:
   - pane
   - pane
