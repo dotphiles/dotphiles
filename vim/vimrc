@@ -22,6 +22,7 @@ if has("user_commands")
   " Add extra bundles here...
   Bundle 'benohara/cisco.vim'
   Bundle 'justinmk/vim-sneak'
+  Bundle 'tpope/vim-dispatch'
 endif
 
 " Customize to your needs...

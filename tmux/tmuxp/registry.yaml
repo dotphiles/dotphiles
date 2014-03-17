@@ -1,0 +1,27 @@
+session_name: registry
+start_directory: ~/ # load session relative to config location (project root).
+windows:
+- window_name: melbourne
+  focus: True
+  layout: tiled
+  options:
+    allow-rename: off
+  panes:
+  - ssh registry1.mel.arsrs.local
+  - ssh registry2.mel.arsrs.local
+  - ssh registry3.mel.arsrs.local
+  - ssh registry4.mel.arsrs.local
+  - ssh registry5.mel.arsrs.local
+  - ssh registry6.mel.arsrs.local
+- window_name: sydney
+  layout: tiled
+  options:
+    allow-rename: off
+  panes:
+  - ssh registry1.syd.arsrs.local
+  - ssh registry2.syd.arsrs.local
+  - ssh registry3.syd.arsrs.local
+  - ssh registry4.syd.arsrs.local
+  - ssh registry5.syd.arsrs.local
+  - ssh registry6.syd.arsrs.local
+
