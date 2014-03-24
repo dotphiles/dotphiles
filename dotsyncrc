@@ -252,5 +252,8 @@ ote-reseller1.syd.arsrs.local   rsync=desktop-vm
 build1.mel.arsrs.local          rsync=desktop-vm
 dev-cer-testing2.stkildard.vic.ausregistry.com.au rsync=desktop-vm
 csr-prod-staging.stkildard.vic.ausregistry.com.au rsync=desktop-vm
+dev-cer-ci-desktop.office       rsync=desktop-vm
+whois1.stag.arsrs.local         rsync=desktop-vm
+ote-orer-web1.mel.arsrs.local   rsync=desktop-vm
 [endhosts]
 

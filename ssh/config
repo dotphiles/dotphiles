@@ -26,7 +26,7 @@ Host localhost
     StrictHostKeyChecking no
 
 # Work machines
-Host *.arsrs.local *.ardns.local *.ausregistry.com.au *.office *.ausregistrygroup.local desktop-vm
+Host *.arsrs.local *.ardns.local *.ausregistry.com.au *.office *.ausregistrygroup.local desktop-vm *.orer
     User ben.ohara
     IdentityFile ~/.ssh/id_rsa.work
 
