@@ -5366,10 +5366,12 @@
 	<array/>
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>307 274 214 309 0 0 1440 878 </string>
+	<key>NSWindow Frame NSFontPanel</key>
+	<string>995 4 445 270 0 0 1440 878 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>2502 460 924 485 1920 0 1920 1058 </string>
+	<string>2503 459 605 485 1920 0 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1920 0 1920 1058 1920 0 1920 1058 </string>
+	<string>0 409 1440 469 0 0 1440 878 </string>
 	<key>NeverWarnAboutShortLivedSessions_12E5BB2C-6F82-46D7-B079-63293E0A3EE7</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_16C503FD-77E7-43DA-B3CD-5795EAE74C90</key>
@@ -5980,11 +5982,11 @@
 			<key>Name</key>
 			<string>base16-3024.dark</string>
 			<key>Non Ascii Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -6712,11 +6714,11 @@
 			<key>Name</key>
 			<string>base16-bright.dark</string>
 			<key>Non Ascii Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -7444,11 +7446,11 @@
 			<key>Name</key>
 			<string>base16-chalk.dark</string>
 			<key>Non Ascii Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -8176,11 +8178,11 @@
 			<key>Name</key>
 			<string>base16-default.dark</string>
 			<key>Non Ascii Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -8908,11 +8910,11 @@
 			<key>Name</key>
 			<string>base16-eighties.dark</string>
 			<key>Non Ascii Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -9640,11 +9642,11 @@
 			<key>Name</key>
 			<string>base16-greenscreen.dark</string>
 			<key>Non Ascii Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -10372,11 +10374,11 @@
 			<key>Name</key>
 			<string>base16-mocha.dark</string>
 			<key>Non Ascii Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -11104,11 +11106,11 @@
 			<key>Name</key>
 			<string>base16-monokai.dark</string>
 			<key>Non Ascii Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -11836,11 +11838,11 @@
 			<key>Name</key>
 			<string>base16-ocean.dark</string>
 			<key>Non Ascii Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -12568,11 +12570,11 @@
 			<key>Name</key>
 			<string>base16-pop.dark</string>
 			<key>Non Ascii Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -13300,11 +13302,11 @@
 			<key>Name</key>
 			<string>base16-railscasts.dark</string>
 			<key>Non Ascii Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -14032,11 +14034,11 @@
 			<key>Name</key>
 			<string>base16-solarized.dark</string>
 			<key>Non Ascii Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -14764,11 +14766,11 @@
 			<key>Name</key>
 			<string>base16-tomorrow.dark</string>
 			<key>Non Ascii Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -15496,11 +15498,11 @@
 			<key>Name</key>
 			<string>base16-3024.light</string>
 			<key>Non Ascii Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -16228,11 +16230,11 @@
 			<key>Name</key>
 			<string>base16-bright.light</string>
 			<key>Non Ascii Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -16960,11 +16962,11 @@
 			<key>Name</key>
 			<string>base16-chalk.light</string>
 			<key>Non Ascii Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -17692,11 +17694,11 @@
 			<key>Name</key>
 			<string>base16-default.light</string>
 			<key>Non Ascii Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -18424,11 +18426,11 @@
 			<key>Name</key>
 			<string>base16-eighties.light</string>
 			<key>Non Ascii Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -19156,11 +19158,11 @@
 			<key>Name</key>
 			<string>base16-greenscreen.light</string>
 			<key>Non Ascii Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -19888,11 +19890,11 @@
 			<key>Name</key>
 			<string>base16-mocha.light</string>
 			<key>Non Ascii Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -20620,11 +20622,11 @@
 			<key>Name</key>
 			<string>base16-monokai.light</string>
 			<key>Non Ascii Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -21352,11 +21354,11 @@
 			<key>Name</key>
 			<string>base16-ocean.light</string>
 			<key>Non Ascii Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -22084,11 +22086,11 @@
 			<key>Name</key>
 			<string>base16-railscasts.light</string>
 			<key>Non Ascii Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -22816,11 +22818,11 @@
 			<key>Name</key>
 			<string>base16-solarized.light</string>
 			<key>Non Ascii Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -23548,11 +23550,11 @@
 			<key>Name</key>
 			<string>base16-tomorrow.light</string>
 			<key>Non Ascii Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -24280,11 +24282,11 @@
 			<key>Name</key>
 			<string>Hotkey Window</string>
 			<key>Non Ascii Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MesloLGS-RegularForPowerline 14</string>
+			<string>LiterationMonoPowerline 13</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -24529,7 +24531,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-03-27T07:45:34Z</date>
+	<date>2014-04-30T06:02:13Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -26214,6 +26216,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>1.0.0.20140112</string>
+	<string>1.0.0.20140421</string>
 </dict>
 </plist>
