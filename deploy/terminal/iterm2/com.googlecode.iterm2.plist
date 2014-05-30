@@ -5369,9 +5369,9 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>995 4 445 270 0 0 1440 878 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>2503 459 605 485 1920 0 1920 1058 </string>
+	<string>583 459 605 485 0 0 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 409 1440 469 0 0 1440 878 </string>
+	<string>1920 0 1920 1058 1920 0 1920 1058 </string>
 	<key>NeverWarnAboutShortLivedSessions_12E5BB2C-6F82-46D7-B079-63293E0A3EE7</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_16C503FD-77E7-43DA-B3CD-5795EAE74C90</key>
@@ -24531,7 +24531,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-04-30T06:02:13Z</date>
+	<date>2014-05-19T23:27:53Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -24569,7 +24569,7 @@
 	<key>WebKitDefaultFontSize</key>
 	<integer>11</integer>
 	<key>WebKitStandardFont</key>
-	<string>Lucida Grande</string>
+	<string>.Lucida Grande UI</string>
 	<key>Window Arrangements</key>
 	<dict>
 		<key>Default</key>

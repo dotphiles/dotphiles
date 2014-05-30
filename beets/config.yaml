@@ -25,7 +25,7 @@ paths:
     albumtype:soundtrack: Soundtracks/($year) $album%aunique{}/%if{$multidisc,$disc-}$track - $artist - $title [$bitrate]
 
 pluginpath:
-  - /Users/bohara/Projects/
+- /Users/bohara/Projects/
 
 # Item fields for multidisc
 item_fields:
