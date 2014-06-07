@@ -27,5 +27,4 @@ if has("user_commands")
 endif
 
 " Customize to your needs...
-set scrolloff=999
 
