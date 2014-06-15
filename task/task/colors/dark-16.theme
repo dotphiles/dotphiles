@@ -1,0 +1,77 @@
+################################################################################
+# Sample taskwarrior 1.9 (or later) dark 16-color theme
+#
+# taskwarrior - a command line task list manager.
+#
+# Copyright 2006-2014, Paul Beckingham, Federico Hernandez.
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included
+# in all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+# OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+# THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
+# http://www.opensource.org/licenses/mit-license.php
+#
+###############################################################################
+
+color=on
+color.header=yellow
+color.footnote=yellow
+color.error=yellow
+color.debug=yellow
+
+color.summary.bar=black on green
+color.summary.background=white on black
+
+color.history.add=black on red
+color.history.done=black on green
+color.history.delete=black on yellow
+
+color.burndown.pending=on red
+color.burndown.started=on yellow
+color.burndown.done=on green
+
+color.sync.added=green
+color.sync.changed=yellow
+color.sync.rejected=red
+
+color.undo.before=red
+color.undo.after=green
+
+color.calendar.today=bold white on bright blue
+color.calendar.due=white on red
+color.calendar.due.today=bold white on red
+color.calendar.overdue=black on bright red
+color.calendar.weekend=white on bright black
+color.calendar.holiday=black on bright yellow
+color.calendar.weeknumber=bold blue
+
+color.recurring=magenta
+color.overdue=bold red
+color.due.today=red
+color.due=red
+color.active=black on bright green
+color.pri.none=
+color.pri.H=bold white
+color.pri.M=white
+color.pri.L=
+color.tagged=green
+color.blocked=black on white
+color.blocking=black on bright white
+color.project.none=
+color.tag.none=
+color.alternate=
+
