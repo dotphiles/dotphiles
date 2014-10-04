@@ -45,7 +45,7 @@ import:
 ignore: .AppleDouble ._* *~ .DS_Store
 
 # Use these plugins
-plugins: chroma mbcollection inline the lyrics echonest scrub mbsync replaygain missing duplicates lastgenre fromfilename info fetchart embedart
+plugins: chroma mbcollection inline the lyrics scrub mbsync missing duplicates fromfilename info
 
 # Run multi threaded
 threaded: yes
