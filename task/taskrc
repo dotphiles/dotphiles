@@ -18,5 +18,4 @@
 data.location=~/.task
 curses=on
 # Color theme
-include ~/.task/colors/solarized/solarized-dark-256.theme
-
+include ~/.task/colors/dark-16.theme

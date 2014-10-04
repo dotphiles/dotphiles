@@ -1,188 +1,374 @@
 # -*- coding: utf-8 -*-
-#
-# dotphiles : https://github.com/dotphiles/dotphiles
-#
-# Best goddamn .pythonrc file in the whole world.
-#
-# Authors:
-#   Ben O'Hara <bohara@gmail.com>
-#
+"""Startup script that adds niceties to the interactive interpreter.
 
-import os
+This script adds the following things:
 
-try:
-    import readline
-    import rlcompleter
-    import atexit
-except ImportError:
-    print("You need readline, rlcompleter, and atexit")
+- Readline bindings, tab completion, and history (in ~/.pyhistory,
+  which can be disabled by setting NOHIST in the environment)
+
+- Pretty printing of expression output (with Pygments highlighting)
+
+- Pygments highlighting of tracebacks
+
+- Function arguments in repr() for callables
+
+- A source() function that displays the source of an arbitrary object
+  (in a pager, with Pygments highlighting)
+
+Python 2.3 and newer are supported, including Python 3.x.
+
+Note: The default versions of Python that ship with Mac OS X don't
+come with readline. To get readline support, you can try a stand-alone
+readline library[1], or you can use a different Python distribution
+(like the one from MacPorts).
+
+[1]: http://pypi.python.org/pypi/readline
+"""
 
 
-# Make this work properly in Darwin and Linux
-if 'libedit' in readline.__doc__:
-    readline.parse_and_bind("bind ^I rl_complete")
-else:
-    readline.parse_and_bind("tab: complete")
+def _pythonrc_enable_readline():
+    """Enable readline, tab completion, and history"""
+    import sys
 
-class Completer(object):
-    def __init__(self):
-        # Enable a History
-        self.HISTFILE=os.path.expanduser("%s/.history/python" % os.environ["HOME"])
-
-        # Read the existing history if there is one
-        if os.path.exists(self.HISTFILE):
-            readline.read_history_file(self.HISTFILE)
-
-        # Set maximum number of items that will be written to the history file
-        readline.set_history_length(300)
-        atexit.register(self.savehist)
-
-    def savehist(self):
+    try:
         import readline
-        readline.write_history_file(self.HISTFILE)
+        import rlcompleter
+    except ImportError:
+        sys.stderr.write('readline unavailable - tab completion disabled.\n')
+        return
 
+    old_complete = readline.get_completer()
 
-c = Completer()
-
-WELCOME=''
-# Color Support
-class TermColors(dict):
-    """Gives easy access to ANSI color codes. Attempts to fall back to no color
-    for certain TERM values. (Mostly stolen from IPython.)"""
-
-    COLOR_TEMPLATES = (
-        ("Black"       , "0;30"),
-        ("Red"         , "0;31"),
-        ("Green"       , "0;32"),
-        ("Brown"       , "0;33"),
-        ("Blue"        , "0;34"),
-        ("Purple"      , "0;35"),
-        ("Cyan"        , "0;36"),
-        ("LightGray"   , "0;37"),
-        ("DarkGray"    , "1;30"), ("LightRed"    , "1;31"),
-        ("LightGreen"  , "1;32"),
-        ("Yellow"      , "1;33"),
-        ("LightBlue"   , "1;34"),
-        ("LightPurple" , "1;35"),
-        ("LightCyan"   , "1;36"),
-        ("White"       , "1;37"),
-        ("Normal"      , "0"),
-    )
-
-    NoColor = ''
-    _base  = '\001\033[%sm\002'
-
-    def __init__(self):
-        if os.environ.get('TERM') in ('xterm-color', 'xterm-256color', 'linux',
-                                    'screen', 'screen-256color', 'screen-bce'):
-            self.update(dict([(k, self._base % v) for k,v in self.COLOR_TEMPLATES]))
+    def complete(text, state):
+        if not text:
+            # Insert four spaces for indentation
+            return ('    ', None)[state]
         else:
-            self.update(dict([(k, self.NoColor) for k,v in self.COLOR_TEMPLATES]))
-_c = TermColors()
+            return old_complete(text, state)
+    readline.parse_and_bind('tab: complete')
+    readline.set_completer(complete)
 
 
+def _pythonrc_enable_history():
+    import atexit
+    import os
+    try:
+        import readline
+    except:
+        return
 
-import sys
-# Enable Color Prompts
-sys.ps1 = '%s>>> %s' % (_c['Green'], _c['Normal'])
-sys.ps2 = '%s... %s' % (_c['Red'], _c['Normal'])
+    # "NOHIST= python" will disable history
+    if 'NOHIST' not in os.environ:
+        history_path = os.path.expanduser('~/.history/python')
 
-# Enable Pretty Printing for stdout
-def my_displayhook(value):
-    if value is not None:
+        has_written = [False]
+
+        def write_history():
+            if not has_written[0]:
+                readline.write_history_file(history_path)
+                print('Written history to %s' % history_path)
+                has_written[0] = True
+        atexit.register(write_history)
+
+        if os.path.isfile(history_path):
+            readline.read_history_file(history_path)
+        readline.set_history_length(-1)
+
+
+def _pythonrc_enable_pprint():
+    """Enable pretty printing of evaluated expressions"""
+    import pprint
+    import sys
+
+    try:
+        if sys.platform == 'win32':
+            raise ImportError()
+        from cStringIO import StringIO
+        from pygments import highlight
+        from pygments.lexers import PythonLexer, PythonTracebackLexer
+        from pygments.formatters import TerminalFormatter
+
+        def pphighlight(o, *a, **kw):
+            s = pprint.pformat(o, *a, **kw)
+            try:
+                sys.stdout.write(
+                    highlight(s, PythonLexer(), TerminalFormatter()))
+            except UnicodeError:
+                sys.stdout.write(s)
+                sys.stdout.write('\n')
+
+        _old_excepthook = sys.excepthook
+
+        def excepthook(exctype, value, traceback):
+            """Prints exceptions to sys.stderr and colorizes them"""
+
+            # traceback.format_exception() isn't used because it's
+            # inconsistent with the built-in formatter
+            old_stderr = sys.stderr
+            sys.stderr = StringIO()
+            try:
+                _old_excepthook(exctype, value, traceback)
+                s = sys.stderr.getvalue()
+                try:
+                    s = highlight(
+                        s, PythonTracebackLexer(), TerminalFormatter())
+                except UnicodeError:
+                    pass
+                old_stderr.write(s)
+            finally:
+                sys.stderr = old_stderr
+
+        sys.excepthook = excepthook
+    except ImportError:
+        pphighlight = pprint.pprint
+
+    try:
+        import __builtin__
+    except ImportError:
+        import builtins as __builtin__
+    import inspect
+    import pydoc
+    import sys
+    import types
+
+    help_types = [types.BuiltinFunctionType, types.BuiltinMethodType,
+                  types.FunctionType, types.MethodType, types.ModuleType,
+                  type,
+                  # method_descriptor
+                  type(list.remove)]
+    if hasattr(types, 'UnboundMethodType'):
+        help_types.append(types.UnboundMethodType)
+    help_types = tuple(help_types)
+
+    def _ioctl_width(fd):
+
+        from fcntl import ioctl
+        from struct import pack, unpack
+        from termios import TIOCGWINSZ
+        return unpack('HHHH',
+                      ioctl(fd, TIOCGWINSZ, pack('HHHH', 0, 0, 0, 0)))[1]
+
+    def get_width():
+        """Returns terminal width"""
+
+        width = 0
         try:
-            import __builtin__
-            __builtin__._ = value
+            width = _ioctl_width(0) or _ioctl_width(1) or _ioctl_width(2)
         except ImportError:
-            __builtins__._ = value
+            pass
+        if not width:
+            import os
+            width = os.environ.get('COLUMNS', 0)
+        return width
 
-        import pprint
-        pprint.pprint(value)
-        del pprint
+    if hasattr(inspect, 'getfullargspec'):
+        getargspec = inspect.getfullargspec
+    else:
+        getargspec = inspect.getargspec
 
-sys.displayhook = my_displayhook
+    def pprinthook(value):
+        """Pretty print an object to sys.stdout and also save it in
+        __builtin__.
+        """
 
-# Django Helpers
-def SECRET_KEY():
-    "Generates a new SECRET_KEY that can be used in a project settings file."
+        if value is None:
+            return
+        __builtin__._ = value
 
-    from random import choice
-    return ''.join(
-            [choice('abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)')
-                for i in range(50)])
+        if isinstance(value, help_types):
+            reprstr = repr(value)
+            try:
+                if inspect.isfunction(value):
+                    parts = reprstr.split(' ')
+                    parts[1] += inspect.formatargspec(*getargspec(value))
+                    reprstr = ' '.join(parts)
+                elif inspect.ismethod(value):
+                    parts = reprstr[:-1].split(' ')
+                    parts[2] += inspect.formatargspec(*getargspec(value))
+                    reprstr = ' '.join(parts) + '>'
+            except TypeError:
+                pass
+            sys.stdout.write(reprstr)
+            sys.stdout.write('\n')
+            if getattr(value, '__doc__', None):
+                sys.stdout.write('\n')
+                sys.stdout.write(pydoc.getdoc(value))
+                sys.stdout.write('\n')
+        else:
+            pphighlight(value, width=get_width() or 80)
 
-# If we're working with a Django project, set up the environment
-if 'DJANGO_SETTINGS_MODULE' in os.environ:
-    from django.db.models.loading import get_models
-    from django.test.client import Client
-    from django.test.utils import setup_test_environment, teardown_test_environment
-    from django.conf import settings as S
+    sys.displayhook = pprinthook
 
-    class DjangoModels(object):
-        """Loop through all the models in INSTALLED_APPS and import them."""
-        def __init__(self):
-            for m in get_models():
-                setattr(self, m.__name__, m)
 
-    A = DjangoModels()
-    C = Client()
+def _pythonrc_fix_linecache():
+    """Add source(obj) that shows the source code for a given object"""
+    import os
+    import sys
+    from linecache import cache
 
-    WELCOME += """%(Green)s
-    Django environment detected.
-* Your INSTALLED_APPS models are available as `A`.
-* Your project settings are available as `S`.
-* The Django test client is available as `C`.
-%(Normal)s""" % _c
+    # linecache.updatecache() replacement that actually works with zips.
+    # See http://bugs.python.org/issue4223 for more information.
+    def updatecache(filename, module_globals=None):
+        """Update a cache entry and return its list of lines.
+        If something's wrong, print a message, discard the cache entry,
+        and return an empty list."""
 
-    setup_test_environment()
-    S.DEBUG_PROPAGATE_EXCEPTIONS = True
+        if filename in cache:
+            del cache[filename]
+        if not filename or filename[0] + filename[-1] == '<>':
+            return []
 
-    WELCOME += """%(LightPurple)s
-Warning: the Django test environment has been set up; to restore the
-normal environment call `teardown_test_environment()`.
+        fullname = filename
+        try:
+            stat = os.stat(fullname)
+        except os.error:
+            basename = os.path.split(filename)[1]
 
-Warning: DEBUG_PROPAGATE_EXCEPTIONS has been set to True.
-%(Normal)s""" % _c
+            if module_globals and '__loader__' in module_globals:
+                name = module_globals.get('__name__')
+                loader = module_globals['__loader__']
+                get_source = getattr(loader, 'get_source', None)
 
-# Start an external editor with \e
-# http://aspn.activestate.com/ASPN/Cookbook/Python/Recipe/438813/
+                if name and get_source:
+                    try:
+                        data = get_source(name)
+                    except (ImportError, IOError):
+                        pass
+                    else:
+                        if data is None:
+                            return []
+                        cache[filename] = (
+                            len(data), None,
+                            [line + '\n' for line in data.splitlines()],
+                            fullname
+                        )
+                        return cache[filename][2]
 
-EDITOR = os.environ.get('EDITOR', 'vim')
-EDIT_CMD = '\e'
+            for dirname in sys.path:
+                try:
+                    fullname = os.path.join(dirname, basename)
+                except (TypeError, AttributeError):
+                    pass
+                else:
+                    try:
+                        stat = os.stat(fullname)
+                        break
+                    except os.error:
+                        pass
+            else:
+                return []
+        try:
+            fp = open(fullname, 'rU')
+            lines = fp.readlines()
+            fp.close()
+        except IOError:
+            return []
+        size, mtime = stat.st_size, stat.st_mtime
+        cache[filename] = size, mtime, lines, fullname
+        return lines
 
-from tempfile import mkstemp
-from code import InteractiveConsole
+    import linecache
+    linecache.updatecache = updatecache
 
-class EditableBufferInteractiveConsole(InteractiveConsole):
-    def __init__(self, *args, **kwargs):
-        self.last_buffer = [] # This holds the last executed statement
-        InteractiveConsole.__init__(self, *args, **kwargs)
 
-    def runsource(self, source, *args):
-        self.last_buffer = [ source.encode('latin-1') ]
-        return InteractiveConsole.runsource(self, source, *args)
+def source(obj):
+    """Display the source code of an object.
 
-    def raw_input(self, *args):
-        line = InteractiveConsole.raw_input(self, *args)
-        if line == EDIT_CMD:
-            fd, tmpfl = mkstemp('.py')
-            os.write(fd, b'\n'.join(self.last_buffer))
-            os.close(fd)
-            os.system('%s %s' % (EDITOR, tmpfl))
-            line = open(tmpfl).read()
-            os.unlink(tmpfl)
-            tmpfl = ''
-            lines = line.split( '\n' )
-            for i in range(len(lines) - 1): self.push( lines[i] )
-            line = lines[-1]
-        return line
+    Applies syntax highlighting if Pygments is available.
+    """
+    import os
+    import sys
+    from inspect import findsource, getmodule, getsource, getsourcefile
+    from pydoc import pager
 
-# clean up namespace
-del sys
+    try:
+        # Check to see if the object is defined in a shared library, which
+        # findsource() doesn't do properly (see issue4050)
+        if not getsourcefile(obj):
+            raise TypeError
+        s = getsource(obj)
+    except TypeError:
+        sys.stderr.write("Source code unavailable (maybe it's part of "
+                         "a C extension?)\n")
+        return
 
-c = EditableBufferInteractiveConsole(locals=locals())
-c.interact(banner=WELCOME)
+    # Detect the module's file encoding. We could use
+    # tokenize.detect_encoding(), but it's only available in Python 3.
+    import re
+    enc = 'ascii'
+    for line in findsource(getmodule(obj))[0][:2]:
+        m = re.search(r'coding[:=]\s*([-\w.]+)', line)
+        if m:
+            enc = m.group(1)
+    if hasattr(s, 'decode'):
+        try:
+            s = s.decode(enc, 'replace')
+        except LookupError:
+            s = s.decode('ascii', 'replace')
 
-# Exit the Python shell on exiting the InteractiveConsole
-import sys
-sys.exit()
+    try:
+        # For now, let's assume we'll never have a proper terminal on win32
+        if sys.platform == 'win32':
+            raise ImportError
+        from pygments import highlight
+        from pygments.lexers import PythonLexer
+        from pygments.formatters import TerminalFormatter
+        s = highlight(s, PythonLexer(), TerminalFormatter())
+    except (ImportError, UnicodeError):
+        pass
+
+    # Display the source code in the pager, and try to convince less not to
+    # escape color control codes.
+    has_lessopts = 'LESS' in os.environ
+    lessopts = os.environ.get('LESS', '')
+    try:
+        os.environ['LESS'] = lessopts + ' -R'
+        if hasattr(s, 'decode'):
+            pager(s.encode(sys.stdout.encoding, 'replace'))
+        else:
+            pager(s)
+    finally:
+        if has_lessopts:
+            os.environ['LESS'] = lessopts
+        else:
+            os.environ.pop('LESS', None)
+
+if __name__ == '__main__':
+    __doc__ = None
+
+    # Make sure modules in the current directory can't interfere
+    import sys
+    try:
+        try:
+            cwd = sys.path.index('')
+            sys.path.pop(cwd)
+        except ValueError:
+            cwd = None
+
+        sys.ps1 = "\001\033[0;32m\002>>> \001\033[1;37m\002"
+        sys.ps2 = "\001\033[1;31m\002... \001\033[1;37m\002"
+
+        # Run installation functions and don't taint the global namespace
+        try:
+            try:
+                import jedi.utils
+                jedi.utils.setup_readline()
+                del jedi
+            except:
+                print('No jedi here. Coming to the dark side.')
+                _pythonrc_enable_readline()
+                del _pythonrc_enable_readline
+
+            _pythonrc_enable_history()
+            _pythonrc_enable_pprint()
+            _pythonrc_fix_linecache()
+
+            del _pythonrc_enable_history
+            del _pythonrc_enable_pprint
+            del _pythonrc_fix_linecache
+        finally:
+            if cwd is not None:
+                sys.path.insert(cwd, '')
+            del cwd
+    finally:
+        pass
