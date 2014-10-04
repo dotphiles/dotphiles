@@ -21,9 +21,10 @@ Host mac-mini mac-mini.benohara.net
     Hostname mac-mini.local
 
 # Local development
-Host localhost
+Host localhost 127.0.0.1
     UserKnownHostsFile /dev/null
     StrictHostKeyChecking no
+    DynamicForward 5555
 
 # Work machines
 Host *.arsrs.local *.ardns.local *.ausregistry.com.au *.office *.ausregistrygroup.local desktop-vm *.vic.ausregistry.com.au *.stkildard.vic.ausregistry.com.au
