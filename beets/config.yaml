@@ -25,7 +25,7 @@ paths:
     albumtype:soundtrack: Soundtracks/($year) $album%aunique{}/%if{$multidisc,$disc-}$track - $artist - $title [$bitrate]
 
 pluginpath:
-  - ~/Projects/
+- /Users/bohara/Projects/
 
 # Item fields for multidisc
 item_fields:
@@ -45,7 +45,7 @@ import:
 ignore: .AppleDouble ._* *~ .DS_Store
 
 # Use these plugins
-plugins: mbcollection inline the lyrics echonest chroma scrub mbsync replaygain missing duplicates lastgenre fromfilename info fetchart embedart
+plugins: chroma mbcollection inline the lyrics scrub mbsync missing duplicates fromfilename info
 
 # Run multi threaded
 threaded: yes
@@ -74,13 +74,14 @@ replaygain:
 
 # Options for lyrics
 lyrics:
-    auto: no
+    auto: yes
     fallback: 'No lyrics found'
 
 # Options for chroma
 chroma:
     auto: true
 acoustid:
+    auto: true
     apikey: IkH0JkBR
 
 # Options for scrub
@@ -91,15 +92,16 @@ scrub:
 echonest:
     apikey: RCWGGPLO5BI5DE2RB
     codegen: /usr/local/bin/echoprint-codegen
-    auto: no
+    auto: yes
     upload: no
     convert: no
 
 # Options for importfeeds
 importfeeds:
     formats: link
-    dir: /Volumes/Music/imports/
+    dir: /Volumes/PORTABLE/Music/imports/
 
 musicbrainz:
     user: benohara
     pass: br34kb34t
+

@@ -33,7 +33,7 @@ gnupg
 grc
 input/editrc
 input/inputrc
-#irssi
+irssi
 mercurial/hgrc
 mercurial/hgignore
 #mutt
@@ -52,9 +52,8 @@ ruby/rdebugrc
 ruby/aprc
 ruby/caprc
 screen/screenrc
-#shell/hushlogin
+shell/hushlogin
 shell/urlview
-ssh
 subversion
 task/task
 task/taskrc
@@ -79,84 +78,229 @@ zsh/zshrc
 # Hosts to sync
 ## hostname                     type=masterhost, ANY or NONE    files=dotfile:tolink,another:tolink
 [hosts]
-macbook-air.benohara.net        git=NONE                        files=beets/config.yaml:.config/beets/config.yaml
-#mac-mini.benohara.net           git=macbook-air.benohara.net    files=beets/config.yaml:.config/beets/config.yaml
-#nas.benohara.net                rsync=macbook-air.benohara.net
-#pi.benohara.net                 rsync=macbook-air.benohara.net
-mgmt1.mel.arsrs.local           git=macbook-air.benohara.net
-mgmt1.syd.arsrs.local           git=macbook-air.benohara.net
-dns1.akl.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns2.akl.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns1.ams.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns2.ams.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns3.ams.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns4.ams.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns5.ams.ardns.local            rsync=mgmt1.mel.arsrs.local
-mgmt1.ams.ardns.local           rsync=mgmt1.mel.arsrs.local
-dns1.bne.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns2.bne.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns1.bog.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns2.bog.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns1.hkg.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns2.hkg.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns1.ist.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns2.ist.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns1.jbo.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns2.jbo.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns1.mad.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns2.mad.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns3.mad.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns4.mad.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns5.mad.ardns.local            rsync=mgmt1.mel.arsrs.local
-mgmt1.mad.ardns.local           rsync=mgmt1.mel.arsrs.local
-dns1.mel.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns2.mel.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns3.mel.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns4.mel.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns5.mel.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns1.mia.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns2.mia.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns3.mia.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns4.mia.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns5.mia.ardns.local            rsync=mgmt1.mel.arsrs.local
-mgmt1.mia.ardns.local           rsync=mgmt1.mel.arsrs.local
-dns1.nbo.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns2.nbo.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns1.per.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns2.per.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns1.sao.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns2.sao.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns1.sjc.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns2.sjc.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns3.sjc.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns4.sjc.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns5.sjc.ardns.local            rsync=mgmt1.mel.arsrs.local
-mgmt1.sjc.ardns.local           rsync=mgmt1.mel.arsrs.local
-dns1.sto.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns2.sto.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns1.syd.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns2.syd.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns3.syd.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns4.syd.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns5.syd.ardns.local            rsync=mgmt1.mel.arsrs.local
-mgmt1.syd.ardns.local           rsync=mgmt1.mel.arsrs.local
-dns1.tky.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns2.tky.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns3.tky.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns4.tky.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns5.tky.ardns.local            rsync=mgmt1.mel.arsrs.local
-mgmt1.tky.ardns.local           rsync=mgmt1.mel.arsrs.local
-dns1.tor.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns2.tor.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns3.tor.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns4.tor.ardns.local            rsync=mgmt1.mel.arsrs.local
-dns5.tor.ardns.local            rsync=mgmt1.mel.arsrs.local
-mgmt1.tor.ardns.local           rsync=mgmt1.mel.arsrs.local
-stealth1.mel.arsrs.local        rsync=mgmt1.mel.arsrs.local
-stealth2.mel.arsrs.local        rsync=mgmt1.mel.arsrs.local
-stealth1.syd.arsrs.local        rsync=mgmt1.mel.arsrs.local
-stealth2.syd.arsrs.local        rsync=mgmt1.mel.arsrs.local
-build1.mel.arsrs.local          rsync=mgmt1.mel.arsrs.local
-office-backup.stkildard.vic.ausregistry.com.au  rsync=mgmt1.mel.arsrs.local
+macbook-air.benohara.net        git=NONE                        files=beets/config.yaml:.config/beets/config.yaml,ssh
+mac-mini.benohara.net           git=macbook-air.benohara.net    files=beets/config.yaml:.config/beets/config.yaml,ssh
+nas.benohara.net                rsync=macbook-air.benohara.net  files=ssh
+pi.benohara.net                 rsync=macbook-air.benohara.net  files=ssh
+desktop-vm                      rsync=macbook-air.benohara.net  files=ssh
+
+mgmt1.mel.arsrs.local           rsync=macbook-air.benohara.net
+mgmt1.syd.arsrs.local           rsync=macbook-air.benohara.net
+dns1.akl.ardns.local            rsync=macbook-air.benohara.net
+dns2.akl.ardns.local            rsync=macbook-air.benohara.net
+dns1.ams.ardns.local            rsync=macbook-air.benohara.net
+dns2.ams.ardns.local            rsync=macbook-air.benohara.net
+dns3.ams.ardns.local            rsync=macbook-air.benohara.net
+dns4.ams.ardns.local            rsync=macbook-air.benohara.net
+dns5.ams.ardns.local            rsync=macbook-air.benohara.net
+mgmt1.ams.ardns.local           rsync=macbook-air.benohara.net
+dns1.bne.ardns.local            rsync=macbook-air.benohara.net
+dns2.bne.ardns.local            rsync=macbook-air.benohara.net
+dns1.bog.ardns.local            rsync=macbook-air.benohara.net
+dns2.bog.ardns.local            rsync=macbook-air.benohara.net
+dns1.hkg.ardns.local            rsync=macbook-air.benohara.net
+dns2.hkg.ardns.local            rsync=macbook-air.benohara.net
+dns1.ist.ardns.local            rsync=macbook-air.benohara.net
+dns2.ist.ardns.local            rsync=macbook-air.benohara.net
+dns1.jbo.ardns.local            rsync=macbook-air.benohara.net
+dns2.jbo.ardns.local            rsync=macbook-air.benohara.net
+dns1.mad.ardns.local            rsync=macbook-air.benohara.net
+dns2.mad.ardns.local            rsync=macbook-air.benohara.net
+dns3.mad.ardns.local            rsync=macbook-air.benohara.net
+dns4.mad.ardns.local            rsync=macbook-air.benohara.net
+dns5.mad.ardns.local            rsync=macbook-air.benohara.net
+mgmt1.mad.ardns.local           rsync=macbook-air.benohara.net
+dns1.mel.ardns.local            rsync=macbook-air.benohara.net
+dns2.mel.ardns.local            rsync=macbook-air.benohara.net
+dns3.mel.ardns.local            rsync=macbook-air.benohara.net
+dns4.mel.ardns.local            rsync=macbook-air.benohara.net
+dns5.mel.ardns.local            rsync=macbook-air.benohara.net
+dns1.mia.ardns.local            rsync=macbook-air.benohara.net
+dns2.mia.ardns.local            rsync=macbook-air.benohara.net
+dns3.mia.ardns.local            rsync=macbook-air.benohara.net
+dns4.mia.ardns.local            rsync=macbook-air.benohara.net
+dns5.mia.ardns.local            rsync=macbook-air.benohara.net
+mgmt1.mia.ardns.local           rsync=macbook-air.benohara.net
+dns1.nbo.ardns.local            rsync=macbook-air.benohara.net
+dns2.nbo.ardns.local            rsync=macbook-air.benohara.net
+dns1.per.ardns.local            rsync=macbook-air.benohara.net
+dns2.per.ardns.local            rsync=macbook-air.benohara.net
+dns1.sao.ardns.local            rsync=macbook-air.benohara.net
+dns2.sao.ardns.local            rsync=macbook-air.benohara.net
+dns1.sjc.ardns.local            rsync=macbook-air.benohara.net
+dns2.sjc.ardns.local            rsync=macbook-air.benohara.net
+dns3.sjc.ardns.local            rsync=macbook-air.benohara.net
+dns4.sjc.ardns.local            rsync=macbook-air.benohara.net
+dns5.sjc.ardns.local            rsync=macbook-air.benohara.net
+mgmt1.sjc.ardns.local           rsync=macbook-air.benohara.net
+dns1.sto.ardns.local            rsync=macbook-air.benohara.net
+dns2.sto.ardns.local            rsync=macbook-air.benohara.net
+dns1.syd.ardns.local            rsync=macbook-air.benohara.net
+dns2.syd.ardns.local            rsync=macbook-air.benohara.net
+dns3.syd.ardns.local            rsync=macbook-air.benohara.net
+dns4.syd.ardns.local            rsync=macbook-air.benohara.net
+dns5.syd.ardns.local            rsync=macbook-air.benohara.net
+mgmt1.syd.ardns.local           rsync=macbook-air.benohara.net
+dns1.tky.ardns.local            rsync=macbook-air.benohara.net
+dns2.tky.ardns.local            rsync=macbook-air.benohara.net
+dns3.tky.ardns.local            rsync=macbook-air.benohara.net
+dns4.tky.ardns.local            rsync=macbook-air.benohara.net
+dns5.tky.ardns.local            rsync=macbook-air.benohara.net
+mgmt1.tky.ardns.local           rsync=macbook-air.benohara.net
+dns1.tor.ardns.local            rsync=macbook-air.benohara.net
+dns2.tor.ardns.local            rsync=macbook-air.benohara.net
+dns3.tor.ardns.local            rsync=macbook-air.benohara.net
+dns4.tor.ardns.local            rsync=macbook-air.benohara.net
+dns5.tor.ardns.local            rsync=macbook-air.benohara.net
+mgmt1.tor.ardns.local           rsync=macbook-air.benohara.net
+stealth1.stag.arsrs.local       rsync=macbook-air.benohara.net
+stealth1.mel.arsrs.local        rsync=macbook-air.benohara.net
+stealth2.mel.arsrs.local        rsync=macbook-air.benohara.net
+stealth3.mel.arsrs.local        rsync=macbook-air.benohara.net
+stealth4.mel.arsrs.local        rsync=macbook-air.benohara.net
+stealth1.syd.arsrs.local        rsync=macbook-air.benohara.net
+stealth2.syd.arsrs.local        rsync=macbook-air.benohara.net
+stealth3.syd.arsrs.local        rsync=macbook-air.benohara.net
+stealth4.syd.arsrs.local        rsync=macbook-air.benohara.net
+build1.mel.arsrs.local          rsync=macbook-air.benohara.net
+office-backup.stkildard.vic.ausregistry.com.au  rsync=macbook-air.benohara.net
+backup1.office.arsrs.local      rsync=macbook-air.benohara.net
+db1.mel.arsrs.local             rsync=macbook-air.benohara.net
+db2.mel.arsrs.local             rsync=macbook-air.benohara.net
+db3.mel.arsrs.local             rsync=macbook-air.benohara.net
+dnsstats1.mel.arsrs.local       rsync=macbook-air.benohara.net
+dnsstats2.mel.arsrs.local       rsync=macbook-air.benohara.net
+dnsstats3.mel.arsrs.local       rsync=macbook-air.benohara.net
+dnsstats1.syd.arsrs.local       rsync=macbook-air.benohara.net
+dnsstats2.syd.arsrs.local       rsync=macbook-air.benohara.net
+dnsstats3.syd.arsrs.local       rsync=macbook-air.benohara.net
+webdns1.mel.arsrs.local         rsync=macbook-air.benohara.net
+webdns2.mel.arsrs.local         rsync=macbook-air.benohara.net
+webdns1.syd.arsrs.local         rsync=macbook-air.benohara.net
+webdns2.syd.arsrs.local         rsync=macbook-air.benohara.net
+db1.stag.arsrs.local            rsync=macbook-air.benohara.net
+db2.stag.arsrs.local            rsync=macbook-air.benohara.net
+otedb1.stag.arsrs.local         rsync=macbook-air.benohara.net
+occ1.stag.arsrs.local           rsync=macbook-air.benohara.net
+occ2.stag.arsrs.local           rsync=macbook-air.benohara.net
+psg-confluence.stkildard.vic.ausregistry.com.au rsync=macbook-air.benohara.net
+staging-db.stkildard.vic.ausregistry.com.au rsync=macbook-air.benohara.net
+jde.stkildard.vic.ausregistry.com.au rsync=macbook-air.benohara.net
+occ1.mel.arsrs.local            rsync=macbook-air.benohara.net
+occ1.syd.arsrs.local            rsync=macbook-air.benohara.net
+otedb1.mel.arsrs.local          rsync=macbook-air.benohara.net
+otedb1.syd.arsrs.local          rsync=macbook-air.benohara.net
+webdns1.stag.arsrs.local        rsync=macbook-air.benohara.net
+db1.syd.arsrs.local             rsync=macbook-air.benohara.net
+db2.syd.arsrs.local             rsync=macbook-air.benohara.net
+db3.syd.arsrs.local             rsync=macbook-air.benohara.net
+storage.stag.arsrs.local        rsync=macbook-air.benohara.net
+satellite1.mel.arsrs.local      rsync=macbook-air.benohara.net
+dns1.stag.ardns.local           rsync=macbook-air.benohara.net
+backup1.mel.arsrs.local         rsync=macbook-air.benohara.net
+backup1.syd.arsrs.local         rsync=macbook-air.benohara.net
+psg-apps.stkildard.vic.ausregistry.com.au  rsync=macbook-air.benohara.net
+ldap2.burnleyst.vic.ausregistry.com.au     rsync=macbook-air.benohara.net
+au-epp1.stag.arsrs.local        rsync=macbook-air.benohara.net
+au-whois.stag.arsrs.local       rsync=macbook-air.benohara.net
+au-epp1.mel.arsrs.local         rsync=macbook-air.benohara.net
+au-epp2.mel.arsrs.local         rsync=macbook-air.benohara.net
+au-epp3.mel.arsrs.local         rsync=macbook-air.benohara.net
+au-epp1.syd.arsrs.local         rsync=macbook-air.benohara.net
+au-epp2.syd.arsrs.local         rsync=macbook-air.benohara.net
+au-epp3.syd.arsrs.local         rsync=macbook-air.benohara.net
+epp1.mel.arsrs.local            rsync=macbook-air.benohara.net
+epp2.mel.arsrs.local            rsync=macbook-air.benohara.net
+epp1.syd.arsrs.local            rsync=macbook-air.benohara.net
+epp2.syd.arsrs.local            rsync=macbook-air.benohara.net
+registry1.stag.arsrs.local      rsync=macbook-air.benohara.net
+webdns1.stag.arsrs.local        rsync=macbook-air.benohara.net
+stealth1.stag.arsrs.local       rsync=macbook-air.benohara.net
+ca-test.stag.arsrs.local        rsync=macbook-air.benohara.net
+netmon2.syd.arsrs.local         rsync=macbook-air.benohara.net
+slamon1.mel.arsrs.local         rsync=macbook-air.benohara.net
+slamon1.syd.arsrs.local         rsync=macbook-air.benohara.net
+ids1.mel.arsrs.local            rsync=macbook-air.benohara.net
+ids1.syd.arsrs.local            rsync=macbook-air.benohara.net
+syslog1.mel.arsrs.local         rsync=macbook-air.benohara.net
+syslog1.syd.arsrs.local         rsync=macbook-air.benohara.net
+au-stealth1.stag.arsrs.local    rsync=macbook-air.benohara.net
+au-web-mgmt1.stag.arsrs.local   rsync=macbook-air.benohara.net
+au-web-app1.stag.arsrs.local    rsync=macbook-air.benohara.net
+au-web-app1.mel.arsrs.local     rsync=macbook-air.benohara.net
+au-web-app2.mel.arsrs.local     rsync=macbook-air.benohara.net
+au-web-app3.mel.arsrs.local     rsync=macbook-air.benohara.net
+au-web-app1.syd.arsrs.local     rsync=macbook-air.benohara.net
+au-web-app2.syd.arsrs.local     rsync=macbook-air.benohara.net
+au-web-app3.syd.arsrs.local     rsync=macbook-air.benohara.net
+whois1.mel.arsrs.local          rsync=macbook-air.benohara.net
+whois2.mel.arsrs.local          rsync=macbook-air.benohara.net
+whois1.syd.arsrs.local          rsync=macbook-air.benohara.net
+whois2.syd.arsrs.local          rsync=macbook-air.benohara.net
+ote1.mel.arsrs.local            rsync=macbook-air.benohara.net
+ote2.mel.arsrs.local            rsync=macbook-air.benohara.net
+ote1.syd.arsrs.local            rsync=macbook-air.benohara.net
+ote2.syd.arsrs.local            rsync=macbook-air.benohara.net
+ote1.stag.arsrs.local           rsync=macbook-air.benohara.net
+registry1.mel.arsrs.local       rsync=macbook-air.benohara.net
+registry2.mel.arsrs.local       rsync=macbook-air.benohara.net
+registry3.mel.arsrs.local       rsync=macbook-air.benohara.net
+registry4.mel.arsrs.local       rsync=macbook-air.benohara.net
+registry5.mel.arsrs.local       rsync=macbook-air.benohara.net
+registry6.mel.arsrs.local       rsync=macbook-air.benohara.net
+registry1.syd.arsrs.local       rsync=macbook-air.benohara.net
+registry2.syd.arsrs.local       rsync=macbook-air.benohara.net
+registry3.syd.arsrs.local       rsync=macbook-air.benohara.net
+registry4.syd.arsrs.local       rsync=macbook-air.benohara.net
+registry5.syd.arsrs.local       rsync=macbook-air.benohara.net
+registry6.syd.arsrs.local       rsync=macbook-air.benohara.net
+escrow1.mel.arsrs.local         rsync=macbook-air.benohara.net
+escrow1.syd.arsrs.local         rsync=macbook-air.benohara.net
+escrow1.stag.arsrs.local        rsync=macbook-air.benohara.net
+reseller1.mel.arsrs.local       rsync=macbook-air.benohara.net
+reseller2.mel.arsrs.local       rsync=macbook-air.benohara.net
+reseller1.syd.arsrs.local       rsync=macbook-air.benohara.net
+reseller2.syd.arsrs.local       rsync=macbook-air.benohara.net
+ote-reseller1.mel.arsrs.local   rsync=macbook-air.benohara.net
+ote-reseller1.syd.arsrs.local   rsync=macbook-air.benohara.net
+reseller1.stag.arsrs.local      rsync=macbook-air.benohara.net
+ote-reseller1.stag.arsrs.local  rsync=macbook-air.benohara.net
+build1.mel.arsrs.local          rsync=macbook-air.benohara.net
+csr-prod-staging.stkildard.vic.ausregistry.com.au rsync=macbook-air.benohara.net
+whois1.stag.arsrs.local         rsync=macbook-air.benohara.net
+ote-orer-web1.mel.arsrs.local   rsync=macbook-air.benohara.net
+confluence1.office.arsrs.local  rsync=macbook-air.benohara.net
+docker1.stag.arsrs.local        rsync=macbook-air.benohara.net
+dev-cer-ci1.stkildard.vic.ausregistry.com.au    rsync=macbook-air.benohara.net
+dev-app1.stkildard.vic.ausregistry.com.au       rsync=macbook-air.benohara.net
+dev-app2.stkildard.vic.ausregistry.com.au       rsync=macbook-air.benohara.net
+dev-cer-testing2.stkildard.vic.ausregistry.com.au   rsync=macbook-air.benohara.net
+dev-cer-ci1.stkildard.vic.ausregistry.com.au    rsync=macbook-air.benohara.net
+dev-rhel6-showcase.stkildard.vic.ausregistry.com.au rsync=macbook-air.benohara.net
+dev-orer-testing1.stkildard.vic.ausregistry.com.au  rsync=macbook-air.benohara.net
+dev-vm1.stkildard.vic.ausregistry.com.au        rsync=macbook-air.benohara.net
+dev-vm2.stkildard.vic.ausregistry.com.au        rsync=macbook-air.benohara.net
+dev-util-linux1.stkildard.vic.ausregistry.com.au    rsync=macbook-air.benohara.net
+dev-dnrs-registry.stkildard.vic.ausregistry.com.au  rsync=macbook-air.benohara.net
+dev-cer-ci-desktop.stkildard.vic.ausregistry.com.au rsync=macbook-air.benohara.net
+dev-mingle.stkildard.vic.ausregistry.com.au     rsync=macbook-air.benohara.net
+dev-dnrs-eppclient.stkildard.vic.ausregistry.com.au rsync=macbook-air.benohara.net
+dev-cer-ci-dt1.stkildard.vic.ausregistry.com.au     rsync=macbook-air.benohara.net
+dev-cer-ci-dt2.stkildard.vic.ausregistry.com.au     rsync=macbook-air.benohara.net
+dev-cer-ci-dt3.stkildard.vic.ausregistry.com.au     rsync=macbook-air.benohara.net
+dev-db1.stkildard.vic.ausregistry.com.au    rsync=macbook-air.benohara.net
+dev-db2.stkildard.vic.ausregistry.com.au    rsync=macbook-air.benohara.net
+dev-dnrs-dev1.stkildard.vic.ausregistry.com.au  rsync=macbook-air.benohara.net
+jira-test.stag.arsrs.local      rsync=macbook-air.benohara.net
+ops1.office.arsrs.local         rsync=macbook-air.benohara.net
+cer-web1.mel.arsrs.local        rsync=macbook-air.benohara.net
+cer-web2.mel.arsrs.local        rsync=macbook-air.benohara.net
+cer-web1.syd.arsrs.local        rsync=macbook-air.benohara.net
+cer-web2.syd.arsrs.local        rsync=macbook-air.benohara.net
+cer-ote1.mel.arsrs.local        rsync=macbook-air.benohara.net
+cer-ote2.mel.arsrs.local        rsync=macbook-air.benohara.net
+cer-ote1.syd.arsrs.local        rsync=macbook-air.benohara.net
+cer-ote2.syd.arsrs.local        rsync=macbook-air.benohara.net
+
 [endhosts]
 

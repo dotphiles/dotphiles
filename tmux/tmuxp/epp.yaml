@@ -1,0 +1,19 @@
+session_name: epp
+start_directory: ~/ # load session relative to config location (project root).
+windows:
+- window_name: melbourne
+  focus: True
+  layout: tiled
+  options:
+    allow-rename: off
+  panes:
+  - ssh epp1.mel.arsrs.local
+  - ssh epp2.mel.arsrs.local
+- window_name: sydney
+  layout: tiled
+  options:
+    allow-rename: off
+  panes:
+  - ssh epp1.syd.arsrs.local
+  - ssh epp2.syd.arsrs.local
+

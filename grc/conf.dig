@@ -1,0 +1,57 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# Setup grc for `dig`
+#
+# Authors:
+#   Ben O'Hara <bohrara@gmail.com>
+#
+
+# domain
+regexp=[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,6}?\.
+#([a-zA-Z]+\.)+(com|org|net|edu)
+colours=magenta
+=======
+# dns result
+regexp=(\d+\s){0,1}IN\s(AAAA|A|AFSDB|APL|CERT|CNAME|DHCID|DLV|DNAME|DNSKEY|DS|HIP|IPSECKEY|KEY|KX|LOC|MX|NAPTR|NS|NSEC|NSEC3|NSEC3PARAM|PTR|RRSIG|RP|SIG|SOA|SPF|SRV|SSHFP|TA|TKEY|TSIG|TXT)
+colours=green
+=======
+# ip number
+regexp=\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}
+colours=magenta
+=======
+# ipv6 number
+regexp=(([0-9a-fA-F]{1,4})?\:\:?[0-9a-fA-F]{1,4})+
+colours=magenta
+=======
+# date/time
+regexp=(Mon|Tue|Wed|Thu|Fri|Sat|Sun)\s(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s([\d]{2})\s([\d]{2}:[\d]{2}:[\d]{2})\s([\d]{4})
+colours=blue
+=======
+# time
+regexp=\d+\smsec
+colours=green
+======
+# (,)
+regexp=\(|\)
+colours=yellow
+=======
+# ;;
+regexp=^[;]+
+colours=blue
+=======
+#: number
+regexp=:\s(\d+)(,){0,1}
+colours=green
+=======
+# Sections
+regexp=ANSWER\sSECTION:|Query\stime:|SERVER:|WHEN:|QUESTION\sSECTION|OPT\sPSEUDOSECTION|->>HEADER<<-|MSG\sSIZE|<<>>\sDiG\s[\d\.]+\s<<>>|QUERY|NOERROR|ANSWER|AUTHORITY|ADDITIONAL|rcvd
+colours=yellow
+=======
+# move stuff to background
+regexp=(flags:\s([a-z\s]+);)|opcode:|,\sstatus:|,\sid:|Got\sanswer:|global\soptions:.*$
+colours=bold blue
+=======
+# #number
+regexp=#[0-9]+
+colours=black

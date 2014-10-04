@@ -1,0 +1,22 @@
+session_name: blog
+start_directory: ~/Projects/benohara.com # load session relative to config location (project root).
+windows:
+- window_name: editor
+  focus: True
+  layout: main-horizontal
+  options:
+    main-pane-height: 30
+  panes:
+  - shell_command: 
+    - reset
+    - vim
+    - :NERDTree
+    focus: true
+  - jekyll serve -w
+- window_name: testing
+  layout: main-horizontal
+  options:
+    main-pane-height: 30
+  panes:
+  - pane
+  - pane

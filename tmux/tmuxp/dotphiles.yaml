@@ -1,0 +1,22 @@
+session_name: dotfiles
+start_directory: ~/.dotfiles # load session relative to config location (project root).
+windows:
+- window_name: editor
+  focus: True
+  layout: main-horizontal
+  options:
+    main-pane-height: 30
+  panes:
+  - shell_command: 
+    - reset
+    - vim
+    - :NERDTree
+    focus: true
+  - pane 
+- window_name: docs
+  layout: main-horizontal
+  options:
+    main-pane-height: 30
+  panes:
+  - pane
+  - pane
