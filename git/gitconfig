@@ -9,139 +9,145 @@
 
 # Global Config
 [user]
-  name = Ben O'Hara
-  email = "bohara@gmail.com"
-  signingkey = B2D779CE
+    name = Ben O'Hara
+    email = "bohara@gmail.com"
+    signingkey = B2D779CE
 
 [branch "master"]
-  remote = origin
-  merge = refs/heads/master
+    remote = origin
+    merge = refs/heads/master
 
 [color]
-  branch = always
-  diff = always
-  grep = always
-  interactive = always
-  pager = true
-  showbranch = auto
-  status = auto
-  ui = always
+    branch = always
+    diff = always
+    grep = always
+    interactive = always
+    pager = true
+    showbranch = auto
+    status = auto
+    ui = always
 
 [color "interactive"]
-  error = red bold
+    error = red bold
 
 [color "branch"]
-  current = yellow reverse
-  local = yellow
-  remote = green
+    current = yellow reverse
+    local = yellow
+    remote = green
 
 [color "diff"]
-  meta = yellow
-  frag = magenta
-  old = red
-  new = green
-  whitespace = white reverse
+    meta = yellow
+    frag = magenta
+    old = red
+    new = green
+    whitespace = white reverse
 
 [color "status"]
-  added = yellow
-  changed = green
-  untracked = cyan
-  branch = magenta
+    added = yellow
+    changed = green
+    untracked = cyan
+    branch = magenta
 
 [core]
-  pager = less -FRSX
-  whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+    pager = less -FRSX
+    whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
 
 [diff]
-  tool = vimdiff
+    tool = vimdiff
 
 [difftool]
-  prompt = false
+    prompt = false
 
 [merge]
-  tool = vimdiff
+    tool = vimdiff
 
 [alias]
-  # branch
-  b  = branch
-  bc = checkout -b
-  bl = branch -v
-  bL = branch -av
-  bx = branch -d
-  bX = branch -D
-  bm = branch -m
-  bM = branch -M
-  bs = show-branch
-  bS = show-branch -a
+    # branch
+    b  = branch
+    bc = checkout -b
+    bl = branch -v
+    bL = branch -av
+    bx = branch -d
+    bX = branch -D
+    bm = branch -m
+    bM = branch -M
+    bs = show-branch
+    bS = show-branch -a
 
-  # checkout/fetch/merge/push/rebase
-  # checkout
-  co  = checkout
-  co0 = checkout HEAD --
-  # fetch
-  f   = fetch
-  fm  = pull
-  fo  = fetch origin
-  # merge
-  m   = merge
-  mom = merge origin/master
-  # push
-  p   = push
-  pa  = push --all
-  pt  = push --tags
-  # rebase
-  r   = rebase
-  ra  = rebase --abort
-  rc  = rebase --continue
-  ri  = rebase --interactive
-  rs  = rebase --skip
-  rom = rebase origin/master
+    # checkout/fetch/merge/push/rebase
+    # checkout
+    co  = checkout
+    co0 = checkout HEAD --
+    # fetch
+    f   = fetch
+    fm  = pull
+    fo  = fetch origin
+    # merge
+    m   = merge
+    mom = merge origin/master
+    # push
+    p   = push
+    pa  = push --all
+    pt  = push --tags
+    # rebase
+    r   = rebase
+    ra  = rebase --abort
+    rc  = rebase --continue
+    ri  = rebase --interactive
+    rs  = rebase --skip
+    rom = rebase origin/master
 
-  # commit
-  c      = commit -v
-  ca     = commit --all -v
-  cm     = commit --message
-  cam    = commit --all --message
-  camend = commit --amend --reuse-message HEAD
-  cundo  = reset --soft "HEAD^"
-  cp     = cherry-pick
+    # commit
+    c      = commit -v
+    ca     = commit --all -v
+    cm     = commit --message
+    cam    = commit --all --message
+    camend = commit --amend --reuse-message HEAD
+    cundo  = reset --soft "HEAD^"
+    cp     = cherry-pick
 
-  # diff
-  d    = diff          # Diff working dir to index
-  ds   = diff --staged # Diff index to HEAD
-  dc   = diff --staged # Diff index to HEAD
-  dh   = diff HEAD     # Diff working dir and index to HEAD
-  hub  = browse
-  hubd = compare
+    # diff
+    d    = diff          # Diff working dir to index
+    ds   = diff --staged # Diff index to HEAD
+    dc   = diff --staged # Diff index to HEAD
+    dh   = diff HEAD     # Diff working dir and index to HEAD
+    hub  = browse
+    hubd = compare
 
-  # index
-  s  = status
-  a  = add
-  ia = add
-  ir = reset
+    # index
+    s  = status
+    a  = add
+    ia = add
+    ir = reset
 
-  # log
-  l   = log --topo-order --pretty=format:'%C(yellow)%h %C(cyan)%cn %C(blue)%cr%C(reset) %s'
-  ls  = log --topo-order --stat --pretty=format:'%C(bold)%C(yellow)Commit:%C(reset) %C(yellow)%H%C(red)%d%n%C(bold)%C(yellow)Author:%C(reset) %C(cyan)%an <%ae>%n%C(bold)%C(yellow)Date:%C(reset)   %C(blue)%ai (%ar)%C(reset)%n%+B'
-  ld  = log --topo-order --stat --patch --full-diff --pretty=format:'%C(bold)%C(yellow)Commit:%C(reset) %C(yellow)%H%C(red)%d%n%C(bold)%C(yellow)Author:%C(reset) %C(cyan)%an <%ae>%n%C(bold)%C(yellow)Date:%C(reset)   %C(blue)%ai (%ar)%C(reset)%n%+B'
-  lg  = log --topo-order --all --graph --pretty=format:'%C(yellow)%h%C(reset) %s %C(red)%d%C(reset)%n'
-  lga = log --topo-order --all --graph --pretty=format:'%C(yellow)%h %C(cyan)%cn%C(reset) %s %C(red)%d%C(reset)%n'
-  lm  = log --topo-order --pretty=format:'%s'
-  lh  = shortlog --summary --numbered
-  llf = fsck --lost-found
+    # log
+    l   = log --topo-order --pretty=format:'%C(yellow)%h %C(cyan)%cn %C(blue)%cr%C(reset) %s'
+    ls  = log --topo-order --stat --pretty=format:'%C(bold)%C(yellow)Commit:%C(reset) %C(yellow)%H%C(red)%d%n%C(bold)%C(yellow)Author:%C(reset) %C(cyan)%an <%ae>%n%C(bold)%C(yellow)Date:%C(reset)   %C(blue)%ai (%ar)%C(reset)%n%+B'
+    ld  = log --topo-order --stat --patch --full-diff --pretty=format:'%C(bold)%C(yellow)Commit:%C(reset) %C(yellow)%H%C(red)%d%n%C(bold)%C(yellow)Author:%C(reset) %C(cyan)%an <%ae>%n%C(bold)%C(yellow)Date:%C(reset)   %C(blue)%ai (%ar)%C(reset)%n%+B'
+    lg  = log --topo-order --all --graph --pretty=format:'%C(yellow)%h%C(reset) %s %C(red)%d%C(reset)%n'
+    lg  = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    lga = log --topo-order --all --graph --pretty=format:'%C(yellow)%h %C(cyan)%cn%C(reset) %s %C(red)%d%C(reset)%n'
+    lm  = log --topo-order --pretty=format:'%s'
+    lh  = shortlog --summary --numbered
+    llf = fsck --lost-found
 
-  # remote
-  re  = remote
-  rel = remote --verbose
-  rea = remote add
-  rex = remote rm
-  rem = remote rename
+    lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+    lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+
+    # remote
+    re  = remote
+    rel = remote --verbose
+    rea = remote add
+    rex = remote rm
+    rem = remote rename
 
 [push]
     default = matching
 
 [url "git@github.com:"]
-  insteadof = github:
+    insteadof = github:
 [url "git@git.stkildard.vic.ausregistry.com.au:"]
-  insteadof = arsgit:
+    insteadof = arsgit:
+[url "bohara@home.benohara.net:~/Projects/git-repos/"]
+    insteadof = homegit:
 
