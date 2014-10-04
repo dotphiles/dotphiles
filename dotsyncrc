@@ -292,5 +292,15 @@ dev-db1.stkildard.vic.ausregistry.com.au    rsync=macbook-air.benohara.net
 dev-db2.stkildard.vic.ausregistry.com.au    rsync=macbook-air.benohara.net
 dev-dnrs-dev1.stkildard.vic.ausregistry.com.au  rsync=macbook-air.benohara.net
 jira-test.stag.arsrs.local      rsync=macbook-air.benohara.net
+ops1.office.arsrs.local         rsync=macbook-air.benohara.net
+cer-web1.mel.arsrs.local        rsync=macbook-air.benohara.net
+cer-web2.mel.arsrs.local        rsync=macbook-air.benohara.net
+cer-web1.syd.arsrs.local        rsync=macbook-air.benohara.net
+cer-web2.syd.arsrs.local        rsync=macbook-air.benohara.net
+cer-ote1.mel.arsrs.local        rsync=macbook-air.benohara.net
+cer-ote2.mel.arsrs.local        rsync=macbook-air.benohara.net
+cer-ote1.syd.arsrs.local        rsync=macbook-air.benohara.net
+cer-ote2.syd.arsrs.local        rsync=macbook-air.benohara.net
+
 [endhosts]
 
