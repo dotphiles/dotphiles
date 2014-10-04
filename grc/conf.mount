@@ -1,0 +1,33 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# Setup grc for `mount`
+#
+# Authors:
+#   Ben O'Hara <bohrara@gmail.com>
+#
+
+#/full/path
+regexp=\s/[-\w\d.]+(\s|/[-\w\d./]+)
+colours=cyan
+=======
+#filesystem
+regexp=^\w+\s
+colours=yellow
+=======
+#type filesystem
+#regexp=(?<=type)\s*
+#colours=red
+#=======
+# /dev/sda
+regexp=^(/dev/)?[s]d[a-f][0-9]*(?=[^\w\d]|$)
+colours=blue
+=======
+# /dev/disk
+regexp=^(/dev/)?disk[0-9]*(?=[^\w\d]|$)
+colours=blue
+=======
+#
+#mount options
+regexp=(?<=[,(])[^,]*(?=[,)])
+colours=green

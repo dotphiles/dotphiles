@@ -9,22 +9,22 @@
 
 # new lines and filenames (unified diff)
 regexp=^\+(.*$)
-colours=bold green
+colours=green
 count=more
 =======
 # removed lines and filenames (unified diff)
 regexp=^\-(--.+$|[^\-].*$|$)
-colours=bold red
+colours=red
 count=more
 ========
 # new lines
 regexp=^\>([^\>].*|$)
-colours=bold green
+colours=green
 count=more
 =======
 # removed lines
 regexp=^\<([^\<].*|$)
-colours=bold red
+colours=red
 count=more
 =======
 # lines affected
