@@ -3,7 +3,7 @@
 
 This script adds the following things:
 
-- Readline bindings, tab completion, and history (in ~/.pyhistory,
+- Readline bindings, tab completion, and history (in ~/.history/python,
   which can be disabled by setting NOHIST in the environment)
 
 - Pretty printing of expression output (with Pygments highlighting)
@@ -71,7 +71,11 @@ def _pythonrc_enable_history():
         atexit.register(write_history)
 
         if os.path.isfile(history_path):
-            readline.read_history_file(history_path)
+            try:
+                readline.read_history_file(history_path)
+            except IOError:
+                pass
+		
         readline.set_history_length(-1)
 
 
