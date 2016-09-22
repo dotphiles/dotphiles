@@ -20,11 +20,11 @@
 dotsyncrc
 #ack/ackrc
 #aptitude
-#bin:bin
+bin:bin
 #ctags/ctags
 #cmus
 #curl/curlrc
-#git/gitconfig
+git/gitconfig
 #git/gitignore
 #git/gitattributes
 #git/tigrc
@@ -73,7 +73,7 @@ dotsyncrc
 #zsh/zlogout
 #zsh/zprofile
 #zsh/zshenv
-#zsh/zshrc
+zsh/zshrc
 [endfiles]
 
 # Hosts to sync
