@@ -7,9 +7,7 @@
 #    Ben O'Hara <bohara@gmail.com>
 #
 
-#zsh
-#git
-#vim
-#tmux
-#nmap
+zsh
+git
+nmap
 
