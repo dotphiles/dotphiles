@@ -43,6 +43,7 @@ git/gitconfig
 zsh/zshrc
 nano/nanorc
 nano.d
+oh-my-zsh
 [endfiles]
 
 # Hosts to sync
