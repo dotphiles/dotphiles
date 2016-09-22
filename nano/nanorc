@@ -152,54 +152,81 @@ unset wordbounds
 
 ## Syntax Highlighting
 
-#apacheconf
-#include "~/.nano.d/syntax-highlighting/apacheconf.nanorc"
-#asm
-#include "~/.nano.d/syntax-highlighting/asm.nanorc"
-#c
-#include "~/.nano.d/syntax-highlighting/c.nanorc"
-#conf
-#include "~/.nano.d/syntax-highlighting/conf.nanorc"
-#css
-include "~/.nano.d/syntax-highlighting/css.nanorc"
-#cython
-#include "~/.nano.d/syntax-highlighting/cython.nanorc"
-#fortran
-#include "~/.nano.d/syntax-highlighting/fortran.nanorc"
-#gentoo
-#include "~/.nano.d/syntax-highlighting/gentoo.nanorc"
-#groff
-#include "~/.nano.d/syntax-highlighting/groff.nanorc"
-#html
-include "~/.nano.d/syntax-highlighting/html.nanorc"
-#java
-include "~/.nano.d/syntax-highlighting/java.nanorc"
-#lua
-#include "~/.nano.d/syntax-highlighting/lua.nanorc"
-#man
-include "~/.nano.d/syntax-highlighting/man.nanorc"
-#mutt
-#include "~/.nano.d/syntax-highlighting/mutt.nanorc"
-#nanorc
-include "~/.nano.d/syntax-highlighting/nanorc.nanorc"
-#patch
-include "~/.nano.d/syntax-highlighting/patch.nanorc"
-#perl
-include "~/.nano.d/syntax-highlighting/perl.nanorc"
-#php
-include "~/.nano.d/syntax-highlighting/php.nanorc"
-#pov
-#include "~/.nano.d/syntax-highlighting/pov.nanorc"
-#python
-include "~/.nano.d/syntax-highlighting/python.nanorc"
-#reST
-#include "~/.nano.d/syntax-highlighting/reST.nanorc"
-#ruby
-include "~/.nano.d/syntax-highlighting/ruby.nanorc"
-#sh
-include "~/.nano.d/syntax-highlighting/sh.nanorc"
-#tex
-include "~/.nano.d/syntax-highlighting/tex.nanorc"
-#xml
-include "~/.nano.d/syntax-highlighting/xml.nanorc"
-
+include "~/.nano.d/apacheconf.nanorc"
+include "~/.nano.d/arduino.nanorc"
+include "~/.nano.d/asciidoc.nanorc"
+include "~/.nano.d/asm.nanorc"
+include "~/.nano.d/awk.nanorc"
+include "~/.nano.d/c.nanorc"
+include "~/.nano.d/clojure.nanorc"
+include "~/.nano.d/cmake.nanorc"
+include "~/.nano.d/coffeescript.nanorc"
+include "~/.nano.d/colortest.nanorc"
+include "~/.nano.d/conf.nanorc"
+include "~/.nano.d/csharp.nanorc"
+include "~/.nano.d/css.nanorc"
+include "~/.nano.d/cython.nanorc"
+include "~/.nano.d/dot.nanorc"
+include "~/.nano.d/email.nanorc"
+include "~/.nano.d/Dockerfile.nanorc"
+include "~/.nano.d/fish.nanorc"
+include "~/.nano.d/fortran.nanorc"
+include "~/.nano.d/gentoo.nanorc"
+include "~/.nano.d/git.nanorc"
+include "~/.nano.d/gitcommit.nanorc"
+include "~/.nano.d/glsl.nanorc"
+include "~/.nano.d/go.nanorc"
+include "~/.nano.d/groff.nanorc"
+include "~/.nano.d/haml.nanorc"
+include "~/.nano.d/haskell.nanorc"
+include "~/.nano.d/html.nanorc"
+include "~/.nano.d/ini.nanorc"
+include "~/.nano.d/inputrc.nanorc"
+include "~/.nano.d/java.nanorc"
+include "~/.nano.d/javascript.nanorc"
+include "~/.nano.d/js.nanorc"
+include "~/.nano.d/json.nanorc"
+include "~/.nano.d/keymap.nanorc"
+include "~/.nano.d/kickstart.nanorc"
+include "~/.nano.d/ledger.nanorc"
+include "~/.nano.d/lisp.nanorc"
+include "~/.nano.d/lua.nanorc"
+include "~/.nano.d/makefile.nanorc"
+include "~/.nano.d/man.nanorc"
+include "~/.nano.d/markdown.nanorc"
+include "~/.nano.d/mpdconf.nanorc"
+include "~/.nano.d/mutt.nanorc"
+include "~/.nano.d/nanorc.nanorc"
+include "~/.nano.d/nginx.nanorc"
+include "~/.nano.d/ocaml.nanorc"
+include "~/.nano.d/patch.nanorc"
+include "~/.nano.d/peg.nanorc"
+include "~/.nano.d/perl.nanorc"
+include "~/.nano.d/perl6.nanorc"
+include "~/.nano.d/php.nanorc"
+include "~/.nano.d/pkg-config.nanorc"
+include "~/.nano.d/pkgbuild.nanorc"
+include "~/.nano.d/po.nanorc"
+include "~/.nano.d/pov.nanorc"
+include "~/.nano.d/privoxy.nanorc"
+include "~/.nano.d/python.nanorc"
+include "~/.nano.d/reST.nanorc"
+include "~/.nano.d/rpmspec.nanorc"
+include "~/.nano.d/ruby.nanorc"
+include "~/.nano.d/rust.nanorc"
+include "~/.nano.d/scala.nanorc"
+include "~/.nano.d/sed.nanorc"
+include "~/.nano.d/sh.nanorc"
+include "~/.nano.d/sls.nanorc"
+include "~/.nano.d/sql.nanorc"
+include "~/.nano.d/swift.nanorc"
+include "~/.nano.d/systemd.nanorc"
+include "~/.nano.d/tcl.nanorc"
+include "~/.nano.d/tex.nanorc"
+include "~/.nano.d/vala.nanorc"
+include "~/.nano.d/vi.nanorc"
+include "~/.nano.d/xml.nanorc"
+include "~/.nano.d/xresources.nanorc"
+include "~/.nano.d/yaml.nanorc"
+include "~/.nano.d/yum.nanorc"
+include "~/.nano.d/zsh.nanorc"
