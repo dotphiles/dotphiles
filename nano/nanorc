@@ -11,7 +11,7 @@
 set autoindent
 
 # Create backup files in "filename~"
-set backup
+#set backup
 
 # Set the directory where nano puts unique backup files if file backups
 # are enabled.
@@ -62,16 +62,16 @@ unset mouse
 set multibuffer
 
 # Don't convert files from DOS/Mac format.
-set noconvert
+#set noconvert
 
 # Don't follow symlinks when writing files.
-unset nofollow
+#unset nofollow
 
 # Don't display the help lists at the bottom of the screen.
-set nohelp
+#set nohelp
 
 # Don't add newlines to the ends of files.
-unset nonewlines
+#unset nonewlines
 
 # Don't wrap text at all.
 unset nowrap

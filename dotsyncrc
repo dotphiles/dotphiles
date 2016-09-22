@@ -42,7 +42,7 @@ git/gitconfig
 #zsh/zshenv
 zsh/zshrc
 nano/nanorc
-nano/syntax-highlighting
+nano.d
 [endfiles]
 
 # Hosts to sync
