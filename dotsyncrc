@@ -20,7 +20,7 @@
 dotsyncrc
 #ack/ackrc
 #aptitude
-bin:bin
+bin
 #ctags/ctags
 #cmus
 #curl/curlrc
@@ -79,14 +79,6 @@ zsh/zshrc
 # Hosts to sync
 ## hostname                     type=masterhost, ANY or NONE    files=dotfile:tolink,another:tolink
 [hosts]
-#host1.example.com               git=ANY                        files=custom/dotfile    #git repo, pull from anywhere and link a custom dotfile
-#host2.example.com               git=ANY                                                #git repo, pull from anywhere
-#host3.example.com               git=ANY                                                #git repo, pull from anywhere
-#host4.example.com               git=host5.example.com                                  #git repo, pull from host5
-#host5.example.com               git=NONE                                               #git repo, local only
-#host6.example.net               rsync=host1.example.com                                #rsync mirror, push from host1
-#host7.example.net               rsync=host2.example.com                                #rsync mirror, push from host2
-#host8.example.net               rsync=host2.example.com                                #rsync mirror, push from host2
-#host9.example.net               rsync=host2.example.com                                #rsync mirror, push from host2
+linux-vm			git=any
 [endhosts]
 
