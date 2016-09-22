@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [[ "$1" == "alpine" ]]; then
+    docker run --rm -it alpine:latest /bin/sh
+elif [[ "$1"  == "centos" ]]; then
+    docker run --rm -it centos:latest /bin/bash -l
+else
+    docker run --rm -it ubuntu:latest /bin/bash -l
+fi
