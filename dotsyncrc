@@ -50,5 +50,6 @@ oh-my-zsh
 ## hostname                     type=masterhost, ANY or NONE    files=dotfile:tolink,another:tolink
 [hosts]
 linux-vm			git=any
+alpha               git=any
 [endhosts]
 
