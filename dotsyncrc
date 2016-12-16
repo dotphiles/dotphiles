@@ -51,5 +51,6 @@ oh-my-zsh
 [hosts]
 linux-vm			git=any
 alpha               git=any
+Chandra			git=any
 [endhosts]
 
