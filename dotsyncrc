@@ -28,8 +28,8 @@ git/gitconfig
 #python/pythonrc
 #python/pylintrc
 #screen/screenrc
-#shell/hushlogin
-#shell/urlview
+shell/hushlogin
+shell/urlview
 #ssh
 #task/task
 #task/taskrc
@@ -49,8 +49,7 @@ oh-my-zsh
 # Hosts to sync
 ## hostname                     type=masterhost, ANY or NONE    files=dotfile:tolink,another:tolink
 [hosts]
-linux-vm			git=any
+messi		git=any
 alpha               git=any
-Chandra			git=any
 [endhosts]
 
