@@ -94,3 +94,8 @@ fi
 if [ -f /home/lonix/google-cloud-sdk/completion.zsh.inc ]; then
   source '/home/lonix/google-cloud-sdk/completion.zsh.inc'
 fi
+
+# This adds zsh completion for AWS CLI
+if [ -f /usr/bin/aws_zsh_completer.sh ];then
+  source '/usr/bin/aws_zsh_completer.sh'
+fi
