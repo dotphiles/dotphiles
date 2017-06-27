@@ -50,6 +50,6 @@ oh-my-zsh
 ## hostname                     type=masterhost, ANY or NONE    files=dotfile:tolink,another:tolink
 [hosts]
 messi		git=any
-alpha               git=any
+alpha.lonix.me               rsync=messi
 [endhosts]
 
