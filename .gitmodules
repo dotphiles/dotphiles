@@ -28,3 +28,6 @@
 [submodule "dracula/dracula-zsh"]
 	path = dracula/dracula-zsh
 	url = https://github.com/dracula/zsh.git
+[submodule "zsh_custom/themes/dracula"]
+	path = zsh_custom/themes/dracula
+	url = https://github.com/dracula/zsh.git
