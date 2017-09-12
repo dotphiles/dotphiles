@@ -20,16 +20,9 @@
 dotsyncrc
 bin
 git/gitconfig
-#git/gitignore
-#git/gitattributes
-#git/tigrc
-#irssi
-#mysql/my.cnf
-#python/pythonrc
-#python/pylintrc
-#screen/screenrc
+git/gitignore
+git/gitattributes
 shell/hushlogin
-shell/urlview
 #ssh
 #task/task
 #task/taskrc
@@ -50,6 +43,6 @@ oh-my-zsh
 ## hostname                     type=masterhost, ANY or NONE    files=dotfile:tolink,another:tolink
 [hosts]
 messi		git=any
-alpha.lonix.me               rsync=messi
+alpha.lonix.me               git=any
 [endhosts]
 
