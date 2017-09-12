@@ -150,4 +150,4 @@ unset view
 # as part of a word.
 unset wordbounds
 
-include ~./nano/syntax-highlighting/*.nanorc
+include ~/.syntax-highlighting/*.nanorc
