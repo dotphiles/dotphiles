@@ -25,3 +25,6 @@
 [submodule "nano/syntax-highlighting"]
 	path = nano/syntax-highlighting
 	url = https://github.com/scopatz/nanorc.git
+[submodule "dracula/dracula-zsh"]
+	path = dracula/dracula-zsh
+	url = https://github.com/dracula/zsh.git
