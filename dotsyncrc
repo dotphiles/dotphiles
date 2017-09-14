@@ -38,5 +38,6 @@ oh-my-zsh
 [hosts]
 messi		git=any
 alpha.lonix.me               git=any
+Stians-MacBook-Pro		git=any
 [endhosts]
 
