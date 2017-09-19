@@ -30,7 +30,7 @@ Installation
 
   2. Clone your fork.
 
-        git clone --recursive git@github.com:*username*/dotphiles.git ~/.dotfiles
+     `git clone --recursive git@github.com:*username*/dotphiles.git ~/.dotfiles`
 
   3. Setup your terminal and the dotfiles you want to use, see below.
 
