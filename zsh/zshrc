@@ -52,7 +52,7 @@ HIST_STAMPS="dd.mm.yyyy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colorize cp screen tugboat wd go github docker gitignore themes)
+plugins=(git colorize aws brew cask pip vagrant cp screen osx tugboat go github docker gitignore themes)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -96,3 +96,6 @@ fi
 if [ -f /usr/local/bin/aws_zsh_completer.sh ];then
   source '/usr/local/bin/aws_zsh_completer.sh'
 fi
+
+source ~/.iterm2_shell_integration.`basename $SHELL`
+
