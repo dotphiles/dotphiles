@@ -31,3 +31,6 @@
 [submodule "zsh_custom/themes/dracula"]
 	path = zsh_custom/themes/dracula
 	url = https://github.com/dracula/zsh.git
+[submodule "zsh_custom/plugins/zsh-autosuggestions"]
+	path = zsh_custom/plugins/zsh-autosuggestions
+	url = git://github.com/zsh-users/zsh-autosuggestions
