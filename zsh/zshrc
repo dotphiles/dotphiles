@@ -2,14 +2,14 @@
 export PATH=$HOME/.bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/e214048/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 #ZSH Custom path
-ZSH_CUSTOM=/Users/e214048/.zsh_custom
+ZSH_CUSTOM=$HOME/.zsh_custom
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="dracula/dracula"
+ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -86,7 +86,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export EDITOR='subl -w'
 
-
+. /Users/e214048/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/powerline.zshrc
 # This adds zsh completion for AWS CLI 
 if [ -f /usr/bin/aws_zsh_completer.sh ];then 
   source '/usr/bin/aws_zsh_completer.sh'

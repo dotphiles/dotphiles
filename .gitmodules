@@ -34,3 +34,6 @@
 [submodule "zsh_custom/plugins/zsh-autosuggestions"]
 	path = zsh_custom/plugins/zsh-autosuggestions
 	url = git://github.com/zsh-users/zsh-autosuggestions
+[submodule "zsh_custom/themes/powerlevel9k"]
+	path = zsh_custom/themes/powerlevel9k
+	url = https://github.com/bhilburn/powerlevel9k.git
