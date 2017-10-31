@@ -37,7 +37,7 @@ oh-my-zsh
 ## hostname                     type=masterhost, ANY or NONE    files=dotfile:tolink,another:tolink
 [hosts]
 messi		git=any
-alpha.lonix.me               rsync=Stians-MacBook-Pro
-Stians-MacBook-Pro		git=any
+alpha.lonix.me               rsync=algol
+algol		git=any
 [endhosts]
 
