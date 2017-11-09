@@ -13,6 +13,7 @@ ZSH_CUSTOM=$HOME/.zsh_custom
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
 ## Local Function for Shspotify
+
 custom_spotify () {
 #    local color='%F{cyan}'
   state=`osascript -e 'tell application "Spotify" to player state as string'`;
@@ -58,6 +59,8 @@ alias prev="spotify prev"
 
 ## Sources
 
+#zsh-completions
+fpath=(/usr/local/share/zsh-completions $fpath)
 #Import oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 

@@ -39,5 +39,6 @@ oh-my-zsh
 messi		git=any
 alpha.lonix.me               rsync=algol
 algol		git=any
+irc.lonix.me                rsync=algol
 [endhosts]
 

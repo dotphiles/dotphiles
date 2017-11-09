@@ -142,6 +142,7 @@
 
 [push]
     default = matching
+	followTags = true
 
 [url "git@github.com:"]
     insteadof = github:
@@ -151,3 +152,5 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[fetch]
+	prune = true
