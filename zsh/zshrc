@@ -1,16 +1,51 @@
-## Exports
-export PATH=$HOME/.bin:/usr/local/bin:$PATH
-export ZSH=$HOME/.oh-my-zsh
-
-## Sources
-
 ## My custom Vars
 AWS_DEFAULT_PROFILE=default
 POWERLEVEL9K_MODE='nerdfont-complete'
 
-## ZSH Custom path
-ZSH_CUSTOM=$HOME/.zsh_custom
-ZSH_THEME="powerlevel9k/powerlevel9k"
+#Export for personal Binarys
+export PATH=$HOME/.bin:/usr/local/bin:$PATH
+
+#zsh-completions
+fpath=(/usr/local/share/zsh-completions $fpath)
+
+## Antigen
+source $HOME/.antigen/antigen.zsh
+
+##Antigen configuration
+antigen use oh-my-zsh
+
+## Always Bundles
+antigen bundle <<EOBUNDLE
+  git
+  zsh-users/zsh-syntax-highlighting
+  zsh-users/zsh-autosuggestions
+  zsh-users/zsh-completions
+  desyncr/auto-ls
+  caarlos0/zsh-open-pr
+  colorize
+EOBUNDLE
+
+## Darwin Bundles
+if [[ $(uname) = "Darwin" ]]; then
+  antigen bundle <<EOMAC
+  brew
+  osx
+EOMAC
+fi
+
+## Docker Bundles
+if [[ $(hash docker) ]]; then
+  antigen bundle docker
+fi
+
+
+##Themeing for Antigen
+antigen theme bhilburn/powerlevel9k powerlevel9k
+#antigen theme iam4x/zsh-iterm-touchbar
+
+##Apply antigen Configuration
+antigen apply
+
 
 ## Local Function for Shspotify
 
@@ -25,23 +60,11 @@ custom_spotify () {
   fi
 }
 
-
-
-## Oh-my-zsh Settings
-#Disables Auto-update of ZSH
-DISABLE_AUTO_UPDATE="true"
-#Red dots while waiting for completion
-COMPLETION_WAITING_DOTS="true"
-#Make autocompletion insensitive
-CASE_SENSITIVE="false"
-#Interchangable Hypens _ & -
-HYPHEN_INSENSITIVE="false"
-#Command Autocorrect
-ENABLE_CORRECTION="true"
-#History timestamp format
-HIST_STAMPS="dd.mm.yyyy"
-#Plugins
-plugins=(zsh-autosuggestions git colorize aws brew cask pip vagrant cp screen osx tugboat go github docker gitignore themes)
+## Alias List
+alias next="spotify next"
+alias play="spotify play"
+alias pause="spotify pause"
+alias prev="spotify prev"
 
 
 ##Set Editor for both ssh and Loal sessions
@@ -51,18 +74,7 @@ else
     export EDITOR='subl -w '
 fi
 
-## Alias List
-alias next="spotify next"
-alias play="spotify play"
-alias pause="spotify pause"
-alias prev="spotify prev"
 
-## Sources
-
-#zsh-completions
-fpath=(/usr/local/share/zsh-completions $fpath)
-#Import oh-my-zsh
-source $ZSH/oh-my-zsh.sh
 
 # This adds zsh completion for AWS CLI 
 if [ -f /usr/bin/aws_zsh_completer.sh ];then 
@@ -188,24 +200,3 @@ POWERLEVEL9K_ALWAYS_SHOW_USER=false #Always show the username, but conditionaliz
 POWERLEVEL9K_CONTEXT_TEMPLATE=%n@%m
 POWERLEVEL9K_CONTEXT_BACKGROUND="black"
 POWERLEVEL9K_CONTEXT_FOREGROUND="cyan"
-
-# ##History
-# POWERLEVEL9K_HISTORY_FOREGROUND="cyan"
-# POWERLEVEL9K_HISTORY_BACKGROUND="black"
-
-##Misc
-# POWERLEVEL9K_ROOT_INDICATOR_BACKGROUND="235"
-# POWERLEVEL9K_ROOT_INDICATOR_FOREGROUND="red"
-# POWERLEVEL9K_USER_DEFAULT_BACKGROUND="235"
-# POWERLEVEL9K_USER_DEFAULT_FOREGROUND="cyan"
-# POWERLEVEL9K_USER_ROOT_BACKGROUND="235"
-# POWERLEVEL9K_USER_ROOT_FOREGROUND="red"
-# POWERLEVEL9K_USER_ICON="\uF415" #
-# POWERLEVEL9K_ROOT_ICON="\u26A1" # ⚡
-# POWERLEVEL9K_HOST_LOCAL_BACKGROUND="235"
-# POWERLEVEL9K_HOST_LOCAL_FOREGROUND="cyan"
-# POWERLEVEL9K_HOST_REMOTE_BACKGROUND="235"
-# POWERLEVEL9K_HOST_REMOTE_FOREGROUND="cyan"
-# POWERLEVEL9K_HOST_ICON="\uF109" #
-# POWERLEVEL9K_HOST_ICON_FOREGROUND="red"
-# POWERLEVEL9K_HOST_ICON_BACKGROUND="black"

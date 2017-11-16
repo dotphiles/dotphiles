@@ -30,7 +30,7 @@ nano/nanorc
 nano/syntax-highlighting
 zsh_custom
 nano.d
-oh-my-zsh
+antigen
 [endfiles]
 
 # Hosts to sync

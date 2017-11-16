@@ -37,3 +37,6 @@
 [submodule "zsh_custom/themes/powerlevel9k"]
 	path = zsh_custom/themes/powerlevel9k
 	url = https://github.com/bhilburn/powerlevel9k.git
+[submodule "antigen"]
+	path = antigen
+	url = https://github.com/zsh-users/antigen.git
