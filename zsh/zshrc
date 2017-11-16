@@ -15,7 +15,7 @@ source $HOME/.antigen/antigen.zsh
 antigen use oh-my-zsh
 
 ## Always Bundles
-antigen bundle <<EOBUNDLE
+antigen bundles <<EOBUNDLE
   git
   zsh-users/zsh-syntax-highlighting
   zsh-users/zsh-autosuggestions
@@ -27,7 +27,7 @@ EOBUNDLE
 
 ## Darwin Bundles
 if [[ $(uname) = "Darwin" ]]; then
-  antigen bundle <<EOMAC
+  antigen bundles <<EOMAC
     brew
     osx
 EOMAC
@@ -48,17 +48,16 @@ antigen apply
 
 
 ## Local Function for Shspotify
-
-custom_spotify () {
-#    local color='%F{cyan}'
-  state=`osascript -e 'tell application "Spotify" to player state as string'`;
-  if [ $state = "playing" ]; then
-    artist=`osascript -e 'tell application "Spotify" to artist of current track as string'`;
-    track=`osascript -e 'tell application "Spotify" to name of current track as string'`;
-
+if [[ $(uname) = "Darwin" ]]; then
+  custom_spotify () {
+  #    local color='%F{cyan}'
+    state=`osascript -e 'tell application "Spotify" to player state as string'`;
+    if [ $state = "playing" ]; then
+      artist=`osascript -e 'tell application "Spotify" to artist of current track as string'`;
+      track=`osascript -e 'tell application "Spotify" to name of current track as string'`;
       echo -n "\uf485 $artist - $track " ; 
-  fi
-}
+    fi
+  }
 
 ## Alias List
 alias next="spotify next"
@@ -66,6 +65,7 @@ alias play="spotify play"
 alias pause="spotify pause"
 alias prev="spotify prev"
 
+fi
 
 ##Set Editor for both ssh and Loal sessions
 if [[ -n $SSH_CONNECTION ]]; then
