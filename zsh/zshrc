@@ -28,8 +28,8 @@ EOBUNDLE
 ## Darwin Bundles
 if [[ $(uname) = "Darwin" ]]; then
   antigen bundle <<EOMAC
-  brew
-  osx
+    brew
+    osx
 EOMAC
 fi
 
