@@ -5,8 +5,9 @@ POWERLEVEL9K_MODE='nerdfont-complete'
 #Export for personal Binarys
 export PATH=$HOME/.bin:/usr/local/bin:$PATH
 
+GENCOMPL_FPATH=$HOME/.zsh-completions
 #zsh-completions
-fpath=(/usr/local/share/zsh-completions $fpath)
+fpath=(/usr/local/share/zsh-completions $GENCOMPL_FPATH $fpath)
 
 ## Antigen
 source $HOME/.antigen/antigen.zsh
@@ -23,6 +24,7 @@ antigen bundles <<EOBUNDLE
   desyncr/auto-ls
   caarlos0/zsh-open-pr
   colorize
+  RobSis/zsh-completion-generator
 EOBUNDLE
 
 ## Darwin Bundles
@@ -35,7 +37,7 @@ fi
 
 ## Docker Bundles
 if [[ $(hash docker) ]]; then
-  antigen bundle docker
+  antigen bundles docker
 fi
 
 
@@ -65,7 +67,10 @@ alias play="spotify play"
 alias pause="spotify pause"
 alias prev="spotify prev"
 
+else
+  custom_spotify(){}
 fi
+
 
 ##Set Editor for both ssh and Loal sessions
 if [[ -n $SSH_CONNECTION ]]; then
