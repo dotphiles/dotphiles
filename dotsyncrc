@@ -37,8 +37,8 @@ antigen
 ## hostname                     type=masterhost, ANY or NONE    files=dotfile:tolink,another:tolink
 [hosts]
 messi		git=any
-alpha.lonix.me               rsync=algol
+alpha.lonix.me               git=algol
 algol		git=any
-irc.lonix.me                rsync=algol
+#irc.lonix.me                rsync=algol
 [endhosts]
 
