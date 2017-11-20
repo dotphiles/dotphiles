@@ -25,6 +25,9 @@ antigen bundles <<EOBUNDLE
   caarlos0/zsh-open-pr
   colorize
   RobSis/zsh-completion-generator
+  unixorn/autoupdate-antigen.zshplugin
+  peterhurford/git-it-on.zsh
+  arzzen/calc.plugin.zsh
 EOBUNDLE
 
 ## Darwin Bundles
@@ -35,9 +38,10 @@ if [[ $(uname) = "Darwin" ]]; then
 EOMAC
 fi
 
+
 ## Docker Bundles
 if [[ $(hash docker) ]]; then
-  antigen bundles docker
+  antigen bundle docker
 fi
 
 
@@ -86,13 +90,14 @@ if [ -f /usr/bin/aws_zsh_completer.sh ];then
   source '/usr/bin/aws_zsh_completer.sh'
 fi
 
-# And For Mac
-if [ -f /usr/local/bin/aws_zsh_completer.sh ];then
-  source '/usr/local/bin/aws_zsh_completer.sh'
+# And For Mac iTerm2 intigration
+if [[ $(uname) = "Darwin" ]]; then
+  # iTerm2 Shell integration
+  source ~/.iterm2_shell_integration.`basename $SHELL`
 fi
 
-# iTerm2 Shell integration
-source ~/.iterm2_shell_integration.`basename $SHELL`
+
+
 
 ## POWERLEVEL9K PROMT SETTINGS ##
 PPOWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="%F{cyan}\u256D\u2500%f"
@@ -202,6 +207,6 @@ POWERLEVEL9K_TIME_BACKGROUND="black"
 DEFAULT_USER=e214048
 POWERLEVEL9K_ALWAYS_SHOW_CONTEXT=false #Always show this segment, including $USER and hostname.
 POWERLEVEL9K_ALWAYS_SHOW_USER=false #Always show the username, but conditionalize the hostname.
-POWERLEVEL9K_CONTEXT_TEMPLATE=%n@%m
+POWERLEVEL9K_CONTEXT_TEMPLATE="%n@%m"
 POWERLEVEL9K_CONTEXT_BACKGROUND="black"
 POWERLEVEL9K_CONTEXT_FOREGROUND="cyan"
