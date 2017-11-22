@@ -23,8 +23,6 @@ git/gitconfig
 git/gitignore
 git/gitattributes
 shell/hushlogin
-#ssh
-wget/wgetrc
 zsh/zshrc
 nano/nanorc
 nano/syntax-highlighting
