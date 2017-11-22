@@ -25,18 +25,6 @@
 [submodule "nano/syntax-highlighting"]
 	path = nano/syntax-highlighting
 	url = https://github.com/scopatz/nanorc.git
-[submodule "dracula/dracula-zsh"]
-	path = dracula/dracula-zsh
-	url = https://github.com/dracula/zsh.git
-[submodule "zsh_custom/themes/dracula"]
-	path = zsh_custom/themes/dracula
-	url = https://github.com/dracula/zsh.git
-[submodule "zsh_custom/plugins/zsh-autosuggestions"]
-	path = zsh_custom/plugins/zsh-autosuggestions
-	url = git://github.com/zsh-users/zsh-autosuggestions
-[submodule "zsh_custom/themes/powerlevel9k"]
-	path = zsh_custom/themes/powerlevel9k
-	url = https://github.com/bhilburn/powerlevel9k.git
 [submodule "antigen"]
 	path = antigen
 	url = https://github.com/zsh-users/antigen.git
