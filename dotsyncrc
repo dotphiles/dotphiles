@@ -26,7 +26,6 @@ shell/hushlogin
 zsh/zshrc
 nano/nanorc
 nano/syntax-highlighting
-zsh_custom
 nano.d
 antigen
 [endfiles]

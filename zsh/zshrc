@@ -17,17 +17,13 @@ antigen use oh-my-zsh
 
 ## Always Bundles
 antigen bundles <<EOBUNDLE
-  git
   zsh-users/zsh-syntax-highlighting
   zsh-users/zsh-autosuggestions
-  zsh-users/zsh-completions
   desyncr/auto-ls
-  caarlos0/zsh-open-pr
   colorize
   RobSis/zsh-completion-generator
   unixorn/autoupdate-antigen.zshplugin
-  peterhurford/git-it-on.zsh
-  arzzen/calc.plugin.zsh
+  
 EOBUNDLE
 
 ## Darwin Bundles
@@ -36,6 +32,15 @@ if [[ $(uname) = "Darwin" ]]; then
     brew
     osx
 EOMAC
+fi
+
+if [[ $(hash git) ]]; then
+  antigen bundles <<EOBUNDLE
+  git
+  zsh-users/zsh-completions
+  caarlos0/zsh-open-pr
+  peterhurford/git-it-on.zsh
+EOBUNDLE
 fi
 
 
