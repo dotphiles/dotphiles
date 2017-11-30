@@ -154,3 +154,5 @@
 	required = true
 [fetch]
 	prune = true
+[commit]
+	gpgSign = true
