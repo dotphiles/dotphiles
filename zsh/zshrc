@@ -4,6 +4,7 @@ POWERLEVEL9K_MODE='nerdfont-complete'
 
 #Export for personal Binarys
 export PATH=$HOME/.bin:/usr/local/bin:$PATH
+export GPG_TTY=$(tty)
 
 GENCOMPL_FPATH=$HOME/.zsh-completions
 #zsh-completions
