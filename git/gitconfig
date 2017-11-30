@@ -11,7 +11,7 @@
 [user]
 	name = Stian Buch Larsen
 	email = lonixx@gmail.com
-    signingkey = "0101b8a571c5437b92174c53ccfc0d0283a3cd27c7be9c5fdd68ed9f4c13c05046bd0a"
+	signingkey = 55CF05DD043E4F6C
 
 [branch "master"]
     remote = origin
