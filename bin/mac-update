@@ -1,2 +1,0 @@
-#!/bin/sh
-brew update && brew upgrade && brew cu -yf && antigen update && antigen reset && mas upgrade && dotsync -U && dotsync -P
