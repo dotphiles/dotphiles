@@ -16,12 +16,6 @@
 [submodule "vim/dotvim"]
 	path = vim/dotvim
 	url = https://github.com/dotphiles/dotvim.git
-[submodule "nano.d"]
-	path = nano.d
-	url = https://github.com/scopatz/nanorc.git
-[submodule "nano/syntax-highlighting"]
-	path = nano/syntax-highlighting
-	url = https://github.com/scopatz/nanorc.git
 [submodule "antigen"]
 	path = antigen
 	url = https://github.com/zsh-users/antigen.git
