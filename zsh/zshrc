@@ -1,5 +1,4 @@
 ## My custom Vars
-AWS_DEFAULT_PROFILE=default
 POWERLEVEL9K_MODE='nerdfont-complete'
 
 #Export for personal Binarys
@@ -86,15 +85,9 @@ fi
 if [[ -n $SSH_CONNECTION ]]; then
     export EDITOR='vim'
 else
-    export EDITOR='subl -w '
+    export EDITOR='atom -w '
 fi
 
-
-
-# This adds zsh completion for AWS CLI 
-if [ -f /usr/bin/aws_zsh_completer.sh ];then 
-  source '/usr/bin/aws_zsh_completer.sh'
-fi
 
 # And For Mac iTerm2 intigration
 if [[ $(uname) = "Darwin" ]]; then
@@ -111,7 +104,7 @@ POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%F{014}\u2570%F{cyan}\uF460%F{073}\uF
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
 POWERLEVEL9K_SHORTEN_STRATEGY="truncate_to_unique"
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon status kubecontext aws dir_writable dir vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon status kubecontext dir_writable dir vcs)
 #POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(icons_test)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(custom_spotify command_execution_time background_jobs battery time ssh context_joined)
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
@@ -135,10 +128,6 @@ POWERLEVEL9K_STATUS_ERROR_FOREGROUND="red"
 ## Kubecontext
 POWERLEVEL9K_KUBECONTEXT_FOREGROUND="cyan"
 POWERLEVEL9K_KUBECONTEXT_BACKGROUND="black"
-
-## AWS
-POWERLEVEL9K_AWS_FOREGROUND="cyan"
-POWERLEVEL9K_AWS_BACKGROUND="black"
 
 ## Dir Writable
 POWERLEVEL9K_DIR_WRITABLE_FORBIDDEN_BACKGROUND="cyan"
@@ -178,7 +167,7 @@ POWERLEVEL9K_CUSTOM_SPOTIFY="custom_spotify"
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_BACKGROUND="black"
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND="cyan"
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_ICON="\u231A"
-POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD="0"
+POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD="3"
 
 
 
@@ -210,7 +199,7 @@ POWERLEVEL9K_TIME_FOREGROUND="cyan"
 POWERLEVEL9K_TIME_BACKGROUND="black"
 
 ##Context
-DEFAULT_USER=e214048
+DEFAULT_USER=lonix
 POWERLEVEL9K_ALWAYS_SHOW_CONTEXT=false #Always show this segment, including $USER and hostname.
 POWERLEVEL9K_ALWAYS_SHOW_USER=false #Always show the username, but conditionalize the hostname.
 POWERLEVEL9K_CONTEXT_TEMPLATE="%n@%m"
