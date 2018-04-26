@@ -21,10 +21,12 @@ antigen bundles <<EOBUNDLE
   zsh-users/zsh-autosuggestions
   desyncr/auto-ls
   colorize
-  RobSis/zsh-completion-generator
   unixorn/autoupdate-antigen.zshplugin
 
 EOBUNDLE
+
+## incompatible bundle
+## RobSis/zsh-completion-generator
 
 ## Darwin Bundles
 if [[ $(uname) = "Darwin" ]]; then
