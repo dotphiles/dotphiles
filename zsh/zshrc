@@ -98,6 +98,7 @@ if [[ $(uname) = "Darwin" ]]; then
 fi
 
 if [[ $(type gcloud) && $(uname) = "Darwin" ]]; then
+  echo "sdk should load"
   source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
   source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 fi
