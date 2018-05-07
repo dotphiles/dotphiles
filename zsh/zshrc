@@ -25,9 +25,6 @@ antigen bundles <<EOBUNDLE
 
 EOBUNDLE
 
-## incompatible bundle
-## RobSis/zsh-completion-generator
-
 ## Darwin Bundles
 if [[ $(uname) = "Darwin" ]]; then
   antigen bundles <<EOMAC
