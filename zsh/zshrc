@@ -79,7 +79,7 @@ alias pause="spotify pause"
 alias prev="spotify prev"
 alias mac-update="brew update && brew upgrade && brew cu -y && antigen update && antigen reset && mas upgrade && dotsync -U && dotsync -P"
 else
-  custom_spotify(){}
+  custom_spotify() { true;}
 fi
 
 
