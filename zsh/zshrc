@@ -7,7 +7,7 @@ export GPG_TTY=$(tty)
 
 GENCOMPL_FPATH=$HOME/.zsh-completions
 #zsh-completions
-fpath=(/usr/local/share/zsh-completions "$GENCOMPL_FPATH" "$fpath")
+fpath=(/usr/local/share/zsh-completions $GENCOMPL_FPATH $fpath)
 
 ## Antigen
 source $HOME/.antigen/antigen.zsh
@@ -21,10 +21,12 @@ antigen bundles <<EOBUNDLE
   zsh-users/zsh-autosuggestions
   desyncr/auto-ls
   colorize
-  RobSis/zsh-completion-generator
   unixorn/autoupdate-antigen.zshplugin
 
 EOBUNDLE
+
+## incompatible bundle
+## RobSis/zsh-completion-generator
 
 ## Darwin Bundles
 if [[ $(uname) = "Darwin" ]]; then
@@ -32,10 +34,6 @@ if [[ $(uname) = "Darwin" ]]; then
     brew
     osx
 EOMAC
-  if [[ $(hash gcloud) ]]; then
-    source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
-    source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
-  fi
 fi
 
 if [[ $(hash git) ]]; then
@@ -79,9 +77,9 @@ alias next="spotify next"
 alias play="spotify play"
 alias pause="spotify pause"
 alias prev="spotify prev"
-alias mac-update="brew update && brew upgrade && brew cu -yf && antigen update && antigen reset && mas upgrade && dotsync -U && dotsync -P"
+alias mac-update="brew update && brew upgrade && brew cu -y && antigen update && antigen reset && mas upgrade && dotsync -U && dotsync -P"
 else
-  custom_spotify(){ true;}
+  custom_spotify(){}
 fi
 
 
@@ -89,8 +87,9 @@ fi
 if [[ -n $SSH_CONNECTION ]]; then
     export EDITOR='vim'
 else
-    export EDITOR='subl -w '
+    export EDITOR='atom -w '
 fi
+
 
 # And For Mac iTerm2 intigration
 if [[ $(uname) = "Darwin" ]]; then
@@ -99,13 +98,15 @@ if [[ $(uname) = "Darwin" ]]; then
 fi
 
 
+
+
 ## POWERLEVEL9K PROMT SETTINGS ##
-PPOWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="%F{cyan}\u256D\u2500%f"
+POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="%F{cyan}\u256D\u2500%f"
 POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%F{014}\u2570%F{cyan}\uF460%F{073}\uF460%F{109}\uF460%f "
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
 POWERLEVEL9K_SHORTEN_STRATEGY="truncate_to_unique"
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon status kubecontext aws dir_writable dir vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon status kubecontext dir_writable dir vcs)
 #POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(icons_test)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(custom_spotify command_execution_time background_jobs battery time ssh context_joined)
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
@@ -129,10 +130,6 @@ POWERLEVEL9K_STATUS_ERROR_FOREGROUND="red"
 ## Kubecontext
 POWERLEVEL9K_KUBECONTEXT_FOREGROUND="cyan"
 POWERLEVEL9K_KUBECONTEXT_BACKGROUND="black"
-
-## AWS
-POWERLEVEL9K_AWS_FOREGROUND="cyan"
-POWERLEVEL9K_AWS_BACKGROUND="black"
 
 ## Dir Writable
 POWERLEVEL9K_DIR_WRITABLE_FORBIDDEN_BACKGROUND="cyan"
@@ -172,7 +169,7 @@ POWERLEVEL9K_CUSTOM_SPOTIFY="custom_spotify"
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_BACKGROUND="black"
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND="cyan"
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_ICON="\u231A"
-POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD="0"
+POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD="3"
 
 
 
@@ -204,7 +201,7 @@ POWERLEVEL9K_TIME_FOREGROUND="cyan"
 POWERLEVEL9K_TIME_BACKGROUND="black"
 
 ##Context
-DEFAULT_USER=e214048
+DEFAULT_USER=lonix
 POWERLEVEL9K_ALWAYS_SHOW_CONTEXT=false #Always show this segment, including $USER and hostname.
 POWERLEVEL9K_ALWAYS_SHOW_USER=false #Always show the username, but conditionalize the hostname.
 POWERLEVEL9K_CONTEXT_TEMPLATE="%n@%m"
