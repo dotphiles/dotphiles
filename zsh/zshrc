@@ -97,7 +97,10 @@ if [[ $(uname) = "Darwin" ]]; then
   source ~/.iterm2_shell_integration.`basename $SHELL`
 fi
 
-
+if [[ $(type gcloud) && $(uname) = "Darwin" ]]; then
+  source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
+  source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
+fi
 
 
 ## POWERLEVEL9K PROMT SETTINGS ##
