@@ -21,7 +21,7 @@ Example dotfiles for:
   - `python` `ruby` `perl`
   - `screen` `tmux`
   - `mutt` `irssi`
-  - and many more...
+  - and many more!
 
 Installation
 ------------
@@ -52,7 +52,7 @@ These are the minimum files you'll want to edit
   - `vim/vimrc` settings for [dotvim][4]
   - and any dotfiles you enable in `dotsyncrc`
 
-These are stable and reported working...
+These are stable and reported working ...
 
   - `aptitude` - Configure aptitude
   - `bin` - ~/bin for scripts etc
@@ -73,7 +73,7 @@ These are stable and reported working...
   - `subversion` - Configure subversion
   - `tmux` - Configure tmux
 
-These probably work...
+These probably work ...
 
   - `ack` - Configure ack - i dont use it
   - `cmus` - Configure cmus - i dont use it
@@ -174,7 +174,7 @@ And periodically push the changes to github
 Updating
 --------
 
-To keep your fork upto date with additions to the dotphiles repo, do the following
+To keep your fork up to date with additions to the dotphiles repo, do the following
 
     cd ~/.dotfiles
     git remote add upstream https://github.com/dotphiles/dotphiles
@@ -212,4 +212,4 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 [5]: https://github.com/chriskempson/base16
 [6]: https://github.com/Lokaltog/powerline-fonts
 [7]: https://github.com/dotphiles/dotphiles/graphs/contributors
-
+  
