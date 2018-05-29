@@ -35,18 +35,6 @@ else
   custom_spotify() { true;}
 fi
 
-##
-# $1 = type; 0 - both, 1 - tab, 2 - title
-# rest = text
-setTerminalText () {
-    # echo works in bash & zsh
-    local mode=$0 ; shift
-    echo -ne "\033]$mode;$@\007"
-}
-stt_both  () { setTerminalText 0 $@; }
-stt_tab   () { setTerminalText 1 $@; }
-stt_title () { setTerminalText 2 $@; }
-
 ## Adding Mac alias for updating stuff
 if [[ $(uname) = "Darwin" ]]; then
 alias mac-update="brew update && brew upgrade && brew cu -y && antigen update && antigen reset && mas upgrade && dotsync -U && dotsync -P"
