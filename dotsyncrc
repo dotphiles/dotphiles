@@ -35,6 +35,7 @@ antigen
 [hosts]
 vega       git=any
 alpha.lonix.me               git=any
+bravo.lonix.me 				git=any
 irc.lonix.me                git=any
 [endhosts]
 
