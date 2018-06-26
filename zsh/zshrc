@@ -7,17 +7,6 @@ if [[ $(type gcloud) && $(uname) = "Darwin" ]]; then
   source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 fi
 
-## Load Kubectl Bundle
-if [ $commands[kubectl] ]; then
-  source <(kubectl completion zsh)
-fi
-
-##Load helm bundle
-if [ $commands[helm] ]; then
-  source <(helm completion zsh)
-fi
-
-
 ##Add iterm intigration
 if [[ $(uname) = "Darwin" ]]; then
   source ~/.iterm2_shell_integration.`basename $SHELL`
@@ -87,10 +76,24 @@ if [[ $(hash git) ]]; then
 EOBUNDLE
 fi
 
+## Load Kubectl Bundle
+if [ $commands[kubectl] ]; then
+    antigen bundle kubectl
+fi
+
+##Load helm bundle
+if [ $commands[helm] ]; then
+  antigen bundle helm
+fi
 
 ## Docker Bundles
 if [ $commands[docker] ]; then
   antigen bundle docker
+fi
+
+## Golang Bundles
+if [ $commands[go] ]; then
+  antigen bundle golang
 fi
 
 
@@ -99,7 +102,7 @@ antigen theme bhilburn/powerlevel9k powerlevel9k
 
 ##Apply antigen Configuration
 antigen apply
-
+source $HOME/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/kubectl/kubectl.plugin.zsh
 
 #Export for personal Binarys
 export PATH=$HOME/.bin:/usr/local/bin:$PATH
