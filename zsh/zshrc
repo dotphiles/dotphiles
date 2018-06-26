@@ -3,12 +3,22 @@
 
 ## Add completion for Google Cloud sdk
 if [[ $(type gcloud) && $(uname) = "Darwin" ]]; then
-  alias fix-gcloud="source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'"
   source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
   source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 fi
 
-##Add completion for Google Cloud sdk
+## Load Kubectl Bundle
+if [ $commands[kubectl] ]; then
+  source <(kubectl completion zsh)
+fi
+
+##Load helm bundle
+if [ $commands[helm] ]; then
+  source <(helm completion zsh)
+fi
+
+
+##Add iterm intigration
 if [[ $(uname) = "Darwin" ]]; then
   source ~/.iterm2_shell_integration.`basename $SHELL`
 fi
@@ -79,7 +89,7 @@ fi
 
 
 ## Docker Bundles
-if [[ $(hash docker) ]]; then
+if [ $commands[docker] ]; then
   antigen bundle docker
 fi
 
