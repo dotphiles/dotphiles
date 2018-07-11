@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AboutToPasteTabsWithCancel</key>
+	<true/>
+	<key>AboutToPasteTabsWithCancel_selection</key>
+	<integer>2</integer>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
 	<key>AppleScrollAnimationEnabled</key>
@@ -68,12 +72,14 @@
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>760 192 445 77 0 0 1920 1177 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>530 488 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>2189 -114 606 469 1920 -240 2560 1418 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>2375 239 796 473 1920 -240 2560 1418 </string>
+	<string>277 1204 937 512 -548 1050 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1920 1177 0 0 1920 1177 </string>
+	<string>-548 1050 1274 1417 -548 1050 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>2263 -59 570 452 1920 -240 2560 1417 </string>
 	<key>New Bookmarks</key>
@@ -1281,6 +1287,8 @@
 	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>546255923.57071102</real>
+	<key>PasteTabToStringTabStopSize</key>
+	<integer>2</integer>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -1325,7 +1333,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-05-29T05:10:29Z</date>
+	<date>2018-07-08T09:47:25Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1344,6 +1352,6 @@
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>iTerm Version</key>
-	<string>3.1.6</string>
+	<string>3.2.0beta6</string>
 </dict>
 </plist>
