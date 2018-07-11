@@ -39,3 +39,4 @@ mutt/mailboxes.*
 mutt/smime/*
 mutt/certificates
 task/task/*.data
+bin/jenkins-cli.jar
