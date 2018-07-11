@@ -53,6 +53,7 @@ antigen bundles <<EOBUNDLE
   zsh-users/zsh-syntax-highlighting
   zsh-users/zsh-autosuggestions
   desyncr/auto-ls
+  z
   colorize
   unixorn/autoupdate-antigen.zshplugin
 EOBUNDLE
@@ -105,9 +106,9 @@ antigen apply
 source $HOME/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/kubectl/kubectl.plugin.zsh
 
 #Export for personal Binarys
-export PATH=$HOME/.bin:/usr/local/bin:$PATH
+export PATH=$HOME/.bin:$HOME/go/bin:/usr/local/bin:$PATH
 export GPG_TTY=$(tty)
-
+export GOPATH=$HOME/Go:/usr/local/go
 
 #######Powerlevel 9000
 
