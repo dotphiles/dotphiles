@@ -1,0 +1,10 @@
+#!/bin/bash
+
+[[ -d ~/.rancher ]] || mkdir -p  ~/.rancher
+[[ -d ~/.ssh ]] || mkdir -p  ~/.ssh
+[[ -e ~/.ssh/known_hosts ]] || touch ~/.ssh/known_hosts
+[[ -e ~/.rancher/cli.json ]] || echo "{"accessKey":"","secretKey":"","url":"","environment":""}" >  ~/.rancher/cli.json
+
+IMAGE=${IMAGE:-rancher/cli}
+
+exec docker run --rm -it --net host -v ~/.rancher/cli.json:/root/.rancher/cli.json  -v ~/.ssh/known_hosts:/root/.ssh/known_hosts -v $(pwd):/mnt ${IMAGE} "$@"

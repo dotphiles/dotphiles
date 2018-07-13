@@ -1,114 +1,187 @@
-#
-# dotphiles : https://github.com/dotphiles/dotphiles
-#
-# Sets dotzsh options.
-#
-# Authors:
-#   Ben O'Hara <bohara@gmail.com>
-#
+#!/bin/zsh
 
-# debug: see with `dzinfo`
-##zstyle ':dotzsh:load' timing 'yes'
-##zstyle ':dotzsh:module:*' timing 'yes'
+## Add completion for Google Cloud sdk
+if [[ $(type gcloud) && $(uname) == "Darwin" ]]; then
+	source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
+	source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
+fi
 
-# Set the Zsh modules to load (man zshmodules).
-zstyle ':dotzsh:load' zmodule 'stat'
+##Add iterm intigration
+if [[ $(uname) == "Darwin" ]]; then
+	source ~/.iterm2_shell_integration.$(basename $SHELL)
+fi
 
-# Set the Zsh functions to load (man zshcontrib).
-zstyle ':dotzsh:load' zfunction 'zargs' 'zmv'
+##Configure default editior for local and SSH sessions
+if [[ -n $SSH_CONNECTION ]]; then
+	export EDITOR='vim'
+else
+	export EDITOR='code -w '
+fi
 
-# Set the dotzsh modules to load (browse modules).
-# The order matters.
-zstyle ':dotzsh:load' dzmodule \
-  'gnu-utility' \
-  'environment' \
-  'terminal' \
-  'editor' \
-  'history' \
-  'utility' \
-  'completion' \
-  'theme'
+## Add local alias for Spotify for powerlevel9k
+if [[ $(uname) == "Darwin" ]]; then
+	custom_spotify() {
+		#    local color='%F{cyan}'
+		state=$(osascript -e 'tell application "Spotify" to player state as string')
+		if [ $state = "playing" ]; then
+			artist=$(osascript -e 'tell application "Spotify" to artist of current track as string')
+			track=$(osascript -e 'tell application "Spotify" to name of current track as string')
+			echo -n "\uf485 $artist - $track "
+		fi
+	}
+else
+	custom_spotify() { true; }
+fi
 
-### Global settings
-# Color output (auto set to 'no' on dumb terminals).
-zstyle ':dotzsh:module:*' color 'yes'
-# Setup aliases for modules (disable per module below).
-zstyle ':dotzsh:module:*' aliases 'yes'
-# Set case-sensitivity for completion, history lookup, etc.
-zstyle ':dotzsh:module:*' case-sensitive 'no'
+## Adding Mac alias for updating stuff
+if [[ $(uname) == "Darwin" ]]; then
+	alias mac-update="brew update && brew upgrade && brew cu -y && antigen update && antigen reset && mas upgrade && dotsync -U && dotsync -P"
+fi
 
-### Environment module
-# Set which PAGER to use less or more
-##zstyle ':dotzsh:module:environment' pager 'less'
-# Enable mouse scrolling in less, add the following to *zshrc*
-##zstyle ':dotzsh:module:environment:pager:less' mousescroll 'false'
+#Initialize antibody pluginloader
+source <(antibody init)
 
-### Terminal Module
-# Auto set the tab and window titles.
-zstyle ':dotzsh:module:terminal' auto-title 'yes'
+## Define mode/font for Powerlevel 9k
+POWERLEVEL9K_MODE='nerdfont-complete'
 
-### Editor module
-# Set the key mapping style to 'emacs' or 'vi'.
-zstyle ':dotzsh:module:editor' keymap 'emacs'
-# Set EDITOR to 'emacs' or 'vi'.
-zstyle ':dotzsh:module:editor' editor 'vi'
-# Auto convert .... to ../..
-#zstyle ':dotzsh:module:editor' dot-expansion 'yes'
+## Antigen Modules to always load
+#antigen use oh-my-zsh
+antibody bundle <<EOBUNDLE
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-completions
+rupa/z
+EOBUNDLE
 
-### Utility Module
-# Disable `diff` highlighting
-##zstyle ':dotzsh:module:utility:diff' color 'no'
-# Disable `wdiff` highlighting
-##zstyle ':dotzsh:module:utility:wdiff' color 'no'
-# Disable `make` highlighting
-##zstyle ':dotzsh:module:utility:make' color 'no'
+## Add git spesific modules
+if [ $commands[git] ]; then
+	antibody bundle <<EOBUNDLE
+caarlos0/zsh-git-fetch-merge kind:path
+caarlos0/zsh-git-sync kind:path
+caarlos0/zsh-open-pr kind:path
+EOBUNDLE
+fi
 
-### Completion module
-# Expand global aliases automatically
-#zstyle ':dotzsh:module:completion' expand-global-aliases 'yes'
+## Apply theme for antibody
+antibody bundle bhilburn/powerlevel9k
 
-### SSH module
-zstyle ':dotzsh:module:ssh:agent' forwarding 'yes'
-#zstyle ':dotzsh:module:ssh:aliases' hosts 'yes'
-##zstyle ':dotzsh:module:ssh:agent' identities 'id_rsa' 'id_rsa2' 'id_github'
+#These bundles should always be last
+antibody bundle <<EOBUNDLE
+mafredri/zsh-async
+zsh-users/zsh-syntax-highlighting
+zsh-users/zsh-history-substring-search
+EOBUNDLE
 
-### GNUPG module
-# Enable ssh-agent protocol emulation for gpg-agent
-##zstyle ':dotzsh:module:gnupg' agent-ssh-support 'yes'
+#Export for personal Binarys
+export PATH=$HOME/.bin:$HOME/go/bin:/usr/local/bin:$PATH
+export GPG_TTY=$(tty)
+export GOPATH=$HOME/Go:/usr/local/go
 
-### OSX module
-# Add aliases for Applications
-##zstyle ':dotzsh:module:osx' launcher 'yes'
-# Open/Resume temrinal in correct dir
-##zstyle ':dotzsh:module:osx' terminal-resume 'yes'
+#Reload compinit
 
-### Git module
-# Disable all git aliases
-##zstyle ':dotzsh:module:git' aliases 'no'
+autoload -Uz compinit
+if [ $(date +'%j') != $(stat -f '%Sm' -t '%j' ~/.zcompdump) ]; then
+	compinit
+else
+	compinit -C
+fi
 
-### TMUX module
-# Auto start a session when Zsh is launched.
-# Setting it to 'local' only starts a session for local terminals.
-# Setting it to 'remote' only starts a session for SSH connections.
-##zstyle ':dotzsh:module:tmux' auto-start 'no'
-#zstyle ':dotzsh:module:tmux:aliases' tmuxinator 'yes'
+#######Powerlevel 9000
 
-### Syntax Highlighting module
-#zstyle ':dotzsh:module:syntax-highlighting' highlighters 'main' 'brackets' 'pattern' \
-#  'cursor' 'root' \
+## POWERLEVEL9K PROMT SETTINGS ##
+POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="%F{cyan}\u256D\u2500%f"
+POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%F{cyan}\u2570\uF460\uF460 λ "
+OWERLEVEL9K_SHORTEN_STRATEGY="truncate_to_unique"
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon status dir_writable dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(custom_spotify command_execution_time background_jobs battery time ssh context_joined)
+POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 
-### Theme module
-# Set default theme to load.
-# Setting it to 'random' loads a random theme.
-# Auto set to 'off' on dumb terminals.
-zstyle ':dotzsh:module:theme' theme 'dotphiles'
-### Set custom theme based on hostname or domain
-# zstyle ':dotzsh:module:theme:hostname:your-host-here' theme 'dotphiles' 'soldark' 'magenta'
-# zstyle ':dotzsh:module:theme:hostname:your-other-host-here' theme 'dotphiles' 'soldark' 'violet'
-# zstyle ':dotzsh:module:theme:domain:your-domain-here' theme 'dotphiles' 'soldark' 'orange'
+## MISC ##
+POWERLEVEL9K_STATUS_VERBOSE=false
+POWERLEVEL9K_STATUS_OK_IN_NON_VERBOSE=true
 
-### Load dotzsh
-source "$DOTZSH/init.zsh"
+###### LEFT SIDE ######
+## OS Icon
+POWERLEVEL9K_OS_ICON_BACKGROUND="black"
+POWERLEVEL9K_OS_ICON_FOREGROUND="cyan"
 
-### Customize to your needs...
+## Status
+POWERLEVEL9K_STATUS_OK_BACKGROUND="black"
+POWERLEVEL9K_STATUS_OK_FOREGROUND="cyan"
+POWERLEVEL9K_STATUS_ERROR_BACKGROUND="black"
+POWERLEVEL9K_STATUS_ERROR_FOREGROUND="red"
 
+## Kubecontext
+POWERLEVEL9K_KUBECONTEXT_FOREGROUND="cyan"
+POWERLEVEL9K_KUBECONTEXT_BACKGROUND="black"
+
+## Dir Writable
+POWERLEVEL9K_DIR_WRITABLE_FORBIDDEN_BACKGROUND="black"
+POWERLEVEL9K_DIR_WRITABLE_FORBIDDEN_FOREGROUND="cyan"
+
+## Dir
+POWERLEVEL9K_DIR_HOME_BACKGROUND="black"
+POWERLEVEL9K_DIR_HOME_FOREGROUND="cyan"
+POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND="black"
+POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND="cyan"
+POWERLEVEL9K_DIR_DEFAULT_BACKGROUND="black"
+POWERLEVEL9K_DIR_DEFAULT_FOREGROUND="cyan"
+
+## VCS
+POWERLEVEL9K_VCS_CLEAN_BACKGROUND="black"
+POWERLEVEL9K_VCS_CLEAN_FOREGROUND="cyan"
+POWERLEVEL9K_VCS_MODIFIED_BACKGROUND="black"
+POWERLEVEL9K_VCS_MODIFIED_FOREGROUND="yellow"
+POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND="black"
+POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND="yellow"
+POWERLEVEL9K_VCS_GIT_GITHUB_ICON="\ue709"
+POWERLEVEL9K_VCS_GIT_BITBUCKET_ICON="\ue703"
+POWERLEVEL9K_VCS_GIT_GITLAB_ICON="\ue705"
+POWERLEVEL9K_VCS_GIT_ICON=""
+
+###### RIGHT SIDE
+
+## Spotify
+POWERLEVEL9K_CUSTOM_SPOTIFY_FOREGROUND="cyan"
+POWERLEVEL9K_CUSTOM_SPOTIFY_BACKGROUND="black"
+POWERLEVEL9K_CUSTOM_SPOTIFY="custom_spotify"
+
+## Command Execution TIme
+POWERLEVEL9K_COMMAND_EXECUTION_TIME_BACKGROUND="black"
+POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND="cyan"
+POWERLEVEL9K_COMMAND_EXECUTION_TIME_ICON="\u231A"
+POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD="3"
+
+## Background Jobs
+POWERLEVEL9K_BACKGROUND_JOBS_BACKGROUND="black"
+POWERLEVEL9K_BACKGROUND_JOBS_FOREGROUND="cyan"
+
+##Ssh
+#POWERLEVEL9K_SSH_FOREGROUND="226"
+POWERLEVEL9K_SSH_FOREGROUND="cyan"
+POWERLEVEL9K_SSH_BACKGROUND="black"
+POWERLEVEL9K_SSH_ICON="\uF489" #
+
+##Battery
+POWERLEVEL9K_BATTERY_CHARGING="cyan"
+POWERLEVEL9K_BATTERY_CHARGING_FOREGROUND="yellow"
+POWERLEVEL9K_BATTERY_CHARGED="cyan"
+POWERLEVEL9K_BATTERY_CHARGED_FOREGROUND="cyan"
+POWERLEVEL9K_BATTERY_DISCONNECTED="cyan"
+POWERLEVEL9K_BATTERY_DISCONNECTED_FOREGROUND="cyan"
+POWERLEVEL9K_BATTERY_LOW_THRESHOLD="15"
+POWERLEVEL9K_BATTERY_LOW_COLOR="red"
+POWERLEVEL9K_BATTERY_VERBOSE="flase"
+
+##Time
+POWERLEVEL9K_TIME_FORMAT="%D{\uf017 %T}"
+POWERLEVEL9K_TIME_FOREGROUND="cyan"
+POWERLEVEL9K_TIME_BACKGROUND="black"
+
+##Context
+DEFAULT_USER=lonix
+POWERLEVEL9K_ALWAYS_SHOW_CONTEXT=false #Always show this segment, including $USER and hostname.
+POWERLEVEL9K_ALWAYS_SHOW_USER=false    #Always show the username, but conditionalize the hostname.
+POWERLEVEL9K_CONTEXT_TEMPLATE="%n@%m"
+POWERLEVEL9K_CONTEXT_BACKGROUND="black"
+POWERLEVEL9K_CONTEXT_FOREGROUND="cyan"

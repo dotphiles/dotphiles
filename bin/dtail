@@ -1,0 +1,3 @@
+#!/bin/bash
+
+docker logs -tf --tail="50" "$@"

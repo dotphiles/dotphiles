@@ -9,9 +9,9 @@
 
 # Global Config
 [user]
-    #name = "**Your Name**"
-    #email = "**Your Email**"
-    #signingkey = **Your GPG ID**
+	name = Stian Buch Larsen
+	email = lonixx@gmail.com
+	signingkey = 55CF05DD043E4F6C
 
 [branch "master"]
     remote = origin
@@ -142,7 +142,17 @@
 
 [push]
     default = matching
+	followTags = true
 
 [url "git@github.com:"]
     insteadof = github:
 
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[fetch]
+	prune = true
+[commit]
+	gpgSign = true
