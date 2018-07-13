@@ -16,6 +16,8 @@
     "workbench.colorTheme": "Dracula",
     "jenkins.polling": 5,
     "git.confirmSync": false,
-    "workbench.iconTheme": "vscode-great-icons"
+    "workbench.iconTheme": "vscode-great-icons",
+    "outline.problems.enabled": true,
+    "outline.icons": true
 }
 
