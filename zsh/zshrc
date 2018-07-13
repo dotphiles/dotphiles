@@ -1,43 +1,41 @@
 #!/bin/zsh
 
 ## Add completion for Google Cloud sdk
-if [[ $(type gcloud) && $(uname) = "Darwin" ]]; then
-  source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
-  source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
+if [[ $(type gcloud) && $(uname) == "Darwin" ]]; then
+	source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
+	source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 fi
 
 ##Add iterm intigration
-if [[ $(uname) = "Darwin" ]]; then
-  source ~/.iterm2_shell_integration.`basename $SHELL`
+if [[ $(uname) == "Darwin" ]]; then
+	source ~/.iterm2_shell_integration.$(basename $SHELL)
 fi
 
 ##Configure default editior for local and SSH sessions
 if [[ -n $SSH_CONNECTION ]]; then
-    export EDITOR='vim'
+	export EDITOR='vim'
 else
-    export EDITOR='code -w '
+	export EDITOR='code -w '
 fi
 
 ## Add local alias for Spotify for powerlevel9k
-if [[ $(uname) = "Darwin" ]]; then
-  custom_spotify () {
-  #    local color='%F{cyan}'
-    state=`osascript -e 'tell application "Spotify" to player state as string'`;
-    if [ $state = "playing" ]; then
-      artist=`osascript -e 'tell application "Spotify" to artist of current track as string'`;
-      track=`osascript -e 'tell application "Spotify" to name of current track as string'`;
-      echo -n "\uf485 $artist - $track " ;
-    fi
-  }
+if [[ $(uname) == "Darwin" ]]; then
+	custom_spotify() {
+		#    local color='%F{cyan}'
+		state=$(osascript -e 'tell application "Spotify" to player state as string')
+		if [ $state = "playing" ]; then
+			artist=$(osascript -e 'tell application "Spotify" to artist of current track as string')
+			track=$(osascript -e 'tell application "Spotify" to name of current track as string')
+			echo -n "\uf485 $artist - $track "
+		fi
+	}
 else
-  custom_spotify() { true;}
+	custom_spotify() { true; }
 fi
 
-
-
 ## Adding Mac alias for updating stuff
-if [[ $(uname) = "Darwin" ]]; then
-alias mac-update="brew update && brew upgrade && brew cu -y && antigen update && antigen reset && mas upgrade && dotsync -U && dotsync -P"
+if [[ $(uname) == "Darwin" ]]; then
+	alias mac-update="brew update && brew upgrade && brew cu -y && antigen update && antigen reset && mas upgrade && dotsync -U && dotsync -P"
 fi
 
 #Initialize antibody pluginloader
@@ -56,7 +54,7 @@ EOBUNDLE
 
 ## Add git spesific modules
 if [ $commands[git] ]; then
-  antibody bundle <<EOBUNDLE
+	antibody bundle <<EOBUNDLE
 caarlos0/zsh-git-fetch-merge kind:path
 caarlos0/zsh-git-sync kind:path
 caarlos0/zsh-open-pr kind:path
@@ -65,7 +63,6 @@ fi
 
 ## Apply theme for antibody
 antibody bundle bhilburn/powerlevel9k
-
 
 #These bundles should always be last
 antibody bundle <<EOBUNDLE
@@ -83,9 +80,9 @@ export GOPATH=$HOME/Go:/usr/local/go
 
 autoload -Uz compinit
 if [ $(date +'%j') != $(stat -f '%Sm' -t '%j' ~/.zcompdump) ]; then
-  compinit
+	compinit
 else
-  compinit -C
+	compinit -C
 fi
 
 #######Powerlevel 9000
@@ -102,8 +99,6 @@ POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 ## MISC ##
 POWERLEVEL9K_STATUS_VERBOSE=false
 POWERLEVEL9K_STATUS_OK_IN_NON_VERBOSE=true
-
-
 
 ###### LEFT SIDE ######
 ## OS Icon
@@ -132,7 +127,6 @@ POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND="cyan"
 POWERLEVEL9K_DIR_DEFAULT_BACKGROUND="black"
 POWERLEVEL9K_DIR_DEFAULT_FOREGROUND="cyan"
 
-
 ## VCS
 POWERLEVEL9K_VCS_CLEAN_BACKGROUND="black"
 POWERLEVEL9K_VCS_CLEAN_FOREGROUND="cyan"
@@ -144,8 +138,6 @@ POWERLEVEL9K_VCS_GIT_GITHUB_ICON="\ue709"
 POWERLEVEL9K_VCS_GIT_BITBUCKET_ICON="\ue703"
 POWERLEVEL9K_VCS_GIT_GITLAB_ICON="\ue705"
 POWERLEVEL9K_VCS_GIT_ICON=""
-
-
 
 ###### RIGHT SIDE
 
@@ -160,18 +152,15 @@ POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND="cyan"
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_ICON="\u231A"
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD="3"
 
-
-
 ## Background Jobs
 POWERLEVEL9K_BACKGROUND_JOBS_BACKGROUND="black"
 POWERLEVEL9K_BACKGROUND_JOBS_FOREGROUND="cyan"
-
 
 ##Ssh
 #POWERLEVEL9K_SSH_FOREGROUND="226"
 POWERLEVEL9K_SSH_FOREGROUND="cyan"
 POWERLEVEL9K_SSH_BACKGROUND="black"
-POWERLEVEL9K_SSH_ICON="\uF489"  #
+POWERLEVEL9K_SSH_ICON="\uF489" #
 
 ##Battery
 POWERLEVEL9K_BATTERY_CHARGING="cyan"
@@ -192,7 +181,7 @@ POWERLEVEL9K_TIME_BACKGROUND="black"
 ##Context
 DEFAULT_USER=lonix
 POWERLEVEL9K_ALWAYS_SHOW_CONTEXT=false #Always show this segment, including $USER and hostname.
-POWERLEVEL9K_ALWAYS_SHOW_USER=false #Always show the username, but conditionalize the hostname.
+POWERLEVEL9K_ALWAYS_SHOW_USER=false    #Always show the username, but conditionalize the hostname.
 POWERLEVEL9K_CONTEXT_TEMPLATE="%n@%m"
 POWERLEVEL9K_CONTEXT_BACKGROUND="black"
 POWERLEVEL9K_CONTEXT_FOREGROUND="cyan"
