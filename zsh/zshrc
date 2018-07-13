@@ -1,5 +1,5 @@
-
-
+zmodload zsh/zprof
+#setopt VERBOSE
 
 ## Add completion for Google Cloud sdk
 if [[ $(type gcloud) && $(uname) = "Darwin" ]]; then
@@ -8,9 +8,9 @@ if [[ $(type gcloud) && $(uname) = "Darwin" ]]; then
 fi
 
 ##Add iterm intigration
-if [[ $(uname) = "Darwin" ]]; then
-  source ~/.iterm2_shell_integration.`basename $SHELL`
-fi
+#if [[ $(uname) = "Darwin" ]]; then
+#  source ~/.iterm2_shell_integration.`basename $SHELL`
+#fi
 
 ##Configure default editior for local and SSH sessions
 if [[ -n $SSH_CONNECTION ]]; then
@@ -34,94 +34,75 @@ else
   custom_spotify() { true;}
 fi
 
+
+
 ## Adding Mac alias for updating stuff
 if [[ $(uname) = "Darwin" ]]; then
 alias mac-update="brew update && brew upgrade && brew cu -y && antigen update && antigen reset && mas upgrade && dotsync -U && dotsync -P"
 fi
 
-## Start of Antigen Configuration
+#Initialize antibody pluginloader
+source <(antibody init)
 
 ## Define mode/font for Powerlevel 9k
 POWERLEVEL9K_MODE='nerdfont-complete'
 
-## Source antigen itself
-source $HOME/.antigen/antigen.zsh
-
 ## Antigen Modules to always load
-antigen use oh-my-zsh
-antigen bundles <<EOBUNDLE
-  zsh-users/zsh-syntax-highlighting
-  zsh-users/zsh-autosuggestions
-  desyncr/auto-ls
-  z
-  colorize
-  unixorn/autoupdate-antigen.zshplugin
+#antigen use oh-my-zsh
+antibody bundle <<EOBUNDLE
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-completions
+rupa/z
 EOBUNDLE
-
-## Load Darwin spesific Modules
-
-if [[ $(uname) = "Darwin" ]]; then
-  antigen bundles <<EOMAC
-    brew
-    osx
-EOMAC
-fi
 
 ## Add git spesific modules
-if [[ $(hash git) ]]; then
-  antigen bundles <<EOBUNDLE
-  git
-  zsh-users/zsh-completions
-  caarlos0/zsh-open-pr
-  peterhurford/git-it-on.zsh
+if [ $commands[git] ]; then
+  antibody bundle <<EOBUNDLE
+caarlos0/zsh-git-fetch-merge kind:path
+caarlos0/zsh-git-sync kind:path
+caarlos0/zsh-open-pr kind:path
 EOBUNDLE
 fi
 
-## Load Kubectl Bundle
-if [ $commands[kubectl] ]; then
-    antigen bundle kubectl
-fi
-
-##Load helm bundle
-if [ $commands[helm] ]; then
-  antigen bundle helm
-fi
-
-## Docker Bundles
-if [ $commands[docker] ]; then
-  antigen bundle docker
-fi
-
-## Golang Bundles
-if [ $commands[go] ]; then
-  antigen bundle golang
-fi
-
-
 ## Apply theme for Antigen
-antigen theme bhilburn/powerlevel9k powerlevel9k
+antibody bundle bhilburn/powerlevel9k
 
-##Apply antigen Configuration
-antigen apply
-source $HOME/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/kubectl/kubectl.plugin.zsh
+#bundles Last
+
+antibody bundle <<EOBUNDLE
+mafredri/zsh-async
+#sindresorhus/pure
+zsh-users/zsh-syntax-highlighting
+zsh-users/zsh-history-substring-search
+EOBUNDLE
 
 #Export for personal Binarys
 export PATH=$HOME/.bin:$HOME/go/bin:/usr/local/bin:$PATH
 export GPG_TTY=$(tty)
 export GOPATH=$HOME/Go:/usr/local/go
 
+#Reload compinit
+
+autoload -Uz compinit
+if [ $(date +'%j') != $(stat -f '%Sm' -t '%j' ~/.zcompdump) ]; then
+  compinit
+else
+  compinit -C
+fi
+
 #######Powerlevel 9000
 
 ## POWERLEVEL9K PROMT SETTINGS ##
 POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="%F{cyan}\u256D\u2500%f"
-POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%F{014}\u2570%F{cyan}\uF460%F{073}\uF460%F{109}\uF460%f "
+POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%F{cyan}\u2570\uF460\uF460 λ"
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
 POWERLEVEL9K_SHORTEN_STRATEGY="truncate_to_unique"
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon status kubecontext dir_writable dir vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon status dir_writable dir vcs)
 #POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(icons_test)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(custom_spotify command_execution_time background_jobs battery time ssh context_joined)
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+
 ## MISC ##
 POWERLEVEL9K_STATUS_VERBOSE=false
 POWERLEVEL9K_STATUS_OK_IN_NON_VERBOSE=true
