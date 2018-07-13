@@ -63,14 +63,13 @@ caarlos0/zsh-open-pr kind:path
 EOBUNDLE
 fi
 
-## Apply theme for Antigen
+## Apply theme for antibody
 antibody bundle bhilburn/powerlevel9k
 
-#bundles Last
 
+#These bundles should always be last
 antibody bundle <<EOBUNDLE
 mafredri/zsh-async
-#sindresorhus/pure
 zsh-users/zsh-syntax-highlighting
 zsh-users/zsh-history-substring-search
 EOBUNDLE
@@ -93,12 +92,10 @@ fi
 
 ## POWERLEVEL9K PROMT SETTINGS ##
 POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="%F{cyan}\u256D\u2500%f"
-POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%F{cyan}\u2570\uF460\uF460 λ"
-POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
-POWERLEVEL9K_SHORTEN_STRATEGY="truncate_to_unique"
+POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%F{cyan}\u2570\uF460\uF460 λ "
+OWERLEVEL9K_SHORTEN_STRATEGY="truncate_to_unique"
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon status dir_writable dir vcs)
-#POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(icons_test)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(custom_spotify command_execution_time background_jobs battery time ssh context_joined)
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 
@@ -177,7 +174,7 @@ POWERLEVEL9K_SSH_BACKGROUND="black"
 POWERLEVEL9K_SSH_ICON="\uF489"  #
 
 ##Battery
-POWERLEVEL9K_BATTERY_CHARGING="yellow"
+POWERLEVEL9K_BATTERY_CHARGING="cyan"
 POWERLEVEL9K_BATTERY_CHARGING_FOREGROUND="yellow"
 POWERLEVEL9K_BATTERY_CHARGED="cyan"
 POWERLEVEL9K_BATTERY_CHARGED_FOREGROUND="cyan"
