@@ -1,5 +1,4 @@
-zmodload zsh/zprof
-#setopt VERBOSE
+#!/bin/zsh
 
 ## Add completion for Google Cloud sdk
 if [[ $(type gcloud) && $(uname) = "Darwin" ]]; then
@@ -8,9 +7,9 @@ if [[ $(type gcloud) && $(uname) = "Darwin" ]]; then
 fi
 
 ##Add iterm intigration
-#if [[ $(uname) = "Darwin" ]]; then
-#  source ~/.iterm2_shell_integration.`basename $SHELL`
-#fi
+if [[ $(uname) = "Darwin" ]]; then
+  source ~/.iterm2_shell_integration.`basename $SHELL`
+fi
 
 ##Configure default editior for local and SSH sessions
 if [[ -n $SSH_CONNECTION ]]; then
@@ -125,8 +124,8 @@ POWERLEVEL9K_KUBECONTEXT_FOREGROUND="cyan"
 POWERLEVEL9K_KUBECONTEXT_BACKGROUND="black"
 
 ## Dir Writable
-POWERLEVEL9K_DIR_WRITABLE_FORBIDDEN_BACKGROUND="cyan"
-POWERLEVEL9K_DIR_WRITABLE_FORBIDDEN_FOREGROUND="black"
+POWERLEVEL9K_DIR_WRITABLE_FORBIDDEN_BACKGROUND="black"
+POWERLEVEL9K_DIR_WRITABLE_FORBIDDEN_FOREGROUND="cyan"
 
 ## Dir
 POWERLEVEL9K_DIR_HOME_BACKGROUND="black"
