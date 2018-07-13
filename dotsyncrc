@@ -33,7 +33,7 @@ antigen
 # Hosts to sync
 ## hostname                     type=masterhost, ANY or NONE    files=dotfile:tolink,another:tolink
 [hosts]
-vega       git=any
-alpha.lonix.me               git=any
-bravo.lonix.me 				git=any
+vega                  git=any
+bravo.lonix.me        git=any,rsync=vega
+gamma.lonix.me      git=any,rsync=vega
 [endhosts]
