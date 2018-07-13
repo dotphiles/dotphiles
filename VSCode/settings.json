@@ -1,0 +1,21 @@
+{
+    "explorer.confirmDelete": false,
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+
+    },
+    "editor.renderWhitespace": "all",
+    "workbench.startupEditor": "newUntitledFile",
+    "files.insertFinalNewline": true,
+    "editor.fontSize": 14,
+    "editor.tabSize": 2,
+    "files.trimTrailingWhitespace": true,
+    "editor.formatOnPaste": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "workbench.colorTheme": "Dracula",
+    "jenkins.polling": 5,
+    "git.confirmSync": false,
+    "workbench.iconTheme": "vscode-great-icons"
+}
+
