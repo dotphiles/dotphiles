@@ -24,12 +24,12 @@ dotsyncrc
 #ctags/ctags
 #cmus
 #curl/curlrc
-#git/gitconfig
+git/gitconfig
 #git/gitignore
 #git/gitattributes
 #git/tigrc
 #git/gitk
-#gnupg
+gnupg
 #grc
 #input/editrc
 #input/inputrc
@@ -61,10 +61,10 @@ dotsyncrc
 #subversion
 #task/task
 #task/taskrc
-#tmux/tmux.conf
-#tmux/tmuxinator
+tmux/tmux.conf
+tmux/tmuxinator
 #vim/dotvim:.vim
-#vim/vimrc
+vim/vimrc
 #vim/gvimrc
 #wget/wgetrc
 #zsh/fasdrc
@@ -73,7 +73,7 @@ dotsyncrc
 #zsh/zlogout
 #zsh/zprofile
 #zsh/zshenv
-#zsh/zshrc
+zsh/zshrc
 [endfiles]
 
 # Hosts to sync
